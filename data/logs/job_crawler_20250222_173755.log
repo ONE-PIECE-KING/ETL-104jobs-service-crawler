@@ -1,0 +1,2941 @@
+2025-02-22 17:37:55 - INFO: 日誌檔案已建立：logs\job_crawler_20250222_173755.log
+2025-02-22 17:37:55 - INFO: ====== WebDriver manager ======
+2025-02-22 17:37:56 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 17:37:59 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 17:37:59 - INFO: Driver [C:\Users\songs\.wdm\drivers\chromedriver\win64\133.0.6943.126\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-22 17:38:20 - INFO: 正在處理第 1 頁...
+2025-02-22 17:38:20 - INFO: 當前頁面職缺數量: 22
+2025-02-22 17:38:31 - INFO: 職缺名稱: 【眼科儀器】北區業務代表
+2025-02-22 17:38:31 - INFO: 職缺網址: https://www.104.com.tw/job/7rd2q?jobsource=hotjob_chr_exp
+2025-02-22 17:38:31 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 17:38:31 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:38:41 - INFO: 已添加進陣列
+2025-02-22 17:38:49 - INFO: 職缺名稱: 教育訓練理級主管
+2025-02-22 17:38:49 - INFO: 職缺網址: https://www.104.com.tw/job/7x2x6?jobsource=hotjob_chr_exp
+2025-02-22 17:38:49 - INFO: 公司名稱: 大銀微系統股份有限公司_HIWIN MIKROSYSTEM
+2025-02-22 17:38:49 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:38:59 - INFO: 已添加進陣列
+2025-02-22 17:39:02 - INFO: 職缺名稱: 開刀房供應室專員
+2025-02-22 17:39:02 - INFO: 職缺網址: https://www.104.com.tw/job/6u2ki?jobsource=joblist_list
+2025-02-22 17:39:02 - INFO: 公司名稱: 凡登整形外科診所
+2025-02-22 17:39:02 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:39:12 - INFO: 已添加進陣列
+2025-02-22 17:39:13 - INFO: 職缺名稱: 總院 醫工組 辦事員/管理師
+2025-02-22 17:39:13 - INFO: 職缺網址: https://www.104.com.tw/job/8b93i?jobsource=joblist_list
+2025-02-22 17:39:13 - INFO: 公司名稱: 國泰醫療財團法人國泰綜合醫院
+2025-02-22 17:39:13 - INFO: 更新日期: 2025/02/14
+2025-02-22 17:39:23 - INFO: 已添加進陣列
+2025-02-22 17:39:26 - INFO: 職缺名稱: 醫療設備客服工程師
+2025-02-22 17:39:26 - INFO: 職缺網址: https://www.104.com.tw/job/76tus?jobsource=joblist_list
+2025-02-22 17:39:26 - INFO: 公司名稱: 巨研科技股份有限公司
+2025-02-22 17:39:26 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:39:36 - INFO: 已添加進陣列
+2025-02-22 17:39:39 - INFO: 職缺名稱: 醫學影像軟體業務專員（台北）
+2025-02-22 17:39:39 - INFO: 職缺網址: https://www.104.com.tw/job/8led1?jobsource=joblist_list
+2025-02-22 17:39:39 - INFO: 公司名稱: 富士軟片醫療產品股份有限公司
+2025-02-22 17:39:39 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:39:49 - INFO: 已添加進陣列
+2025-02-22 17:39:50 - INFO: 職缺名稱: 醫療業務代表（北區）
+2025-02-22 17:39:50 - INFO: 職缺網址: https://www.104.com.tw/job/6dqa4?jobsource=joblist_bact_n
+2025-02-22 17:39:50 - INFO: 公司名稱: 和進生技有限公司
+2025-02-22 17:39:50 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:39:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:40:01 - INFO: 已添加進陣列
+2025-02-22 17:40:02 - INFO: 職缺名稱: 醫療儀器維修工程師(台北)
+2025-02-22 17:40:02 - INFO: 職缺網址: https://www.104.com.tw/job/8bmjo?jobsource=joblist_list
+2025-02-22 17:40:02 - INFO: 公司名稱: 樺瑩集團_樺瑩企業股份有限公司
+2025-02-22 17:40:02 - INFO: 更新日期: 2024/12/27
+2025-02-22 17:40:04 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:40:13 - INFO: 已添加進陣列
+2025-02-22 17:40:15 - INFO: 職缺名稱: 桃竹苗醫療業務專員(擴編)
+2025-02-22 17:40:15 - INFO: 職缺網址: https://www.104.com.tw/job/6bbcw?jobsource=joblist_list
+2025-02-22 17:40:15 - INFO: 公司名稱: 雄鷹有限公司
+2025-02-22 17:40:15 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:40:25 - INFO: 已添加進陣列
+2025-02-22 17:40:27 - INFO: 職缺名稱: 醫療業務專員 (中區).Nv
+2025-02-22 17:40:27 - INFO: 職缺網址: https://www.104.com.tw/job/6jlfg?jobsource=joblist_bact_n
+2025-02-22 17:40:27 - INFO: 公司名稱: 日龍儀器股份有限公司
+2025-02-22 17:40:27 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:40:37 - INFO: 已添加進陣列
+2025-02-22 17:40:38 - INFO: 職缺名稱: 【醫藥事業部】臨床操作專員(雙北、桃園)
+2025-02-22 17:40:38 - INFO: 職缺網址: https://www.104.com.tw/job/85xg5?jobsource=joblist_list
+2025-02-22 17:40:38 - INFO: 公司名稱: 泰宗生物科技股份有限公司
+2025-02-22 17:40:38 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:40:48 - INFO: 已添加進陣列
+2025-02-22 17:40:50 - INFO: 職缺名稱: 外勤業務助理(北部)
+2025-02-22 17:40:50 - INFO: 職缺網址: https://www.104.com.tw/job/8ff2d?jobsource=joblist_list
+2025-02-22 17:40:50 - INFO: 公司名稱: 元澤科技有限公司
+2025-02-22 17:40:50 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:41:00 - INFO: 已添加進陣列
+2025-02-22 17:41:01 - INFO: 職缺名稱: 中區醫療業務專員(SCS-Spinal cord stimulation)
+2025-02-22 17:41:01 - INFO: 職缺網址: https://www.104.com.tw/job/8m8r9?jobsource=joblist_list
+2025-02-22 17:41:01 - INFO: 公司名稱: 雄鷹有限公司
+2025-02-22 17:41:01 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:41:11 - INFO: 已添加進陣列
+2025-02-22 17:41:15 - INFO: 職缺名稱: 中區臨床應用業務專員 Clinical Application Specialist
+2025-02-22 17:41:15 - INFO: 職缺網址: https://www.104.com.tw/job/8m29v?jobsource=joblist_list
+2025-02-22 17:41:15 - INFO: 公司名稱: 科明儀器股份有限公司
+2025-02-22 17:41:15 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:41:25 - INFO: 已添加進陣列
+2025-02-22 17:41:27 - INFO: 職缺名稱: 行政-總務室醫工組技正
+2025-02-22 17:41:27 - INFO: 職缺網址: https://www.104.com.tw/job/6rycu?jobsource=joblist_list
+2025-02-22 17:41:27 - INFO: 公司名稱: 佛教慈濟醫療財團法人台北慈濟醫院
+2025-02-22 17:41:27 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:41:28 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:41:33 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:41:37 - INFO: 已添加進陣列
+2025-02-22 17:41:38 - INFO: 職缺名稱: 護理部主管
+2025-02-22 17:41:38 - INFO: 職缺網址: https://www.104.com.tw/job/7f16b?jobsource=joblist_list
+2025-02-22 17:41:38 - INFO: 公司名稱: 宇丰玄股份有限公司
+2025-02-22 17:41:38 - INFO: 更新日期: 2025/02/12
+2025-02-22 17:41:48 - INFO: 已添加進陣列
+2025-02-22 17:41:49 - INFO: 職缺名稱: 醫工組 - 工程師
+2025-02-22 17:41:49 - INFO: 職缺網址: https://www.104.com.tw/job/7ojki?jobsource=joblist_list
+2025-02-22 17:41:49 - INFO: 公司名稱: 戴德森醫療財團法人嘉義基督教醫院
+2025-02-22 17:41:49 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:41:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:42:00 - INFO: 已添加進陣列
+2025-02-22 17:42:01 - INFO: 職缺名稱: 醫工工程師
+2025-02-22 17:42:01 - INFO: 職缺網址: https://www.104.com.tw/job/36jsk?jobsource=joblist_list
+2025-02-22 17:42:01 - INFO: 公司名稱: 義大醫療財團法人義大醫院
+2025-02-22 17:42:01 - INFO: 更新日期: 2025/02/15
+2025-02-22 17:42:11 - INFO: 已添加進陣列
+2025-02-22 17:42:13 - INFO: 職缺名稱: 醫工部-醫學工程師'
+2025-02-22 17:42:13 - INFO: 職缺網址: https://www.104.com.tw/job/42m42?jobsource=joblist_list
+2025-02-22 17:42:13 - INFO: 公司名稱: 彰化基督教醫療財團法人彰化基督教醫院
+2025-02-22 17:42:13 - INFO: 更新日期: 2025/02/10
+2025-02-22 17:42:23 - INFO: 已添加進陣列
+2025-02-22 17:42:25 - INFO: 職缺名稱: 外勤業務助理(南部)
+2025-02-22 17:42:25 - INFO: 職缺網址: https://www.104.com.tw/job/8e0jo?jobsource=joblist_list
+2025-02-22 17:42:25 - INFO: 公司名稱: 元澤科技有限公司
+2025-02-22 17:42:25 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:42:36 - INFO: 已添加進陣列
+2025-02-22 17:42:37 - INFO: 職缺名稱: 臺南市立安南醫院-醫學工程師
+2025-02-22 17:42:37 - INFO: 職缺網址: https://www.104.com.tw/job/8js7d?jobsource=joblist_list
+2025-02-22 17:42:37 - INFO: 公司名稱: 臺南市立安南醫院-委託中國醫藥大學興建經營
+2025-02-22 17:42:37 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:42:38 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:42:47 - INFO: 已添加進陣列
+2025-02-22 17:42:48 - INFO: 職缺名稱: 醫療業務專員 (中區).ENT
+2025-02-22 17:42:48 - INFO: 職缺網址: https://www.104.com.tw/job/7whtf?jobsource=joblist_bact_n
+2025-02-22 17:42:48 - INFO: 公司名稱: 日龍儀器股份有限公司
+2025-02-22 17:42:48 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:42:58 - INFO: 已添加進陣列
+2025-02-22 17:43:00 - INFO: 正在處理第 2 頁...
+2025-02-22 17:43:00 - INFO: 當前頁面職缺數量: 44
+2025-02-22 17:43:02 - INFO: 職缺名稱: CNC車床/銑床加工操作員/技師【平均月所得6萬】
+2025-02-22 17:43:02 - INFO: 職缺網址: https://www.104.com.tw/job/q2et?jobsource=hotjob_chr_exp
+2025-02-22 17:43:02 - INFO: 公司名稱: 大銀微系統股份有限公司_HIWIN MIKROSYSTEM
+2025-02-22 17:43:02 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:43:13 - INFO: 已添加進陣列
+2025-02-22 17:43:14 - INFO: 職缺名稱: 產線裝配人員【平均月所得5萬】
+2025-02-22 17:43:14 - INFO: 職缺網址: https://www.104.com.tw/job/8cov6?jobsource=hotjob_chr_exp
+2025-02-22 17:43:14 - INFO: 公司名稱: 大銀微系統股份有限公司_HIWIN MIKROSYSTEM
+2025-02-22 17:43:14 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:43:25 - INFO: 已添加進陣列
+2025-02-22 17:43:26 - INFO: 職缺名稱: 【醫藥事業部】臨床操作專員(台中)
+2025-02-22 17:43:26 - INFO: 職缺網址: https://www.104.com.tw/job/7gz47?jobsource=joblist_list
+2025-02-22 17:43:26 - INFO: 公司名稱: 泰宗生物科技股份有限公司
+2025-02-22 17:43:26 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:43:36 - INFO: 已添加進陣列
+2025-02-22 17:43:37 - INFO: 職缺名稱: 中區醫療業務專員(擴編)
+2025-02-22 17:43:37 - INFO: 職缺網址: https://www.104.com.tw/job/53vrs?jobsource=joblist_bact_n
+2025-02-22 17:43:37 - INFO: 公司名稱: 雄鷹有限公司
+2025-02-22 17:43:37 - INFO: 更新日期: 2025/02/19
+2025-02-22 17:43:47 - INFO: 已添加進陣列
+2025-02-22 17:43:49 - INFO: 職缺名稱: 眼科診斷設備臨床應用專員(CDM)_MED
+2025-02-22 17:43:49 - INFO: 職缺網址: https://www.104.com.tw/job/7ubiw?jobsource=joblist_list
+2025-02-22 17:43:49 - INFO: 公司名稱: 卡爾蔡司股份有限公司
+2025-02-22 17:43:49 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:43:59 - INFO: 已添加進陣列
+2025-02-22 17:44:00 - INFO: 職缺名稱: 【新店耕莘】醫工組-工程師(滿1年/年薪約49.3萬元起)
+2025-02-22 17:44:00 - INFO: 職缺網址: https://www.104.com.tw/job/8luk5?jobsource=joblist_list
+2025-02-22 17:44:00 - INFO: 公司名稱: 天主教耕莘醫療財團法人耕莘醫院
+2025-02-22 17:44:00 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:44:07 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:44:10 - INFO: 已添加進陣列
+2025-02-22 17:44:12 - INFO: 職缺名稱: 醫工師/醫工部
+2025-02-22 17:44:12 - INFO: 職缺網址: https://www.104.com.tw/job/7b86v?jobsource=joblist_list
+2025-02-22 17:44:12 - INFO: 公司名稱: 童綜合醫療社團法人童綜合醫院
+2025-02-22 17:44:12 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:44:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:44:22 - INFO: 已添加進陣列
+2025-02-22 17:44:24 - INFO: 職缺名稱: 心電圖分析技術員
+2025-02-22 17:44:24 - INFO: 職缺網址: https://www.104.com.tw/job/4eptt?jobsource=joblist_bact_n
+2025-02-22 17:44:24 - INFO: 公司名稱: 準訊生醫股份有限公司
+2025-02-22 17:44:24 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:44:34 - INFO: 已添加進陣列
+2025-02-22 17:44:36 - INFO: 職缺名稱: 心導管室技術員(放射師)(每月再發醫勤獎助金)
+2025-02-22 17:44:36 - INFO: 職缺網址: https://www.104.com.tw/job/8motl?jobsource=joblist_list
+2025-02-22 17:44:36 - INFO: 公司名稱: 三軍總醫院澎湖分院附設民眾診療服務處
+2025-02-22 17:44:36 - INFO: 更新日期: 2025/02/19
+2025-02-22 17:44:42 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:44:45 - INFO: 已添加進陣列
+2025-02-22 17:44:46 - INFO: 職缺名稱: 放射師(台中市西區)
+2025-02-22 17:44:46 - INFO: 職缺網址: https://www.104.com.tw/job/7upr1?jobsource=joblist_bact_n
+2025-02-22 17:44:46 - INFO: 公司名稱: 台全醫療體系_台全診所
+2025-02-22 17:44:46 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:44:47 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:44:56 - INFO: 已添加進陣列
+2025-02-22 17:44:58 - INFO: 職缺名稱: 醫工/醫學工程技術員
+2025-02-22 17:44:58 - INFO: 職缺網址: https://www.104.com.tw/job/7dv01?jobsource=joblist_list
+2025-02-22 17:44:58 - INFO: 公司名稱: 林新醫療社團法人烏日林新醫院
+2025-02-22 17:44:58 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:45:08 - INFO: 已添加進陣列
+2025-02-22 17:45:09 - INFO: 職缺名稱: 醫療業務代表（中區）
+2025-02-22 17:45:09 - INFO: 職缺網址: https://www.104.com.tw/job/6dq95?jobsource=joblist_list
+2025-02-22 17:45:09 - INFO: 公司名稱: 和進生技有限公司
+2025-02-22 17:45:09 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:45:10 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:45:19 - INFO: 已添加進陣列
+2025-02-22 17:45:20 - INFO: 職缺名稱: 醫工室 醫學工程師(技師)
+2025-02-22 17:45:20 - INFO: 職缺網址: https://www.104.com.tw/job/7nmqi?jobsource=joblist_list
+2025-02-22 17:45:20 - INFO: 公司名稱: 中山醫學大學附設醫院
+2025-02-22 17:45:20 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:45:31 - INFO: 已添加進陣列
+2025-02-22 17:45:32 - INFO: 職缺名稱: 臨床應用工程師
+2025-02-22 17:45:32 - INFO: 職缺網址: https://www.104.com.tw/job/8i2ux?jobsource=joblist_list
+2025-02-22 17:45:32 - INFO: 公司名稱: 鈦隼生物科技股份有限公司
+2025-02-22 17:45:32 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:45:38 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:45:41 - INFO: 已添加進陣列
+2025-02-22 17:45:43 - INFO: 職缺名稱: 林口[EyePlus 聚英眼科] 兼職視光師
+2025-02-22 17:45:43 - INFO: 職缺網址: https://www.104.com.tw/job/8jg1h?jobsource=joblist_list
+2025-02-22 17:45:43 - INFO: 公司名稱: EyePlus艾佳眼視光醫學_艾佳光學股份有限公司
+2025-02-22 17:45:43 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:45:54 - INFO: 已添加進陣列
+2025-02-22 17:45:55 - INFO: 職缺名稱: 南區醫療人員- 跟刀專員
+2025-02-22 17:45:55 - INFO: 職缺網址: https://www.104.com.tw/job/79ql5?jobsource=joblist_bact_n
+2025-02-22 17:45:55 - INFO: 公司名稱: 寶健科技股份有限公司
+2025-02-22 17:45:55 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:46:05 - INFO: 已添加進陣列
+2025-02-22 17:46:07 - INFO: 職缺名稱: Surgical Application Specialist_MED
+2025-02-22 17:46:07 - INFO: 職缺網址: https://www.104.com.tw/job/7vjzj?jobsource=joblist_list
+2025-02-22 17:46:07 - INFO: 公司名稱: 卡爾蔡司股份有限公司
+2025-02-22 17:46:07 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:46:18 - INFO: 已添加進陣列
+2025-02-22 17:46:19 - INFO: 職缺名稱: 放射師
+2025-02-22 17:46:19 - INFO: 職缺網址: https://www.104.com.tw/job/72ok1?jobsource=joblist_list
+2025-02-22 17:46:19 - INFO: 公司名稱: 陽明醫院(桃園平鎮)
+2025-02-22 17:46:19 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:46:20 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:46:25 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:46:28 - INFO: 已添加進陣列
+2025-02-22 17:46:30 - INFO: 職缺名稱: 北區植牙跟刀助理
+2025-02-22 17:46:30 - INFO: 職缺網址: https://www.104.com.tw/job/6mt2i?jobsource=joblist_bact_n
+2025-02-22 17:46:30 - INFO: 公司名稱: 聯雄健康事業股份有限公司
+2025-02-22 17:46:30 - INFO: 更新日期: 2025/02/19
+2025-02-22 17:46:36 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:46:39 - INFO: 已添加進陣列
+2025-02-22 17:46:41 - INFO: 職缺名稱: 醫療業務專員 (南部地區).
+2025-02-22 17:46:41 - INFO: 職缺網址: https://www.104.com.tw/job/6jjcy?jobsource=joblist_list
+2025-02-22 17:46:41 - INFO: 公司名稱: 日龍儀器股份有限公司
+2025-02-22 17:46:41 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:46:51 - INFO: 已添加進陣列
+2025-02-22 17:46:52 - INFO: 職缺名稱: [南區]業務/設備工程師
+2025-02-22 17:46:52 - INFO: 職缺網址: https://www.104.com.tw/job/8d0hu?jobsource=joblist_list
+2025-02-22 17:46:52 - INFO: 公司名稱: 眾醫生物科技股份有限公司
+2025-02-22 17:46:52 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:47:02 - INFO: 已添加進陣列
+2025-02-22 17:47:03 - INFO: 職缺名稱: 醫療輔具業務
+2025-02-22 17:47:03 - INFO: 職缺網址: https://www.104.com.tw/job/87nh1?jobsource=joblist_list
+2025-02-22 17:47:03 - INFO: 公司名稱: 康立安智能醫療設備股份有限公司
+2025-02-22 17:47:03 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:47:05 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:47:14 - INFO: 已添加進陣列
+2025-02-22 17:47:16 - INFO: 正在處理第 3 頁...
+2025-02-22 17:47:16 - INFO: 當前頁面職缺數量: 66
+2025-02-22 17:47:18 - INFO: 職缺名稱: 高階主管司機【平均月所得5.9萬】
+2025-02-22 17:47:18 - INFO: 職缺網址: https://www.104.com.tw/job/77cvc?jobsource=hotjob_chr_exp
+2025-02-22 17:47:18 - INFO: 公司名稱: 大銀微系統股份有限公司_HIWIN MIKROSYSTEM
+2025-02-22 17:47:18 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:47:29 - INFO: 已添加進陣列
+2025-02-22 17:47:31 - INFO: 職缺名稱: Advanced Field Service Engineer 資深現場服務工程師 (PLC/ Networking), Process Measurement and Controls, Industrial Automation
+2025-02-22 17:47:31 - INFO: 職缺網址: https://www.104.com.tw/job/8gmgf?jobsource=hotjob_chr_exp
+2025-02-22 17:47:31 - INFO: 公司名稱: 漢威聯合股份有限公司
+2025-02-22 17:47:31 - INFO: 更新日期: 2024/12/16
+2025-02-22 17:47:41 - INFO: 已添加進陣列
+2025-02-22 17:47:43 - INFO: 職缺名稱: 放射師(雲林虎尾)
+2025-02-22 17:47:43 - INFO: 職缺網址: https://www.104.com.tw/job/8mkb7?jobsource=joblist_list
+2025-02-22 17:47:43 - INFO: 公司名稱: 台全醫療體系_台全診所
+2025-02-22 17:47:43 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:47:45 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:47:53 - INFO: 已添加進陣列
+2025-02-22 17:47:56 - INFO: 職缺名稱: 學習型的實習生-醫學工程/生物醫學工程/工程師/醫療器材/研究人員
+2025-02-22 17:47:56 - INFO: 職缺網址: https://www.104.com.tw/job/8b80c?jobsource=joblist_list
+2025-02-22 17:47:56 - INFO: 公司名稱: 邑方醫療器材企業社
+2025-02-22 17:47:56 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:48:02 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:48:05 - INFO: 已添加進陣列
+2025-02-22 17:48:07 - INFO: 職缺名稱: 醫療器材業務行銷代表-桃園
+2025-02-22 17:48:07 - INFO: 職缺網址: https://www.104.com.tw/job/5bm0r?jobsource=joblist_list
+2025-02-22 17:48:07 - INFO: 公司名稱: 韶田股份有限公司
+2025-02-22 17:48:07 - INFO: 更新日期: 2025/02/14
+2025-02-22 17:48:17 - INFO: 已添加進陣列
+2025-02-22 17:48:20 - INFO: 職缺名稱: 醫學工程師
+2025-02-22 17:48:20 - INFO: 職缺網址: https://www.104.com.tw/job/2r10o?jobsource=joblist_list
+2025-02-22 17:48:20 - INFO: 公司名稱: 李綜合醫療社團法人大甲李綜合醫院
+2025-02-22 17:48:20 - INFO: 更新日期: 2025/02/15
+2025-02-22 17:48:30 - INFO: 已添加進陣列
+2025-02-22 17:48:31 - INFO: 職缺名稱: 北區醫藥業務代表-業務代表，跟刀業務
+2025-02-22 17:48:31 - INFO: 職缺網址: https://www.104.com.tw/job/7h0g9?jobsource=joblist_list
+2025-02-22 17:48:31 - INFO: 公司名稱: 澄竑醫療器材有限公司
+2025-02-22 17:48:31 - INFO: 更新日期: 2025/02/14
+2025-02-22 17:48:42 - INFO: 已添加進陣列
+2025-02-22 17:48:43 - INFO: 職缺名稱: 業務代表
+2025-02-22 17:48:43 - INFO: 職缺網址: https://www.104.com.tw/job/5lith?jobsource=joblist_bact_n
+2025-02-22 17:48:43 - INFO: 公司名稱: 錩泓企業有限公司
+2025-02-22 17:48:43 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:48:53 - INFO: 已添加進陣列
+2025-02-22 17:48:55 - INFO: 職缺名稱: 臨床應用專員
+2025-02-22 17:48:55 - INFO: 職缺網址: https://www.104.com.tw/job/8kdu4?jobsource=joblist_list
+2025-02-22 17:48:55 - INFO: 公司名稱: 艾克夏醫療儀器股份有限公司
+2025-02-22 17:48:55 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:49:05 - INFO: 已添加進陣列
+2025-02-22 17:49:06 - INFO: 職缺名稱: 【科林】Sales Representative 醫療業務代表 (南區)
+2025-02-22 17:49:06 - INFO: 職缺網址: https://www.104.com.tw/job/8k6su?jobsource=joblist_list
+2025-02-22 17:49:06 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 17:49:06 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:49:16 - INFO: 已添加進陣列
+2025-02-22 17:49:18 - INFO: 職缺名稱: 【北區】醫療儀器業務人員
+2025-02-22 17:49:18 - INFO: 職缺網址: https://www.104.com.tw/job/8guo7?jobsource=joblist_bact_n
+2025-02-22 17:49:18 - INFO: 公司名稱: 亞帝昇生物科技有限公司
+2025-02-22 17:49:18 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:49:19 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:49:28 - INFO: 已添加進陣列
+2025-02-22 17:49:30 - INFO: 職缺名稱: 醫療器材業務行銷代表-大台北地區
+2025-02-22 17:49:30 - INFO: 職缺網址: https://www.104.com.tw/job/3t46q?jobsource=joblist_list
+2025-02-22 17:49:30 - INFO: 公司名稱: 韶田股份有限公司
+2025-02-22 17:49:30 - INFO: 更新日期: 2025/02/14
+2025-02-22 17:49:41 - INFO: 已添加進陣列
+2025-02-22 17:49:42 - INFO: 職缺名稱: 雲嘉區醫療人員- 跟刀專員
+2025-02-22 17:49:42 - INFO: 職缺網址: https://www.104.com.tw/job/7eth9?jobsource=joblist_list
+2025-02-22 17:49:42 - INFO: 公司名稱: 寶健科技股份有限公司
+2025-02-22 17:49:42 - INFO: 更新日期: 2025/02/10
+2025-02-22 17:49:52 - INFO: 已添加進陣列
+2025-02-22 17:49:54 - INFO: 職缺名稱: 醫材業務人員(北區-依公司規定分派)
+2025-02-22 17:49:54 - INFO: 職缺網址: https://www.104.com.tw/job/7woyu?jobsource=joblist_list
+2025-02-22 17:49:54 - INFO: 公司名稱: 群曜醫療儀器股份有限公司
+2025-02-22 17:49:54 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:50:05 - INFO: 已添加進陣列
+2025-02-22 17:50:07 - INFO: 職缺名稱: 【歡迎無經驗】南區-醫療業務代表(保障底薪+業績獎金)
+2025-02-22 17:50:07 - INFO: 職缺網址: https://www.104.com.tw/job/7yv52?jobsource=joblist_bact_n
+2025-02-22 17:50:07 - INFO: 公司名稱: 蓋婭基因股份有限公司
+2025-02-22 17:50:07 - INFO: 更新日期: 2025/02/19
+2025-02-22 17:50:17 - INFO: 已添加進陣列
+2025-02-22 17:50:19 - INFO: 職缺名稱: 業務專員(南區)
+2025-02-22 17:50:19 - INFO: 職缺網址: https://www.104.com.tw/job/8m3e3?jobsource=joblist_bact_n
+2025-02-22 17:50:19 - INFO: 公司名稱: 品約股份有限公司
+2025-02-22 17:50:19 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:50:29 - INFO: 已添加進陣列
+2025-02-22 17:50:31 - INFO: 職缺名稱: 長照輔具_業務助理
+2025-02-22 17:50:31 - INFO: 職缺網址: https://www.104.com.tw/job/7eugz?jobsource=joblist_bact_n
+2025-02-22 17:50:31 - INFO: 公司名稱: 強生醫療儀器股份有限公司
+2025-02-22 17:50:31 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:50:41 - INFO: 已添加進陣列
+2025-02-22 17:50:42 - INFO: 職缺名稱: 北區業務人員
+2025-02-22 17:50:42 - INFO: 職缺網址: https://www.104.com.tw/job/619m8?jobsource=joblist_list
+2025-02-22 17:50:42 - INFO: 公司名稱: 禾仲行企業有限公司
+2025-02-22 17:50:42 - INFO: 更新日期: 2025/02/11
+2025-02-22 17:50:52 - INFO: 已添加進陣列
+2025-02-22 17:50:55 - INFO: 職缺名稱: 【整形外科事業處】北區產品專員
+2025-02-22 17:50:55 - INFO: 職缺網址: https://www.104.com.tw/job/6zsjm?jobsource=joblist_list
+2025-02-22 17:50:55 - INFO: 公司名稱: 沃醫學股份有限公司
+2025-02-22 17:50:55 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:51:05 - INFO: 已添加進陣列
+2025-02-22 17:51:06 - INFO: 職缺名稱: 南區醫療業務專員
+2025-02-22 17:51:06 - INFO: 職缺網址: https://www.104.com.tw/job/8jf6a?jobsource=joblist_bact_n
+2025-02-22 17:51:06 - INFO: 公司名稱: 詠捷醫療器材有限公司
+2025-02-22 17:51:06 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:51:17 - INFO: 已添加進陣列
+2025-02-22 17:51:19 - INFO: 職缺名稱: 醫療設備業務專員-北區
+2025-02-22 17:51:19 - INFO: 職缺網址: https://www.104.com.tw/job/7sm7y?jobsource=joblist_bact_n
+2025-02-22 17:51:19 - INFO: 公司名稱: 凱圖國際股份有限公司
+2025-02-22 17:51:19 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:51:30 - INFO: 已添加進陣列
+2025-02-22 17:51:32 - INFO: 職缺名稱: 北區儲備醫材業務人員(無經驗可)
+2025-02-22 17:51:32 - INFO: 職缺網址: https://www.104.com.tw/job/876in?jobsource=joblist_bact_n
+2025-02-22 17:51:32 - INFO: 公司名稱: 群曜醫療儀器股份有限公司
+2025-02-22 17:51:32 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:51:42 - INFO: 已添加進陣列
+2025-02-22 17:51:44 - INFO: 正在處理第 4 頁...
+2025-02-22 17:51:44 - INFO: 當前頁面職缺數量: 88
+2025-02-22 17:51:48 - INFO: 職缺名稱: 牙科臨床支援專員 - 北區 (有植體手術經驗 / Nobel Biocare手術經驗背景 / 外科手術經驗優先) (Clinical Specialist)
+2025-02-22 17:51:48 - INFO: 職缺網址: https://www.104.com.tw/job/87spf?jobsource=hotjob_chr_exp
+2025-02-22 17:51:48 - INFO: 公司名稱: Nobel Biocare_台灣諾保科股份有限公司
+2025-02-22 17:51:48 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:51:58 - INFO: 已添加進陣列
+2025-02-22 17:52:00 - INFO: 職缺名稱: 發泡產線技術員-常日班
+2025-02-22 17:52:00 - INFO: 職缺網址: https://www.104.com.tw/job/7g3s0?jobsource=hotjob_chr_exp
+2025-02-22 17:52:00 - INFO: 公司名稱: 碩晨生醫股份有限公司
+2025-02-22 17:52:00 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:52:10 - INFO: 已添加進陣列
+2025-02-22 17:52:11 - INFO: 職缺名稱: 業務專員(南區)(無經驗可，公司提供培訓)
+2025-02-22 17:52:11 - INFO: 職缺網址: https://www.104.com.tw/job/8mmwp?jobsource=joblist_bact_n
+2025-02-22 17:52:11 - INFO: 公司名稱: 晶實企業有限公司
+2025-02-22 17:52:11 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:52:12 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:52:21 - INFO: 已添加進陣列
+2025-02-22 17:52:22 - INFO: 職缺名稱:  業務專員(北區)
+2025-02-22 17:52:22 - INFO: 職缺網址: https://www.104.com.tw/job/8e6ui?jobsource=joblist_bact_n
+2025-02-22 17:52:22 - INFO: 公司名稱: 品約股份有限公司
+2025-02-22 17:52:22 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:52:33 - INFO: 已添加進陣列
+2025-02-22 17:52:35 - INFO: 職缺名稱: 醫療業務專員 (中南區、北區、桃竹苗區)
+2025-02-22 17:52:35 - INFO: 職缺網址: https://www.104.com.tw/job/8et7j?jobsource=joblist_list
+2025-02-22 17:52:35 - INFO: 公司名稱: 元又興業股份有限公司
+2025-02-22 17:52:35 - INFO: 更新日期: 2025/02/13
+2025-02-22 17:52:45 - INFO: 已添加進陣列
+2025-02-22 17:52:48 - INFO: 職缺名稱: 南區業務代表 (診所組)
+2025-02-22 17:52:48 - INFO: 職缺網址: https://www.104.com.tw/job/449eu?jobsource=joblist_list
+2025-02-22 17:52:48 - INFO: 公司名稱: 蓓蕾莉生技股份有限公司
+2025-02-22 17:52:48 - INFO: 更新日期: 2025/02/12
+2025-02-22 17:52:58 - INFO: 已添加進陣列
+2025-02-22 17:53:01 - INFO: 職缺名稱: (北部)醫療業務代表
+2025-02-22 17:53:01 - INFO: 職缺網址: https://www.104.com.tw/job/6tyig?jobsource=joblist_bact_n
+2025-02-22 17:53:01 - INFO: 公司名稱: 瑪克多股份有限公司
+2025-02-22 17:53:01 - INFO: 更新日期: 2025/02/16
+2025-02-22 17:53:12 - INFO: 已添加進陣列
+2025-02-22 17:53:15 - INFO: 職缺名稱: 【健康醫學事業處】中區業務專員(保障底薪+高額獎金+油資補助)
+2025-02-22 17:53:15 - INFO: 職缺網址: https://www.104.com.tw/job/8mezh?jobsource=joblist_bact_n
+2025-02-22 17:53:15 - INFO: 公司名稱: 沃醫學股份有限公司
+2025-02-22 17:53:15 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:53:26 - INFO: 已添加進陣列
+2025-02-22 17:53:29 - INFO: 職缺名稱: 行銷經理( ( 歡迎具有醫藥或醫材相關經驗人才加入））
+2025-02-22 17:53:29 - INFO: 職缺網址: https://www.104.com.tw/job/7j2ue?jobsource=joblist_bact_n
+2025-02-22 17:53:29 - INFO: 公司名稱: 群曜醫療儀器股份有限公司
+2025-02-22 17:53:29 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:53:39 - INFO: 已添加進陣列
+2025-02-22 17:53:41 - INFO: 職缺名稱: 醫療業務人員(中區)
+2025-02-22 17:53:41 - INFO: 職缺網址: https://www.104.com.tw/job/3d765?jobsource=joblist_bact_n
+2025-02-22 17:53:41 - INFO: 公司名稱: 連鎰有限公司
+2025-02-22 17:53:41 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:53:42 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:53:51 - INFO: 已添加進陣列
+2025-02-22 17:53:53 - INFO: 職缺名稱: 醫療業務代表 (駐點 宜蘭 花蓮地區)
+2025-02-22 17:53:53 - INFO: 職缺網址: https://www.104.com.tw/job/82i5e?jobsource=joblist_list
+2025-02-22 17:53:53 - INFO: 公司名稱: 安頡儀器有限公司
+2025-02-22 17:53:53 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:54:03 - INFO: 已添加進陣列
+2025-02-22 17:54:05 - INFO: 職缺名稱: 醫療器材業務行銷代表-台中
+2025-02-22 17:54:05 - INFO: 職缺網址: https://www.104.com.tw/job/3ym9f?jobsource=joblist_list
+2025-02-22 17:54:05 - INFO: 公司名稱: 韶田股份有限公司
+2025-02-22 17:54:05 - INFO: 更新日期: 2025/02/14
+2025-02-22 17:54:15 - INFO: 已添加進陣列
+2025-02-22 17:54:16 - INFO: 職缺名稱: 中區醫療器材銷售業務
+2025-02-22 17:54:16 - INFO: 職缺網址: https://www.104.com.tw/job/8airl?jobsource=joblist_bact_n
+2025-02-22 17:54:16 - INFO: 公司名稱: 生訊科技股份有限公司
+2025-02-22 17:54:16 - INFO: 更新日期: 2025/02/19
+2025-02-22 17:54:27 - INFO: 已添加進陣列
+2025-02-22 17:54:29 - INFO: 職缺名稱: 【整形外科事業處】南區業務專員(保障底薪+高額獎金+油資補助)
+2025-02-22 17:54:29 - INFO: 職缺網址: https://www.104.com.tw/job/7ua96?jobsource=joblist_list
+2025-02-22 17:54:29 - INFO: 公司名稱: 沃醫學股份有限公司
+2025-02-22 17:54:29 - INFO: 更新日期: 2025/02/21
+2025-02-22 17:54:39 - INFO: 已添加進陣列
+2025-02-22 17:54:41 - INFO: 職缺名稱: 醫療生殖醫學業務代表(台灣中區 )
+2025-02-22 17:54:41 - INFO: 職缺網址: https://www.104.com.tw/job/7jtq6?jobsource=joblist_list
+2025-02-22 17:54:41 - INFO: 公司名稱: 弘智企業有限公司
+2025-02-22 17:54:41 - INFO: 更新日期: 2025/02/04
+2025-02-22 17:54:51 - INFO: 已添加進陣列
+2025-02-22 17:54:55 - INFO: 職缺名稱: 醫療業務人員(北區)
+2025-02-22 17:54:55 - INFO: 職缺網址: https://www.104.com.tw/job/4yudf?jobsource=joblist_bact_n
+2025-02-22 17:54:55 - INFO: 公司名稱: 連鎰有限公司
+2025-02-22 17:54:55 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:54:57 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:55:05 - INFO: 已添加進陣列
+2025-02-22 17:55:08 - INFO: 職缺名稱: 【業務處】健保申報人員
+2025-02-22 17:55:08 - INFO: 職缺網址: https://www.104.com.tw/job/6knwu?jobsource=joblist_bact_n
+2025-02-22 17:55:08 - INFO: 公司名稱: 沙爾德聖保祿修女會醫療財團法人聖保祿醫院
+2025-02-22 17:55:08 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:55:18 - INFO: 已添加進陣列
+2025-02-22 17:55:19 - INFO: 職缺名稱: 【中區】門市聽力師(通過試用首年保障年薪86萬)
+2025-02-22 17:55:19 - INFO: 職缺網址: https://www.104.com.tw/job/7wlzw?jobsource=joblist_list
+2025-02-22 17:55:19 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 17:55:19 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:55:26 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:55:29 - INFO: 已添加進陣列
+2025-02-22 17:55:30 - INFO: 職缺名稱: 【CC】南區業務(藥局&診所通路)-高屏區
+2025-02-22 17:55:30 - INFO: 職缺網址: https://www.104.com.tw/job/8mmyc?jobsource=joblist_bact_n
+2025-02-22 17:55:30 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 17:55:30 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:55:41 - INFO: 已添加進陣列
+2025-02-22 17:55:42 - INFO: 職缺名稱: S-2 國外業務代表(東南亞區域)
+2025-02-22 17:55:42 - INFO: 職缺網址: https://www.104.com.tw/job/80xyz?jobsource=joblist_list
+2025-02-22 17:55:42 - INFO: 公司名稱: 巨興醫學科技股份有限公司
+2025-02-22 17:55:42 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:55:52 - INFO: 已添加進陣列
+2025-02-22 17:55:53 - INFO: 職缺名稱: 醫療業務代表
+2025-02-22 17:55:53 - INFO: 職缺網址: https://www.104.com.tw/job/8jret?jobsource=joblist_bact_n
+2025-02-22 17:55:53 - INFO: 公司名稱: 睦創實業有限公司
+2025-02-22 17:55:53 - INFO: 更新日期: 2025/02/06
+2025-02-22 17:56:04 - INFO: 已添加進陣列
+2025-02-22 17:56:05 - INFO: 職缺名稱: 醫療業務代表(北區)
+2025-02-22 17:56:05 - INFO: 職缺網址: https://www.104.com.tw/job/7pplu?jobsource=joblist_list
+2025-02-22 17:56:05 - INFO: 公司名稱: 慧德科技股份有限公司
+2025-02-22 17:56:05 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:56:15 - INFO: 已添加進陣列
+2025-02-22 17:56:18 - INFO: 正在處理第 5 頁...
+2025-02-22 17:56:18 - INFO: 當前頁面職缺數量: 109
+2025-02-22 17:56:20 - INFO: 職缺名稱: 企業輔導顧問
+2025-02-22 17:56:20 - INFO: 職缺網址: https://www.104.com.tw/job/75y73?jobsource=hotjob_chr_exp
+2025-02-22 17:56:20 - INFO: 公司名稱: 財團法人中國生產力中心
+2025-02-22 17:56:20 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:56:31 - INFO: 已添加進陣列
+2025-02-22 17:56:32 - INFO: 職缺名稱: 業務人員(中區)
+2025-02-22 17:56:32 - INFO: 職缺網址: https://www.104.com.tw/job/7n2zo?jobsource=joblist_list
+2025-02-22 17:56:32 - INFO: 公司名稱: 華江醫療儀器股份有限公司
+2025-02-22 17:56:32 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:56:39 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:56:42 - INFO: 已添加進陣列
+2025-02-22 17:56:44 - INFO: 職缺名稱: 【南區】門市聽力師(通過試用首年保障年薪86萬)
+2025-02-22 17:56:44 - INFO: 職缺網址: https://www.104.com.tw/job/7qq7z?jobsource=joblist_list
+2025-02-22 17:56:44 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 17:56:44 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:56:55 - INFO: 已添加進陣列
+2025-02-22 17:56:57 - INFO: 職缺名稱: 南部醫療器材業務專員
+2025-02-22 17:56:57 - INFO: 職缺網址: https://www.104.com.tw/job/8caz6?jobsource=joblist_list
+2025-02-22 17:56:57 - INFO: 公司名稱: 承啟醫系股份有限公司
+2025-02-22 17:56:57 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:56:58 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:57:07 - INFO: 已添加進陣列
+2025-02-22 17:57:08 - INFO: 職缺名稱: S-2 國外業務代表(北美洲區域)
+2025-02-22 17:57:08 - INFO: 職缺網址: https://www.104.com.tw/job/8mf6w?jobsource=joblist_bact_n
+2025-02-22 17:57:08 - INFO: 公司名稱: 巨興醫學科技股份有限公司
+2025-02-22 17:57:08 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:57:19 - INFO: 已添加進陣列
+2025-02-22 17:57:20 - INFO: 職缺名稱: 【擴編】北區/桃竹苗區-醫療業務代表(保障底薪+業績獎金)
+2025-02-22 17:57:20 - INFO: 職缺網址: https://www.104.com.tw/job/773wi?jobsource=joblist_list
+2025-02-22 17:57:20 - INFO: 公司名稱: 蓋婭基因股份有限公司
+2025-02-22 17:57:20 - INFO: 更新日期: 2025/02/19
+2025-02-22 17:57:30 - INFO: 已添加進陣列
+2025-02-22 17:57:31 - INFO: 職缺名稱: 醫藥業務代表-高屏區業務組
+2025-02-22 17:57:31 - INFO: 職缺網址: https://www.104.com.tw/job/70cf6?jobsource=joblist_list
+2025-02-22 17:57:31 - INFO: 公司名稱: 澄竑醫療器材有限公司
+2025-02-22 17:57:31 - INFO: 更新日期: 2025/02/14
+2025-02-22 17:57:42 - INFO: 已添加進陣列
+2025-02-22 17:57:45 - INFO: 職缺名稱: 外科雷射業務人員(中區-依公司規定分派)
+2025-02-22 17:57:45 - INFO: 職缺網址: https://www.104.com.tw/job/7xfaq?jobsource=joblist_list
+2025-02-22 17:57:45 - INFO: 公司名稱: 群曜醫療儀器股份有限公司
+2025-02-22 17:57:45 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:57:55 - INFO: 已添加進陣列
+2025-02-22 17:57:57 - INFO: 職缺名稱: 獸醫業務代表 (Veterinary Sales Representative)
+2025-02-22 17:57:57 - INFO: 職缺網址: https://www.104.com.tw/job/8ishp?jobsource=joblist_bact_n
+2025-02-22 17:57:57 - INFO: 公司名稱: 美麗康有限公司
+2025-02-22 17:57:57 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:58:08 - INFO: 已添加進陣列
+2025-02-22 17:58:09 - INFO: 職缺名稱: 【IB】健康顧問-新竹門市(通過考核首年月薪45K，非醫療背景可)
+2025-02-22 17:58:09 - INFO: 職缺網址: https://www.104.com.tw/job/8641l?jobsource=joblist_list
+2025-02-22 17:58:09 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 17:58:09 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:58:15 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:58:18 - INFO: 已添加進陣列
+2025-02-22 17:58:21 - INFO: 職缺名稱: 醫療業務代表 (台南地區)
+2025-02-22 17:58:21 - INFO: 職缺網址: https://www.104.com.tw/job/8lams?jobsource=joblist_bact_n
+2025-02-22 17:58:21 - INFO: 公司名稱: 安頡儀器有限公司
+2025-02-22 17:58:21 - INFO: 更新日期: 2025/02/19
+2025-02-22 17:58:31 - INFO: 已添加進陣列
+2025-02-22 17:58:32 - INFO: 職缺名稱: 業務專員(中區)(無經驗可，公司提供培訓)
+2025-02-22 17:58:32 - INFO: 職缺網址: https://www.104.com.tw/job/8mmwf?jobsource=joblist_bact_n
+2025-02-22 17:58:32 - INFO: 公司名稱: 晶實企業有限公司
+2025-02-22 17:58:32 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:58:34 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:58:43 - INFO: 已添加進陣列
+2025-02-22 17:58:44 - INFO: 職缺名稱: 醫療器材業務行銷代表-高雄
+2025-02-22 17:58:44 - INFO: 職缺網址: https://www.104.com.tw/job/d985?jobsource=joblist_list
+2025-02-22 17:58:44 - INFO: 公司名稱: 韶田股份有限公司
+2025-02-22 17:58:44 - INFO: 更新日期: 2025/02/14
+2025-02-22 17:58:55 - INFO: 已添加進陣列
+2025-02-22 17:58:56 - INFO: 職缺名稱: 乳房攝影車外勤行政人員
+2025-02-22 17:58:56 - INFO: 職缺網址: https://www.104.com.tw/job/8js1b?jobsource=joblist_bact_n
+2025-02-22 17:58:56 - INFO: 公司名稱: 醫盟實業有限公司
+2025-02-22 17:58:56 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:59:06 - INFO: 已添加進陣列
+2025-02-22 17:59:08 - INFO: 職缺名稱: 醫療業務代表
+2025-02-22 17:59:08 - INFO: 職缺網址: https://www.104.com.tw/job/8hx3j?jobsource=joblist_bact_n
+2025-02-22 17:59:08 - INFO: 公司名稱: 米飛生醫股份有限公司
+2025-02-22 17:59:08 - INFO: 更新日期: 2025/02/18
+2025-02-22 17:59:09 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:59:18 - INFO: 已添加進陣列
+2025-02-22 17:59:20 - INFO: 職缺名稱: 外科雷射業務人員(北區-具有外科手術開刀房經驗者佳)
+2025-02-22 17:59:20 - INFO: 職缺網址: https://www.104.com.tw/job/8i4wt?jobsource=joblist_list
+2025-02-22 17:59:20 - INFO: 公司名稱: 群曜醫療儀器股份有限公司
+2025-02-22 17:59:20 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:59:26 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 17:59:29 - INFO: 已添加進陣列
+2025-02-22 17:59:31 - INFO: 職缺名稱: 【科林】Sales Representative 醫療業務代表 (台中、彰化)
+2025-02-22 17:59:31 - INFO: 職缺網址: https://www.104.com.tw/job/807g3?jobsource=joblist_bact_n
+2025-02-22 17:59:31 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 17:59:31 - INFO: 更新日期: 2025/02/20
+2025-02-22 17:59:42 - INFO: 已添加進陣列
+2025-02-22 17:59:43 - INFO: 職缺名稱: 業務專員(北區)(無經驗可，公司提供培訓)
+2025-02-22 17:59:43 - INFO: 職缺網址: https://www.104.com.tw/job/84zg8?jobsource=joblist_bact_n
+2025-02-22 17:59:43 - INFO: 公司名稱: 晶實企業有限公司
+2025-02-22 17:59:43 - INFO: 更新日期: 2025/02/17
+2025-02-22 17:59:45 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 17:59:54 - INFO: 已添加進陣列
+2025-02-22 17:59:55 - INFO: 職缺名稱: 中區業務人員
+2025-02-22 17:59:55 - INFO: 職缺網址: https://www.104.com.tw/job/615mr?jobsource=joblist_list
+2025-02-22 17:59:55 - INFO: 公司名稱: 禾仲行企業有限公司
+2025-02-22 17:59:55 - INFO: 更新日期: 2024/12/02
+2025-02-22 18:00:01 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:00:04 - INFO: 已添加進陣列
+2025-02-22 18:00:06 - INFO: 職缺名稱: 醫療業務代表(台灣中區)
+2025-02-22 18:00:06 - INFO: 職缺網址: https://www.104.com.tw/job/vifg?jobsource=joblist_list
+2025-02-22 18:00:06 - INFO: 公司名稱: 弘智企業有限公司
+2025-02-22 18:00:06 - INFO: 更新日期: 2025/02/04
+2025-02-22 18:00:16 - INFO: 已添加進陣列
+2025-02-22 18:00:17 - INFO: 職缺名稱: 【眼科儀器】寵物組-業務代表
+2025-02-22 18:00:17 - INFO: 職缺網址: https://www.104.com.tw/job/8lcem?jobsource=joblist_bact_n
+2025-02-22 18:00:17 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:00:17 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:00:27 - INFO: 已添加進陣列
+2025-02-22 18:00:30 - INFO: 正在處理第 6 頁...
+2025-02-22 18:00:30 - INFO: 當前頁面職缺數量: 129
+2025-02-22 18:00:33 - INFO: 職缺名稱: 醫療業務代表/北區
+2025-02-22 18:00:33 - INFO: 職缺網址: https://www.104.com.tw/job/5ln8u?jobsource=joblist_bact_n
+2025-02-22 18:00:33 - INFO: 公司名稱: 華龍生醫股份有限公司
+2025-02-22 18:00:33 - INFO: 更新日期: 2025/02/01
+2025-02-22 18:00:44 - INFO: 已添加進陣列
+2025-02-22 18:00:45 - INFO: 職缺名稱: 醫療業務代表(雲嘉區)
+2025-02-22 18:00:45 - INFO: 職缺網址: https://www.104.com.tw/job/8dxzg?jobsource=joblist_list
+2025-02-22 18:00:45 - INFO: 公司名稱: Maxima Biotech Inc_久方生技股份有限公司
+2025-02-22 18:00:45 - INFO: 更新日期: 2025/02/14
+2025-02-22 18:00:55 - INFO: 已添加進陣列
+2025-02-22 18:00:56 - INFO: 職缺名稱: 醫療業務專員(北區)
+2025-02-22 18:00:56 - INFO: 職缺網址: https://www.104.com.tw/job/5xuo0?jobsource=joblist_list
+2025-02-22 18:00:56 - INFO: 公司名稱: 泰永生物科技股份有限公司
+2025-02-22 18:00:56 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:01:07 - INFO: 已添加進陣列
+2025-02-22 18:01:08 - INFO: 職缺名稱: 業務經理(優於同業獎酬制度)
+2025-02-22 18:01:08 - INFO: 職缺網址: https://www.104.com.tw/job/79nee?jobsource=joblist_list
+2025-02-22 18:01:08 - INFO: 公司名稱: 晶鑽生醫股份有限公司
+2025-02-22 18:01:08 - INFO: 更新日期: 2025/02/11
+2025-02-22 18:01:19 - INFO: 已添加進陣列
+2025-02-22 18:01:20 - INFO: 職缺名稱: 【擴編】中區-醫療業務代表(保障底薪+業績獎金)
+2025-02-22 18:01:20 - INFO: 職缺網址: https://www.104.com.tw/job/7yv4n?jobsource=joblist_bact_n
+2025-02-22 18:01:20 - INFO: 公司名稱: 蓋婭基因股份有限公司
+2025-02-22 18:01:20 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:01:30 - INFO: 已添加進陣列
+2025-02-22 18:01:32 - INFO: 職缺名稱: 【全台】門市聽力師(通過試用首年保障年薪86萬)***服務門市依所在區域分配***
+2025-02-22 18:01:32 - INFO: 職缺網址: https://www.104.com.tw/job/87hfj?jobsource=joblist_list
+2025-02-22 18:01:32 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:01:32 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:01:39 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:01:43 - INFO: 已添加進陣列
+2025-02-22 18:01:44 - INFO: 職缺名稱: 國內業務人員(歡迎醫護／照服退休人員二度就業)(承攬性質/非勞動契約)
+2025-02-22 18:01:44 - INFO: 職缺網址: https://www.104.com.tw/job/71d9u?jobsource=joblist_bact_n
+2025-02-22 18:01:44 - INFO: 公司名稱: 龍巖 長億營業處_五福臻有限公司
+2025-02-22 18:01:44 - INFO: 更新日期: 2025/02/14
+2025-02-22 18:01:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:01:53 - INFO: 已添加進陣列
+2025-02-22 18:01:55 - INFO: 職缺名稱: 【全台】門市人員-聽力顧問(含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上)***服務門市依所在區域分配***
+2025-02-22 18:01:55 - INFO: 職缺網址: https://www.104.com.tw/job/8djk4?jobsource=joblist_bact_n
+2025-02-22 18:01:55 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:01:55 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:02:02 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:02:05 - INFO: 已添加進陣列
+2025-02-22 18:02:06 - INFO: 職缺名稱: 北區醫療設備銷售專員
+2025-02-22 18:02:06 - INFO: 職缺網址: https://www.104.com.tw/job/7w9op?jobsource=joblist_list
+2025-02-22 18:02:06 - INFO: 公司名稱: 承啟醫系股份有限公司
+2025-02-22 18:02:06 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:02:17 - INFO: 已添加進陣列
+2025-02-22 18:02:18 - INFO: 職缺名稱: 【科林】睡眠產品行政專員
+2025-02-22 18:02:18 - INFO: 職缺網址: https://www.104.com.tw/job/8k6fi?jobsource=joblist_list
+2025-02-22 18:02:18 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:02:18 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:02:20 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:02:25 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:02:28 - INFO: 已添加進陣列
+2025-02-22 18:02:30 - INFO: 職缺名稱: 中部醫療器材業務專員
+2025-02-22 18:02:30 - INFO: 職缺網址: https://www.104.com.tw/job/7w9ok?jobsource=joblist_bact_n
+2025-02-22 18:02:30 - INFO: 公司名稱: 承啟醫系股份有限公司
+2025-02-22 18:02:30 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:02:31 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:02:40 - INFO: 已添加進陣列
+2025-02-22 18:02:42 - INFO: 職缺名稱: 醫療儀器維修工程師
+2025-02-22 18:02:42 - INFO: 職缺網址: https://www.104.com.tw/job/4o0x1?jobsource=joblist_list
+2025-02-22 18:02:42 - INFO: 公司名稱: 醫影股份有限公司
+2025-02-22 18:02:42 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:02:53 - INFO: 已添加進陣列
+2025-02-22 18:02:54 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (台中北區)
+2025-02-22 18:02:54 - INFO: 職缺網址: https://www.104.com.tw/job/89n3f?jobsource=joblist_list
+2025-02-22 18:02:54 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:02:54 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:03:05 - INFO: 已添加進陣列
+2025-02-22 18:03:06 - INFO: 職缺名稱: 醫療業務專員(中部)
+2025-02-22 18:03:06 - INFO: 職缺網址: https://www.104.com.tw/job/7sr6g?jobsource=joblist_bact_n
+2025-02-22 18:03:06 - INFO: 公司名稱: 啓動力股份有限公司
+2025-02-22 18:03:06 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:03:17 - INFO: 已添加進陣列
+2025-02-22 18:03:18 - INFO: 職缺名稱: 【整形外科事業處】中區業務專員(保障底薪+高額獎金+油資補助)
+2025-02-22 18:03:18 - INFO: 職缺網址: https://www.104.com.tw/job/8cace?jobsource=joblist_bact_n
+2025-02-22 18:03:18 - INFO: 公司名稱: 沃醫學股份有限公司
+2025-02-22 18:03:18 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:03:29 - INFO: 已添加進陣列
+2025-02-22 18:03:31 - INFO: 職缺名稱: 【IB】健康顧問-土城門市(通過考核首年月薪45K，非醫療背景可)
+2025-02-22 18:03:31 - INFO: 職缺網址: https://www.104.com.tw/job/8m4hl?jobsource=joblist_bact_n
+2025-02-22 18:03:31 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:03:31 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:03:37 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:03:41 - INFO: 已添加進陣列
+2025-02-22 18:03:42 - INFO: 職缺名稱: 醫療銷售業務代表 / 醫療銷售業務助理
+2025-02-22 18:03:42 - INFO: 職缺網址: https://www.104.com.tw/job/8lnru?jobsource=joblist_bact_n
+2025-02-22 18:03:42 - INFO: 公司名稱: 嘉文國際事業有限公司
+2025-02-22 18:03:42 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:03:53 - INFO: 已添加進陣列
+2025-02-22 18:03:54 - INFO: 職缺名稱: 業務專員（北區）
+2025-02-22 18:03:54 - INFO: 職缺網址: https://www.104.com.tw/job/8irme?jobsource=joblist_list
+2025-02-22 18:03:54 - INFO: 公司名稱: 威力德生醫股份有限公司
+2025-02-22 18:03:54 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:04:05 - INFO: 已添加進陣列
+2025-02-22 18:04:06 - INFO: 職缺名稱: 業務專員/診所通路-OD(高雄)
+2025-02-22 18:04:06 - INFO: 職缺網址: https://www.104.com.tw/job/7logy?jobsource=joblist_list
+2025-02-22 18:04:06 - INFO: 公司名稱: 久和醫療儀器股份有限公司_承業生醫企業集團
+2025-02-22 18:04:06 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:04:07 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:04:16 - INFO: 已添加進陣列
+2025-02-22 18:04:17 - INFO: 職缺名稱: 【科林】Sales Representative 醫療業務代表 (北區)
+2025-02-22 18:04:17 - INFO: 職缺網址: https://www.104.com.tw/job/8i53j?jobsource=joblist_list
+2025-02-22 18:04:17 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:04:17 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:04:28 - INFO: 已添加進陣列
+2025-02-22 18:04:30 - INFO: 正在處理第 7 頁...
+2025-02-22 18:04:30 - INFO: 當前頁面職缺數量: 149
+2025-02-22 18:04:33 - INFO: 職缺名稱: 業務專員 (北部駐區)
+2025-02-22 18:04:33 - INFO: 職缺網址: https://www.104.com.tw/job/81k4p?jobsource=joblist_bact_n
+2025-02-22 18:04:33 - INFO: 公司名稱: 亞海國際有限公司
+2025-02-22 18:04:33 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:04:43 - INFO: 已添加進陣列
+2025-02-22 18:04:45 - INFO: 職缺名稱: 醫療生殖醫學業務代表(台灣南區)
+2025-02-22 18:04:45 - INFO: 職缺網址: https://www.104.com.tw/job/2wvyg?jobsource=joblist_list
+2025-02-22 18:04:45 - INFO: 公司名稱: 弘智企業有限公司
+2025-02-22 18:04:45 - INFO: 更新日期: 2025/02/04
+2025-02-22 18:04:51 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:04:55 - INFO: 已添加進陣列
+2025-02-22 18:04:56 - INFO: 職缺名稱: 中區臨床教育專員
+2025-02-22 18:04:56 - INFO: 職缺網址: https://www.104.com.tw/job/891wz?jobsource=joblist_bact_n
+2025-02-22 18:04:56 - INFO: 公司名稱: 瑩佳國際有限公司
+2025-02-22 18:04:56 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:05:06 - INFO: 已添加進陣列
+2025-02-22 18:05:08 - INFO: 職缺名稱: 【整形外科事業處】南區產品專員(擴編)
+2025-02-22 18:05:08 - INFO: 職缺網址: https://www.104.com.tw/job/8l82b?jobsource=joblist_bact_n
+2025-02-22 18:05:08 - INFO: 公司名稱: 沃醫學股份有限公司
+2025-02-22 18:05:08 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:05:18 - INFO: 已添加進陣列
+2025-02-22 18:05:19 - INFO: 職缺名稱: 中南區-獸醫業務代表 (Veterinary Sales Representative)
+2025-02-22 18:05:19 - INFO: 職缺網址: https://www.104.com.tw/job/8l2jm?jobsource=joblist_bact_n
+2025-02-22 18:05:19 - INFO: 公司名稱: 美麗康有限公司
+2025-02-22 18:05:19 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:05:30 - INFO: 已添加進陣列
+2025-02-22 18:05:31 - INFO: 職缺名稱: 業務專員（南區）
+2025-02-22 18:05:31 - INFO: 職缺網址: https://www.104.com.tw/job/6d6zp?jobsource=joblist_bact_n
+2025-02-22 18:05:31 - INFO: 公司名稱: 威力德生醫股份有限公司
+2025-02-22 18:05:31 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:05:42 - INFO: 已添加進陣列
+2025-02-22 18:05:43 - INFO: 職缺名稱: 【病房單位】病房照服員
+2025-02-22 18:05:43 - INFO: 職缺網址: https://www.104.com.tw/job/40ccq?jobsource=joblist_bact_n
+2025-02-22 18:05:43 - INFO: 公司名稱: 沙爾德聖保祿修女會醫療財團法人聖保祿醫院
+2025-02-22 18:05:43 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:05:45 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:05:54 - INFO: 已添加進陣列
+2025-02-22 18:05:55 - INFO: 職缺名稱: 北區-醫療業務主任(保障底薪+業績獎金)
+2025-02-22 18:05:55 - INFO: 職缺網址: https://www.104.com.tw/job/8dfii?jobsource=joblist_bact_n
+2025-02-22 18:05:55 - INFO: 公司名稱: 蓋婭基因股份有限公司
+2025-02-22 18:05:55 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:06:06 - INFO: 已添加進陣列
+2025-02-22 18:06:07 - INFO: 職缺名稱: 【眼科儀器】(南區)維修工程師
+2025-02-22 18:06:07 - INFO: 職缺網址: https://www.104.com.tw/job/8m60u?jobsource=joblist_bact_n
+2025-02-22 18:06:07 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:06:07 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:06:18 - INFO: 已添加進陣列
+2025-02-22 18:06:20 - INFO: 職缺名稱: 花蓮區醫療業務專員(擴編)
+2025-02-22 18:06:20 - INFO: 職缺網址: https://www.104.com.tw/job/7omrj?jobsource=joblist_list
+2025-02-22 18:06:20 - INFO: 公司名稱: 雄鷹有限公司
+2025-02-22 18:06:20 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:06:30 - INFO: 已添加進陣列
+2025-02-22 18:06:32 - INFO: 職缺名稱: 【科林】Sales Representative 醫療業務代表 (中區)
+2025-02-22 18:06:32 - INFO: 職缺網址: https://www.104.com.tw/job/8k6sf?jobsource=joblist_bact_n
+2025-02-22 18:06:32 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:06:32 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:06:42 - INFO: 已添加進陣列
+2025-02-22 18:06:44 - INFO: 職缺名稱: 【科林】睡眠技師(日班/雙北為主)
+2025-02-22 18:06:44 - INFO: 職缺網址: https://www.104.com.tw/job/7y659?jobsource=joblist_list
+2025-02-22 18:06:44 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:06:44 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:06:45 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:06:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:06:53 - INFO: 已添加進陣列
+2025-02-22 18:06:55 - INFO: 職缺名稱: 【耳科】業務開發主管 (中區)
+2025-02-22 18:06:55 - INFO: 職缺網址: https://www.104.com.tw/job/84hty?jobsource=joblist_list
+2025-02-22 18:06:55 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:06:55 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:07:05 - INFO: 已添加進陣列
+2025-02-22 18:07:06 - INFO: 職缺名稱: 【中區】醫療儀器業務人員
+2025-02-22 18:07:06 - INFO: 職缺網址: https://www.104.com.tw/job/8guod?jobsource=joblist_list
+2025-02-22 18:07:06 - INFO: 公司名稱: 亞帝昇生物科技有限公司
+2025-02-22 18:07:06 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:07:08 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:07:16 - INFO: 已添加進陣列
+2025-02-22 18:07:18 - INFO: 職缺名稱: 業務專員-ND(總公司)
+2025-02-22 18:07:18 - INFO: 職缺網址: https://www.104.com.tw/job/4e5tz?jobsource=joblist_list
+2025-02-22 18:07:18 - INFO: 公司名稱: 久和醫療儀器股份有限公司_承業生醫企業集團
+2025-02-22 18:07:18 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:07:28 - INFO: 已添加進陣列
+2025-02-22 18:07:30 - INFO: 職缺名稱: 【科林】Sales Representative 醫療業務代表 (嘉義、台南)
+2025-02-22 18:07:30 - INFO: 職缺網址: https://www.104.com.tw/job/8fiub?jobsource=joblist_list
+2025-02-22 18:07:30 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:07:30 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:07:40 - INFO: 已添加進陣列
+2025-02-22 18:07:42 - INFO: 職缺名稱: 【擴編】北區-醫療業務代表(保障底薪+業績獎金)
+2025-02-22 18:07:42 - INFO: 職缺網址: https://www.104.com.tw/job/7y9ad?jobsource=joblist_bact_n
+2025-02-22 18:07:42 - INFO: 公司名稱: 蓋婭基因股份有限公司
+2025-02-22 18:07:42 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:07:53 - INFO: 已添加進陣列
+2025-02-22 18:07:54 - INFO: 職缺名稱: 醫療設備耗材業務代表 (北區)
+2025-02-22 18:07:54 - INFO: 職缺網址: https://www.104.com.tw/job/4ize6?jobsource=joblist_list
+2025-02-22 18:07:54 - INFO: 公司名稱: 健伸科技股份有限公司
+2025-02-22 18:07:54 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:08:04 - INFO: 已添加進陣列
+2025-02-22 18:08:06 - INFO: 職缺名稱: 醫療業務專員(台南、高屏區）
+2025-02-22 18:08:06 - INFO: 職缺網址: https://www.104.com.tw/job/7sr6r?jobsource=joblist_list
+2025-02-22 18:08:06 - INFO: 公司名稱: 啓動力股份有限公司
+2025-02-22 18:08:06 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:08:16 - INFO: 已添加進陣列
+2025-02-22 18:08:17 - INFO: 職缺名稱: 【眼科儀器】維修工程師
+2025-02-22 18:08:17 - INFO: 職缺網址: https://www.104.com.tw/job/76sk6?jobsource=joblist_list
+2025-02-22 18:08:17 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:08:17 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:08:24 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:08:27 - INFO: 已添加進陣列
+2025-02-22 18:08:30 - INFO: 正在處理第 8 頁...
+2025-02-22 18:08:30 - INFO: 當前頁面職缺數量: 169
+2025-02-22 18:08:32 - INFO: 職缺名稱: 醫療業務主管
+2025-02-22 18:08:32 - INFO: 職缺網址: https://www.104.com.tw/job/74col?jobsource=joblist_list
+2025-02-22 18:08:32 - INFO: 公司名稱: 華龍生醫股份有限公司
+2025-02-22 18:08:32 - INFO: 更新日期: 2025/02/01
+2025-02-22 18:08:42 - INFO: 已添加進陣列
+2025-02-22 18:08:44 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (台南崇德)
+2025-02-22 18:08:44 - INFO: 職缺網址: https://www.104.com.tw/job/75t87?jobsource=joblist_list
+2025-02-22 18:08:44 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:08:44 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:08:54 - INFO: 已添加進陣列
+2025-02-22 18:08:56 - INFO: 職缺名稱: 總務資訊人員(瑞祥醫院)
+2025-02-22 18:08:56 - INFO: 職缺網址: https://www.104.com.tw/job/8mqhl?jobsource=joblist_bact_n
+2025-02-22 18:08:56 - INFO: 公司名稱: 新高醫院
+2025-02-22 18:08:56 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:09:06 - INFO: 已添加進陣列
+2025-02-22 18:09:08 - INFO: 職缺名稱: 【IB】健康顧問-屏東門市(通過考核首年月薪45K，非醫療背景可)
+2025-02-22 18:09:08 - INFO: 職缺網址: https://www.104.com.tw/job/7uhir?jobsource=joblist_list
+2025-02-22 18:09:08 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:09:08 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:09:18 - INFO: 已添加進陣列
+2025-02-22 18:09:20 - INFO: 職缺名稱: 醫療業務代表
+2025-02-22 18:09:20 - INFO: 職缺網址: https://www.104.com.tw/job/8gapr?jobsource=joblist_bact_n
+2025-02-22 18:09:20 - INFO: 公司名稱: 友信行股份有限公司
+2025-02-22 18:09:20 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:09:30 - INFO: 已添加進陣列
+2025-02-22 18:09:32 - INFO: 職缺名稱: (中部)醫療業務代表
+2025-02-22 18:09:32 - INFO: 職缺網址: https://www.104.com.tw/job/8kjnh?jobsource=joblist_bact_n
+2025-02-22 18:09:32 - INFO: 公司名稱: 瑪克多股份有限公司
+2025-02-22 18:09:32 - INFO: 更新日期: 2025/02/16
+2025-02-22 18:09:42 - INFO: 已添加進陣列
+2025-02-22 18:09:44 - INFO: 職缺名稱: 【耳科】電子耳業務助理
+2025-02-22 18:09:44 - INFO: 職缺網址: https://www.104.com.tw/job/8llb2?jobsource=joblist_list
+2025-02-22 18:09:44 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:09:44 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:09:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:09:53 - INFO: 已添加進陣列
+2025-02-22 18:09:55 - INFO: 職缺名稱: 北區醫療業務代表
+2025-02-22 18:09:55 - INFO: 職缺網址: https://www.104.com.tw/job/5r04c?jobsource=joblist_bact_n
+2025-02-22 18:09:55 - INFO: 公司名稱: 服杏企業有限公司
+2025-02-22 18:09:55 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:10:05 - INFO: 已添加進陣列
+2025-02-22 18:10:07 - INFO: 職缺名稱: 【CC】中區業務(藥局&診所通路)範圍涵蓋台中和苗栗地區
+2025-02-22 18:10:07 - INFO: 職缺網址: https://www.104.com.tw/job/7w328?jobsource=joblist_list
+2025-02-22 18:10:07 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:10:07 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:10:13 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:10:16 - INFO: 已添加進陣列
+2025-02-22 18:10:18 - INFO: 職缺名稱: 【CC】南區業務(藥局&診所通路)-台南區域為主
+2025-02-22 18:10:18 - INFO: 職缺網址: https://www.104.com.tw/job/7w337?jobsource=joblist_list
+2025-02-22 18:10:18 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:10:18 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:10:28 - INFO: 已添加進陣列
+2025-02-22 18:10:30 - INFO: 職缺名稱: 牙體技術人員
+2025-02-22 18:10:30 - INFO: 職缺網址: https://www.104.com.tw/job/4wdp4?jobsource=joblist_list
+2025-02-22 18:10:30 - INFO: 公司名稱: 聯合牙材股份有限公司
+2025-02-22 18:10:30 - INFO: 更新日期: 2025/02/06
+2025-02-22 18:10:31 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:10:36 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:10:39 - INFO: 已添加進陣列
+2025-02-22 18:10:41 - INFO: 職缺名稱: 醫療設備耗材業務代表 (台中)
+2025-02-22 18:10:41 - INFO: 職缺網址: https://www.104.com.tw/job/8002n?jobsource=joblist_list
+2025-02-22 18:10:41 - INFO: 公司名稱: 健伸科技股份有限公司
+2025-02-22 18:10:41 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:10:51 - INFO: 已添加進陣列
+2025-02-22 18:10:53 - INFO: 職缺名稱: CT 臨床應用專員Application Specialist(台北總公司)
+2025-02-22 18:10:53 - INFO: 職缺網址: https://www.104.com.tw/job/8lqbj?jobsource=joblist_list
+2025-02-22 18:10:53 - INFO: 公司名稱: 老達利貿易股份有限公司
+2025-02-22 18:10:53 - INFO: 更新日期: 2025/01/22
+2025-02-22 18:11:03 - INFO: 已添加進陣列
+2025-02-22 18:11:04 - INFO: 職缺名稱: 【知名醫材大廠-製程設備課長】#產業發展穩定 #技術獨佔 #供宿_KTS_1401
+2025-02-22 18:11:04 - INFO: 職缺網址: https://www.104.com.tw/job/7ftn8?jobsource=joblist_list
+2025-02-22 18:11:04 - INFO: 公司名稱: 藝珂人事顧問股份有限公司
+2025-02-22 18:11:04 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:11:06 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:11:11 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:11:14 - INFO: 已添加進陣列
+2025-02-22 18:11:16 - INFO: 職缺名稱: 睡眠技師
+2025-02-22 18:11:16 - INFO: 職缺網址: https://www.104.com.tw/job/82622?jobsource=joblist_list
+2025-02-22 18:11:16 - INFO: 公司名稱: 聯杏股份有限公司
+2025-02-22 18:11:16 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:11:17 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:11:22 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:11:25 - INFO: 已添加進陣列
+2025-02-22 18:11:27 - INFO: 職缺名稱: 業務專員 (南部駐區)
+2025-02-22 18:11:27 - INFO: 職缺網址: https://www.104.com.tw/job/8ktfv?jobsource=joblist_list
+2025-02-22 18:11:27 - INFO: 公司名稱: 亞海國際有限公司
+2025-02-22 18:11:27 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:11:37 - INFO: 已添加進陣列
+2025-02-22 18:11:38 - INFO: 職缺名稱: 【北區】醫材業務專員 (大台北、桃竹)(高底薪+優渥獎金+油資補助)
+2025-02-22 18:11:38 - INFO: 職缺網址: https://www.104.com.tw/job/5nngs?jobsource=joblist_bact_n
+2025-02-22 18:11:38 - INFO: 公司名稱: 晶鑽生醫股份有限公司
+2025-02-22 18:11:38 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:11:49 - INFO: 已添加進陣列
+2025-02-22 18:11:51 - INFO: 職缺名稱: 產品專員 (醫療產品介紹)
+2025-02-22 18:11:51 - INFO: 職缺網址: https://www.104.com.tw/job/8mfkw?jobsource=joblist_list
+2025-02-22 18:11:51 - INFO: 公司名稱: 偉信儀器股份有限公司
+2025-02-22 18:11:51 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:11:52 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:11:57 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:12:00 - INFO: 已添加進陣列
+2025-02-22 18:12:02 - INFO: 職缺名稱: 業務專員-ROD(台中)
+2025-02-22 18:12:02 - INFO: 職缺網址: https://www.104.com.tw/job/8lt5d?jobsource=joblist_bact_n
+2025-02-22 18:12:02 - INFO: 公司名稱: 久和醫療儀器股份有限公司_承業生醫企業集團
+2025-02-22 18:12:02 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:12:12 - INFO: 已添加進陣列
+2025-02-22 18:12:14 - INFO: 職缺名稱: 業務專員
+2025-02-22 18:12:14 - INFO: 職缺網址: https://www.104.com.tw/job/3wyx6?jobsource=joblist_list
+2025-02-22 18:12:14 - INFO: 公司名稱: 安得斯有限公司
+2025-02-22 18:12:14 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:12:15 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:12:24 - INFO: 已添加進陣列
+2025-02-22 18:12:27 - INFO: 正在處理第 9 頁...
+2025-02-22 18:12:27 - INFO: 當前頁面職缺數量: 189
+2025-02-22 18:12:29 - INFO: 職缺名稱: 醫療器材業務代表
+2025-02-22 18:12:29 - INFO: 職缺網址: https://www.104.com.tw/job/7zt1n?jobsource=joblist_bact_n
+2025-02-22 18:12:29 - INFO: 公司名稱: 長佳智能股份有限公司
+2025-02-22 18:12:29 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:12:40 - INFO: 已添加進陣列
+2025-02-22 18:12:42 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (彰化和美)
+2025-02-22 18:12:42 - INFO: 職缺網址: https://www.104.com.tw/job/89n33?jobsource=joblist_bact_n
+2025-02-22 18:12:42 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:12:42 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:12:52 - INFO: 已添加進陣列
+2025-02-22 18:12:54 - INFO: 職缺名稱: 【HA】醫療聽力睡眠輔具門市區督導(新竹)
+2025-02-22 18:12:54 - INFO: 職缺網址: https://www.104.com.tw/job/8mbah?jobsource=joblist_list
+2025-02-22 18:12:54 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:12:54 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:13:00 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:13:03 - INFO: 已添加進陣列
+2025-02-22 18:13:05 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上(員林門市)
+2025-02-22 18:13:05 - INFO: 職缺網址: https://www.104.com.tw/job/8knph?jobsource=joblist_list
+2025-02-22 18:13:05 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:13:05 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:13:15 - INFO: 已添加進陣列
+2025-02-22 18:13:17 - INFO: 職缺名稱: 【眼科儀器】北區業務代表
+2025-02-22 18:13:17 - INFO: 職缺網址: https://www.104.com.tw/job/7rd2q?jobsource=joblist_bact_n
+2025-02-22 18:13:17 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:13:17 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:13:27 - INFO: 已添加進陣列
+2025-02-22 18:13:29 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (大高雄區域)
+2025-02-22 18:13:29 - INFO: 職缺網址: https://www.104.com.tw/job/7hqoa?jobsource=joblist_list
+2025-02-22 18:13:29 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:13:29 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:13:39 - INFO: 已添加進陣列
+2025-02-22 18:13:41 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (桃園中壢)
+2025-02-22 18:13:41 - INFO: 職缺網址: https://www.104.com.tw/job/8hlms?jobsource=joblist_bact_n
+2025-02-22 18:13:41 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:13:41 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:13:51 - INFO: 已添加進陣列
+2025-02-22 18:13:53 - INFO: 職缺名稱: 業務專員
+2025-02-22 18:13:53 - INFO: 職缺網址: https://www.104.com.tw/job/8ccix?jobsource=joblist_bact_n
+2025-02-22 18:13:53 - INFO: 公司名稱: 新芳良化工原料儀器有限公司
+2025-02-22 18:13:53 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:14:04 - INFO: 已添加進陣列
+2025-02-22 18:14:05 - INFO: 職缺名稱: 門診護理組-定期(約聘)時薪助理員(員林基督教醫院)
+2025-02-22 18:14:05 - INFO: 職缺網址: https://www.104.com.tw/job/86uzi?jobsource=joblist_list
+2025-02-22 18:14:05 - INFO: 公司名稱: 彰化基督教醫療財團法人彰化基督教醫院
+2025-02-22 18:14:05 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:14:16 - INFO: 已添加進陣列
+2025-02-22 18:14:17 - INFO: 職缺名稱: 業務代表(南區)
+2025-02-22 18:14:17 - INFO: 職缺網址: https://www.104.com.tw/job/8amzd?jobsource=joblist_list
+2025-02-22 18:14:17 - INFO: 公司名稱: 友信行股份有限公司
+2025-02-22 18:14:17 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:14:27 - INFO: 已添加進陣列
+2025-02-22 18:14:29 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (台中豐原)
+2025-02-22 18:14:29 - INFO: 職缺網址: https://www.104.com.tw/job/8huw7?jobsource=joblist_bact_n
+2025-02-22 18:14:29 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:14:29 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:14:39 - INFO: 已添加進陣列
+2025-02-22 18:14:40 - INFO: 職缺名稱: MRI應用專員Application Specialist(台北總公司)
+2025-02-22 18:14:40 - INFO: 職缺網址: https://www.104.com.tw/job/8dxws?jobsource=joblist_list
+2025-02-22 18:14:40 - INFO: 公司名稱: 老達利貿易股份有限公司
+2025-02-22 18:14:40 - INFO: 更新日期: 2025/01/20
+2025-02-22 18:14:51 - INFO: 已添加進陣列
+2025-02-22 18:14:52 - INFO: 職缺名稱: 醫事放射師(放射科技術員)(每月再發醫勤獎助金)
+2025-02-22 18:14:52 - INFO: 職缺網址: https://www.104.com.tw/job/7ylvn?jobsource=joblist_list
+2025-02-22 18:14:52 - INFO: 公司名稱: 三軍總醫院澎湖分院附設民眾診療服務處
+2025-02-22 18:14:52 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:14:54 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:14:59 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:15:02 - INFO: 已添加進陣列
+2025-02-22 18:15:03 - INFO: 職缺名稱: 【中區】醫材業務專員  (高底薪+優渥獎金+油資補助)
+2025-02-22 18:15:03 - INFO: 職缺網址: https://www.104.com.tw/job/6u263?jobsource=joblist_bact_n
+2025-02-22 18:15:03 - INFO: 公司名稱: 晶鑽生醫股份有限公司
+2025-02-22 18:15:03 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:15:14 - INFO: 已添加進陣列
+2025-02-22 18:15:16 - INFO: 職缺名稱: 【門診】護理師/助理員
+2025-02-22 18:15:16 - INFO: 職缺網址: https://www.104.com.tw/job/7vt8y?jobsource=joblist_list
+2025-02-22 18:15:16 - INFO: 公司名稱: 沙爾德聖保祿修女會醫療財團法人聖保祿醫院
+2025-02-22 18:15:16 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:15:17 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:15:26 - INFO: 已添加進陣列
+2025-02-22 18:15:27 - INFO: 職缺名稱: 醫療業務代表 (中部地區)
+2025-02-22 18:15:27 - INFO: 職缺網址: https://www.104.com.tw/job/83jcn?jobsource=joblist_bact_n
+2025-02-22 18:15:27 - INFO: 公司名稱: 安頡儀器有限公司
+2025-02-22 18:15:27 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:15:38 - INFO: 已添加進陣列
+2025-02-22 18:15:40 - INFO: 職缺名稱: 醫療儀器業務代表(北區、中區)
+2025-02-22 18:15:40 - INFO: 職缺網址: https://www.104.com.tw/job/724cd?jobsource=joblist_list
+2025-02-22 18:15:40 - INFO: 公司名稱: 醫影股份有限公司
+2025-02-22 18:15:40 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:15:50 - INFO: 已添加進陣列
+2025-02-22 18:15:51 - INFO: 職缺名稱: 【知名醫療儀器公司】門市人員_聽力顧問(LLS_885)**服務門市依所在區域分配**
+2025-02-22 18:15:51 - INFO: 職缺網址: https://www.104.com.tw/job/8ky02?jobsource=joblist_list
+2025-02-22 18:15:51 - INFO: 公司名稱: 藝珂人事顧問股份有限公司
+2025-02-22 18:15:52 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:15:53 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:16:02 - INFO: 已添加進陣列
+2025-02-22 18:16:03 - INFO: 職缺名稱: 超音波技術人員
+2025-02-22 18:16:03 - INFO: 職缺網址: https://www.104.com.tw/job/74ce4?jobsource=joblist_list
+2025-02-22 18:16:03 - INFO: 公司名稱: 禾仲行企業有限公司
+2025-02-22 18:16:03 - INFO: 更新日期: 2024/12/02
+2025-02-22 18:16:10 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:16:13 - INFO: 已添加進陣列
+2025-02-22 18:16:14 - INFO: 職缺名稱: 【WL】聽力顧問-助聽輔具門市選配銷售_嘉義門市
+2025-02-22 18:16:14 - INFO: 職缺網址: https://www.104.com.tw/job/8ay71?jobsource=joblist_list
+2025-02-22 18:16:14 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:16:14 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:16:25 - INFO: 已添加進陣列
+2025-02-22 18:16:28 - INFO: 正在處理第 10 頁...
+2025-02-22 18:16:28 - INFO: 當前頁面職缺數量: 209
+2025-02-22 18:16:30 - INFO: 職缺名稱: 業務專員-南區
+2025-02-22 18:16:30 - INFO: 職缺網址: https://www.104.com.tw/job/6vbw2?jobsource=joblist_list
+2025-02-22 18:16:30 - INFO: 公司名稱: 德業聚股份有限公司
+2025-02-22 18:16:30 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:16:40 - INFO: 已添加進陣列
+2025-02-22 18:16:41 - INFO: 職缺名稱: 醫療經紀人
+2025-02-22 18:16:41 - INFO: 職缺網址: https://www.104.com.tw/job/82vay?jobsource=joblist_list
+2025-02-22 18:16:41 - INFO: 公司名稱: 弘宇生技有限公司
+2025-02-22 18:16:41 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:16:43 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:16:48 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:16:51 - INFO: 已添加進陣列
+2025-02-22 18:16:52 - INFO: 職缺名稱: 醫療儀器業務
+2025-02-22 18:16:52 - INFO: 職缺網址: https://www.104.com.tw/job/8k94d?jobsource=joblist_bact_n
+2025-02-22 18:16:52 - INFO: 公司名稱: 湳開股份有限公司
+2025-02-22 18:16:52 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:17:03 - INFO: 已添加進陣列
+2025-02-22 18:17:04 - INFO: 職缺名稱: 醫療業務專員(北區).Neuro
+2025-02-22 18:17:04 - INFO: 職缺網址: https://www.104.com.tw/job/6lf5y?jobsource=joblist_bact_n
+2025-02-22 18:17:04 - INFO: 公司名稱: 日龍儀器股份有限公司
+2025-02-22 18:17:04 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:17:15 - INFO: 已添加進陣列
+2025-02-22 18:17:16 - INFO: 職缺名稱: 業務專員-北區
+2025-02-22 18:17:16 - INFO: 職缺網址: https://www.104.com.tw/job/4ti3t?jobsource=joblist_list
+2025-02-22 18:17:16 - INFO: 公司名稱: 德業聚股份有限公司
+2025-02-22 18:17:16 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:17:26 - INFO: 已添加進陣列
+2025-02-22 18:17:28 - INFO: 職缺名稱: 業務代表(北區)
+2025-02-22 18:17:28 - INFO: 職缺網址: https://www.104.com.tw/job/3zr3r?jobsource=joblist_list
+2025-02-22 18:17:28 - INFO: 公司名稱: 欣美生醫股份有限公司
+2025-02-22 18:17:28 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:17:35 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:17:38 - INFO: 已添加進陣列
+2025-02-22 18:17:39 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (台中地區)
+2025-02-22 18:17:39 - INFO: 職缺網址: https://www.104.com.tw/job/8affv?jobsource=joblist_list
+2025-02-22 18:17:39 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:17:39 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:17:46 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:17:49 - INFO: 已添加進陣列
+2025-02-22 18:17:51 - INFO: 職缺名稱: 擴大產品線～區域銷售專員
+2025-02-22 18:17:51 - INFO: 職缺網址: https://www.104.com.tw/job/6ftot?jobsource=joblist_list
+2025-02-22 18:17:51 - INFO: 公司名稱: 浤鉝實業股份有限公司
+2025-02-22 18:17:51 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:17:57 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:18:00 - INFO: 已添加進陣列
+2025-02-22 18:18:02 - INFO: 職缺名稱: 【WL】聽力顧問-助聽輔具門市選配銷售_小港門市
+2025-02-22 18:18:02 - INFO: 職缺網址: https://www.104.com.tw/job/8k8ir?jobsource=joblist_list
+2025-02-22 18:18:02 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:18:02 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:18:13 - INFO: 已添加進陣列
+2025-02-22 18:18:14 - INFO: 職缺名稱: 醫療業務工程師(北區).NV
+2025-02-22 18:18:14 - INFO: 職缺網址: https://www.104.com.tw/job/8l65y?jobsource=joblist_bact_n
+2025-02-22 18:18:14 - INFO: 公司名稱: 日龍儀器股份有限公司
+2025-02-22 18:18:14 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:18:21 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:18:24 - INFO: 已添加進陣列
+2025-02-22 18:18:25 - INFO: 職缺名稱: 醫療設備耗材業務代表 (高雄)
+2025-02-22 18:18:25 - INFO: 職缺網址: https://www.104.com.tw/job/7tfe3?jobsource=joblist_bact_n
+2025-02-22 18:18:25 - INFO: 公司名稱: 健伸科技股份有限公司
+2025-02-22 18:18:25 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:18:36 - INFO: 已添加進陣列
+2025-02-22 18:18:37 - INFO: 職缺名稱: 桃竹區-脊椎輔具、醫療儀器業務主任-桃
+2025-02-22 18:18:37 - INFO: 職缺網址: https://www.104.com.tw/job/8abhk?jobsource=joblist_list
+2025-02-22 18:18:37 - INFO: 公司名稱: 又強儀器有限公司
+2025-02-22 18:18:37 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:18:48 - INFO: 已添加進陣列
+2025-02-22 18:18:49 - INFO: 職缺名稱: 業務專員-中區
+2025-02-22 18:18:49 - INFO: 職缺網址: https://www.104.com.tw/job/7k2uy?jobsource=joblist_bact_n
+2025-02-22 18:18:49 - INFO: 公司名稱: 德業聚股份有限公司
+2025-02-22 18:18:49 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:19:00 - INFO: 已添加進陣列
+2025-02-22 18:19:02 - INFO: 職缺名稱: 業務代表(中區)
+2025-02-22 18:19:02 - INFO: 職缺網址: https://www.104.com.tw/job/8amz6?jobsource=joblist_list
+2025-02-22 18:19:02 - INFO: 公司名稱: 友信行股份有限公司
+2025-02-22 18:19:02 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:19:12 - INFO: 已添加進陣列
+2025-02-22 18:19:14 - INFO: 職缺名稱: 學習型的實習生（醫療,保健服務類）
+2025-02-22 18:19:14 - INFO: 職缺網址: https://www.104.com.tw/job/8ahc8?jobsource=joblist_list
+2025-02-22 18:19:14 - INFO: 公司名稱: 邑方醫療器材企業社
+2025-02-22 18:19:14 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:19:15 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:19:20 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:19:23 - INFO: 已添加進陣列
+2025-02-22 18:19:25 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (桃園龍潭)
+2025-02-22 18:19:25 - INFO: 職缺網址: https://www.104.com.tw/job/89mxc?jobsource=joblist_list
+2025-02-22 18:19:25 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:19:25 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:19:35 - INFO: 已添加進陣列
+2025-02-22 18:19:37 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (嘉義地區)
+2025-02-22 18:19:37 - INFO: 職缺網址: https://www.104.com.tw/job/89my8?jobsource=joblist_list
+2025-02-22 18:19:37 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:19:37 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:19:47 - INFO: 已添加進陣列
+2025-02-22 18:19:49 - INFO: 職缺名稱: 【WL】聽力顧問-助聽輔具門市選配銷售_中華門市
+2025-02-22 18:19:49 - INFO: 職缺網址: https://www.104.com.tw/job/7xobp?jobsource=joblist_list
+2025-02-22 18:19:49 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:19:49 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:20:00 - INFO: 已添加進陣列
+2025-02-22 18:20:02 - INFO: 職缺名稱: 醫療生殖醫學業務代表(台灣北區 )
+2025-02-22 18:20:02 - INFO: 職缺網址: https://www.104.com.tw/job/2wvxi?jobsource=joblist_list
+2025-02-22 18:20:02 - INFO: 公司名稱: 弘智企業有限公司
+2025-02-22 18:20:02 - INFO: 更新日期: 2025/02/04
+2025-02-22 18:20:12 - INFO: 已添加進陣列
+2025-02-22 18:20:14 - INFO: 職缺名稱: 業務銷售人員(台中)
+2025-02-22 18:20:14 - INFO: 職缺網址: https://www.104.com.tw/job/81q3u?jobsource=joblist_list
+2025-02-22 18:20:14 - INFO: 公司名稱: 鑫霸企業股份有限公司
+2025-02-22 18:20:14 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:20:24 - INFO: 已添加進陣列
+2025-02-22 18:20:28 - INFO: 正在處理第 11 頁...
+2025-02-22 18:20:28 - INFO: 當前頁面職缺數量: 229
+2025-02-22 18:20:30 - INFO: 職缺名稱: 北區超音波業務專員
+2025-02-22 18:20:30 - INFO: 職缺網址: https://www.104.com.tw/job/7w9ns?jobsource=joblist_list
+2025-02-22 18:20:30 - INFO: 公司名稱: 承啟醫系股份有限公司
+2025-02-22 18:20:30 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:20:32 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:20:42 - INFO: 已添加進陣列
+2025-02-22 18:20:44 - INFO: 職缺名稱: 醫學檢驗實驗室專案專員(北區/中區)
+2025-02-22 18:20:44 - INFO: 職缺網址: https://www.104.com.tw/job/65vsl?jobsource=joblist_list
+2025-02-22 18:20:44 - INFO: 公司名稱: 保吉生化學股份有限公司
+2025-02-22 18:20:44 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:20:55 - INFO: 已添加進陣列
+2025-02-22 18:20:56 - INFO: 職缺名稱: 桃竹區-脊椎輔具、醫療儀器業務專員-桃
+2025-02-22 18:20:56 - INFO: 職缺網址: https://www.104.com.tw/job/6o51z?jobsource=joblist_list
+2025-02-22 18:20:56 - INFO: 公司名稱: 又強儀器有限公司
+2025-02-22 18:20:56 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:21:03 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:21:06 - INFO: 已添加進陣列
+2025-02-22 18:21:08 - INFO: 職缺名稱: 竹苗區醫療人員- 跟刀專員
+2025-02-22 18:21:08 - INFO: 職缺網址: https://www.104.com.tw/job/7edwf?jobsource=joblist_list
+2025-02-22 18:21:08 - INFO: 公司名稱: 寶健科技股份有限公司
+2025-02-22 18:21:08 - INFO: 更新日期: 2025/02/10
+2025-02-22 18:21:14 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:21:17 - INFO: 已添加進陣列
+2025-02-22 18:21:19 - INFO: 職缺名稱: 醫療業務人員(南區)
+2025-02-22 18:21:19 - INFO: 職缺網址: https://www.104.com.tw/job/7g12c?jobsource=joblist_list
+2025-02-22 18:21:19 - INFO: 公司名稱: 連鎰有限公司
+2025-02-22 18:21:19 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:21:21 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:21:26 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:21:29 - INFO: 已添加進陣列
+2025-02-22 18:21:31 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用保障薪資43K以上 (四號公園門市)
+2025-02-22 18:21:31 - INFO: 職缺網址: https://www.104.com.tw/job/8k6l1?jobsource=joblist_list
+2025-02-22 18:21:31 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:21:31 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:21:37 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:21:40 - INFO: 已添加進陣列
+2025-02-22 18:21:42 - INFO: 職缺名稱: X光設備應用專員Application Specialist(台北總公司)
+2025-02-22 18:21:42 - INFO: 職缺網址: https://www.104.com.tw/job/896l2?jobsource=joblist_list
+2025-02-22 18:21:42 - INFO: 公司名稱: 老達利貿易股份有限公司
+2025-02-22 18:21:42 - INFO: 更新日期: 2025/01/20
+2025-02-22 18:21:49 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:21:52 - INFO: 已添加進陣列
+2025-02-22 18:21:54 - INFO: 職缺名稱: 醫療業務代表(中區)
+2025-02-22 18:21:54 - INFO: 職缺網址: https://www.104.com.tw/job/7wali?jobsource=joblist_list
+2025-02-22 18:21:54 - INFO: 公司名稱: 維駿儀器有限公司
+2025-02-22 18:21:54 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:22:05 - INFO: 已添加進陣列
+2025-02-22 18:22:07 - INFO: 職缺名稱: 北區-醫療設備維護工程師
+2025-02-22 18:22:07 - INFO: 職缺網址: https://www.104.com.tw/job/7qhqr?jobsource=joblist_list
+2025-02-22 18:22:07 - INFO: 公司名稱: 群益生醫股份有限公司
+2025-02-22 18:22:07 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:22:08 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:22:17 - INFO: 已添加進陣列
+2025-02-22 18:22:19 - INFO: 職缺名稱: 中區醫療設備通路業務
+2025-02-22 18:22:19 - INFO: 職缺網址: https://www.104.com.tw/job/8l9fx?jobsource=joblist_list
+2025-02-22 18:22:19 - INFO: 公司名稱: 精俐生醫股份有限公司
+2025-02-22 18:22:19 - INFO: 更新日期: 2025/02/16
+2025-02-22 18:22:29 - INFO: 已添加進陣列
+2025-02-22 18:22:31 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (大台南區域)
+2025-02-22 18:22:31 - INFO: 職缺網址: https://www.104.com.tw/job/8j70h?jobsource=joblist_list
+2025-02-22 18:22:31 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:22:31 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:22:41 - INFO: 已添加進陣列
+2025-02-22 18:22:43 - INFO: 職缺名稱: 業務代表(中區)
+2025-02-22 18:22:43 - INFO: 職缺網址: https://www.104.com.tw/job/715vv?jobsource=joblist_bact_n
+2025-02-22 18:22:43 - INFO: 公司名稱: 欣美生醫股份有限公司
+2025-02-22 18:22:43 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:22:53 - INFO: 已添加進陣列
+2025-02-22 18:22:55 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (新竹東門)
+2025-02-22 18:22:55 - INFO: 職缺網址: https://www.104.com.tw/job/8fitp?jobsource=joblist_list
+2025-02-22 18:22:55 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:22:55 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:23:02 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:23:05 - INFO: 已添加進陣列
+2025-02-22 18:23:07 - INFO: 職缺名稱: 禾馨醫療【民權】超音波技術員
+2025-02-22 18:23:07 - INFO: 職缺網址: https://www.104.com.tw/job/8etbv?jobsource=joblist_list
+2025-02-22 18:23:07 - INFO: 公司名稱: 禾馨股份有限公司
+2025-02-22 18:23:07 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:23:13 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:23:16 - INFO: 已添加進陣列
+2025-02-22 18:23:19 - INFO: 職缺名稱: (研發類)臨床應用暨導入工程師
+2025-02-22 18:23:19 - INFO: 職缺網址: https://www.104.com.tw/job/8l21a?jobsource=joblist_list
+2025-02-22 18:23:19 - INFO: 公司名稱: 華廣生技股份有限公司
+2025-02-22 18:23:19 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:23:20 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:23:25 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:23:28 - INFO: 已添加進陣列
+2025-02-22 18:23:30 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (大桃園區)
+2025-02-22 18:23:30 - INFO: 職缺網址: https://www.104.com.tw/job/81a0q?jobsource=joblist_list
+2025-02-22 18:23:30 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:23:30 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:23:40 - INFO: 已添加進陣列
+2025-02-22 18:23:43 - INFO: 職缺名稱: 業務處_再生醫學業務[高雄]
+2025-02-22 18:23:43 - INFO: 職缺網址: https://www.104.com.tw/job/7vl39?jobsource=joblist_bact_n
+2025-02-22 18:23:43 - INFO: 公司名稱: 訊聯生物科技股份有限公司
+2025-02-22 18:23:43 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:23:54 - INFO: 已添加進陣列
+2025-02-22 18:23:56 - INFO: 職缺名稱: 獸醫助理
+2025-02-22 18:23:56 - INFO: 職缺網址: https://www.104.com.tw/job/436sn?jobsource=joblist_bact_n
+2025-02-22 18:23:56 - INFO: 公司名稱: 忠愛動物醫院
+2025-02-22 18:23:56 - INFO: 更新日期: 2025/01/02
+2025-02-22 18:24:07 - INFO: 已添加進陣列
+2025-02-22 18:24:09 - INFO: 職缺名稱: 睡眠專員(台北)
+2025-02-22 18:24:09 - INFO: 職缺網址: https://www.104.com.tw/job/8b79e?jobsource=joblist_list
+2025-02-22 18:24:09 - INFO: 公司名稱: 杏昌生技股份有限公司
+2025-02-22 18:24:09 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:24:19 - INFO: 已添加進陣列
+2025-02-22 18:24:21 - INFO: 職缺名稱: 北區教學醫院業務專員(擴編 )
+2025-02-22 18:24:21 - INFO: 職缺網址: https://www.104.com.tw/job/62wji?jobsource=joblist_list
+2025-02-22 18:24:21 - INFO: 公司名稱: 雄鷹有限公司
+2025-02-22 18:24:21 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:24:31 - INFO: 已添加進陣列
+2025-02-22 18:24:34 - INFO: 正在處理第 12 頁...
+2025-02-22 18:24:34 - INFO: 當前頁面職缺數量: 249
+2025-02-22 18:24:36 - INFO: 職缺名稱: 心臟血管外科-體外循環師
+2025-02-22 18:24:36 - INFO: 職缺網址: https://www.104.com.tw/job/7uteg?jobsource=joblist_list
+2025-02-22 18:24:36 - INFO: 公司名稱: 大里仁愛醫院_仁愛醫療財團法人
+2025-02-22 18:24:36 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:24:42 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:24:45 - INFO: 已添加進陣列
+2025-02-22 18:24:48 - INFO: 職缺名稱: 北區牙科銷售業務
+2025-02-22 18:24:48 - INFO: 職缺網址: https://www.104.com.tw/job/4t6kd?jobsource=joblist_bact_n
+2025-02-22 18:24:48 - INFO: 公司名稱: 憶生堂生化科技股份有限公司
+2025-02-22 18:24:48 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:24:49 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:24:58 - INFO: 已添加進陣列
+2025-02-22 18:25:00 - INFO: 職缺名稱: 醫藥業務代表 (高雄屏東台東地區)
+2025-02-22 18:25:00 - INFO: 職缺網址: https://www.104.com.tw/job/80ppp?jobsource=joblist_list
+2025-02-22 18:25:00 - INFO: 公司名稱: 美達特有限公司
+2025-02-22 18:25:00 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:25:01 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:25:10 - INFO: 已添加進陣列
+2025-02-22 18:25:12 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (石牌)
+2025-02-22 18:25:12 - INFO: 職缺網址: https://www.104.com.tw/job/8k0yo?jobsource=joblist_bact_n
+2025-02-22 18:25:12 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:25:12 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:25:23 - INFO: 已添加進陣列
+2025-02-22 18:25:24 - INFO: 職缺名稱: 【WL】聽力顧問-助聽輔具門市選配銷售_忠孝門市
+2025-02-22 18:25:24 - INFO: 職缺網址: https://www.104.com.tw/job/89c41?jobsource=joblist_bact_n
+2025-02-22 18:25:24 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:25:24 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:25:35 - INFO: 已添加進陣列
+2025-02-22 18:25:37 - INFO: 職缺名稱: InBody業務專員 (北部地區)-E
+2025-02-22 18:25:37 - INFO: 職缺網址: https://www.104.com.tw/job/76mtz?jobsource=joblist_list
+2025-02-22 18:25:37 - INFO: 公司名稱: 日龍儀器股份有限公司
+2025-02-22 18:25:37 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:25:43 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:25:46 - INFO: 已添加進陣列
+2025-02-22 18:25:49 - INFO: 職缺名稱: 醫藥業務代表 (台南嘉義地區)
+2025-02-22 18:25:49 - INFO: 職缺網址: https://www.104.com.tw/job/6p4il?jobsource=joblist_list
+2025-02-22 18:25:49 - INFO: 公司名稱: 美達特有限公司
+2025-02-22 18:25:49 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:25:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:26:01 - INFO: 已添加進陣列
+2025-02-22 18:26:03 - INFO: 職缺名稱: 醫藥業務代表(台中彰化縣市)
+2025-02-22 18:26:03 - INFO: 職缺網址: https://www.104.com.tw/job/5as94?jobsource=joblist_list
+2025-02-22 18:26:03 - INFO: 公司名稱: 美達特有限公司
+2025-02-22 18:26:03 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:26:04 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:26:14 - INFO: 已添加進陣列
+2025-02-22 18:26:15 - INFO: 職缺名稱: 醫藥業務代表(台北市及新北地區各級醫院)
+2025-02-22 18:26:15 - INFO: 職缺網址: https://www.104.com.tw/job/5abqs?jobsource=joblist_list
+2025-02-22 18:26:15 - INFO: 公司名稱: 美達特有限公司
+2025-02-22 18:26:15 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:26:17 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:26:26 - INFO: 已添加進陣列
+2025-02-22 18:26:28 - INFO: 職缺名稱: 醫學部專員-寵物線
+2025-02-22 18:26:28 - INFO: 職缺網址: https://www.104.com.tw/job/8jpob?jobsource=joblist_list
+2025-02-22 18:26:28 - INFO: 公司名稱: 華宇藥品股份有限公司
+2025-02-22 18:26:28 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:26:38 - INFO: 已添加進陣列
+2025-02-22 18:26:40 - INFO: 職缺名稱: 【南區】醫材業務專員 ( 台南、高雄、彰化、嘉義、員林) (高底薪+優渥獎金+油資補助)
+2025-02-22 18:26:40 - INFO: 職缺網址: https://www.104.com.tw/job/6u26k?jobsource=joblist_bact_n
+2025-02-22 18:26:40 - INFO: 公司名稱: 晶鑽生醫股份有限公司
+2025-02-22 18:26:40 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:26:51 - INFO: 已添加進陣列
+2025-02-22 18:26:52 - INFO: 職缺名稱: 業務專員-技術指導
+2025-02-22 18:26:52 - INFO: 職缺網址: https://www.104.com.tw/job/80omd?jobsource=joblist_list
+2025-02-22 18:26:52 - INFO: 公司名稱: 集醫股份有限公司
+2025-02-22 18:26:52 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:26:59 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:27:02 - INFO: 已添加進陣列
+2025-02-22 18:27:04 - INFO: 職缺名稱: 嘉義台南地區醫療業務專員
+2025-02-22 18:27:04 - INFO: 職缺網址: https://www.104.com.tw/job/8cra0?jobsource=joblist_list
+2025-02-22 18:27:04 - INFO: 公司名稱: 懇儀股份有限公司
+2025-02-22 18:27:04 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:27:14 - INFO: 已添加進陣列
+2025-02-22 18:27:16 - INFO: 職缺名稱: 醫材業務代表(台北）
+2025-02-22 18:27:16 - INFO: 職缺網址: https://www.104.com.tw/job/74cuc?jobsource=joblist_bact_n
+2025-02-22 18:27:16 - INFO: 公司名稱: 杏昌生技股份有限公司
+2025-02-22 18:27:16 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:27:27 - INFO: 已添加進陣列
+2025-02-22 18:27:29 - INFO: 職缺名稱: 臺南區 儀器 跟刀 人員 兼職 可 不是業務人員，只是跟刀人員
+2025-02-22 18:27:29 - INFO: 職缺網址: https://www.104.com.tw/job/74i79?jobsource=joblist_list
+2025-02-22 18:27:29 - INFO: 公司名稱: 吉富貿易有限公司
+2025-02-22 18:27:29 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:27:35 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:27:39 - INFO: 已添加進陣列
+2025-02-22 18:27:41 - INFO: 職缺名稱: (北區)智慧醫療業務代表(需有醫療儀器背景)
+2025-02-22 18:27:41 - INFO: 職缺網址: https://www.104.com.tw/job/7kmhi?jobsource=joblist_bact_n
+2025-02-22 18:27:41 - INFO: 公司名稱: 康統醫學科技股份有限公司
+2025-02-22 18:27:41 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:27:42 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:27:51 - INFO: 已添加進陣列
+2025-02-22 18:27:53 - INFO: 職缺名稱: 臺中區 藥局 業務
+2025-02-22 18:27:53 - INFO: 職缺網址: https://www.104.com.tw/job/85tkh?jobsource=joblist_list
+2025-02-22 18:27:53 - INFO: 公司名稱: 吉富貿易有限公司
+2025-02-22 18:27:53 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:28:04 - INFO: 已添加進陣列
+2025-02-22 18:28:05 - INFO: 職缺名稱: 大嘉義區業務銷售專員-脊椎線產品-有臨床經驗尤佳(擴編 )
+2025-02-22 18:28:05 - INFO: 職缺網址: https://www.104.com.tw/job/8dya3?jobsource=joblist_list
+2025-02-22 18:28:05 - INFO: 公司名稱: 雄鷹有限公司
+2025-02-22 18:28:05 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:28:16 - INFO: 已添加進陣列
+2025-02-22 18:28:17 - INFO: 職缺名稱: 台南區 藥局 業務
+2025-02-22 18:28:17 - INFO: 職缺網址: https://www.104.com.tw/job/83ydi?jobsource=joblist_list
+2025-02-22 18:28:17 - INFO: 公司名稱: 吉富貿易有限公司
+2025-02-22 18:28:17 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:28:24 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:28:27 - INFO: 已添加進陣列
+2025-02-22 18:28:29 - INFO: 職缺名稱: 【WL】聽力顧問-助聽輔具門市選配銷售_新莊、板橋
+2025-02-22 18:28:29 - INFO: 職缺網址: https://www.104.com.tw/job/87fnw?jobsource=joblist_list
+2025-02-22 18:28:29 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:28:29 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:28:36 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:28:39 - INFO: 已添加進陣列
+2025-02-22 18:28:42 - INFO: 正在處理第 13 頁...
+2025-02-22 18:28:42 - INFO: 當前頁面職缺數量: 269
+2025-02-22 18:28:45 - INFO: 職缺名稱: 南區醫療業務代表
+2025-02-22 18:28:45 - INFO: 職缺網址: https://www.104.com.tw/job/8koea?jobsource=joblist_list
+2025-02-22 18:28:45 - INFO: 公司名稱: 美嘉生技儀器有限公司
+2025-02-22 18:28:45 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:28:55 - INFO: 已添加進陣列
+2025-02-22 18:28:58 - INFO: 職缺名稱: 外科事業部-臨床跟刀業務【中區】
+2025-02-22 18:28:58 - INFO: 職缺網址: https://www.104.com.tw/job/7yk8z?jobsource=joblist_bact_n
+2025-02-22 18:28:58 - INFO: 公司名稱: 康成生醫科技股份有限公司
+2025-02-22 18:28:58 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:29:10 - INFO: 已添加進陣列
+2025-02-22 18:29:12 - INFO: 職缺名稱: 南區超音波業務專員
+2025-02-22 18:29:12 - INFO: 職缺網址: https://www.104.com.tw/job/86g7d?jobsource=joblist_list
+2025-02-22 18:29:12 - INFO: 公司名稱: 承啟醫系股份有限公司
+2025-02-22 18:29:12 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:29:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:29:22 - INFO: 已添加進陣列
+2025-02-22 18:29:24 - INFO: 職缺名稱: InBody業務專員 (中部地區)E.
+2025-02-22 18:29:24 - INFO: 職缺網址: https://www.104.com.tw/job/76muk?jobsource=joblist_bact_n
+2025-02-22 18:29:24 - INFO: 公司名稱: 日龍儀器股份有限公司
+2025-02-22 18:29:24 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:29:35 - INFO: 已添加進陣列
+2025-02-22 18:29:37 - INFO: 職缺名稱: 牙科放射師
+2025-02-22 18:29:37 - INFO: 職缺網址: https://www.104.com.tw/job/78dy2?jobsource=joblist_list
+2025-02-22 18:29:37 - INFO: 公司名稱: 立德牙醫診所
+2025-02-22 18:29:37 - INFO: 更新日期: 2025/02/12
+2025-02-22 18:29:38 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:29:43 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:29:46 - INFO: 已添加進陣列
+2025-02-22 18:29:48 - INFO: 職缺名稱: 外科助理
+2025-02-22 18:29:48 - INFO: 職缺網址: https://www.104.com.tw/job/8m045?jobsource=joblist_list
+2025-02-22 18:29:48 - INFO: 公司名稱: 天祥醫院
+2025-02-22 18:29:48 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:29:58 - INFO: 已添加進陣列
+2025-02-22 18:30:00 - INFO: 職缺名稱: SA安全評估管理師(化妝品)
+2025-02-22 18:30:00 - INFO: 職缺網址: https://www.104.com.tw/job/8hxas?jobsource=joblist_list
+2025-02-22 18:30:00 - INFO: 公司名稱: 自然楓生醫國際有限公司
+2025-02-22 18:30:00 - INFO: 更新日期: 2025/02/19
+2025-02-22 18:30:07 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:30:10 - INFO: 已添加進陣列
+2025-02-22 18:30:12 - INFO: 職缺名稱: 善化院(後場正職)牙醫助理
+2025-02-22 18:30:12 - INFO: 職缺網址: https://www.104.com.tw/job/6gh8x?jobsource=joblist_list
+2025-02-22 18:30:12 - INFO: 公司名稱: 遠東牙醫診所
+2025-02-22 18:30:12 - INFO: 更新日期: 2025/02/10
+2025-02-22 18:30:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:30:18 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:30:21 - INFO: 已添加進陣列
+2025-02-22 18:30:23 - INFO: 職缺名稱: 【門市人員-聽力顧問】含聽力、呼吸治療、營養_通過試用首年保障薪資43K以上 (台北內湖)
+2025-02-22 18:30:23 - INFO: 職缺網址: https://www.104.com.tw/job/8huwf?jobsource=joblist_list
+2025-02-22 18:30:23 - INFO: 公司名稱: 科林儀器股份有限公司
+2025-02-22 18:30:23 - INFO: 更新日期: 2025/02/20
+2025-02-22 18:30:30 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:30:33 - INFO: 已添加進陣列
+2025-02-22 18:30:35 - INFO: 職缺名稱: 國內業務人員
+2025-02-22 18:30:35 - INFO: 職缺網址: https://www.104.com.tw/job/8d9r4?jobsource=joblist_list
+2025-02-22 18:30:35 - INFO: 公司名稱: 英華達股份有限公司
+2025-02-22 18:30:35 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:30:46 - INFO: 已添加進陣列
+2025-02-22 18:30:47 - INFO: 職缺名稱: (南區)智慧醫療業務代表(需有醫療儀器背景)
+2025-02-22 18:30:47 - INFO: 職缺網址: https://www.104.com.tw/job/8a2k9?jobsource=joblist_bact_n
+2025-02-22 18:30:47 - INFO: 公司名稱: 康統醫學科技股份有限公司
+2025-02-22 18:30:47 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:30:49 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:31:00 - INFO: 已添加進陣列
+2025-02-22 18:31:02 - INFO: 職缺名稱: 海外業務專員
+2025-02-22 18:31:02 - INFO: 職缺網址: https://www.104.com.tw/job/8ix2e?jobsource=joblist_bact_n
+2025-02-22 18:31:02 - INFO: 公司名稱: 訊聯細胞智藥股份有限公司
+2025-02-22 18:31:02 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:31:14 - INFO: 已添加進陣列
+2025-02-22 18:31:17 - INFO: 職缺名稱: 北區醫療業務代表
+2025-02-22 18:31:17 - INFO: 職缺網址: https://www.104.com.tw/job/8koeb?jobsource=joblist_list
+2025-02-22 18:31:17 - INFO: 公司名稱: 美嘉生技儀器有限公司
+2025-02-22 18:31:17 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:31:28 - INFO: 已添加進陣列
+2025-02-22 18:31:30 - INFO: 職缺名稱: 高屏區 藥局 業務
+2025-02-22 18:31:30 - INFO: 職缺網址: https://www.104.com.tw/job/83ydz?jobsource=joblist_list
+2025-02-22 18:31:30 - INFO: 公司名稱: 吉富貿易有限公司
+2025-02-22 18:31:30 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:31:36 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:31:39 - INFO: 已添加進陣列
+2025-02-22 18:31:41 - INFO: 職缺名稱: 宜蘭區 醫院，藥局， 自費產品 包含CNS， 泌尿科 等
+2025-02-22 18:31:41 - INFO: 職缺網址: https://www.104.com.tw/job/7v1ho?jobsource=joblist_list
+2025-02-22 18:31:41 - INFO: 公司名稱: 吉富貿易有限公司
+2025-02-22 18:31:41 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:31:52 - INFO: 已添加進陣列
+2025-02-22 18:31:54 - INFO: 職缺名稱: 博文血管中心 醫事放射師
+2025-02-22 18:31:54 - INFO: 職缺網址: https://www.104.com.tw/job/8llum?jobsource=joblist_list
+2025-02-22 18:31:54 - INFO: 公司名稱: 宜博股份有限公司
+2025-02-22 18:31:54 - INFO: 更新日期: 2025/02/18
+2025-02-22 18:31:55 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:32:01 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:32:04 - INFO: 已添加進陣列
+2025-02-22 18:32:05 - INFO: 職缺名稱: 台灣北部地區 泌尿科外科系統 銷售 （大台北地區）
+2025-02-22 18:32:05 - INFO: 職缺網址: https://www.104.com.tw/job/8lkaw?jobsource=joblist_list
+2025-02-22 18:32:05 - INFO: 公司名稱: 吉富貿易有限公司
+2025-02-22 18:32:05 - INFO: 更新日期: 2025/02/21
+2025-02-22 18:32:12 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 18:32:15 - INFO: 已添加進陣列
+2025-02-22 18:32:17 - INFO: 職缺名稱: (中區)智慧醫療業務代表(需有醫療儀器背景)
+2025-02-22 18:32:17 - INFO: 職缺網址: https://www.104.com.tw/job/89kps?jobsource=joblist_bact_n
+2025-02-22 18:32:17 - INFO: 公司名稱: 康統醫學科技股份有限公司
+2025-02-22 18:32:17 - INFO: 更新日期: 2025/02/17
+2025-02-22 18:32:18 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:32:27 - ERROR: 獲取應徵詳細資訊時發生錯誤: Message: target frame detached: received Inspector.detached event
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004523F8]
+	(No symbol) [0x004515C7]
+	(No symbol) [0x00451163]
+	(No symbol) [0x00450E71]
+	(No symbol) [0x0044ED50]
+	(No symbol) [0x0044F8FD]
+	(No symbol) [0x004668F6]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A303E]
+	(No symbol) [0x004CCF3C]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 18:32:30 - INFO: 已添加進陣列
+2025-02-22 18:34:30 - ERROR: 處理 康統醫學科技股份有限公司, (中區)智慧醫療業務代表(需有醫療儀器背景)職缺時發生錯誤, https://www.104.com.tw/job/89kps?jobsource=joblist_bact_n: HTTPConnectionPool(host='localhost', port=6210): Read timed out. (read timeout=120)
+2025-02-22 18:34:30 - ERROR: 處理第12頁職缺時發生錯誤: cannot access local variable 'crawler_error' where it is not associated with a value
+2025-02-22 18:34:30 - INFO: 資料已成功儲存至 D:/allm/crawler/job_list\job_details_20250222_183430.json
+2025-02-22 18:34:30 - INFO: 資料已成功儲存至 D:/allm/crawler/com_url\com_url_20250222_183430.json
+2025-02-22 18:36:30 - WARNING: Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPConnectionPool(host='localhost', port=6210): Read timed out. (read timeout=120)")': /session/71fc9a33ae254db08fc64047e8d93b0f
+2025-02-22 18:37:32 - INFO: 職缺爬蟲程式執行完畢

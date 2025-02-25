@@ -1,0 +1,2256 @@
+2025-02-22 22:59:54 - INFO: 日誌檔案已建立：logs\job_crawler_20250222_225954.log
+2025-02-22 22:59:54 - INFO: ====== WebDriver manager ======
+2025-02-22 22:59:55 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 22:59:55 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 22:59:56 - INFO: Driver [C:\Users\songs\.wdm\drivers\chromedriver\win64\133.0.6943.126\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-22 23:00:04 - INFO: 正在處理第 1 頁...
+2025-02-22 23:00:04 - INFO: 當前頁面職缺數量: 21
+2025-02-22 23:00:05 - INFO: 職缺名稱: 診所助理（兼職）（工讀生）
+2025-02-22 23:00:05 - INFO: 職缺網址: https://www.104.com.tw/job/6gww6?jobsource=hotjob_chr_exp
+2025-02-22 23:00:05 - INFO: 公司名稱: 和欣視光眼科診所
+2025-02-22 23:00:05 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:00:15 - INFO: 已添加進陣列
+2025-02-22 23:00:16 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:00:16 - INFO: 職缺網址: https://www.104.com.tw/job/8kqj3?jobsource=joblist_bact_n
+2025-02-22 23:00:16 - INFO: 公司名稱: 德名有限公司
+2025-02-22 23:00:16 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:00:26 - INFO: 已添加進陣列
+2025-02-22 23:00:27 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:00:27 - INFO: 職缺網址: https://www.104.com.tw/job/6p88l?jobsource=joblist_bact_n
+2025-02-22 23:00:27 - INFO: 公司名稱: 師傅眼鏡行
+2025-02-22 23:00:27 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:00:33 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:00:36 - INFO: 已添加進陣列
+2025-02-22 23:00:37 - INFO: 職缺名稱: 驗光師生
+2025-02-22 23:00:37 - INFO: 職缺網址: https://www.104.com.tw/job/847eo?jobsource=joblist_list
+2025-02-22 23:00:37 - INFO: 公司名稱: 壹視代光學眼鏡有限公司
+2025-02-22 23:00:37 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:00:43 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:00:46 - INFO: 已添加進陣列
+2025-02-22 23:00:47 - INFO: 職缺名稱: 驗光師/驗光生
+2025-02-22 23:00:47 - INFO: 職缺網址: https://www.104.com.tw/job/2xl23?jobsource=joblist_list
+2025-02-22 23:00:47 - INFO: 公司名稱: 阿法眼鏡行
+2025-02-22 23:00:47 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:00:57 - INFO: 已添加進陣列
+2025-02-22 23:00:58 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:00:58 - INFO: 職缺網址: https://www.104.com.tw/job/8mggd?jobsource=joblist_bact_n
+2025-02-22 23:00:58 - INFO: 公司名稱: 怡碩有限公司
+2025-02-22 23:00:58 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:00:59 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:01:08 - INFO: 已添加進陣列
+2025-02-22 23:01:09 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:01:09 - INFO: 職缺網址: https://www.104.com.tw/job/83icn?jobsource=joblist_list
+2025-02-22 23:01:09 - INFO: 公司名稱: 博視眼科診所
+2025-02-22 23:01:09 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:01:10 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:01:15 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:01:19 - INFO: 已添加進陣列
+2025-02-22 23:01:19 - INFO: 職缺名稱: 汐止分院 眼科 驗光師
+2025-02-22 23:01:19 - INFO: 職缺網址: https://www.104.com.tw/job/8l0t0?jobsource=joblist_list
+2025-02-22 23:01:19 - INFO: 公司名稱: 國泰醫療財團法人國泰綜合醫院
+2025-02-22 23:01:20 - INFO: 更新日期: 2025/02/14
+2025-02-22 23:01:26 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:01:29 - INFO: 已添加進陣列
+2025-02-22 23:01:31 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:01:31 - INFO: 職缺網址: https://www.104.com.tw/job/8mtpg?jobsource=joblist_list
+2025-02-22 23:01:31 - INFO: 公司名稱: 博田國際醫院
+2025-02-22 23:01:31 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:01:32 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:01:37 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:01:40 - INFO: 已添加進陣列
+2025-02-22 23:01:41 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:01:41 - INFO: 職缺網址: https://www.104.com.tw/job/72ri4?jobsource=joblist_list
+2025-02-22 23:01:41 - INFO: 公司名稱: 尖端視光眼鏡有限公司
+2025-02-22 23:01:41 - INFO: 更新日期: 2025/01/24
+2025-02-22 23:01:42 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:01:47 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:01:50 - INFO: 已添加進陣列
+2025-02-22 23:01:51 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:01:51 - INFO: 職缺網址: https://www.104.com.tw/job/8hpcz?jobsource=joblist_list
+2025-02-22 23:01:51 - INFO: 公司名稱: 華安眼鏡行
+2025-02-22 23:01:51 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:01:52 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:01:57 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:02:00 - INFO: 已添加進陣列
+2025-02-22 23:02:01 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:02:01 - INFO: 職缺網址: https://www.104.com.tw/job/78krw?jobsource=joblist_list
+2025-02-22 23:02:01 - INFO: 公司名稱: 博視眼科診所
+2025-02-22 23:02:01 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:02:02 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:02:08 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:02:11 - INFO: 已添加進陣列
+2025-02-22 23:02:12 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:02:12 - INFO: 職缺網址: https://www.104.com.tw/job/7en4i?jobsource=joblist_bact_n
+2025-02-22 23:02:12 - INFO: 公司名稱: 寶視力眼鏡有限公司
+2025-02-22 23:02:12 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:02:13 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:02:18 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:02:21 - INFO: 已添加進陣列
+2025-02-22 23:02:22 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看58K】JINS_門市驗光人員/驗光師/驗光生(桃園地區)
+2025-02-22 23:02:22 - INFO: 職缺網址: https://www.104.com.tw/job/5bns6?jobsource=joblist_bact_n
+2025-02-22 23:02:22 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:02:22 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:02:32 - INFO: 已添加進陣列
+2025-02-22 23:02:33 - INFO: 職缺名稱: 驗光師(4萬8起)
+2025-02-22 23:02:33 - INFO: 職缺網址: https://www.104.com.tw/job/7hc0k?jobsource=joblist_list
+2025-02-22 23:02:33 - INFO: 公司名稱: 立可得隱形眼鏡有限公司
+2025-02-22 23:02:33 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:02:43 - INFO: 已添加進陣列
+2025-02-22 23:02:44 - INFO: 職缺名稱: 眼鏡部驗光師(台北院區近京站)
+2025-02-22 23:02:44 - INFO: 職缺網址: https://www.104.com.tw/job/83x12?jobsource=joblist_bact_n
+2025-02-22 23:02:44 - INFO: 公司名稱: 台全醫療體系_台全診所
+2025-02-22 23:02:44 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:02:54 - INFO: 已添加進陣列
+2025-02-22 23:02:55 - INFO: 職缺名稱: 【優渥租屋補助專案】JINS_門市驗光人員/驗光師/驗光生(台北地區)
+2025-02-22 23:02:55 - INFO: 職缺網址: https://www.104.com.tw/job/85oxq?jobsource=joblist_bact_n
+2025-02-22 23:02:55 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:02:55 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:03:01 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:03:04 - INFO: 已添加進陣列
+2025-02-22 23:03:05 - INFO: 職缺名稱: 驗光師（大安區，中山區）
+2025-02-22 23:03:05 - INFO: 職缺網址: https://www.104.com.tw/job/7of3s?jobsource=joblist_list
+2025-02-22 23:03:05 - INFO: 公司名稱: 四季眼鏡精品股份有限公司
+2025-02-22 23:03:05 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:03:15 - INFO: 已添加進陣列
+2025-02-22 23:03:16 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:03:16 - INFO: 職缺網址: https://www.104.com.tw/job/6dkpr?jobsource=joblist_list
+2025-02-22 23:03:16 - INFO: 公司名稱: 博視眼科診所
+2025-02-22 23:03:16 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:03:17 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:03:26 - INFO: 已添加進陣列
+2025-02-22 23:03:27 - INFO: 職缺名稱: *即將開幕#KlassiC.眼鏡墨鏡品牌【高底薪+獎金無上限】高雄左營 驗光師/驗光生
+2025-02-22 23:03:27 - INFO: 職缺網址: https://www.104.com.tw/job/8m07a?jobsource=joblist_list
+2025-02-22 23:03:27 - INFO: 公司名稱: KlassiC.流行眼鏡品牌_克拉戲客股份有限公司
+2025-02-22 23:03:27 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:03:37 - INFO: 已添加進陣列
+2025-02-22 23:03:37 - INFO: 職缺名稱: 儲備店長(驗光師/驗光生)
+2025-02-22 23:03:37 - INFO: 職缺網址: https://www.104.com.tw/job/6xlzi?jobsource=joblist_list
+2025-02-22 23:03:37 - INFO: 公司名稱: 大倉眼鏡_欣紅企業有限公司
+2025-02-22 23:03:37 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:03:48 - INFO: 已添加進陣列
+2025-02-22 23:03:50 - INFO: 正在處理第 2 頁...
+2025-02-22 23:03:50 - INFO: 當前頁面職缺數量: 41
+2025-02-22 23:03:50 - INFO: 職缺名稱: 驗光師 (台北101)
+2025-02-22 23:03:50 - INFO: 職缺網址: https://www.104.com.tw/job/82d5o?jobsource=joblist_bact_n
+2025-02-22 23:03:50 - INFO: 公司名稱: 遠見眼科診所
+2025-02-22 23:03:50 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:03:52 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:04:00 - INFO: 已添加進陣列
+2025-02-22 23:04:01 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看58K】JINS_門市驗光人員/驗光師/驗光生(三重蘆洲區)
+2025-02-22 23:04:01 - INFO: 職缺網址: https://www.104.com.tw/job/8jp69?jobsource=joblist_bact_n
+2025-02-22 23:04:01 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:04:01 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:04:08 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:04:11 - INFO: 已添加進陣列
+2025-02-22 23:04:12 - INFO: 職缺名稱: 7B10-眼科 驗光師/驗光生
+2025-02-22 23:04:12 - INFO: 職缺網址: https://www.104.com.tw/job/7nrbp?jobsource=joblist_list
+2025-02-22 23:04:12 - INFO: 公司名稱: 中國醫藥大學新竹附設醫院
+2025-02-22 23:04:12 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:04:22 - INFO: 已添加進陣列
+2025-02-22 23:04:23 - INFO: 職缺名稱: 寶島眼科-驗光師(橋和分院)
+2025-02-22 23:04:23 - INFO: 職缺網址: https://www.104.com.tw/job/81nee?jobsource=joblist_list
+2025-02-22 23:04:23 - INFO: 公司名稱: 寶島光學科技股份有限公司
+2025-02-22 23:04:23 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:04:29 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:04:33 - INFO: 已添加進陣列
+2025-02-22 23:04:34 - INFO: 職缺名稱: 驗光師/驗光生
+2025-02-22 23:04:34 - INFO: 職缺網址: https://www.104.com.tw/job/6wue7?jobsource=joblist_bact_n
+2025-02-22 23:04:34 - INFO: 公司名稱: 十八街眼鏡行
+2025-02-22 23:04:34 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:04:35 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:04:35 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:04:44 - INFO: 已添加進陣列
+2025-02-22 23:04:45 - INFO: 職缺名稱: <全面調薪!證照人員薪資上看48K! >(台南)眼鏡市場 驗光師/驗光生
+2025-02-22 23:04:45 - INFO: 職缺網址: https://www.104.com.tw/job/7cbks?jobsource=joblist_bact_n
+2025-02-22 23:04:45 - INFO: 公司名稱: 台灣頂點眼鏡市場股份有限公司
+2025-02-22 23:04:45 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:04:46 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:04:51 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:04:54 - INFO: 已添加進陣列
+2025-02-22 23:04:55 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看56K】JINS_門市驗光人員/驗光師/驗光生(宜蘭地區)
+2025-02-22 23:04:55 - INFO: 職缺網址: https://www.104.com.tw/job/5huwh?jobsource=joblist_bact_n
+2025-02-22 23:04:55 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:04:55 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:05:02 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:05:05 - INFO: 已添加進陣列
+2025-02-22 23:05:06 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:05:06 - INFO: 職缺網址: https://www.104.com.tw/job/70j1p?jobsource=joblist_bact_n
+2025-02-22 23:05:06 - INFO: 公司名稱: 群展眼鏡光學有限公司大雅店
+2025-02-22 23:05:06 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:05:12 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:05:15 - INFO: 已添加進陣列
+2025-02-22 23:05:16 - INFO: 職缺名稱: *即將開幕#KlassiC.眼鏡墨鏡品牌【高底薪+獎金無上限】高雄前鎮 驗光師/驗光生
+2025-02-22 23:05:16 - INFO: 職缺網址: https://www.104.com.tw/job/8m078?jobsource=joblist_list
+2025-02-22 23:05:16 - INFO: 公司名稱: KlassiC.流行眼鏡品牌_克拉戲客股份有限公司
+2025-02-22 23:05:16 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:05:22 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:05:25 - INFO: 已添加進陣列
+2025-02-22 23:05:26 - INFO: 職缺名稱: 驗光師/生
+2025-02-22 23:05:26 - INFO: 職缺網址: https://www.104.com.tw/job/75bwt?jobsource=joblist_list
+2025-02-22 23:05:26 - INFO: 公司名稱: 不二加眼鏡_不二加有限公司
+2025-02-22 23:05:26 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:05:36 - INFO: 已添加進陣列
+2025-02-22 23:05:41 - INFO: 職缺名稱: 【台北濰視擴大徵才】近視雷射諮詢顧問(驗光師)(另有季獎金)
+2025-02-22 23:05:41 - INFO: 職缺網址: https://www.104.com.tw/job/86n7t?jobsource=joblist_bact_n
+2025-02-22 23:05:41 - INFO: 公司名稱: 濰視眼科診所
+2025-02-22 23:05:41 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:05:52 - INFO: 已添加進陣列
+2025-02-22 23:05:53 - INFO: 職缺名稱: 手目耳眼鏡台南-南區門市人員(驗光生/驗光師證照)
+2025-02-22 23:05:53 - INFO: 職缺網址: https://www.104.com.tw/job/64pue?jobsource=joblist_list
+2025-02-22 23:05:53 - INFO: 公司名稱: 手目耳眼鏡_和緯眼鏡行
+2025-02-22 23:05:53 - INFO: 更新日期: 2025/02/12
+2025-02-22 23:05:54 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:06:03 - INFO: 已添加進陣列
+2025-02-22 23:06:04 - INFO: 職缺名稱: 【驗光師/生：實領6萬/月休9天/上班9小時（保障薪資/無業績壓力）】大倉酷眼鏡-台中店<請檢附照片>
+2025-02-22 23:06:04 - INFO: 職缺網址: https://www.104.com.tw/job/7mg5v?jobsource=joblist_list
+2025-02-22 23:06:04 - INFO: 公司名稱: 大倉酷眼鏡有限公司
+2025-02-22 23:06:04 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:06:05 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:06:14 - INFO: 已添加進陣列
+2025-02-22 23:06:15 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看56K】JINS_門市驗光人員/驗光師/驗光生(台中地區)
+2025-02-22 23:06:15 - INFO: 職缺網址: https://www.104.com.tw/job/50l18?jobsource=joblist_bact_n
+2025-02-22 23:06:15 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:06:15 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:06:25 - INFO: 已添加進陣列
+2025-02-22 23:06:26 - INFO: 職缺名稱: 【目框眼鏡-新豐】驗光師/驗光生-驗光人員
+2025-02-22 23:06:26 - INFO: 職缺網址: https://www.104.com.tw/job/7sbxy?jobsource=joblist_list
+2025-02-22 23:06:26 - INFO: 公司名稱: 目框眼鏡_新達光學有限公司
+2025-02-22 23:06:26 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:06:32 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:06:35 - INFO: 已添加進陣列
+2025-02-22 23:06:37 - INFO: 職缺名稱: 驗光生/驗光師
+2025-02-22 23:06:37 - INFO: 職缺網址: https://www.104.com.tw/job/8i8op?jobsource=joblist_list
+2025-02-22 23:06:37 - INFO: 公司名稱: 年青人眼鏡有限公司
+2025-02-22 23:06:37 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:06:38 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:06:47 - INFO: 已添加進陣列
+2025-02-22 23:06:48 - INFO: 職缺名稱: 驗光師/驗光生
+2025-02-22 23:06:48 - INFO: 職缺網址: https://www.104.com.tw/job/5kv9l?jobsource=joblist_list
+2025-02-22 23:06:48 - INFO: 公司名稱: 亦品竹東眼鏡有限公司
+2025-02-22 23:06:48 - INFO: 更新日期: 2025/02/10
+2025-02-22 23:06:49 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:06:54 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:06:58 - INFO: 已添加進陣列
+2025-02-22 23:06:59 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:06:59 - INFO: 職缺網址: https://www.104.com.tw/job/79vlp?jobsource=joblist_bact_n
+2025-02-22 23:06:59 - INFO: 公司名稱: 大林眼科診所
+2025-02-22 23:06:59 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:07:00 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:07:00 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:07:05 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:07:08 - INFO: 已添加進陣列
+2025-02-22 23:07:09 - INFO: 職缺名稱: 驗光師/驗光生
+2025-02-22 23:07:09 - INFO: 職缺網址: https://www.104.com.tw/job/82hpd?jobsource=joblist_list
+2025-02-22 23:07:09 - INFO: 公司名稱: 超時代光學眼鏡行
+2025-02-22 23:07:09 - INFO: 更新日期: 2025/02/15
+2025-02-22 23:07:10 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:07:10 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:07:15 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:07:18 - INFO: 已添加進陣列
+2025-02-22 23:07:19 - INFO: 職缺名稱: 【新竹濰視擴大徵才】近視雷射諮詢顧問(驗光師)
+2025-02-22 23:07:19 - INFO: 職缺網址: https://www.104.com.tw/job/89ly7?jobsource=joblist_bact_n
+2025-02-22 23:07:19 - INFO: 公司名稱: 濰視眼科診所
+2025-02-22 23:07:19 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:07:29 - INFO: 已添加進陣列
+2025-02-22 23:07:31 - INFO: 正在處理第 3 頁...
+2025-02-22 23:07:31 - INFO: 當前頁面職缺數量: 61
+2025-02-22 23:07:32 - INFO: 職缺名稱: 【古德眼鏡-中科店】驗光師（生）
+2025-02-22 23:07:32 - INFO: 職缺網址: https://www.104.com.tw/job/6v1dy?jobsource=joblist_list
+2025-02-22 23:07:32 - INFO: 公司名稱: 古德眼鏡有限公司
+2025-02-22 23:07:32 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:07:33 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:07:42 - INFO: 已添加進陣列
+2025-02-22 23:07:43 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看58K】JINS_門市驗光人員/驗光師/驗光生(台北地區)
+2025-02-22 23:07:43 - INFO: 職缺網址: https://www.104.com.tw/job/5asox?jobsource=joblist_bact_n
+2025-02-22 23:07:43 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:07:43 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:07:53 - INFO: 已添加進陣列
+2025-02-22 23:07:54 - INFO: 職缺名稱: 驗光師(生) 
+2025-02-22 23:07:54 - INFO: 職缺網址: https://www.104.com.tw/job/69dqd?jobsource=joblist_list
+2025-02-22 23:07:54 - INFO: 公司名稱: 第一明眼科診所
+2025-02-22 23:07:54 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:07:55 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:08:04 - INFO: 已添加進陣列
+2025-02-22 23:08:05 - INFO: 職缺名稱: 眼科驗光師 - 三總(內湖)
+2025-02-22 23:08:05 - INFO: 職缺網址: https://www.104.com.tw/job/8mo3w?jobsource=joblist_list
+2025-02-22 23:08:05 - INFO: 公司名稱: 橙灝生技顧問股份有限公司
+2025-02-22 23:08:05 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:08:11 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:08:14 - INFO: 已添加進陣列
+2025-02-22 23:08:15 - INFO: 職缺名稱: 睛采眼科-驗光師
+2025-02-22 23:08:15 - INFO: 職缺網址: https://www.104.com.tw/job/8m44z?jobsource=joblist_list
+2025-02-22 23:08:15 - INFO: 公司名稱: 羅眼科診所
+2025-02-22 23:08:15 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:08:25 - INFO: 已添加進陣列
+2025-02-22 23:08:26 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看56K】JINS_門市驗光人員/驗光師/驗光生(台南地區)
+2025-02-22 23:08:26 - INFO: 職缺網址: https://www.104.com.tw/job/5nht2?jobsource=joblist_bact_n
+2025-02-22 23:08:26 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:08:26 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:08:36 - INFO: 已添加進陣列
+2025-02-22 23:08:37 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看56K】JINS_門市驗光人員/驗光師/驗光生(台中梧棲)
+2025-02-22 23:08:37 - INFO: 職缺網址: https://www.104.com.tw/job/6eek6?jobsource=joblist_bact_n
+2025-02-22 23:08:37 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:08:37 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:08:47 - INFO: 已添加進陣列
+2025-02-22 23:08:48 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看56K】JINS_門市驗光人員/驗光師/驗光生(高雄地區)
+2025-02-22 23:08:48 - INFO: 職缺網址: https://www.104.com.tw/job/50l17?jobsource=joblist_bact_n
+2025-02-22 23:08:48 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:08:48 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:08:59 - INFO: 已添加進陣列
+2025-02-22 23:09:00 - INFO: 職缺名稱: 驗光生(或驗光師)
+2025-02-22 23:09:00 - INFO: 職缺網址: https://www.104.com.tw/job/7gki1?jobsource=joblist_list
+2025-02-22 23:09:00 - INFO: 公司名稱: 大倉眼鏡_欣紅企業有限公司
+2025-02-22 23:09:00 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:09:06 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:09:09 - INFO: 已添加進陣列
+2025-02-22 23:09:10 - INFO: 職缺名稱: 2020EYEhaus 資深驗光師(台北)★提供租屋補助★
+2025-02-22 23:09:10 - INFO: 職缺網址: https://www.104.com.tw/job/8gfs9?jobsource=joblist_list
+2025-02-22 23:09:10 - INFO: 公司名稱: 全球精品時尚眼鏡總代理_嘉晏光學股份有限公司
+2025-02-22 23:09:10 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:09:20 - INFO: 已添加進陣列
+2025-02-22 23:09:21 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:09:21 - INFO: 職缺網址: https://www.104.com.tw/job/871ek?jobsource=joblist_list
+2025-02-22 23:09:21 - INFO: 公司名稱: 良視眼科診所
+2025-02-22 23:09:21 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:09:28 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:09:31 - INFO: 已添加進陣列
+2025-02-22 23:09:32 - INFO: 職缺名稱: 東門站[大安聚英視光眼科] 視光師
+2025-02-22 23:09:32 - INFO: 職缺網址: https://www.104.com.tw/job/7d1fg?jobsource=joblist_list
+2025-02-22 23:09:32 - INFO: 公司名稱: EyePlus艾佳眼視光醫學_艾佳光學股份有限公司
+2025-02-22 23:09:32 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:09:38 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:09:42 - INFO: 已添加進陣列
+2025-02-22 23:09:43 - INFO: 職缺名稱: 【BIS IN DEI 膠囊眼鏡】大台北地區 驗光師/驗光生 (全月在職薪獎保障$50,000/$48,000)
+2025-02-22 23:09:43 - INFO: 職缺網址: https://www.104.com.tw/job/8637g?jobsource=joblist_list
+2025-02-22 23:09:43 - INFO: 公司名稱: 永三企業股份有限公司
+2025-02-22 23:09:43 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:09:53 - INFO: 已添加進陣列
+2025-02-22 23:09:54 - INFO: 職缺名稱: 門市驗光師/生(台北)
+2025-02-22 23:09:54 - INFO: 職缺網址: https://www.104.com.tw/job/8k0tl?jobsource=joblist_bact_n
+2025-02-22 23:09:54 - INFO: 公司名稱: 宜安眼鏡行
+2025-02-22 23:09:54 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:09:55 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:10:03 - INFO: 已添加進陣列
+2025-02-22 23:10:05 - INFO: 職缺名稱: 驗光師（生)
+2025-02-22 23:10:05 - INFO: 職缺網址: https://www.104.com.tw/job/2afoq?jobsource=joblist_list
+2025-02-22 23:10:05 - INFO: 公司名稱: 宏恩眼鏡_重谷眼鏡有限公司
+2025-02-22 23:10:05 - INFO: 更新日期: 2025/02/10
+2025-02-22 23:10:11 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:10:14 - INFO: 已添加進陣列
+2025-02-22 23:10:15 - INFO: 職缺名稱: 驗光師及驗光生
+2025-02-22 23:10:15 - INFO: 職缺網址: https://www.104.com.tw/job/8caq4?jobsource=joblist_list
+2025-02-22 23:10:15 - INFO: 公司名稱: 圓山眼鏡_員光眼鏡行
+2025-02-22 23:10:15 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:10:25 - INFO: 已添加進陣列
+2025-02-22 23:10:26 - INFO: 職缺名稱: 驗光師/驗光生
+2025-02-22 23:10:26 - INFO: 職缺網址: https://www.104.com.tw/job/8mkw6?jobsource=joblist_list
+2025-02-22 23:10:26 - INFO: 公司名稱: 林新醫療社團法人林新醫院
+2025-02-22 23:10:26 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:10:27 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:10:36 - INFO: 已添加進陣列
+2025-02-22 23:10:37 - INFO: 職缺名稱: ［Glimpse] 驗光師-薪資4.5萬元起
+2025-02-22 23:10:37 - INFO: 職缺網址: https://www.104.com.tw/job/86r6y?jobsource=joblist_list
+2025-02-22 23:10:37 - INFO: 公司名稱: GLIMPSE台灣區_川碩實業有限公司
+2025-02-22 23:10:37 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:10:38 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:10:43 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:10:46 - INFO: 已添加進陣列
+2025-02-22 23:10:47 - INFO: 職缺名稱: 驗光師（管理職）
+2025-02-22 23:10:47 - INFO: 職缺網址: https://www.104.com.tw/job/76rfv?jobsource=joblist_list
+2025-02-22 23:10:47 - INFO: 公司名稱: 尖端視光眼鏡有限公司
+2025-02-22 23:10:47 - INFO: 更新日期: 2025/01/24
+2025-02-22 23:10:57 - INFO: 已添加進陣列
+2025-02-22 23:10:58 - INFO: 職缺名稱: <全面調薪!證照人員薪資上看48K! >(高雄)眼鏡市場 驗光師/驗光生
+2025-02-22 23:10:58 - INFO: 職缺網址: https://www.104.com.tw/job/6ryi6?jobsource=joblist_list
+2025-02-22 23:10:58 - INFO: 公司名稱: 台灣頂點眼鏡市場股份有限公司
+2025-02-22 23:10:58 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:10:59 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:11:08 - INFO: 已添加進陣列
+2025-02-22 23:11:10 - INFO: 正在處理第 4 頁...
+2025-02-22 23:11:10 - INFO: 當前頁面職缺數量: 81
+2025-02-22 23:11:11 - INFO: 職缺名稱: 驗光師(驗光生)-OP2
+2025-02-22 23:11:11 - INFO: 職缺網址: https://www.104.com.tw/job/7qkf8?jobsource=joblist_list
+2025-02-22 23:11:11 - INFO: 公司名稱: 鷹視有限公司
+2025-02-22 23:11:11 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:11:17 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:11:20 - INFO: 已添加進陣列
+2025-02-22 23:11:21 - INFO: 職缺名稱: 手目耳眼鏡台南-北區門市人員(驗光生/驗光師證照)
+2025-02-22 23:11:21 - INFO: 職缺網址: https://www.104.com.tw/job/64puh?jobsource=joblist_list
+2025-02-22 23:11:21 - INFO: 公司名稱: 手目耳眼鏡_和緯眼鏡行
+2025-02-22 23:11:21 - INFO: 更新日期: 2025/02/12
+2025-02-22 23:11:23 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:11:31 - INFO: 已添加進陣列
+2025-02-22 23:11:32 - INFO: 職缺名稱: *KlassiC.眼鏡墨鏡品牌【高底薪+獎金無上限】台北驗光師/驗光生
+2025-02-22 23:11:32 - INFO: 職缺網址: https://www.104.com.tw/job/8m06y?jobsource=joblist_list
+2025-02-22 23:11:32 - INFO: 公司名稱: KlassiC.流行眼鏡品牌_克拉戲客股份有限公司
+2025-02-22 23:11:32 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:11:39 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:11:42 - INFO: 已添加進陣列
+2025-02-22 23:11:43 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:11:43 - INFO: 職缺網址: https://www.104.com.tw/job/7xrer?jobsource=joblist_list
+2025-02-22 23:11:43 - INFO: 公司名稱: 永明眼科診所
+2025-02-22 23:11:43 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:11:44 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:11:49 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:11:53 - INFO: 已添加進陣列
+2025-02-22 23:11:54 - INFO: 職缺名稱: <全面調薪!證照人員薪資上看48K! >(台中)眼鏡市場 驗光師/驗光生
+2025-02-22 23:11:54 - INFO: 職缺網址: https://www.104.com.tw/job/6t1x0?jobsource=joblist_bact_n
+2025-02-22 23:11:54 - INFO: 公司名稱: 台灣頂點眼鏡市場股份有限公司
+2025-02-22 23:11:54 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:11:55 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:12:04 - INFO: 已添加進陣列
+2025-02-22 23:12:05 - INFO: 職缺名稱: 眼科診所-視光師(板橋)
+2025-02-22 23:12:05 - INFO: 職缺網址: https://www.104.com.tw/job/864sk?jobsource=joblist_list
+2025-02-22 23:12:05 - INFO: 公司名稱: 諾貝爾視光科技股份有限公司
+2025-02-22 23:12:05 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:12:15 - INFO: 已添加進陣列
+2025-02-22 23:12:16 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看58K】JINS_門市驗光人員/驗光師/驗光生(新北淡水)
+2025-02-22 23:12:16 - INFO: 職缺網址: https://www.104.com.tw/job/8ggpp?jobsource=joblist_bact_n
+2025-02-22 23:12:16 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:12:16 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:12:26 - INFO: 已添加進陣列
+2025-02-22 23:12:27 - INFO: 職缺名稱: 台北-眼科驗光師（生）
+2025-02-22 23:12:27 - INFO: 職缺網址: https://www.104.com.tw/job/8fgxv?jobsource=joblist_list
+2025-02-22 23:12:27 - INFO: 公司名稱: 澄清國際眼科醫院
+2025-02-22 23:12:27 - INFO: 更新日期: 2025/02/01
+2025-02-22 23:12:34 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:12:37 - INFO: 已添加進陣列
+2025-02-22 23:12:38 - INFO: 職缺名稱: 桃園中壢區【中壢國際大學眼科診所】門診驗光師-1(需具備驗光師/生證照)
+2025-02-22 23:12:38 - INFO: 職缺網址: https://www.104.com.tw/job/7zo0a?jobsource=joblist_list
+2025-02-22 23:12:38 - INFO: 公司名稱: 大學光學科技股份有限公司_大學眼鏡/大學眼科/大學醫美
+2025-02-22 23:12:38 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:12:48 - INFO: 已添加進陣列
+2025-02-22 23:12:49 - INFO: 職缺名稱: <萬元租屋津貼專案>門市銷售人員/驗光師/驗光生（大台北地區)
+2025-02-22 23:12:49 - INFO: 職缺網址: https://www.104.com.tw/job/8e5r6?jobsource=joblist_list
+2025-02-22 23:12:49 - INFO: 公司名稱: 台灣頂點眼鏡市場股份有限公司
+2025-02-22 23:12:49 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:12:50 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:12:59 - INFO: 已添加進陣列
+2025-02-22 23:13:00 - INFO: 職缺名稱: 2020EYEhaus 驗光師(台南西門新天地)
+2025-02-22 23:13:00 - INFO: 職缺網址: https://www.104.com.tw/job/8hzqd?jobsource=joblist_list
+2025-02-22 23:13:00 - INFO: 公司名稱: 全球精品時尚眼鏡總代理_嘉晏光學股份有限公司
+2025-02-22 23:13:00 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:13:07 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:13:10 - INFO: 已添加進陣列
+2025-02-22 23:13:11 - INFO: 職缺名稱: 溥儀眼鏡 資深驗光師 (Glasstique，Linda Farrow)★提供租屋補助★
+2025-02-22 23:13:11 - INFO: 職缺網址: https://www.104.com.tw/job/8gfsx?jobsource=joblist_list
+2025-02-22 23:13:11 - INFO: 公司名稱: 溥儀眼鏡_香港商溥儀有限公司台灣分公司
+2025-02-22 23:13:11 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:13:12 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:13:21 - INFO: 已添加進陣列
+2025-02-22 23:13:22 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:13:22 - INFO: 職缺網址: https://www.104.com.tw/job/8j3hk?jobsource=joblist_list
+2025-02-22 23:13:22 - INFO: 公司名稱: 同原有限公司
+2025-02-22 23:13:22 - INFO: 更新日期: 2025/01/24
+2025-02-22 23:13:28 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:13:32 - INFO: 已添加進陣列
+2025-02-22 23:13:33 - INFO: 職缺名稱: 驗光師.生 /驗光助理(含獎金平均可4萬2以上)
+2025-02-22 23:13:33 - INFO: 職缺網址: https://www.104.com.tw/job/8kwdq?jobsource=joblist_list
+2025-02-22 23:13:33 - INFO: 公司名稱: 新象眼科診所
+2025-02-22 23:13:33 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:13:39 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:13:43 - INFO: 已添加進陣列
+2025-02-22 23:13:44 - INFO: 職缺名稱: 兼職眼科驗光師(生)
+2025-02-22 23:13:44 - INFO: 職缺網址: https://www.104.com.tw/job/8lnu9?jobsource=joblist_list
+2025-02-22 23:13:44 - INFO: 公司名稱: 教學醫院_西園醫療社團法人西園醫院
+2025-02-22 23:13:44 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:13:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:13:54 - INFO: 已添加進陣列
+2025-02-22 23:13:55 - INFO: 職缺名稱: 【驗光師/生：實領6萬/月休9天/上班9小時（保障薪資/無業績壓力）】大倉酷眼鏡-桃園楊梅店<請檢附照片>
+2025-02-22 23:13:55 - INFO: 職缺網址: https://www.104.com.tw/job/7575z?jobsource=joblist_list
+2025-02-22 23:13:55 - INFO: 公司名稱: 大倉酷眼鏡有限公司
+2025-02-22 23:13:55 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:13:56 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:14:01 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:14:05 - INFO: 已添加進陣列
+2025-02-22 23:14:06 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:14:06 - INFO: 職缺網址: https://www.104.com.tw/job/686f0?jobsource=joblist_list
+2025-02-22 23:14:06 - INFO: 公司名稱: 溰匠眼鏡
+2025-02-22 23:14:06 - INFO: 更新日期: 2025/02/13
+2025-02-22 23:14:16 - INFO: 已添加進陣列
+2025-02-22 23:14:18 - INFO: 職缺名稱: 驗光師(月薪45000-80000)
+2025-02-22 23:14:18 - INFO: 職缺網址: https://www.104.com.tw/job/8ce8d?jobsource=joblist_list
+2025-02-22 23:14:18 - INFO: 公司名稱: 邑明光學眼鏡行
+2025-02-22 23:14:18 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:14:24 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:14:27 - INFO: 已添加進陣列
+2025-02-22 23:14:28 - INFO: 職缺名稱: 【目目眼鏡-東海商圈】驗光師-店長
+2025-02-22 23:14:28 - INFO: 職缺網址: https://www.104.com.tw/job/7t2ya?jobsource=joblist_list
+2025-02-22 23:14:28 - INFO: 公司名稱: 目目眼鏡行
+2025-02-22 23:14:28 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:14:38 - INFO: 已添加進陣列
+2025-02-22 23:14:39 - INFO: 職缺名稱: 新北永和區【永和大學眼科診所】兼職驗光師-2(無驗光證照勿投)
+2025-02-22 23:14:39 - INFO: 職缺網址: https://www.104.com.tw/job/8ar3q?jobsource=joblist_list
+2025-02-22 23:14:39 - INFO: 公司名稱: 大學光學科技股份有限公司_大學眼鏡/大學眼科/大學醫美
+2025-02-22 23:14:39 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:14:45 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:14:49 - INFO: 已添加進陣列
+2025-02-22 23:14:51 - INFO: 正在處理第 5 頁...
+2025-02-22 23:14:51 - INFO: 當前頁面職缺數量: 101
+2025-02-22 23:14:52 - INFO: 職缺名稱: 台中南屯區【e大學眼鏡】[驗光師]台中大墩門市-1
+2025-02-22 23:14:52 - INFO: 職缺網址: https://www.104.com.tw/job/7yh3w?jobsource=joblist_list
+2025-02-22 23:14:52 - INFO: 公司名稱: 大學光學科技股份有限公司_大學眼鏡/大學眼科/大學醫美
+2025-02-22 23:14:52 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:15:02 - INFO: 已添加進陣列
+2025-02-22 23:15:03 - INFO: 職缺名稱: <全面調薪!證照人員薪資上看50K! >（大台北地區)眼鏡市場 驗光師/驗光生
+2025-02-22 23:15:03 - INFO: 職缺網址: https://www.104.com.tw/job/6qxm2?jobsource=joblist_bact_n
+2025-02-22 23:15:03 - INFO: 公司名稱: 台灣頂點眼鏡市場股份有限公司
+2025-02-22 23:15:03 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:15:05 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:15:14 - INFO: 已添加進陣列
+2025-02-22 23:15:16 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看58K】JINS_門市驗光人員/驗光師/驗光生(新竹地區)
+2025-02-22 23:15:16 - INFO: 職缺網址: https://www.104.com.tw/job/5muvb?jobsource=joblist_list
+2025-02-22 23:15:16 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:15:16 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:15:22 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:15:25 - INFO: 已添加進陣列
+2025-02-22 23:15:27 - INFO: 職缺名稱: 驗光師(蘆洲/大安區)
+2025-02-22 23:15:27 - INFO: 職缺網址: https://www.104.com.tw/job/7y9s4?jobsource=joblist_list
+2025-02-22 23:15:27 - INFO: 公司名稱: 慶明眼科診所
+2025-02-22 23:15:27 - INFO: 更新日期: 2025/02/13
+2025-02-22 23:15:34 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:15:37 - INFO: 已添加進陣列
+2025-02-22 23:15:38 - INFO: 職缺名稱: 【目框眼鏡-竹北】驗光師/驗光生
+2025-02-22 23:15:38 - INFO: 職缺網址: https://www.104.com.tw/job/7s247?jobsource=joblist_list
+2025-02-22 23:15:38 - INFO: 公司名稱: 目框眼鏡_新達光學有限公司
+2025-02-22 23:15:38 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:15:45 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:15:48 - INFO: 已添加進陣列
+2025-02-22 23:15:49 - INFO: 職缺名稱: 門市驗光師/生(桃園)
+2025-02-22 23:15:49 - INFO: 職缺網址: https://www.104.com.tw/job/8cxc5?jobsource=joblist_bact_n
+2025-02-22 23:15:49 - INFO: 公司名稱: 宜安眼鏡行
+2025-02-22 23:15:49 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:15:50 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:15:55 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:15:58 - INFO: 已添加進陣列
+2025-02-22 23:15:59 - INFO: 職缺名稱: 年青人眼鏡公司-(高雄楠梓店)-驗光師/驗光生/儲備幹部／儲備店長
+2025-02-22 23:15:59 - INFO: 職缺網址: https://www.104.com.tw/job/8ly0b?jobsource=joblist_bact_n
+2025-02-22 23:15:59 - INFO: 公司名稱: 年青人眼鏡_年清人眼鏡店
+2025-02-22 23:15:59 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:16:10 - INFO: 已添加進陣列
+2025-02-22 23:16:11 - INFO: 職缺名稱: 2020EYEhaus 資深驗光師(桃園華泰)
+2025-02-22 23:16:11 - INFO: 職缺網址: https://www.104.com.tw/job/8gfrz?jobsource=joblist_list
+2025-02-22 23:16:11 - INFO: 公司名稱: 全球精品時尚眼鏡總代理_嘉晏光學股份有限公司
+2025-02-22 23:16:11 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:16:21 - INFO: 已添加進陣列
+2025-02-22 23:16:22 - INFO: 職缺名稱: 羅眼科-驗光師
+2025-02-22 23:16:22 - INFO: 職缺網址: https://www.104.com.tw/job/7xdlo?jobsource=joblist_list
+2025-02-22 23:16:22 - INFO: 公司名稱: 羅眼科診所
+2025-02-22 23:16:22 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:16:28 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:16:32 - INFO: 已添加進陣列
+2025-02-22 23:16:33 - INFO: 職缺名稱: 【目框眼鏡-沙鹿】驗光師/驗光生
+2025-02-22 23:16:33 - INFO: 職缺網址: https://www.104.com.tw/job/7s24s?jobsource=joblist_list
+2025-02-22 23:16:33 - INFO: 公司名稱: 目框眼鏡_新達光學有限公司
+2025-02-22 23:16:33 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:16:39 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:16:42 - INFO: 已添加進陣列
+2025-02-22 23:16:44 - INFO: 職缺名稱: 台中南屯區【台中大學眼科診所】兼職驗光師-1(無驗光證照勿投)
+2025-02-22 23:16:44 - INFO: 職缺網址: https://www.104.com.tw/job/80siz?jobsource=joblist_list
+2025-02-22 23:16:44 - INFO: 公司名稱: 大學光學科技股份有限公司_大學眼鏡/大學眼科/大學醫美
+2025-02-22 23:16:44 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:16:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:16:53 - INFO: 已添加進陣列
+2025-02-22 23:16:55 - INFO: 職缺名稱: 【雲林地區】專業驗光人員 (寶島眼鏡)
+2025-02-22 23:16:55 - INFO: 職缺網址: https://www.104.com.tw/job/8m6v5?jobsource=joblist_list
+2025-02-22 23:16:55 - INFO: 公司名稱: 寶島光學科技股份有限公司
+2025-02-22 23:16:55 - INFO: 更新日期: 2025/02/08
+2025-02-22 23:17:05 - INFO: 已添加進陣列
+2025-02-22 23:17:06 - INFO: 職缺名稱: 眼科驗光師(生)
+2025-02-22 23:17:06 - INFO: 職缺網址: https://www.104.com.tw/job/8jher?jobsource=joblist_list
+2025-02-22 23:17:06 - INFO: 公司名稱: 林新醫療社團法人烏日林新醫院
+2025-02-22 23:17:06 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:17:17 - INFO: 已添加進陣列
+2025-02-22 23:17:18 - INFO: 職缺名稱: 資深驗光師(大安區，中山店)
+2025-02-22 23:17:18 - INFO: 職缺網址: https://www.104.com.tw/job/3lwiw?jobsource=joblist_list
+2025-02-22 23:17:18 - INFO: 公司名稱: 四季眼鏡精品股份有限公司
+2025-02-22 23:17:18 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:17:24 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:17:28 - INFO: 已添加進陣列
+2025-02-22 23:17:29 - INFO: 職缺名稱: *即將開幕#KlassiC.眼鏡墨鏡品牌【高底薪+獎金無上限】高雄鼓山 驗光師/驗光生
+2025-02-22 23:17:29 - INFO: 職缺網址: https://www.104.com.tw/job/8m077?jobsource=joblist_list
+2025-02-22 23:17:29 - INFO: 公司名稱: KlassiC.流行眼鏡品牌_克拉戲客股份有限公司
+2025-02-22 23:17:29 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:17:36 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:17:39 - INFO: 已添加進陣列
+2025-02-22 23:17:40 - INFO: 職缺名稱: <全面調薪!證照人員薪資上看50K! >(桃園/中壢)眼鏡市場 驗光師/驗光生
+2025-02-22 23:17:40 - INFO: 職缺網址: https://www.104.com.tw/job/7x850?jobsource=joblist_list
+2025-02-22 23:17:40 - INFO: 公司名稱: 台灣頂點眼鏡市場股份有限公司
+2025-02-22 23:17:40 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:17:41 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:17:50 - INFO: 已添加進陣列
+2025-02-22 23:17:51 - INFO: 職缺名稱: 【日本第一眼鏡，薪資上看58K】JINS_門市驗光人員/驗光師/驗光生(中壢地區)
+2025-02-22 23:17:51 - INFO: 職缺網址: https://www.104.com.tw/job/6f3qi?jobsource=joblist_bact_n
+2025-02-22 23:17:51 - INFO: 公司名稱: 台灣睛姿股份有限公司
+2025-02-22 23:17:51 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:18:01 - INFO: 已添加進陣列
+2025-02-22 23:18:03 - INFO: 職缺名稱: 驗光生/驗光師
+2025-02-22 23:18:03 - INFO: 職缺網址: https://www.104.com.tw/job/8iif5?jobsource=joblist_list
+2025-02-22 23:18:03 - INFO: 公司名稱: 年青人眼鏡有限公司
+2025-02-22 23:18:03 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:18:04 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:18:09 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:18:12 - INFO: 已添加進陣列
+2025-02-22 23:18:13 - INFO: 職缺名稱: 禾馨醫療【禾馨眼科】驗光師
+2025-02-22 23:18:13 - INFO: 職缺網址: https://www.104.com.tw/job/6qx5d?jobsource=joblist_list
+2025-02-22 23:18:13 - INFO: 公司名稱: 禾馨股份有限公司
+2025-02-22 23:18:13 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:18:20 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:18:23 - INFO: 已添加進陣列
+2025-02-22 23:18:24 - INFO: 職缺名稱: 年青人眼鏡公司-(雲林斗六店)-驗光師/驗光生/儲備幹部／儲備店長
+2025-02-22 23:18:24 - INFO: 職缺網址: https://www.104.com.tw/job/72eqs?jobsource=joblist_list
+2025-02-22 23:18:24 - INFO: 公司名稱: 年青人眼鏡_年清人眼鏡店
+2025-02-22 23:18:24 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:18:34 - INFO: 已添加進陣列
+2025-02-22 23:18:36 - INFO: 正在處理第 6 頁...
+2025-02-22 23:18:36 - INFO: 當前頁面職缺數量: 121
+2025-02-22 23:18:37 - INFO: 職缺名稱: 驗光師/驗光生
+2025-02-22 23:18:37 - INFO: 職缺網址: https://www.104.com.tw/job/808ut?jobsource=joblist_list
+2025-02-22 23:18:37 - INFO: 公司名稱: 宜呈光學眼鏡
+2025-02-22 23:18:37 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:18:38 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:18:38 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:18:47 - INFO: 已添加進陣列
+2025-02-22 23:18:48 - INFO: 職缺名稱: 屏東潮州鎮【e大學眼鏡】[驗光師]屏東潮州門市-2
+2025-02-22 23:18:48 - INFO: 職缺網址: https://www.104.com.tw/job/8cozd?jobsource=joblist_list
+2025-02-22 23:18:48 - INFO: 公司名稱: 大學光學科技股份有限公司_大學眼鏡/大學眼科/大學醫美
+2025-02-22 23:18:48 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:18:58 - INFO: 已添加進陣列
+2025-02-22 23:18:59 - INFO: 職缺名稱: 【台北地區】驗光人員 /門市銷售人員(寶島眼鏡)
+2025-02-22 23:18:59 - INFO: 職缺網址: https://www.104.com.tw/job/6bxf2?jobsource=joblist_list
+2025-02-22 23:18:59 - INFO: 公司名稱: 寶島光學科技股份有限公司
+2025-02-22 23:19:00 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:19:10 - INFO: 已添加進陣列
+2025-02-22 23:19:12 - INFO: 職缺名稱: 驗光師(兼職亦可)
+2025-02-22 23:19:12 - INFO: 職缺網址: https://www.104.com.tw/job/7mtx3?jobsource=joblist_list
+2025-02-22 23:19:12 - INFO: 公司名稱: 京城眼科診所
+2025-02-22 23:19:12 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:19:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:19:18 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:19:21 - INFO: 已添加進陣列
+2025-02-22 23:19:23 - INFO: 職缺名稱: 驗光生/驗光師
+2025-02-22 23:19:23 - INFO: 職缺網址: https://www.104.com.tw/job/7y6va?jobsource=joblist_list
+2025-02-22 23:19:23 - INFO: 公司名稱: 首澄眼鏡行
+2025-02-22 23:19:23 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:19:24 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:19:29 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:19:32 - INFO: 已添加進陣列
+2025-02-22 23:19:33 - INFO: 職缺名稱: 驗光師．新竹
+2025-02-22 23:19:33 - INFO: 職缺網址: https://www.104.com.tw/job/82eua?jobsource=joblist_list
+2025-02-22 23:19:33 - INFO: 公司名稱: 光明分子國際股份有限公司
+2025-02-22 23:19:33 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:19:40 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:19:43 - INFO: 已添加進陣列
+2025-02-22 23:19:44 - INFO: 職缺名稱: <全面調薪!證照人員薪資上看50K! >(新竹)眼鏡市場  驗光師/驗光生
+2025-02-22 23:19:44 - INFO: 職缺網址: https://www.104.com.tw/job/6r8mi?jobsource=joblist_list
+2025-02-22 23:19:44 - INFO: 公司名稱: 台灣頂點眼鏡市場股份有限公司
+2025-02-22 23:19:44 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:19:45 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:19:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:19:53 - INFO: 已添加進陣列
+2025-02-22 23:19:54 - INFO: 職缺名稱: 年青人眼鏡公司-(介壽店)-驗光師/驗光生
+2025-02-22 23:19:54 - INFO: 職缺網址: https://www.104.com.tw/job/7767x?jobsource=joblist_list
+2025-02-22 23:19:54 - INFO: 公司名稱: 年青人眼鏡_年輕人眼鏡行
+2025-02-22 23:19:55 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:20:01 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:20:04 - INFO: 已添加進陣列
+2025-02-22 23:20:06 - INFO: 職缺名稱: 寶島眼科-驗光師(三蘆分院)
+2025-02-22 23:20:06 - INFO: 職缺網址: https://www.104.com.tw/job/85xo7?jobsource=joblist_list
+2025-02-22 23:20:06 - INFO: 公司名稱: 寶島光學科技股份有限公司
+2025-02-22 23:20:06 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:20:12 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:20:15 - INFO: 已添加進陣列
+2025-02-22 23:20:16 - INFO: 職缺名稱: 台北-眼科諮詢驗光師（生）
+2025-02-22 23:20:16 - INFO: 職缺網址: https://www.104.com.tw/job/80gp0?jobsource=joblist_list
+2025-02-22 23:20:16 - INFO: 公司名稱: 澄清國際眼科醫院
+2025-02-22 23:20:16 - INFO: 更新日期: 2025/02/01
+2025-02-22 23:20:26 - INFO: 已添加進陣列
+2025-02-22 23:20:27 - INFO: 職缺名稱: 驗光師(生)
+2025-02-22 23:20:27 - INFO: 職缺網址: https://www.104.com.tw/job/6w599?jobsource=joblist_list
+2025-02-22 23:20:27 - INFO: 公司名稱: 蘋果眼鏡行
+2025-02-22 23:20:28 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:20:29 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:20:34 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:20:37 - INFO: 已添加進陣列
+2025-02-22 23:20:38 - INFO: 職缺名稱: 驗光師
+2025-02-22 23:20:38 - INFO: 職缺網址: https://www.104.com.tw/job/80smw?jobsource=joblist_list
+2025-02-22 23:20:38 - INFO: 公司名稱: 標準光學隱形眼鏡行
+2025-02-22 23:20:38 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:20:39 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:20:48 - INFO: 已添加進陣列
+2025-02-22 23:20:49 - INFO: 職缺名稱: 手目耳眼鏡台南市-東區門市人員(驗光生/驗光師證照)
+2025-02-22 23:20:49 - INFO: 職缺網址: https://www.104.com.tw/job/64pua?jobsource=joblist_list
+2025-02-22 23:20:49 - INFO: 公司名稱: 手目耳眼鏡_和緯眼鏡行
+2025-02-22 23:20:49 - INFO: 更新日期: 2025/02/12
+2025-02-22 23:20:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:20:56 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:20:59 - INFO: 已添加進陣列
+2025-02-22 23:21:00 - INFO: 職缺名稱: [研究]眼科部/研究助理(需具驗光師/生資格)
+2025-02-22 23:21:00 - INFO: 職缺網址: https://www.104.com.tw/job/21rm9?jobsource=joblist_list
+2025-02-22 23:21:00 - INFO: 公司名稱: 醫療財團法人徐元智先生醫藥基金會亞東紀念醫院
+2025-02-22 23:21:00 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:21:07 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:21:10 - INFO: 已添加進陣列
+2025-02-22 23:21:12 - INFO: 職缺名稱: 年青人眼鏡公司-(台南成大店)-驗光師/驗光生/儲備幹部／儲備店長
+2025-02-22 23:21:12 - INFO: 職缺網址: https://www.104.com.tw/job/7im2r?jobsource=joblist_bact_n
+2025-02-22 23:21:12 - INFO: 公司名稱: 年青人眼鏡_年清人眼鏡店
+2025-02-22 23:21:12 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:21:22 - INFO: 已添加進陣列
+2025-02-22 23:21:24 - INFO: 職缺名稱: 《前六個月保障薪資：5萬》【小林眼鏡-桃園藝文】驗光師
+2025-02-22 23:21:24 - INFO: 職缺網址: https://www.104.com.tw/job/6sanu?jobsource=joblist_list
+2025-02-22 23:21:24 - INFO: 公司名稱: 小林鐘錶眼鏡股份有限公司
+2025-02-22 23:21:24 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:21:25 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:21:30 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:21:34 - INFO: 已添加進陣列
+2025-02-22 23:21:36 - INFO: 職缺名稱: 眼科諮詢驗光師（生）/台南
+2025-02-22 23:21:36 - INFO: 職缺網址: https://www.104.com.tw/job/8bous?jobsource=joblist_list
+2025-02-22 23:21:36 - INFO: 公司名稱: 澄清國際眼科醫院
+2025-02-22 23:21:36 - INFO: 更新日期: 2025/02/01
+2025-02-22 23:21:37 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:21:46 - INFO: 已添加進陣列
+2025-02-22 23:21:56 - ERROR: 處理 優視眼科診所, 驗光師職缺時發生錯誤, https://www.104.com.tw/job/7x07l?jobsource=joblist_list: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:21:56 - ERROR: 處理 優視眼科診所, 驗光師職缺時發生錯誤, https://www.104.com.tw/job/7x07l?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:21:56 - ERROR: 處理 優視眼科診所, 驗光師職缺時發生錯誤, https://www.104.com.tw/job/7x07l?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:21:58 - INFO: 正在處理第 7 頁...
+2025-02-22 23:21:58 - INFO: 當前頁面職缺數量: 0
+2025-02-22 23:22:00 - INFO: 沒有新的職缺載入，可能已到底部
+2025-02-22 23:22:00 - INFO: 資料已成功儲存至 D:/allm/crawler/job_list\job_details_20250222_232200.json
+2025-02-22 23:22:00 - INFO: 資料已成功儲存至 D:/allm/crawler/com_url\com_url_20250222_232200.json
+2025-02-22 23:22:03 - INFO: 職缺爬蟲程式執行完畢

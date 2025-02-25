@@ -1,0 +1,1729 @@
+2025-02-22 19:18:36 - INFO: 日誌檔案已建立：logs\job_crawler_20250222_191836.log
+2025-02-22 19:18:36 - INFO: ====== WebDriver manager ======
+2025-02-22 19:18:37 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 19:18:38 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 19:18:38 - INFO: Driver [C:\Users\songs\.wdm\drivers\chromedriver\win64\133.0.6943.126\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-22 19:18:51 - INFO: 正在處理第 1 頁...
+2025-02-22 19:18:51 - INFO: 當前頁面職缺數量: 21
+2025-02-22 19:18:52 - INFO: 職缺名稱: 平面設計/美編
+2025-02-22 19:18:52 - INFO: 職缺網址: https://www.104.com.tw/job/6uri6?jobsource=hotjob_chr_exp
+2025-02-22 19:18:52 - INFO: 公司名稱: 凡奈詩國際有限公司
+2025-02-22 19:18:52 - INFO: 更新日期: 2025/02/22
+2025-02-22 19:19:03 - INFO: 已添加進陣列
+2025-02-22 19:19:05 - INFO: 職缺名稱: 心理師
+2025-02-22 19:19:05 - INFO: 職缺網址: https://www.104.com.tw/job/8ml2w?jobsource=joblist_list
+2025-02-22 19:19:05 - INFO: 公司名稱: 初日診所
+2025-02-22 19:19:05 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:19:15 - INFO: 已添加進陣列
+2025-02-22 19:19:18 - INFO: 職缺名稱: 諮商心理師
+2025-02-22 19:19:18 - INFO: 職缺網址: https://www.104.com.tw/job/8ea8n?jobsource=joblist_bact_n
+2025-02-22 19:19:18 - INFO: 公司名稱: 群健科技股份有限公司
+2025-02-22 19:19:18 - INFO: 更新日期: 2025/02/16
+2025-02-22 19:19:28 - INFO: 已添加進陣列
+2025-02-22 19:19:32 - INFO: 職缺名稱: 兒童早療心理師
+2025-02-22 19:19:32 - INFO: 職缺網址: https://www.104.com.tw/job/8mt3a?jobsource=joblist_bact_n
+2025-02-22 19:19:32 - INFO: 公司名稱: 新莊活力復健診所
+2025-02-22 19:19:32 - INFO: 更新日期: 2025/02/21
+2025-02-22 19:19:38 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:19:41 - INFO: 已添加進陣列
+2025-02-22 19:19:43 - INFO: 職缺名稱: 線上心理師
+2025-02-22 19:19:43 - INFO: 職缺網址: https://www.104.com.tw/job/7z5to?jobsource=joblist_list
+2025-02-22 19:19:43 - INFO: 公司名稱: 伊生診所
+2025-02-22 19:19:43 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:19:53 - INFO: 已添加進陣列
+2025-02-22 19:19:54 - INFO: 職缺名稱: 國立臺灣大學電資學院兼任駐點心理師1名
+2025-02-22 19:19:54 - INFO: 職缺網址: https://www.104.com.tw/job/8mnhh?jobsource=joblist_list
+2025-02-22 19:19:54 - INFO: 公司名稱: 國立臺灣大學
+2025-02-22 19:19:54 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:19:55 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:20:04 - INFO: 已添加進陣列
+2025-02-22 19:20:05 - INFO: 職缺名稱: 愛心理諮商行政心理師-全職大安館
+2025-02-22 19:20:05 - INFO: 職缺網址: https://www.104.com.tw/job/8l07k?jobsource=joblist_list
+2025-02-22 19:20:05 - INFO: 公司名稱: 愛心理顧問有限公司
+2025-02-22 19:20:05 - INFO: 更新日期: 2025/02/07
+2025-02-22 19:20:06 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:20:15 - INFO: 已添加進陣列
+2025-02-22 19:20:16 - INFO: 職缺名稱: 癌症委員會臨床心理師/諮商心理師
+2025-02-22 19:20:16 - INFO: 職缺網址: https://www.104.com.tw/job/8mk5v?jobsource=joblist_bact_n
+2025-02-22 19:20:16 - INFO: 公司名稱: 振興醫療財團法人振興醫院
+2025-02-22 19:20:16 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:20:17 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:20:26 - INFO: 已添加進陣列
+2025-02-22 19:20:27 - INFO: 職缺名稱: 愛心理諮商行政心理師-全職汐止館
+2025-02-22 19:20:27 - INFO: 職缺網址: https://www.104.com.tw/job/8l05v?jobsource=joblist_list
+2025-02-22 19:20:27 - INFO: 公司名稱: 愛心理顧問有限公司
+2025-02-22 19:20:27 - INFO: 更新日期: 2025/02/07
+2025-02-22 19:20:33 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:20:37 - INFO: 已添加進陣列
+2025-02-22 19:20:39 - INFO: 職缺名稱: 心理師(兼職)
+2025-02-22 19:20:39 - INFO: 職缺網址: https://www.104.com.tw/job/7q1je?jobsource=joblist_list
+2025-02-22 19:20:39 - INFO: 公司名稱: 林新醫療社團法人烏日林新醫院
+2025-02-22 19:20:39 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:20:40 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:20:45 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:20:48 - INFO: 已添加進陣列
+2025-02-22 19:20:49 - INFO: 職缺名稱: 心理師
+2025-02-22 19:20:49 - INFO: 職缺網址: https://www.104.com.tw/job/8diny?jobsource=joblist_bact_n
+2025-02-22 19:20:49 - INFO: 公司名稱: 大心診所
+2025-02-22 19:20:49 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:20:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:20:51 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:21:00 - INFO: 已添加進陣列
+2025-02-22 19:21:01 - INFO: 職缺名稱: 癌症中心-諮商心理師
+2025-02-22 19:21:01 - INFO: 職缺網址: https://www.104.com.tw/job/803nc?jobsource=joblist_list
+2025-02-22 19:21:01 - INFO: 公司名稱: 臺北醫學大學附設醫院
+2025-02-22 19:21:01 - INFO: 更新日期: 2025/02/21
+2025-02-22 19:21:02 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:21:07 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:21:11 - INFO: 已添加進陣列
+2025-02-22 19:21:12 - INFO: 職缺名稱: 學生事務處學生輔導中心-約聘心理師
+2025-02-22 19:21:12 - INFO: 職缺網址: https://www.104.com.tw/job/8mg00?jobsource=joblist_list
+2025-02-22 19:21:12 - INFO: 公司名稱: 中華醫事科技大學
+2025-02-22 19:21:12 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:21:18 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:21:21 - INFO: 已添加進陣列
+2025-02-22 19:21:22 - INFO: 職缺名稱: (兼職)勞工健康服務心理師/特約臨場服務心理師(新竹)
+2025-02-22 19:21:22 - INFO: 職缺網址: https://www.104.com.tw/job/77v2q?jobsource=joblist_list
+2025-02-22 19:21:22 - INFO: 公司名稱: 季灃健康服務有限公司
+2025-02-22 19:21:22 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:21:28 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:21:31 - INFO: 已添加進陣列
+2025-02-22 19:21:32 - INFO: 職缺名稱: 學生事務處學生輔導中心誠徵計畫人員(諮商心理師)乙名
+2025-02-22 19:21:32 - INFO: 職缺網址: https://www.104.com.tw/job/875cc?jobsource=joblist_list
+2025-02-22 19:21:32 - INFO: 公司名稱: 崑山科技大學
+2025-02-22 19:21:32 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:21:42 - INFO: 已添加進陣列
+2025-02-22 19:21:44 - INFO: 職缺名稱: 諮商心理師(醫療防護及體能處)
+2025-02-22 19:21:44 - INFO: 職缺網址: https://www.104.com.tw/job/8mldp?jobsource=joblist_list
+2025-02-22 19:21:44 - INFO: 公司名稱: 國家運動訓練中心
+2025-02-22 19:21:44 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:21:54 - INFO: 已添加進陣列
+2025-02-22 19:21:55 - INFO: 職缺名稱: 【諮詢服務組】專線顧問心理師
+2025-02-22 19:21:55 - INFO: 職缺網址: https://www.104.com.tw/job/6o633?jobsource=joblist_list
+2025-02-22 19:21:55 - INFO: 公司名稱: 興智國際企業管理整合諮詢有限公司
+2025-02-22 19:21:55 - INFO: 更新日期: 2025/02/21
+2025-02-22 19:22:06 - INFO: 已添加進陣列
+2025-02-22 19:22:07 - INFO: 職缺名稱: 113年度「問題姓飲酒與酒癮者成癮醫療及社會復健轉銜服務深耕計畫」個案管理師(諮商心理師、臨床心理師、護理師、社工師)
+2025-02-22 19:22:07 - INFO: 職缺網址: https://www.104.com.tw/job/8i1l1?jobsource=joblist_list
+2025-02-22 19:22:07 - INFO: 公司名稱: 衛生福利部苗栗醫院
+2025-02-22 19:22:07 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:22:08 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:22:17 - INFO: 已添加進陣列
+2025-02-22 19:22:18 - INFO: 職缺名稱: <平日晚間兼職>兒童職能治療師、心理師(恬兒職能治療師/KidPro團隊）
+2025-02-22 19:22:18 - INFO: 職缺網址: https://www.104.com.tw/job/83d3y?jobsource=joblist_list
+2025-02-22 19:22:18 - INFO: 公司名稱: 智寶教育股份有限公司
+2025-02-22 19:22:18 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:22:19 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:22:28 - INFO: 已添加進陣列
+2025-02-22 19:22:29 - INFO: 職缺名稱: 【易思腦心理治療所】正職&兼職臨床/諮商心理師
+2025-02-22 19:22:29 - INFO: 職缺網址: https://www.104.com.tw/job/7tm1l?jobsource=joblist_list
+2025-02-22 19:22:29 - INFO: 公司名稱: 易思腦科技股份有限公司
+2025-02-22 19:22:29 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:22:39 - INFO: 已添加進陣列
+2025-02-22 19:22:40 - INFO: 職缺名稱: 學生事務處諮商與特教資源組專任諮商輔導人員(心理師)
+2025-02-22 19:22:40 - INFO: 職缺網址: https://www.104.com.tw/job/6kcp6?jobsource=joblist_list
+2025-02-22 19:22:40 - INFO: 公司名稱: 樹人醫護管理專科學校
+2025-02-22 19:22:40 - INFO: 更新日期: 2025/01/20
+2025-02-22 19:22:41 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:22:50 - INFO: 已添加進陣列
+2025-02-22 19:22:52 - INFO: 正在處理第 2 頁...
+2025-02-22 19:22:52 - INFO: 當前頁面職缺數量: 42
+2025-02-22 19:22:53 - INFO: 職缺名稱: 人才發展部丨人力資源資深專員/主任
+2025-02-22 19:22:53 - INFO: 職缺網址: https://www.104.com.tw/job/8jbfz?jobsource=hotjob_chr_exp
+2025-02-22 19:22:53 - INFO: 公司名稱: 若水國際股份有限公司
+2025-02-22 19:22:53 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:23:04 - INFO: 已添加進陣列
+2025-02-22 19:23:05 - INFO: 職缺名稱: 徵諮商心理師、臨床心理師｜週末情緒教育老師
+2025-02-22 19:23:05 - INFO: 職缺網址: https://www.104.com.tw/job/7xhic?jobsource=joblist_list
+2025-02-22 19:23:05 - INFO: 公司名稱: 戲心成長教育股份有限公司
+2025-02-22 19:23:05 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:23:12 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:23:15 - INFO: 已添加進陣列
+2025-02-22 19:23:16 - INFO: 職缺名稱: 臨床心理師或諮商心理師
+2025-02-22 19:23:16 - INFO: 職缺網址: https://www.104.com.tw/job/827cl?jobsource=joblist_list
+2025-02-22 19:23:16 - INFO: 公司名稱: 星星碼頭職能治療所
+2025-02-22 19:23:16 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:23:22 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:23:25 - INFO: 已添加進陣列
+2025-02-22 19:23:27 - INFO: 職缺名稱: [醫技]精神科專任臨床心理師
+2025-02-22 19:23:27 - INFO: 職缺網址: https://www.104.com.tw/job/8lsha?jobsource=joblist_list
+2025-02-22 19:23:27 - INFO: 公司名稱: 新光醫院_新光醫療財團法人新光吳火獅紀念醫院
+2025-02-22 19:23:27 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:23:37 - INFO: 已添加進陣列
+2025-02-22 19:23:38 - INFO: 職缺名稱: 兼職諮商心理師
+2025-02-22 19:23:38 - INFO: 職缺網址: https://www.104.com.tw/job/89bv9?jobsource=joblist_list
+2025-02-22 19:23:38 - INFO: 公司名稱: 安兒康小兒專科診所
+2025-02-22 19:23:38 - INFO: 更新日期: 2025/01/07
+2025-02-22 19:23:48 - INFO: 已添加進陣列
+2025-02-22 19:23:49 - INFO: 職缺名稱: 台北院區　協談輔導室　諮商心理師
+2025-02-22 19:23:49 - INFO: 職缺網址: https://www.104.com.tw/job/78bfg?jobsource=joblist_list
+2025-02-22 19:23:49 - INFO: 公司名稱: 台灣基督長老教會馬偕醫療財團法人馬偕紀念醫院
+2025-02-22 19:23:49 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:23:59 - INFO: 已添加進陣列
+2025-02-22 19:24:00 - INFO: 職缺名稱: 臺北院區　精神醫學部　專案研究助理(臨床/諮商心理師)
+2025-02-22 19:24:00 - INFO: 職缺網址: https://www.104.com.tw/job/8mksn?jobsource=joblist_list
+2025-02-22 19:24:00 - INFO: 公司名稱: 台灣基督長老教會馬偕醫療財團法人馬偕紀念醫院
+2025-02-22 19:24:00 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:24:10 - INFO: 已添加進陣列
+2025-02-22 19:24:11 - INFO: 職缺名稱: [研究]癌症防治中心/諮商心理師(研究助理)
+2025-02-22 19:24:11 - INFO: 職缺網址: https://www.104.com.tw/job/8h65d?jobsource=joblist_list
+2025-02-22 19:24:11 - INFO: 公司名稱: 醫療財團法人徐元智先生醫藥基金會亞東紀念醫院
+2025-02-22 19:24:11 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:24:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:24:21 - INFO: 已添加進陣列
+2025-02-22 19:24:23 - INFO: 職缺名稱: 誠徵 「學務處-諮商中心」專業諮商心理師2名
+2025-02-22 19:24:23 - INFO: 職缺網址: https://www.104.com.tw/job/8m9w9?jobsource=joblist_list
+2025-02-22 19:24:23 - INFO: 公司名稱: 宏國學校財團法人宏國德霖科技大學
+2025-02-22 19:24:23 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:24:33 - INFO: 已添加進陣列
+2025-02-22 19:24:34 - INFO: 職缺名稱: 心理師（勞工健康服務人員特約兼職）
+2025-02-22 19:24:34 - INFO: 職缺網址: https://www.104.com.tw/job/7u0if?jobsource=joblist_list
+2025-02-22 19:24:34 - INFO: 公司名稱: 永悅健康股份有限公司
+2025-02-22 19:24:34 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:24:35 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:24:40 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:24:43 - INFO: 已添加進陣列
+2025-02-22 19:24:45 - INFO: 職缺名稱: 臨床心理師
+2025-02-22 19:24:45 - INFO: 職缺網址: https://www.104.com.tw/job/7o0kt?jobsource=joblist_list
+2025-02-22 19:24:45 - INFO: 公司名稱: 郭綜合醫院
+2025-02-22 19:24:45 - INFO: 更新日期: 2025/02/21
+2025-02-22 19:24:51 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:24:54 - INFO: 已添加進陣列
+2025-02-22 19:24:55 - INFO: 職缺名稱: 員工協助服務中心：個案管理師(心理師)
+2025-02-22 19:24:55 - INFO: 職缺網址: https://www.104.com.tw/job/89u81?jobsource=joblist_list
+2025-02-22 19:24:55 - INFO: 公司名稱: 社團法人新竹市生命線協會
+2025-02-22 19:24:55 - INFO: 更新日期: 2025/02/16
+2025-02-22 19:25:05 - INFO: 已添加進陣列
+2025-02-22 19:25:06 - INFO: 職缺名稱: 情感諮商師-需具心理師執照（專案）
+2025-02-22 19:25:06 - INFO: 職缺網址: https://www.104.com.tw/job/7a5jj?jobsource=joblist_list
+2025-02-22 19:25:06 - INFO: 公司名稱: Date Me now跟我約會吧_寶芮利國際股份有限公司
+2025-02-22 19:25:06 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:25:16 - INFO: 已添加進陣列
+2025-02-22 19:25:17 - INFO: 職缺名稱: 汐止分院 復健科 臨床心理師
+2025-02-22 19:25:17 - INFO: 職缺網址: https://www.104.com.tw/job/89xmq?jobsource=joblist_list
+2025-02-22 19:25:17 - INFO: 公司名稱: 國泰醫療財團法人國泰綜合醫院
+2025-02-22 19:25:17 - INFO: 更新日期: 2025/02/14
+2025-02-22 19:25:23 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:25:26 - INFO: 已添加進陣列
+2025-02-22 19:25:27 - INFO: 職缺名稱: 諮商心理師【備註:只限紙本履歷投遞，履歷投遞方式詳如內容】
+2025-02-22 19:25:27 - INFO: 職缺網址: https://www.104.com.tw/job/86122?jobsource=joblist_list
+2025-02-22 19:25:27 - INFO: 公司名稱: 臺中市政府衛生局
+2025-02-22 19:25:27 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:25:28 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:25:33 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:25:36 - INFO: 已添加進陣列
+2025-02-22 19:25:37 - INFO: 職缺名稱: 萬能科技大學學務處諮商輔導組招聘輔導人員
+2025-02-22 19:25:37 - INFO: 職缺網址: https://www.104.com.tw/job/81j6z?jobsource=joblist_list
+2025-02-22 19:25:37 - INFO: 公司名稱: 萬能學校財團法人萬能科技大學_人事室
+2025-02-22 19:25:37 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:25:39 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:25:47 - INFO: 已添加進陣列
+2025-02-22 19:25:49 - INFO: 職缺名稱: 世新大學【學生事務處諮商中心】教輔助理(社工師或心理師)
+2025-02-22 19:25:49 - INFO: 職缺網址: https://www.104.com.tw/job/8mcp7?jobsource=joblist_bact_n
+2025-02-22 19:25:49 - INFO: 公司名稱: 世新大學_人事室
+2025-02-22 19:25:49 - INFO: 更新日期: 2025/02/12
+2025-02-22 19:25:50 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:25:59 - INFO: 已添加進陣列
+2025-02-22 19:26:00 - INFO: 職缺名稱: 臨床心理師
+2025-02-22 19:26:00 - INFO: 職缺網址: https://www.104.com.tw/job/895cn?jobsource=joblist_list
+2025-02-22 19:26:00 - INFO: 公司名稱: 清海醫院
+2025-02-22 19:26:00 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:26:07 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:26:10 - INFO: 已添加進陣列
+2025-02-22 19:26:12 - INFO: 職缺名稱: 專任或兼任之兒童心理師
+2025-02-22 19:26:12 - INFO: 職缺網址: https://www.104.com.tw/job/6tce5?jobsource=joblist_list
+2025-02-22 19:26:12 - INFO: 公司名稱: 好晴天身心診所
+2025-02-22 19:26:12 - INFO: 更新日期: 2025/02/21
+2025-02-22 19:26:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:26:18 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:26:21 - INFO: 已添加進陣列
+2025-02-22 19:26:22 - INFO: 職缺名稱: 教育部「114年度補助大專校院聘用專兼任專業輔導人力計畫」約聘專任諮商輔導人員
+2025-02-22 19:26:22 - INFO: 職缺網址: https://www.104.com.tw/job/8kot1?jobsource=joblist_list
+2025-02-22 19:26:22 - INFO: 公司名稱: 法鼓學校財團法人法鼓文理學院
+2025-02-22 19:26:22 - INFO: 更新日期: 2025/01/22
+2025-02-22 19:26:32 - INFO: 已添加進陣列
+2025-02-22 19:26:33 - INFO: 職缺名稱: 兼職諮商心理師/兼職臨床心理師
+2025-02-22 19:26:33 - INFO: 職缺網址: https://www.104.com.tw/job/8k8y0?jobsource=joblist_list
+2025-02-22 19:26:33 - INFO: 公司名稱: 新北市私立全心居家長照機構
+2025-02-22 19:26:33 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:26:39 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:26:42 - INFO: 已添加進陣列
+2025-02-22 19:26:44 - INFO: 正在處理第 3 頁...
+2025-02-22 19:26:44 - INFO: 當前頁面職缺數量: 62
+2025-02-22 19:26:45 - INFO: 職缺名稱: 心理師（桃園市、新北市）
+2025-02-22 19:26:45 - INFO: 職缺網址: https://www.104.com.tw/job/8gu4p?jobsource=joblist_list
+2025-02-22 19:26:45 - INFO: 公司名稱: 新北市私立天晴居家長照機構
+2025-02-22 19:26:45 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:26:52 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:26:55 - INFO: 已添加進陣列
+2025-02-22 19:26:58 - INFO: 職缺名稱: 【永和耕莘】心理諮商中心兒童臨床心理師
+2025-02-22 19:26:58 - INFO: 職缺網址: https://www.104.com.tw/job/7cxps?jobsource=joblist_list
+2025-02-22 19:26:58 - INFO: 公司名稱: 天主教耕莘醫療財團法人耕莘醫院
+2025-02-22 19:26:58 - INFO: 更新日期: 2025/02/21
+2025-02-22 19:26:59 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:27:07 - INFO: 已添加進陣列
+2025-02-22 19:27:09 - INFO: 職缺名稱: EAP特約心理講師
+2025-02-22 19:27:09 - INFO: 職缺網址: https://www.104.com.tw/job/8iutd?jobsource=joblist_list
+2025-02-22 19:27:09 - INFO: 公司名稱: 宇聯管理顧問有限公司
+2025-02-22 19:27:09 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:27:11 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:27:19 - INFO: 已添加進陣列
+2025-02-22 19:27:26 - INFO: 職缺名稱: 社工員/社工師、專案人員
+2025-02-22 19:27:26 - INFO: 職缺網址: https://www.104.com.tw/job/8ljyg?jobsource=joblist_list
+2025-02-22 19:27:26 - INFO: 公司名稱: 社團法人桃園市遠樂心理健康關懷協會
+2025-02-22 19:27:26 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:27:36 - INFO: 已添加進陣列
+2025-02-22 19:27:39 - INFO: 職缺名稱: 居家心理師(基隆、汐止區)
+2025-02-22 19:27:39 - INFO: 職缺網址: https://www.104.com.tw/job/83tr3?jobsource=joblist_list
+2025-02-22 19:27:39 - INFO: 公司名稱: 居達健康事業有限公司
+2025-02-22 19:27:39 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:27:40 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:27:45 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:27:48 - INFO: 已添加進陣列
+2025-02-22 19:27:49 - INFO: 職缺名稱: 勞工健康服務相關人員(心理諮商師/物理治療師/職能治療師)
+2025-02-22 19:27:49 - INFO: 職缺網址: https://www.104.com.tw/job/8juoj?jobsource=joblist_list
+2025-02-22 19:27:49 - INFO: 公司名稱: 立偉電子股份有限公司
+2025-02-22 19:27:49 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:27:50 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:27:59 - INFO: 已添加進陣列
+2025-02-22 19:28:00 - INFO: 職缺名稱: 三軍總醫院精神醫學部研究助理
+2025-02-22 19:28:00 - INFO: 職缺網址: https://www.104.com.tw/job/8lowb?jobsource=joblist_bact_n
+2025-02-22 19:28:00 - INFO: 公司名稱: 三軍總醫院附設民眾診療服務處_創新育成中心
+2025-02-22 19:28:00 - INFO: 更新日期: 2025/02/12
+2025-02-22 19:28:02 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:28:11 - INFO: 已添加進陣列
+2025-02-22 19:28:15 - INFO: 職缺名稱: 臨床心理師 
+2025-02-22 19:28:15 - INFO: 職缺網址: https://www.104.com.tw/job/86qeg?jobsource=joblist_list
+2025-02-22 19:28:15 - INFO: 公司名稱: 天成醫療社團法人天晟醫院
+2025-02-22 19:28:15 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:28:22 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:28:25 - INFO: 已添加進陣列
+2025-02-22 19:28:26 - INFO: 職缺名稱: 徵音樂治療師｜週末情緒教育老師
+2025-02-22 19:28:26 - INFO: 職缺網址: https://www.104.com.tw/job/8j4ix?jobsource=joblist_list
+2025-02-22 19:28:26 - INFO: 公司名稱: 戲心成長教育股份有限公司
+2025-02-22 19:28:26 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:28:36 - INFO: 已添加進陣列
+2025-02-22 19:28:38 - INFO: 職缺名稱: 就業服務員【社會企業-建北加油站】
+2025-02-22 19:28:38 - INFO: 職缺網址: https://www.104.com.tw/job/8kxve?jobsource=joblist_bact_n
+2025-02-22 19:28:38 - INFO: 公司名稱: 財團法人陽光社會福利基金會
+2025-02-22 19:28:38 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:28:48 - INFO: 已添加進陣列
+2025-02-22 19:28:49 - INFO: 職缺名稱: 諮商心理師｜身心科診所｜竹北
+2025-02-22 19:28:49 - INFO: 職缺網址: https://www.104.com.tw/job/8limw?jobsource=joblist_list
+2025-02-22 19:28:49 - INFO: 公司名稱: 精思數位股份有限公司
+2025-02-22 19:28:49 - INFO: 更新日期: 2025/02/09
+2025-02-22 19:28:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:29:00 - INFO: 已添加進陣列
+2025-02-22 19:29:01 - INFO: 職缺名稱: 徵諮商心理師、臨床心理師｜週末情緒教育老師
+2025-02-22 19:29:01 - INFO: 職缺網址: https://www.104.com.tw/job/8j4ir?jobsource=joblist_list
+2025-02-22 19:29:01 - INFO: 公司名稱: 戲心成長教育股份有限公司
+2025-02-22 19:29:01 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:29:07 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:29:10 - INFO: 已添加進陣列
+2025-02-22 19:29:11 - INFO: 職缺名稱: 長照居家心理師
+2025-02-22 19:29:11 - INFO: 職缺網址: https://www.104.com.tw/job/89eho?jobsource=joblist_list
+2025-02-22 19:29:11 - INFO: 公司名稱: 桃園市私立全家人居家長照機構
+2025-02-22 19:29:11 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:29:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:29:22 - INFO: 已添加進陣列
+2025-02-22 19:29:23 - INFO: 職缺名稱: 徵藝術治療師｜週末情緒教育老師
+2025-02-22 19:29:23 - INFO: 職缺網址: https://www.104.com.tw/job/8j4j2?jobsource=joblist_list
+2025-02-22 19:29:23 - INFO: 公司名稱: 戲心成長教育股份有限公司
+2025-02-22 19:29:23 - INFO: 更新日期: 2025/02/20
+2025-02-22 19:29:33 - INFO: 已添加進陣列
+2025-02-22 19:29:35 - INFO: 職缺名稱: 兒童心理師
+2025-02-22 19:29:35 - INFO: 職缺網址: https://www.104.com.tw/job/7utr9?jobsource=joblist_list
+2025-02-22 19:29:35 - INFO: 公司名稱: 禾康復健科診所
+2025-02-22 19:29:35 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:29:36 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:29:36 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:29:41 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:29:44 - INFO: 已添加進陣列
+2025-02-22 19:29:45 - INFO: 職缺名稱: 員工協助服務中心：個案管理員
+2025-02-22 19:29:45 - INFO: 職缺網址: https://www.104.com.tw/job/79yle?jobsource=joblist_bact_n
+2025-02-22 19:29:45 - INFO: 公司名稱: 社團法人新竹市生命線協會
+2025-02-22 19:29:45 - INFO: 更新日期: 2025/02/16
+2025-02-22 19:29:56 - INFO: 已添加進陣列
+2025-02-22 19:29:57 - INFO: 職缺名稱: 臨床心理師
+2025-02-22 19:29:57 - INFO: 職缺網址: https://www.104.com.tw/job/8lgpe?jobsource=joblist_list
+2025-02-22 19:29:57 - INFO: 公司名稱: 惠安復健科診所
+2025-02-22 19:29:57 - INFO: 更新日期: 2025/01/13
+2025-02-22 19:29:58 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:30:03 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:30:06 - INFO: 已添加進陣列
+2025-02-22 19:30:07 - INFO: 職缺名稱: 學務處/諮商輔導暨職涯發展中心-資源教室輔導員(專案計畫人員)
+2025-02-22 19:30:07 - INFO: 職缺網址: https://www.104.com.tw/job/8csqf?jobsource=joblist_bact_n
+2025-02-22 19:30:07 - INFO: 公司名稱: 光宇學校財團法人元培醫事科技大學
+2025-02-22 19:30:07 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:30:09 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:30:17 - INFO: 已添加進陣列
+2025-02-22 19:30:20 - INFO: 職缺名稱: 慈馨兒少之家  專任心理輔導員
+2025-02-22 19:30:20 - INFO: 職缺網址: https://www.104.com.tw/job/8awh1?jobsource=joblist_list
+2025-02-22 19:30:20 - INFO: 公司名稱: 財團法人台中市私立慈光社會福利慈善事業基金會
+2025-02-22 19:30:20 - INFO: 更新日期: 2025/02/19
+2025-02-22 19:30:22 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:30:30 - INFO: 已添加進陣列
+2025-02-22 19:30:32 - INFO: 職缺名稱: 新北市成人性侵害方案心理輔導員
+2025-02-22 19:30:32 - INFO: 職缺網址: https://www.104.com.tw/job/5xgra?jobsource=joblist_list
+2025-02-22 19:30:32 - INFO: 公司名稱: 社團法人桃園市助人專業促進協會
+2025-02-22 19:30:32 - INFO: 更新日期: 2025/02/10
+2025-02-22 19:30:42 - INFO: 已添加進陣列
+2025-02-22 19:30:44 - INFO: 正在處理第 4 頁...
+2025-02-22 19:30:44 - INFO: 當前頁面職缺數量: 82
+2025-02-22 19:30:45 - INFO: 職缺名稱: 社區心理衛生 社工員/心輔員
+2025-02-22 19:30:45 - INFO: 職缺網址: https://www.104.com.tw/job/7ju8a?jobsource=joblist_bact_n
+2025-02-22 19:30:45 - INFO: 公司名稱: 桃園市生命線協會
+2025-02-22 19:30:45 - INFO: 更新日期: 2024/11/27
+2025-02-22 19:30:47 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:30:56 - INFO: 已添加進陣列
+2025-02-22 19:30:57 - INFO: 職缺名稱: 約用臨床心理師(精神科正職)，年所得約61萬以上(含獎勵金及年終)
+2025-02-22 19:30:57 - INFO: 職缺網址: https://www.104.com.tw/job/8ij2x?jobsource=joblist_list
+2025-02-22 19:30:57 - INFO: 公司名稱: 國立陽明交通大學附設醫院
+2025-02-22 19:30:57 - INFO: 更新日期: 2025/02/12
+2025-02-22 19:30:58 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:03 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:31:06 - INFO: 已添加進陣列
+2025-02-22 19:31:07 - INFO: 職缺名稱: 北區兒少組(偏鄉)-社工
+2025-02-22 19:31:07 - INFO: 職缺網址: https://www.104.com.tw/job/76uxk?jobsource=joblist_bact_n
+2025-02-22 19:31:07 - INFO: 公司名稱: 財團法人中華民國兒童福利聯盟基金會
+2025-02-22 19:31:07 - INFO: 更新日期: 2025/02/18
+2025-02-22 19:31:14 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 19:31:17 - INFO: 已添加進陣列
+2025-02-22 19:31:18 - INFO: 職缺名稱: 研究專員(專案，可全職)
+2025-02-22 19:31:18 - INFO: 職缺網址: https://www.104.com.tw/job/8ixtq?jobsource=joblist_list
+2025-02-22 19:31:18 - INFO: 公司名稱: 財團法人天使心家族社會福利基金會
+2025-02-22 19:31:18 - INFO: 更新日期: 2025/02/17
+2025-02-22 19:31:28 - INFO: 已添加進陣列
+2025-02-22 19:31:30 - INFO: 職缺名稱: 心理與諮商服務開發顧問
+2025-02-22 19:31:30 - INFO: 職缺網址: https://www.104.com.tw/job/8jtim?jobsource=joblist_list
+2025-02-22 19:31:30 - INFO: 公司名稱: 愛心理顧問有限公司
+2025-02-22 19:31:30 - INFO: 更新日期: 2025/02/07
+2025-02-22 19:31:40 - INFO: 已添加進陣列
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:51 - ERROR: 處理 李綜合醫療社團法人大甲李綜合醫院, 臨床心理師(急徵~待優)職缺時發生錯誤, https://www.104.com.tw/job/7p54c?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 19:31:53 - INFO: 正在處理第 5 頁...
+2025-02-22 19:31:53 - INFO: 當前頁面職缺數量: 0
+2025-02-22 19:31:55 - INFO: 沒有新的職缺載入，可能已到底部
+2025-02-22 19:31:55 - INFO: 資料已成功儲存至 D:/allm/crawler/job_list\job_details_20250222_193155.json
+2025-02-22 19:31:55 - INFO: 資料已成功儲存至 D:/allm/crawler/com_url\com_url_20250222_193155.json
+2025-02-22 19:31:57 - INFO: 職缺爬蟲程式執行完畢

@@ -1,0 +1,1888 @@
+2025-02-22 20:58:01 - INFO: 日誌檔案已建立：logs\job_crawler_20250222_205801.log
+2025-02-22 20:58:01 - INFO: ====== WebDriver manager ======
+2025-02-22 20:58:03 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 20:58:03 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 20:58:03 - INFO: Driver [C:\Users\songs\.wdm\drivers\chromedriver\win64\133.0.6943.126\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-22 20:58:11 - INFO: 正在處理第 1 頁...
+2025-02-22 20:58:11 - INFO: 當前頁面職缺數量: 21
+2025-02-22 20:58:12 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:58:12 - INFO: 職缺網址: https://www.104.com.tw/job/8ltto?jobsource=hotjob_chr_exp
+2025-02-22 20:58:12 - INFO: 公司名稱: 一里雲村養生園區暨金色天地安養中心_尚逸長照社團法人
+2025-02-22 20:58:12 - INFO: 更新日期: 2025/02/18
+2025-02-22 20:58:19 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 20:58:22 - ERROR: 處理詳細頁面資訊時發生錯誤: cannot access local variable 'age_distribution' where it is not associated with a value
+2025-02-22 20:58:23 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:58:23 - INFO: 職缺網址: https://www.104.com.tw/job/7oz7s?jobsource=hotjob_chr_exp
+2025-02-22 20:58:23 - INFO: 公司名稱: 順安復健專科診所
+2025-02-22 20:58:23 - INFO: 更新日期: 2025/02/16
+2025-02-22 20:58:24 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:58:24 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:58:29 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 20:58:32 - ERROR: 處理詳細頁面資訊時發生錯誤: cannot access local variable 'age_distribution' where it is not associated with a value
+2025-02-22 20:58:33 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:58:33 - INFO: 職缺網址: https://www.104.com.tw/job/5ybn2?jobsource=joblist_bact_n
+2025-02-22 20:58:33 - INFO: 公司名稱: 豐榮醫院
+2025-02-22 20:58:33 - INFO: 更新日期: 2025/02/18
+2025-02-22 20:58:39 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:58:43 - INFO: 已添加進陣列
+2025-02-22 20:58:43 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:58:43 - INFO: 職缺網址: https://www.104.com.tw/job/88jep?jobsource=joblist_list
+2025-02-22 20:58:43 - INFO: 公司名稱: 康耀物理治療所
+2025-02-22 20:58:43 - INFO: 更新日期: 2025/02/21
+2025-02-22 20:58:45 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:58:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 20:58:53 - INFO: 已添加進陣列
+2025-02-22 20:58:53 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:58:53 - INFO: 職缺網址: https://www.104.com.tw/job/8lczb?jobsource=joblist_list
+2025-02-22 20:58:53 - INFO: 公司名稱: 國立臺灣體育運動大學_運動事業管理學系
+2025-02-22 20:58:53 - INFO: 更新日期: 2025/02/21
+2025-02-22 20:58:55 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:59:03 - INFO: 已添加進陣列
+2025-02-22 20:59:06 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:59:06 - INFO: 職缺網址: https://www.104.com.tw/job/8btcp?jobsource=joblist_list
+2025-02-22 20:59:06 - INFO: 公司名稱: 康悅復健科診所
+2025-02-22 20:59:06 - INFO: 更新日期: 2025/02/20
+2025-02-22 20:59:07 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:59:16 - INFO: 已添加進陣列
+2025-02-22 20:59:16 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:59:16 - INFO: 職缺網址: https://www.104.com.tw/job/8ggw1?jobsource=joblist_list
+2025-02-22 20:59:16 - INFO: 公司名稱: 由朵物理治療所
+2025-02-22 20:59:16 - INFO: 更新日期: 2025/02/20
+2025-02-22 20:59:18 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:59:27 - INFO: 已添加進陣列
+2025-02-22 20:59:27 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:59:27 - INFO: 職缺網址: https://www.104.com.tw/job/8grrz?jobsource=joblist_bact_n
+2025-02-22 20:59:27 - INFO: 公司名稱: 楠梓朝氣診所
+2025-02-22 20:59:27 - INFO: 更新日期: 2025/02/20
+2025-02-22 20:59:29 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:59:29 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:59:37 - INFO: 已添加進陣列
+2025-02-22 20:59:38 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:59:38 - INFO: 職缺網址: https://www.104.com.tw/job/88e8i?jobsource=joblist_list
+2025-02-22 20:59:38 - INFO: 公司名稱: 唯心運動醫療體系_唯心運動健康顧問股份有限公司
+2025-02-22 20:59:38 - INFO: 更新日期: 2025/02/21
+2025-02-22 20:59:39 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:59:44 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 20:59:47 - INFO: 已添加進陣列
+2025-02-22 20:59:48 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:59:48 - INFO: 職缺網址: https://www.104.com.tw/job/7q7bw?jobsource=joblist_bact_n
+2025-02-22 20:59:48 - INFO: 公司名稱: 永業物理治療所
+2025-02-22 20:59:48 - INFO: 更新日期: 2025/02/16
+2025-02-22 20:59:49 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 20:59:54 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 20:59:57 - INFO: 已添加進陣列
+2025-02-22 20:59:58 - INFO: 職缺名稱: 物理治療師
+2025-02-22 20:59:58 - INFO: 職缺網址: https://www.104.com.tw/job/8mail?jobsource=joblist_bact_n
+2025-02-22 20:59:58 - INFO: 公司名稱: Moon‘s_豪美企業社
+2025-02-22 20:59:58 - INFO: 更新日期: 2025/02/21
+2025-02-22 20:59:59 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:04 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:08 - INFO: 已添加進陣列
+2025-02-22 21:00:09 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:00:09 - INFO: 職缺網址: https://www.104.com.tw/job/8d832?jobsource=joblist_list
+2025-02-22 21:00:09 - INFO: 公司名稱: 維賢診所
+2025-02-22 21:00:09 - INFO: 更新日期: 2025/02/20
+2025-02-22 21:00:10 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:19 - INFO: 已添加進陣列
+2025-02-22 21:00:21 - INFO: 職缺名稱: (兼職)物理治療師/生  時薪400
+2025-02-22 21:00:21 - INFO: 職缺網址: https://www.104.com.tw/job/8jao9?jobsource=joblist_bact_n
+2025-02-22 21:00:21 - INFO: 公司名稱: Dr PAIN 康銓中醫診所(籌備處)
+2025-02-22 21:00:21 - INFO: 更新日期: 2025/02/22
+2025-02-22 21:00:22 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:27 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:00:30 - INFO: 已添加進陣列
+2025-02-22 21:00:31 - INFO: 職缺名稱: 物理治療師(正職)
+2025-02-22 21:00:31 - INFO: 職缺網址: https://www.104.com.tw/job/8bbtb?jobsource=joblist_bact_n
+2025-02-22 21:00:31 - INFO: 公司名稱: 崇心復健科診所
+2025-02-22 21:00:31 - INFO: 更新日期: 2025/02/07
+2025-02-22 21:00:32 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:32 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:41 - INFO: 已添加進陣列
+2025-02-22 21:00:42 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:00:42 - INFO: 職缺網址: https://www.104.com.tw/job/5dlia?jobsource=joblist_list
+2025-02-22 21:00:42 - INFO: 公司名稱: 愛力能復健科診所
+2025-02-22 21:00:42 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:00:43 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:48 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:00:51 - INFO: 已添加進陣列
+2025-02-22 21:00:52 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:00:52 - INFO: 職缺網址: https://www.104.com.tw/job/8cisp?jobsource=joblist_bact_n
+2025-02-22 21:00:52 - INFO: 公司名稱: 大重仁復健科診所
+2025-02-22 21:00:52 - INFO: 更新日期: 2025/02/19
+2025-02-22 21:00:53 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:53 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:00:58 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:01:01 - INFO: 已添加進陣列
+2025-02-22 21:01:02 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:01:02 - INFO: 職缺網址: https://www.104.com.tw/job/7xsjj?jobsource=joblist_list
+2025-02-22 21:01:02 - INFO: 公司名稱: 永恆美診所
+2025-02-22 21:01:02 - INFO: 更新日期: 2025/02/03
+2025-02-22 21:01:08 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:01:11 - INFO: 已添加進陣列
+2025-02-22 21:01:12 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:01:12 - INFO: 職缺網址: https://www.104.com.tw/job/7tb9f?jobsource=joblist_bact_n
+2025-02-22 21:01:12 - INFO: 公司名稱: 永業物理治療所
+2025-02-22 21:01:12 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:01:13 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:01:18 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:01:22 - INFO: 已添加進陣列
+2025-02-22 21:01:22 - INFO: 職缺名稱: 物理治療師（正職）
+2025-02-22 21:01:22 - INFO: 職缺網址: https://www.104.com.tw/job/7v50l?jobsource=joblist_bact_n
+2025-02-22 21:01:22 - INFO: 公司名稱: 宏懿復健科診所
+2025-02-22 21:01:22 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:01:29 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:01:32 - INFO: 已添加進陣列
+2025-02-22 21:01:33 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:01:33 - INFO: 職缺網址: https://www.104.com.tw/job/8motz?jobsource=joblist_bact_n
+2025-02-22 21:01:33 - INFO: 公司名稱: 新達骨科診所
+2025-02-22 21:01:33 - INFO: 更新日期: 2025/02/20
+2025-02-22 21:01:39 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:01:42 - INFO: 已添加進陣列
+2025-02-22 21:01:43 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:01:43 - INFO: 職缺網址: https://www.104.com.tw/job/6hn0o?jobsource=joblist_list
+2025-02-22 21:01:43 - INFO: 公司名稱: 祥泰診所
+2025-02-22 21:01:43 - INFO: 更新日期: 2025/02/15
+2025-02-22 21:01:49 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:01:52 - INFO: 已添加進陣列
+2025-02-22 21:01:52 - INFO: 已儲存 ['物理治療師'] 職缺0筆
+2025-02-22 21:01:54 - INFO: 正在處理第 2 頁...
+2025-02-22 21:01:54 - INFO: 當前頁面職缺數量: 43
+2025-02-22 21:01:55 - INFO: 職缺名稱: 整復師 /按摩師
+2025-02-22 21:01:55 - INFO: 職缺網址: https://www.104.com.tw/job/8kajh?jobsource=hotjob_chr_exp
+2025-02-22 21:01:55 - INFO: 公司名稱: 椿之院有限公司
+2025-02-22 21:01:55 - INFO: 更新日期: 2025/02/19
+2025-02-22 21:01:56 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:02:06 - INFO: 已添加進陣列
+2025-02-22 21:02:06 - INFO: 職缺名稱: 正職門市職員
+2025-02-22 21:02:06 - INFO: 職缺網址: https://www.104.com.tw/job/7xfvi?jobsource=hotjob_chr_exp
+2025-02-22 21:02:06 - INFO: 公司名稱: 唯心運動醫療體系_唯心運動健康顧問股份有限公司
+2025-02-22 21:02:06 - INFO: 更新日期: 2025/02/20
+2025-02-22 21:02:17 - INFO: 已添加進陣列
+2025-02-22 21:02:18 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:02:18 - INFO: 職缺網址: https://www.104.com.tw/job/8c34r?jobsource=joblist_list
+2025-02-22 21:02:18 - INFO: 公司名稱: 健立生醫股份有限公司
+2025-02-22 21:02:18 - INFO: 更新日期: 2025/02/05
+2025-02-22 21:02:19 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:02:25 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:02:28 - INFO: 已添加進陣列
+2025-02-22 21:02:29 - INFO: 職缺名稱: 勞工健康服務相關人員(心理諮商師/物理治療師/職能治療師)
+2025-02-22 21:02:29 - INFO: 職缺網址: https://www.104.com.tw/job/8juoj?jobsource=joblist_list
+2025-02-22 21:02:29 - INFO: 公司名稱: 立偉電子股份有限公司
+2025-02-22 21:02:29 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:02:30 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:02:39 - INFO: 已添加進陣列
+2025-02-22 21:02:41 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:02:41 - INFO: 職缺網址: https://www.104.com.tw/job/8bkpj?jobsource=joblist_list
+2025-02-22 21:02:41 - INFO: 公司名稱: 重維復健用品有限公司
+2025-02-22 21:02:41 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:02:42 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:02:47 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:02:50 - INFO: 已添加進陣列
+2025-02-22 21:02:51 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:02:51 - INFO: 職缺網址: https://www.104.com.tw/job/8c6ar?jobsource=joblist_list
+2025-02-22 21:02:51 - INFO: 公司名稱: 言恩診所
+2025-02-22 21:02:51 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:03:01 - INFO: 已添加進陣列
+2025-02-22 21:03:02 - INFO: 職缺名稱: 物理治療師-職務代理人
+2025-02-22 21:03:02 - INFO: 職缺網址: https://www.104.com.tw/job/8ia3o?jobsource=joblist_list
+2025-02-22 21:03:02 - INFO: 公司名稱: 國家運動訓練中心
+2025-02-22 21:03:02 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:03:12 - INFO: 已添加進陣列
+2025-02-22 21:03:13 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:03:13 - INFO: 職缺網址: https://www.104.com.tw/job/83cdf?jobsource=joblist_bact_n
+2025-02-22 21:03:13 - INFO: 公司名稱: 重仁骨科醫院
+2025-02-22 21:03:13 - INFO: 更新日期: 2025/02/21
+2025-02-22 21:03:14 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:03:23 - INFO: 已添加進陣列
+2025-02-22 21:03:24 - INFO: 職缺名稱: 正職物理治療師
+2025-02-22 21:03:24 - INFO: 職缺網址: https://www.104.com.tw/job/80kfq?jobsource=joblist_list
+2025-02-22 21:03:24 - INFO: 公司名稱: 榮誠骨科診所
+2025-02-22 21:03:24 - INFO: 更新日期: 2025/02/15
+2025-02-22 21:03:25 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:03:34 - INFO: 已添加進陣列
+2025-02-22 21:03:34 - INFO: 職缺名稱: 七醫醫療體系【台南_華國診所】物理治療師/生(中西區) <挑戰百萬年薪!! 歡迎新鮮人>
+2025-02-22 21:03:34 - INFO: 職缺網址: https://www.104.com.tw/job/8f4wj?jobsource=joblist_bact_n
+2025-02-22 21:03:34 - INFO: 公司名稱: 七醫醫療體系_七醫健康股份有限公司
+2025-02-22 21:03:34 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:03:45 - INFO: 已添加進陣列
+2025-02-22 21:03:46 - INFO: 職缺名稱: 藍海曙光 杏誠復健診所/永誠復健診所/宏恩綜合醫院復健科 物理治療師
+2025-02-22 21:03:46 - INFO: 職缺網址: https://www.104.com.tw/job/7wkyc?jobsource=joblist_bact_n
+2025-02-22 21:03:46 - INFO: 公司名稱: 藍海曙光集團_藍海曙光有限公司
+2025-02-22 21:03:46 - INFO: 更新日期: 2025/02/22
+2025-02-22 21:03:47 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:03:56 - INFO: 已添加進陣列
+2025-02-22 21:03:56 - INFO: 職缺名稱: 物理治療師 正式底薪7萬另加(團體獎金+個人獎金)-信義店
+2025-02-22 21:03:56 - INFO: 職缺網址: https://www.104.com.tw/job/8dvbo?jobsource=joblist_list
+2025-02-22 21:03:56 - INFO: 公司名稱: 霍普生醫集團_信義霍普金斯診所
+2025-02-22 21:03:56 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:03:58 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:04:06 - INFO: 已添加進陣列
+2025-02-22 21:04:07 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:04:07 - INFO: 職缺網址: https://www.104.com.tw/job/83sq9?jobsource=joblist_bact_n
+2025-02-22 21:04:07 - INFO: 公司名稱: 和沐復健專科診所
+2025-02-22 21:04:07 - INFO: 更新日期: 2025/02/19
+2025-02-22 21:04:09 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:04:17 - INFO: 已添加進陣列
+2025-02-22 21:04:18 - INFO: 職缺名稱: 物理治療師  (工作地點：台中)
+2025-02-22 21:04:18 - INFO: 職缺網址: https://www.104.com.tw/job/8m4te?jobsource=joblist_bact_n
+2025-02-22 21:04:18 - INFO: 公司名稱: 埔新永美聯合診所、復健診所_埔新永美牙醫診所
+2025-02-22 21:04:18 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:04:28 - INFO: 已添加進陣列
+2025-02-22 21:04:29 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:04:29 - INFO: 職缺網址: https://www.104.com.tw/job/85s5q?jobsource=joblist_list
+2025-02-22 21:04:29 - INFO: 公司名稱: 中英醫療社團法人中英醫院
+2025-02-22 21:04:29 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:04:30 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:04:35 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:04:38 - INFO: 已添加進陣列
+2025-02-22 21:04:39 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:04:39 - INFO: 職缺網址: https://www.104.com.tw/job/8khyw?jobsource=joblist_list
+2025-02-22 21:04:39 - INFO: 公司名稱: 博證物理治療所
+2025-02-22 21:04:39 - INFO: 更新日期: 2025/02/22
+2025-02-22 21:04:46 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:04:49 - INFO: 已添加進陣列
+2025-02-22 21:04:49 - INFO: 職缺名稱: 物理治療師（兼職）
+2025-02-22 21:04:49 - INFO: 職缺網址: https://www.104.com.tw/job/8jjd7?jobsource=joblist_list
+2025-02-22 21:04:49 - INFO: 公司名稱: 全威診所
+2025-02-22 21:04:49 - INFO: 更新日期: 2025/02/16
+2025-02-22 21:04:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:04:59 - INFO: 已添加進陣列
+2025-02-22 21:05:00 - INFO: 職缺名稱: 七醫醫療體系【台中_宜群診所】物理治療師/生(北屯區) <挑戰百萬年薪!! 歡迎新鮮人>★另有新進獎勵金★
+2025-02-22 21:05:00 - INFO: 職缺網址: https://www.104.com.tw/job/8amfj?jobsource=joblist_bact_n
+2025-02-22 21:05:00 - INFO: 公司名稱: 七醫醫療體系_七醫健康股份有限公司
+2025-02-22 21:05:00 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:05:01 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:05:06 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:05:10 - INFO: 已添加進陣列
+2025-02-22 21:05:11 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:05:11 - INFO: 職缺網址: https://www.104.com.tw/job/760js?jobsource=joblist_list
+2025-02-22 21:05:11 - INFO: 公司名稱: 祥泰診所
+2025-02-22 21:05:11 - INFO: 更新日期: 2025/02/15
+2025-02-22 21:05:17 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:05:20 - INFO: 已添加進陣列
+2025-02-22 21:05:21 - INFO: 職缺名稱: 七醫醫療體系【台中_如毅診所】物理治療師/生(豐原區) <挑戰百萬年薪!! 歡迎新鮮人>
+2025-02-22 21:05:21 - INFO: 職缺網址: https://www.104.com.tw/job/88tj4?jobsource=joblist_list
+2025-02-22 21:05:21 - INFO: 公司名稱: 七醫醫療體系_七醫健康股份有限公司
+2025-02-22 21:05:21 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:05:31 - INFO: 已添加進陣列
+2025-02-22 21:05:32 - INFO: 職缺名稱: 【自然人承攬月薪5萬元以上】物理治療師
+2025-02-22 21:05:32 - INFO: 職缺網址: https://www.104.com.tw/job/7ounk?jobsource=joblist_list
+2025-02-22 21:05:32 - INFO: 公司名稱: 衛生福利部中區老人之家
+2025-02-22 21:05:32 - INFO: 更新日期: 2025/02/21
+2025-02-22 21:05:33 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:05:38 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:05:41 - INFO: 已添加進陣列
+2025-02-22 21:05:42 - INFO: 職缺名稱: 物理治療師-歡迎應屆畢業生 歡迎轉行 月休十天
+2025-02-22 21:05:42 - INFO: 職缺網址: https://www.104.com.tw/job/8eiaf?jobsource=joblist_list
+2025-02-22 21:05:42 - INFO: 公司名稱: 柔伊國際有限公司
+2025-02-22 21:05:42 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:05:43 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:05:49 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:05:52 - INFO: 已添加進陣列
+2025-02-22 21:05:52 - INFO: 已儲存 ['物理治療師'] 職缺0筆
+2025-02-22 21:05:54 - INFO: 正在處理第 3 頁...
+2025-02-22 21:05:54 - INFO: 當前頁面職缺數量: 64
+2025-02-22 21:05:54 - INFO: 職缺名稱: (桃園院區) 語言治療師
+2025-02-22 21:05:54 - INFO: 職缺網址: https://www.104.com.tw/job/84rzd?jobsource=hotjob_chr_exp
+2025-02-22 21:05:54 - INFO: 公司名稱: 順安復健專科診所
+2025-02-22 21:05:54 - INFO: 更新日期: 2025/02/19
+2025-02-22 21:05:56 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:05:56 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:06:01 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:06:04 - INFO: 已添加進陣列
+2025-02-22 21:06:05 - INFO: 職缺名稱: 【總部擴編】產品專員(物理治療師)
+2025-02-22 21:06:05 - INFO: 職缺網址: https://www.104.com.tw/job/5jmg6?jobsource=joblist_bact_n
+2025-02-22 21:06:05 - INFO: 公司名稱: 蓋婭基因股份有限公司
+2025-02-22 21:06:05 - INFO: 更新日期: 2025/02/19
+2025-02-22 21:06:16 - INFO: 已添加進陣列
+2025-02-22 21:06:16 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:06:16 - INFO: 職缺網址: https://www.104.com.tw/job/5zrdb?jobsource=joblist_list
+2025-02-22 21:06:16 - INFO: 公司名稱: 挺立康物理治療所
+2025-02-22 21:06:16 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:06:18 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:06:23 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:06:26 - INFO: 已添加進陣列
+2025-02-22 21:06:26 - INFO: 職缺名稱: 物理治療師/生 (兼職)
+2025-02-22 21:06:26 - INFO: 職缺網址: https://www.104.com.tw/job/8bmkg?jobsource=joblist_bact_n
+2025-02-22 21:06:26 - INFO: 公司名稱: 健心復健科診所
+2025-02-22 21:06:26 - INFO: 更新日期: 2025/02/20
+2025-02-22 21:06:28 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:06:33 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:06:36 - INFO: 已添加進陣列
+2025-02-22 21:06:36 - INFO: 職缺名稱: 兼職物理治療師
+2025-02-22 21:06:36 - INFO: 職缺網址: https://www.104.com.tw/job/5q5jq?jobsource=joblist_list
+2025-02-22 21:06:36 - INFO: 公司名稱: 愛力能復健科診所
+2025-02-22 21:06:36 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:06:38 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:06:43 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:06:46 - INFO: 已添加進陣列
+2025-02-22 21:06:47 - INFO: 職缺名稱: 物理治療師(全職) 
+2025-02-22 21:06:47 - INFO: 職缺網址: https://www.104.com.tw/job/72ik6?jobsource=joblist_bact_n
+2025-02-22 21:06:47 - INFO: 公司名稱: 郭大添骨科診所
+2025-02-22 21:06:47 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:06:57 - INFO: 已添加進陣列
+2025-02-22 21:06:58 - INFO: 職缺名稱: 產品設計工程師(物理治療師)
+2025-02-22 21:06:58 - INFO: 職缺網址: https://www.104.com.tw/job/8lpm9?jobsource=joblist_bact_n
+2025-02-22 21:06:58 - INFO: 公司名稱: 律動醫創股份有限公司
+2025-02-22 21:06:58 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:06:59 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:07:08 - INFO: 已添加進陣列
+2025-02-22 21:07:09 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:07:09 - INFO: 職缺網址: https://www.104.com.tw/job/8anso?jobsource=joblist_list
+2025-02-22 21:07:09 - INFO: 公司名稱: 財團法人屏東基督教勝利之家
+2025-02-22 21:07:09 - INFO: 更新日期: 2025/02/17
+2025-02-22 21:07:10 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:07:19 - INFO: 已添加進陣列
+2025-02-22 21:07:20 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:07:20 - INFO: 職缺網址: https://www.104.com.tw/job/8ltto?jobsource=joblist_list
+2025-02-22 21:07:20 - INFO: 公司名稱: 一里雲村養生園區暨金色天地安養中心_尚逸長照社團法人
+2025-02-22 21:07:20 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:07:26 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:07:29 - INFO: 已添加進陣列
+2025-02-22 21:07:30 - INFO: 職缺名稱: 物理治療師合作創業（台南）
+2025-02-22 21:07:30 - INFO: 職缺網址: https://www.104.com.tw/job/8ihrp?jobsource=joblist_list
+2025-02-22 21:07:30 - INFO: 公司名稱: 仁一生醫股份有限公司
+2025-02-22 21:07:30 - INFO: 更新日期: 2025/02/20
+2025-02-22 21:07:40 - INFO: 已添加進陣列
+2025-02-22 21:07:41 - INFO: 職缺名稱: 兼職  物理治療師/生
+2025-02-22 21:07:41 - INFO: 職缺網址: https://www.104.com.tw/job/8bbte?jobsource=joblist_list
+2025-02-22 21:07:41 - INFO: 公司名稱: 和康神經科診所
+2025-02-22 21:07:41 - INFO: 更新日期: 2025/02/19
+2025-02-22 21:07:42 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:07:47 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:07:50 - INFO: 已添加進陣列
+2025-02-22 21:07:51 - INFO: 職缺名稱: 物理治療師
+2025-02-22 21:07:51 - INFO: 職缺網址: https://www.104.com.tw/job/7utrb?jobsource=joblist_list
+2025-02-22 21:07:51 - INFO: 公司名稱: 禾康復健科診所
+2025-02-22 21:07:51 - INFO: 更新日期: 2025/02/18
+2025-02-22 21:07:52 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:07:52 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:01 - INFO: 已添加進陣列
+2025-02-22 21:08:02 - INFO: 職缺名稱: 物理治療師/生(永和)組長職
+2025-02-22 21:08:02 - INFO: 職缺網址: https://www.104.com.tw/job/842fq?jobsource=joblist_list
+2025-02-22 21:08:02 - INFO: 公司名稱: 惠安復健科診所
+2025-02-22 21:08:02 - INFO: 更新日期: 2024/12/26
+2025-02-22 21:08:03 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:09 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 21:08:12 - INFO: 已添加進陣列
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - ERROR: 處理 新合骨外科診所, 物理治療師(生)職缺時發生錯誤, https://www.104.com.tw/job/5e44z?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 21:08:22 - INFO: 已儲存 ['物理治療師'] 職缺0筆
+2025-02-22 21:08:24 - INFO: 正在處理第 4 頁...
+2025-02-22 21:08:24 - INFO: 當前頁面職缺數量: 0
+2025-02-22 21:08:24 - INFO: 資料已成功儲存至 D:/allm/crawler/job_list\job_details_20250222_210824.json
+2025-02-22 21:08:24 - INFO: 已儲存 ['物理治療師'] 職缺0筆
+2025-02-22 21:08:26 - INFO: 沒有新的職缺載入，可能已到底部
+2025-02-22 21:08:26 - INFO: 資料已成功儲存至 D:/allm/crawler/job_list\job_details_20250222_210826.json
+2025-02-22 21:08:26 - INFO: 資料已成功儲存至 D:/allm/crawler/com_url\com_url_20250222_210826.json
+2025-02-22 21:08:28 - INFO: 職缺爬蟲程式執行完畢

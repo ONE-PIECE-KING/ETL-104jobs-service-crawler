@@ -1,0 +1,1377 @@
+2025-02-22 23:31:51 - INFO: 日誌檔案已建立：logs\job_crawler_20250222_233151.log
+2025-02-22 23:31:51 - INFO: ====== WebDriver manager ======
+2025-02-22 23:31:51 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 23:31:52 - INFO: Get LATEST chromedriver version for google-chrome
+2025-02-22 23:31:52 - INFO: Driver [C:\Users\songs\.wdm\drivers\chromedriver\win64\133.0.6943.126\chromedriver-win32/chromedriver.exe] found in cache
+2025-02-22 23:32:00 - INFO: 正在處理第 1 頁...
+2025-02-22 23:32:00 - INFO: 當前頁面職缺數量: 22
+2025-02-22 23:32:01 - INFO: 職缺名稱: 信義馬光中醫診所-護理人員 #完善教育訓練 #多元升遷管道
+2025-02-22 23:32:01 - INFO: 職缺網址: https://www.104.com.tw/job/86u61?jobsource=hotjob_chr_exp
+2025-02-22 23:32:01 - INFO: 公司名稱: 馬光醫療網_馬光中醫診所
+2025-02-22 23:32:01 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:32:12 - INFO: 已添加進陣列
+2025-02-22 23:32:13 - INFO: 職缺名稱: 信義馬光中醫診所-診助人員 #不限科系 #完善教育訓練 #多元升遷管道
+2025-02-22 23:32:13 - INFO: 職缺網址: https://www.104.com.tw/job/86u5q?jobsource=hotjob_chr_exp
+2025-02-22 23:32:13 - INFO: 公司名稱: 馬光醫療網_馬光中醫診所
+2025-02-22 23:32:13 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:32:23 - INFO: 已添加進陣列
+2025-02-22 23:32:24 - INFO: 職缺名稱: 中醫師
+2025-02-22 23:32:24 - INFO: 職缺網址: https://www.104.com.tw/job/72gsa?jobsource=joblist_bact_n
+2025-02-22 23:32:24 - INFO: 公司名稱: 馥林中醫診所
+2025-02-22 23:32:24 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:32:25 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:32:30 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:32:33 - INFO: 已添加進陣列
+2025-02-22 23:32:34 - INFO: 職缺名稱: 中醫師（兼職）
+2025-02-22 23:32:34 - INFO: 職缺網址: https://www.104.com.tw/job/7ibje?jobsource=joblist_list
+2025-02-22 23:32:34 - INFO: 公司名稱: 昇陽中醫診所
+2025-02-22 23:32:34 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:32:35 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:32:40 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:32:43 - INFO: 已添加進陣列
+2025-02-22 23:32:44 - INFO: 職缺名稱: 中醫師
+2025-02-22 23:32:44 - INFO: 職缺網址: https://www.104.com.tw/job/893lt?jobsource=joblist_list
+2025-02-22 23:32:44 - INFO: 公司名稱: 明正中醫診所
+2025-02-22 23:32:44 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:32:50 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:32:53 - INFO: 已添加進陣列
+2025-02-22 23:32:56 - INFO: 職缺名稱: 中醫師
+2025-02-22 23:32:56 - INFO: 職缺網址: https://www.104.com.tw/job/800o7?jobsource=joblist_list
+2025-02-22 23:32:56 - INFO: 公司名稱: 彭燕婷中醫診所
+2025-02-22 23:32:56 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:32:57 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:33:02 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:33:05 - INFO: 已添加進陣列
+2025-02-22 23:33:06 - INFO: 職缺名稱: 中醫師
+2025-02-22 23:33:06 - INFO: 職缺網址: https://www.104.com.tw/job/8mkus?jobsource=joblist_list
+2025-02-22 23:33:06 - INFO: 公司名稱: 漢氫科技股份有限公司
+2025-02-22 23:33:06 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:33:07 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:33:12 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:33:15 - INFO: 已添加進陣列
+2025-02-22 23:33:16 - INFO: 職缺名稱: 中醫師
+2025-02-22 23:33:16 - INFO: 職缺網址: https://www.104.com.tw/job/8d703?jobsource=joblist_list
+2025-02-22 23:33:16 - INFO: 公司名稱: 祥寧中醫診所
+2025-02-22 23:33:16 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:33:22 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:33:25 - INFO: 已添加進陣列
+2025-02-22 23:33:26 - INFO: 職缺名稱: 中醫師/(兼職中醫師)
+2025-02-22 23:33:26 - INFO: 職缺網址: https://www.104.com.tw/job/8kkyc?jobsource=joblist_list
+2025-02-22 23:33:26 - INFO: 公司名稱: 涂育嘉中醫診所
+2025-02-22 23:33:26 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:33:32 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:33:35 - INFO: 已添加進陣列
+2025-02-22 23:33:36 - INFO: 職缺名稱: 【中彰投地區】中醫師(一周需6-8診，診數可議)
+2025-02-22 23:33:36 - INFO: 職缺網址: https://www.104.com.tw/job/8m1m7?jobsource=joblist_list
+2025-02-22 23:33:36 - INFO: 公司名稱: 詠祥中醫診所
+2025-02-22 23:33:36 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:33:37 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:33:37 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:33:42 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:33:46 - INFO: 已添加進陣列
+2025-02-22 23:33:47 - INFO: 職缺名稱: 中醫師(台中公益/黎明院所)
+2025-02-22 23:33:47 - INFO: 職缺網址: https://www.104.com.tw/job/7rx88?jobsource=joblist_list
+2025-02-22 23:33:47 - INFO: 公司名稱: 瑩中醫診所
+2025-02-22 23:33:47 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:33:48 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:33:57 - INFO: 已添加進陣列
+2025-02-22 23:33:57 - INFO: 職缺名稱: 兼職中醫師
+2025-02-22 23:33:57 - INFO: 職缺網址: https://www.104.com.tw/job/8ckc4?jobsource=joblist_list
+2025-02-22 23:33:57 - INFO: 公司名稱: 京禾中醫診所
+2025-02-22 23:33:57 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:34:04 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:34:07 - INFO: 已添加進陣列
+2025-02-22 23:34:07 - INFO: 職缺名稱: 執業中醫師（台中中清院）
+2025-02-22 23:34:07 - INFO: 職缺網址: https://www.104.com.tw/job/7ifu0?jobsource=joblist_list
+2025-02-22 23:34:07 - INFO: 公司名稱: 日禾中醫診所
+2025-02-22 23:34:07 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:34:09 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:34:14 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:34:17 - INFO: 已添加進陣列
+2025-02-22 23:34:17 - INFO: 職缺名稱: 【中醫師】京都堂中醫體系(三重區)
+2025-02-22 23:34:17 - INFO: 職缺網址: https://www.104.com.tw/job/6x5sx?jobsource=joblist_bact_n
+2025-02-22 23:34:17 - INFO: 公司名稱: 京都堂中醫診所
+2025-02-22 23:34:17 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:34:24 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:34:27 - INFO: 已添加進陣列
+2025-02-22 23:34:28 - INFO: 職缺名稱: 晚班兼職行政人員
+2025-02-22 23:34:28 - INFO: 職缺網址: https://www.104.com.tw/job/823ug?jobsource=joblist_bact_n
+2025-02-22 23:34:28 - INFO: 公司名稱: 吉人堂中醫診所
+2025-02-22 23:34:28 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:34:34 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:34:37 - INFO: 已添加進陣列
+2025-02-22 23:34:38 - INFO: 職缺名稱: 泰昌堂中醫診所天母店-正職助理
+2025-02-22 23:34:38 - INFO: 職缺網址: https://www.104.com.tw/job/7u9zm?jobsource=joblist_list
+2025-02-22 23:34:38 - INFO: 公司名稱: 泰昌堂中醫診所
+2025-02-22 23:34:38 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:34:49 - INFO: 已添加進陣列
+2025-02-22 23:34:49 - INFO: 職缺名稱: 中醫師
+2025-02-22 23:34:49 - INFO: 職缺網址: https://www.104.com.tw/job/75tc2?jobsource=joblist_list
+2025-02-22 23:34:49 - INFO: 公司名稱: 群復中醫診所
+2025-02-22 23:34:49 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:34:51 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:34:56 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:34:59 - INFO: 已添加進陣列
+2025-02-22 23:34:59 - INFO: 職缺名稱: 執業中醫師（台北復興北院）
+2025-02-22 23:34:59 - INFO: 職缺網址: https://www.104.com.tw/job/8mjfd?jobsource=joblist_list
+2025-02-22 23:34:59 - INFO: 公司名稱: 日禾中醫診所
+2025-02-22 23:35:00 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:35:01 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:35:06 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:35:09 - INFO: 已添加進陣列
+2025-02-22 23:35:10 - INFO: 職缺名稱: 【天心中醫】掛號櫃檯正職
+2025-02-22 23:35:10 - INFO: 職缺網址: https://www.104.com.tw/job/8crih?jobsource=joblist_bact_n
+2025-02-22 23:35:10 - INFO: 公司名稱: 天心中醫診所
+2025-02-22 23:35:10 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:35:11 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:35:20 - INFO: 已添加進陣列
+2025-02-22 23:35:21 - INFO: 職缺名稱: 午晚班「藥局」助理(大安區-忠孝祥寧)(通化培訓)
+2025-02-22 23:35:21 - INFO: 職缺網址: https://www.104.com.tw/job/8h7gj?jobsource=joblist_bact_n
+2025-02-22 23:35:21 - INFO: 公司名稱: 祥寧中醫診所
+2025-02-22 23:35:21 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:35:22 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:35:31 - INFO: 已添加進陣列
+2025-02-22 23:35:32 - INFO: 職缺名稱: 中醫師(台北忠孝院所)
+2025-02-22 23:35:32 - INFO: 職缺網址: https://www.104.com.tw/job/70g51?jobsource=joblist_list
+2025-02-22 23:35:32 - INFO: 公司名稱: 瑩中醫診所
+2025-02-22 23:35:32 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:35:33 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:35:38 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:35:41 - INFO: 已添加進陣列
+2025-02-22 23:35:42 - INFO: 職缺名稱: 午晚班櫃台人員(大安區忠孝祥寧)籌備中
+2025-02-22 23:35:42 - INFO: 職缺網址: https://www.104.com.tw/job/8f7qx?jobsource=joblist_list
+2025-02-22 23:35:42 - INFO: 公司名稱: 祥寧中醫診所
+2025-02-22 23:35:42 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:35:52 - INFO: 已添加進陣列
+2025-02-22 23:35:54 - INFO: 正在處理第 2 頁...
+2025-02-22 23:35:54 - INFO: 當前頁面職缺數量: 42
+2025-02-22 23:35:55 - INFO: 職缺名稱: 中醫師(中山、中永和)
+2025-02-22 23:35:55 - INFO: 職缺網址: https://www.104.com.tw/job/819k4?jobsource=joblist_bact_n
+2025-02-22 23:35:55 - INFO: 公司名稱: 澄品中醫診所
+2025-02-22 23:35:55 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:35:56 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:36:01 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:36:04 - INFO: 已添加進陣列
+2025-02-22 23:36:05 - INFO: 職缺名稱: 泰昌堂中醫診所文山院-正職助理/儲備幹部
+2025-02-22 23:36:05 - INFO: 職缺網址: https://www.104.com.tw/job/7t650?jobsource=joblist_bact_n
+2025-02-22 23:36:05 - INFO: 公司名稱: 泰昌堂中醫診所
+2025-02-22 23:36:05 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:36:16 - INFO: 已添加進陣列
+2025-02-22 23:36:16 - INFO: 職缺名稱: 中醫診所正職
+2025-02-22 23:36:16 - INFO: 職缺網址: https://www.104.com.tw/job/84od3?jobsource=joblist_bact_n
+2025-02-22 23:36:16 - INFO: 公司名稱: 沐荷中醫診所
+2025-02-22 23:36:17 - INFO: 更新日期: 2025/02/16
+2025-02-22 23:36:27 - INFO: 已添加進陣列
+2025-02-22 23:36:27 - INFO: 職缺名稱: 康馥中醫－專任或兼職中醫師
+2025-02-22 23:36:27 - INFO: 職缺網址: https://www.104.com.tw/job/8h2e3?jobsource=joblist_list
+2025-02-22 23:36:27 - INFO: 公司名稱: 康馥中醫診所
+2025-02-22 23:36:27 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:36:29 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:36:34 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:36:37 - INFO: 已添加進陣列
+2025-02-22 23:36:37 - INFO: 職缺名稱: 中醫師/兼職中醫師
+2025-02-22 23:36:37 - INFO: 職缺網址: https://www.104.com.tw/job/8ckar?jobsource=joblist_list
+2025-02-22 23:36:37 - INFO: 公司名稱: 京禾中醫診所
+2025-02-22 23:36:37 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:36:44 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:36:47 - INFO: 已添加進陣列
+2025-02-22 23:36:47 - INFO: 職缺名稱: 【詠春中醫診所】中醫師
+2025-02-22 23:36:47 - INFO: 職缺網址: https://www.104.com.tw/job/8lx45?jobsource=joblist_list
+2025-02-22 23:36:47 - INFO: 公司名稱: 詠春中醫診所
+2025-02-22 23:36:47 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:36:49 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:36:54 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:36:57 - INFO: 已添加進陣列
+2025-02-22 23:36:57 - INFO: 職缺名稱: 美顏針醫師
+2025-02-22 23:36:57 - INFO: 職缺網址: https://www.104.com.tw/job/7exhf?jobsource=joblist_list
+2025-02-22 23:36:57 - INFO: 公司名稱: 彭燕婷中醫診所
+2025-02-22 23:36:57 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:36:59 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:37:04 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:37:07 - INFO: 已添加進陣列
+2025-02-22 23:37:08 - INFO: 職缺名稱: 診所助理 / 診所櫃檯客服兼行政人員
+2025-02-22 23:37:08 - INFO: 職缺網址: https://www.104.com.tw/job/6ctcb?jobsource=joblist_bact_n
+2025-02-22 23:37:08 - INFO: 公司名稱: 彭燕婷中醫診所
+2025-02-22 23:37:08 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:37:09 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:37:18 - INFO: 已添加進陣列
+2025-02-22 23:37:19 - INFO: 職缺名稱: 10901_中醫師 (新北三重分院)
+2025-02-22 23:37:19 - INFO: 職缺網址: https://www.104.com.tw/job/81t9s?jobsource=joblist_list
+2025-02-22 23:37:19 - INFO: 公司名稱: 台中公園仁心堂中醫診所
+2025-02-22 23:37:19 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:37:20 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:37:25 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:37:28 - INFO: 已添加進陣列
+2025-02-22 23:37:30 - INFO: 職缺名稱: 意凡馬光中醫診所-診助人員 #不限科系 #完善教育訓練 #多元升遷管道
+2025-02-22 23:37:30 - INFO: 職缺網址: https://www.104.com.tw/job/4rxkl?jobsource=joblist_bact_n
+2025-02-22 23:37:30 - INFO: 公司名稱: 馬光醫療網_馬光中醫診所
+2025-02-22 23:37:30 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:37:40 - INFO: 已添加進陣列
+2025-02-22 23:37:41 - INFO: 職缺名稱: 午晚班櫃台人員(大安區通化街)
+2025-02-22 23:37:41 - INFO: 職缺網址: https://www.104.com.tw/job/86d7f?jobsource=joblist_list
+2025-02-22 23:37:41 - INFO: 公司名稱: 祥寧中醫診所
+2025-02-22 23:37:41 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:37:42 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:37:52 - INFO: 已添加進陣列
+2025-02-22 23:37:52 - INFO: 職缺名稱: 三重醫務助理
+2025-02-22 23:37:52 - INFO: 職缺網址: https://www.104.com.tw/job/870kk?jobsource=joblist_list
+2025-02-22 23:37:52 - INFO: 公司名稱: 宥聖中醫醫療體系_三重宥聖中醫診所
+2025-02-22 23:37:52 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:38:03 - INFO: 已添加進陣列
+2025-02-22 23:38:04 - INFO: 職缺名稱: 中醫診所早班兼職
+2025-02-22 23:38:04 - INFO: 職缺網址: https://www.104.com.tw/job/8mpcz?jobsource=joblist_bact_n
+2025-02-22 23:38:04 - INFO: 公司名稱: 正元中醫診所
+2025-02-22 23:38:04 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:38:05 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:38:14 - INFO: 已添加進陣列
+2025-02-22 23:38:15 - INFO: 職缺名稱: 中醫診所助理（無經驗可）上班時間13:30~21:30
+2025-02-22 23:38:15 - INFO: 職缺網址: https://www.104.com.tw/job/4r55m?jobsource=joblist_list
+2025-02-22 23:38:15 - INFO: 公司名稱: 京禾中醫診所
+2025-02-22 23:38:15 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:38:25 - INFO: 已添加進陣列
+2025-02-22 23:38:26 - INFO: 職缺名稱: 早班兼職助理(忠孝分院)
+2025-02-22 23:38:26 - INFO: 職缺網址: https://www.104.com.tw/job/8m9iv?jobsource=joblist_list
+2025-02-22 23:38:26 - INFO: 公司名稱: 陳潮宗中醫診所
+2025-02-22 23:38:26 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:38:27 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:38:36 - INFO: 已添加進陣列
+2025-02-22 23:38:37 - INFO: 職缺名稱: 診所助理(三重)
+2025-02-22 23:38:37 - INFO: 職缺網址: https://www.104.com.tw/job/869fc?jobsource=joblist_bact_n
+2025-02-22 23:38:37 - INFO: 公司名稱: 又一春中醫診所
+2025-02-22 23:38:37 - INFO: 更新日期: 2025/02/20
+2025-02-22 23:38:38 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:38:47 - INFO: 已添加進陣列
+2025-02-22 23:38:48 - INFO: 職缺名稱: 診所助理(正職）
+2025-02-22 23:38:48 - INFO: 職缺網址: https://www.104.com.tw/job/8059l?jobsource=joblist_list
+2025-02-22 23:38:48 - INFO: 公司名稱: 峻毅中醫診所
+2025-02-22 23:38:48 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:38:49 - ERROR: 獲取福利制度時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.benefits-description p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:38:58 - INFO: 已添加進陣列
+2025-02-22 23:38:59 - INFO: 職缺名稱: 中醫診所健康專員
+2025-02-22 23:38:59 - INFO: 職缺網址: https://www.104.com.tw/job/78jj8?jobsource=joblist_bact_n
+2025-02-22 23:38:59 - INFO: 公司名稱: 日禾中醫診所
+2025-02-22 23:38:59 - INFO: 更新日期: 2024/12/24
+2025-02-22 23:39:09 - INFO: 已添加進陣列
+2025-02-22 23:39:10 - INFO: 職缺名稱: 中醫診所健康專員（午晚班）
+2025-02-22 23:39:10 - INFO: 職缺網址: https://www.104.com.tw/job/8e1zq?jobsource=joblist_bact_n
+2025-02-22 23:39:10 - INFO: 公司名稱: 日禾中醫診所
+2025-02-22 23:39:10 - INFO: 更新日期: 2024/12/23
+2025-02-22 23:39:20 - INFO: 已添加進陣列
+2025-02-22 23:39:21 - INFO: 職缺名稱: 中醫助理
+2025-02-22 23:39:21 - INFO: 職缺網址: https://www.104.com.tw/job/8isu7?jobsource=joblist_bact_n
+2025-02-22 23:39:21 - INFO: 公司名稱: 禾澄中醫診所
+2025-02-22 23:39:21 - INFO: 更新日期: 2025/02/19
+2025-02-22 23:39:22 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:39:31 - INFO: 已添加進陣列
+2025-02-22 23:39:34 - INFO: 正在處理第 3 頁...
+2025-02-22 23:39:34 - INFO: 當前頁面職缺數量: 62
+2025-02-22 23:39:34 - INFO: 職缺名稱: 信義馬光中醫診所-會計人員
+2025-02-22 23:39:34 - INFO: 職缺網址: https://www.104.com.tw/job/8ap8q?jobsource=joblist_bact_n
+2025-02-22 23:39:34 - INFO: 公司名稱: 馬光醫療網_馬光中醫診所
+2025-02-22 23:39:34 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:39:45 - INFO: 已添加進陣列
+2025-02-22 23:39:45 - INFO: 職缺名稱: 泰昌堂中醫診所文山院-護理師/儲備幹部
+2025-02-22 23:39:45 - INFO: 職缺網址: https://www.104.com.tw/job/80lrd?jobsource=joblist_bact_n
+2025-02-22 23:39:45 - INFO: 公司名稱: 泰昌堂中醫診所
+2025-02-22 23:39:45 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:39:56 - INFO: 已添加進陣列
+2025-02-22 23:39:56 - INFO: 職缺名稱: 中醫師
+2025-02-22 23:39:56 - INFO: 職缺網址: https://www.104.com.tw/job/70is6?jobsource=joblist_list
+2025-02-22 23:39:56 - INFO: 公司名稱: 江美麗婦產科診所
+2025-02-22 23:39:56 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:39:58 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:40:03 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:40:06 - INFO: 已添加進陣列
+2025-02-22 23:40:07 - INFO: 職缺名稱: 診所助理(雙連分院）
+2025-02-22 23:40:07 - INFO: 職缺網址: https://www.104.com.tw/job/8m9mw?jobsource=joblist_list
+2025-02-22 23:40:07 - INFO: 公司名稱: 陳潮宗中醫診所
+2025-02-22 23:40:07 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:40:17 - INFO: 已添加進陣列
+2025-02-22 23:40:18 - INFO: 職缺名稱: 診所助理/兼職人員/ 長期工讀
+2025-02-22 23:40:18 - INFO: 職缺網址: https://www.104.com.tw/job/6oceg?jobsource=joblist_bact_n
+2025-02-22 23:40:18 - INFO: 公司名稱: 彭燕婷中醫診所
+2025-02-22 23:40:18 - INFO: 更新日期: 2025/02/22
+2025-02-22 23:40:19 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:40:28 - INFO: 已添加進陣列
+2025-02-22 23:40:29 - INFO: 職缺名稱: 計時護士/護理師(三峽區)
+2025-02-22 23:40:29 - INFO: 職缺網址: https://www.104.com.tw/job/8i0l6?jobsource=joblist_list
+2025-02-22 23:40:29 - INFO: 公司名稱: 佳禾中醫診所
+2025-02-22 23:40:29 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:40:30 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:40:36 - ERROR: 獲取語言能力時發生錯誤: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//span[contains(@class, 'text-truncate')]"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:40:39 - INFO: 已添加進陣列
+2025-02-22 23:40:40 - INFO: 職缺名稱: 兼職人員
+2025-02-22 23:40:40 - INFO: 職缺網址: https://www.104.com.tw/job/5xzwk?jobsource=joblist_list
+2025-02-22 23:40:40 - INFO: 公司名稱: 田逸堂中醫診所
+2025-02-22 23:40:40 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:40:51 - INFO: 已添加進陣列
+2025-02-22 23:40:52 - INFO: 職缺名稱: 【醫師助理】古亭店(可多元學習，績優可轉任銷售或管理工作)
+2025-02-22 23:40:52 - INFO: 職缺網址: https://www.104.com.tw/job/717ym?jobsource=joblist_bact_n
+2025-02-22 23:40:52 - INFO: 公司名稱: 京都堂中醫診所
+2025-02-22 23:40:52 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:41:02 - INFO: 已添加進陣列
+2025-02-22 23:41:03 - INFO: 職缺名稱: 兼職中醫師
+2025-02-22 23:41:03 - INFO: 職缺網址: https://www.104.com.tw/job/7oe1h?jobsource=joblist_list
+2025-02-22 23:41:03 - INFO: 公司名稱: 群復中醫診所
+2025-02-22 23:41:03 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:41:04 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:41:09 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:41:12 - INFO: 已添加進陣列
+2025-02-22 23:41:13 - INFO: 職缺名稱: 【醫師助理】新北三重店(可多元學習，績優可轉任銷售或管理工作)
+2025-02-22 23:41:13 - INFO: 職缺網址: https://www.104.com.tw/job/76um7?jobsource=joblist_list
+2025-02-22 23:41:13 - INFO: 公司名稱: 京都堂中醫診所
+2025-02-22 23:41:13 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:41:24 - INFO: 已添加進陣列
+2025-02-22 23:41:25 - INFO: 職缺名稱: 【雙連同仁】診所助理
+2025-02-22 23:41:25 - INFO: 職缺網址: https://www.104.com.tw/job/7xi2m?jobsource=joblist_list
+2025-02-22 23:41:25 - INFO: 公司名稱: 同仁堂中醫醫療體系_同仁堂中醫診所
+2025-02-22 23:41:25 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:41:35 - INFO: 已添加進陣列
+2025-02-22 23:41:36 - INFO: 職缺名稱: 【新店國華】診所助理
+2025-02-22 23:41:36 - INFO: 職缺網址: https://www.104.com.tw/job/834lx?jobsource=joblist_bact_n
+2025-02-22 23:41:36 - INFO: 公司名稱: 同仁堂中醫醫療體系_同仁堂中醫診所
+2025-02-22 23:41:36 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:41:37 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:41:47 - INFO: 已添加進陣列
+2025-02-22 23:41:48 - INFO: 職缺名稱: 診所櫃檯助理人員(三峽區)
+2025-02-22 23:41:48 - INFO: 職缺網址: https://www.104.com.tw/job/599ne?jobsource=joblist_list
+2025-02-22 23:41:48 - INFO: 公司名稱: 佳禾中醫診所
+2025-02-22 23:41:48 - INFO: 更新日期: 2025/02/21
+2025-02-22 23:41:49 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:41:58 - INFO: 已添加進陣列
+2025-02-22 23:41:59 - INFO: 職缺名稱: 【醫師助理】新莊儲備店(可多元學習，績優可轉任銷售或管理工作)
+2025-02-22 23:41:59 - INFO: 職缺網址: https://www.104.com.tw/job/8lzt7?jobsource=joblist_list
+2025-02-22 23:41:59 - INFO: 公司名稱: 京都堂中醫診所
+2025-02-22 23:41:59 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:42:05 - ERROR: 獲取語言能力時發生錯誤: list index out of range
+2025-02-22 23:42:08 - INFO: 已添加進陣列
+2025-02-22 23:42:09 - INFO: 職缺名稱: 晚班兼職助理(松山分院)
+2025-02-22 23:42:09 - INFO: 職缺網址: https://www.104.com.tw/job/8m9qv?jobsource=joblist_list
+2025-02-22 23:42:09 - INFO: 公司名稱: 陳潮宗中醫診所
+2025-02-22 23:42:09 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:42:11 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:42:19 - INFO: 已添加進陣列
+2025-02-22 23:42:20 - INFO: 職缺名稱: 成功馬光中醫診所-診助人員 #不限科系 #完善教育訓練 #多元升遷管道
+2025-02-22 23:42:20 - INFO: 職缺網址: https://www.104.com.tw/job/5vb6x?jobsource=joblist_list
+2025-02-22 23:42:20 - INFO: 公司名稱: 馬光醫療網_馬光中醫診所
+2025-02-22 23:42:20 - INFO: 更新日期: 2025/02/18
+2025-02-22 23:42:31 - INFO: 已添加進陣列
+2025-02-22 23:42:32 - INFO: 職缺名稱: 【詠春中醫診所】中醫健康管理師
+2025-02-22 23:42:32 - INFO: 職缺網址: https://www.104.com.tw/job/8ebvs?jobsource=joblist_list
+2025-02-22 23:42:32 - INFO: 公司名稱: 詠春中醫診所
+2025-02-22 23:42:32 - INFO: 更新日期: 2025/02/17
+2025-02-22 23:42:33 - ERROR: 獲取其他條件時發生錯誤: Message: no such element: Unable to locate element: {"method":"css selector","selector":"div.list-row__data p.r3"}
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:42:42 - INFO: 已添加進陣列
+2025-02-22 23:42:52 - ERROR: 處理 泰興中醫診所, 南港泰興中醫診所兼職助理職缺時發生錯誤, https://www.104.com.tw/job/8lerl?jobsource=joblist_list: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x004A8338]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x004F0F62]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:42:52 - ERROR: 處理 泰興中醫診所, 南港泰興中醫診所兼職助理職缺時發生錯誤, https://www.104.com.tw/job/8lerl?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:42:52 - ERROR: 處理 泰興中醫診所, 南港泰興中醫診所兼職助理職缺時發生錯誤, https://www.104.com.tw/job/8lerl?jobsource=joblist_list: Message: no such element: element not found
+  (Session info: chrome=133.0.6943.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00600283+25139]
+	(No symbol) [0x0058B234]
+	(No symbol) [0x004604A3]
+	(No symbol) [0x00471BE1]
+	(No symbol) [0x00470CD0]
+	(No symbol) [0x00467932]
+	(No symbol) [0x00465CDA]
+	(No symbol) [0x00468F9A]
+	(No symbol) [0x00469017]
+	(No symbol) [0x004A7BC1]
+	(No symbol) [0x004A868B]
+	(No symbol) [0x0049D9C1]
+	(No symbol) [0x004CCF84]
+	(No symbol) [0x0049D8E4]
+	(No symbol) [0x004CD1B4]
+	(No symbol) [0x004EE6E1]
+	(No symbol) [0x004CCD36]
+	(No symbol) [0x0049BD29]
+	(No symbol) [0x0049D064]
+	GetHandleVerifier [0x0090B143+3215603]
+	GetHandleVerifier [0x009222BA+3310186]
+	GetHandleVerifier [0x0091C4D2+3286146]
+	GetHandleVerifier [0x00699C80+654384]
+	(No symbol) [0x005945BD]
+	(No symbol) [0x005914A8]
+	(No symbol) [0x00591647]
+	(No symbol) [0x00583D20]
+	BaseThreadInitThunk [0x76355D49+25]
+	RtlInitializeExceptionChain [0x7753CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7753CD71+561]
+
+2025-02-22 23:42:54 - INFO: 正在處理第 4 頁...
+2025-02-22 23:42:54 - INFO: 當前頁面職缺數量: 0
+2025-02-22 23:42:56 - INFO: 沒有新的職缺載入，可能已到底部
+2025-02-22 23:42:56 - INFO: 資料已成功儲存至 D:/allm/crawler/job_list\job_details_20250222_234256.json
+2025-02-22 23:42:56 - INFO: 資料已成功儲存至 D:/allm/crawler/com_url\com_url_20250222_234256.json
+2025-02-22 23:42:59 - INFO: 職缺爬蟲程式執行完畢

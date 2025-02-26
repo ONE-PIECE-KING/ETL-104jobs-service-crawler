@@ -260,7 +260,8 @@ com_list = []
 tools_list = []
 applicants_analysis = []
 job_url_list = []
-
+# 建立 為執行職缺暫存資料夾
+os.makedirs('D:/allm/crawler/undo', exist_ok=True)
 start_time = datetime.now()
 def crawl_jobs(keyword_list, max_errors=3, max_scrolls=100000):
     crawler_error = 0
@@ -314,6 +315,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
             logging.warning(f"等待職缺載入超時: {WAIT_TIMEOUT} 秒")
             break
         current_jobs = driver.find_elements(By.CSS_SELECTOR, target_selector)
+        unprocessed_jobs = current_jobs
         current_count = len(current_jobs)
         logging.info(f"當前頁面職缺數量: {current_count}")
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -791,7 +793,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                 "applicants":applicants, "job_description":job_description, "job_category":job_category, "salary":salary, "job_type":job_type, 
                                 "location":location, "management":management, "business_trip":business_trip, "work_time":work_time, "vacation":vacation, 
                                 "start_work":start_work, "headcount":headcount, "work_exp":work_exp, "education":education, "major":major, 
-                                "language":language, "skills":skills, "certificates":certificates, "other_requirements":other_requirements,
+                                "language":language, "skills":skills, "tools": tools, "certificates":certificates, "other_requirements":other_requirements,
                                 "legal_benefits":legal_benefits_str, "other_benefits":other_benefits_str, "raw_benefits":raw_benefits, "contact_info":contact_info_str,
                                 "apply_education":apply_education, "apply_gender": gender, "apply_language": language_skills, "apply_age_distribution": age_distribution,
                                 "apply_experience": work_experience, "apply_major": major_distribution, "apply_skills": skills_distribution, "apply_certificates": certificates_distribution,
@@ -813,7 +815,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                     # tools_id = f"tool_{index + 1}"  # 根據索引生成 tool_id
                                     tools_list.append({"job_id": job_id, "tool": tool})
                             else:
-                                tools_list.clear()
+                                
                                 tools_list.append({"job_id": job_id, "tool": tools})
                         except Exception as e:
                             tools_list.clear()
@@ -822,7 +824,6 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                         # 使用 split() 方法分割字符串
                         try:
                             # 將公司網址中的公司 ID 提取出來
-                            logging.info(f"公司網址: {company_url}")
                             # 以 "/" 分割 URL，將結果存成串列
                             parts = company_url.split('/')
                             # 分割結果的最後一部分可能包含 query 參數，所以以 "?" 進一步分割
@@ -843,7 +844,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                             "applicants":"", "job_description": "", "job_category": "", "salary": "", "job_type": "",
                             "location": "", "management": "", "business_trip": "", "work_time": "",
                             "vacation": "", "start_work": "", "headcount": "", "work_exp": "", "education": "", 
-                            "major":"", "language":"", "skills":"", "certificates":"", 
+                            "major":"", "language":"", "skills":"", "tools":"", certificates:"", 
                             "other_requirements":"", "legal_benefits":"", "other_benefits":"", "raw_benefits":"", "contact_info":"", "status": "draft",
                             "apply_education":{}, "apply_gender": {}, "apply_language": {}, "apply_age_distribution": {},
                             "apply_experience": {}, "apply_major": {}, "apply_skills": {}, "apply_certificates": {}
@@ -896,17 +897,20 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                     # 若錯誤次數超過上限，則不再處理新的任務
                     if job_count > 3:
                         unprocessed_jobs = current_jobs[job_count-3:]
+                        
                     else:
                         unprocessed_jobs = current_jobs
                     logging.error("錯誤次數超過上限，停止處理後續職缺")
                     with open('D:/allm/crawler/undo/unprocessed_jobs.json', 'w', encoding='utf-8') as f:
                         json.dump(unprocessed_jobs, f, ensure_ascii=False, indent=4)
+                    crawler_error = 0
+                    return unprocessed_jobs
                 except Exception as e:
+                    crawler_error = 0
                     logging.error(f"錯誤處理時發生錯誤: {e}")
-        current_jobs = []
-        unprocessed_jobs = []
     while True:
         if len(unprocessed_jobs) > 0:
+            logging.info(f"未處理職缺數量: {len(unprocessed_jobs)}")
             logging.info("處理未完成的職缺")
             extract_job_info(unprocessed_jobs)
         elif len(current_jobs) > 0:
@@ -916,6 +920,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
             logging.info("沒有職缺可以處理")
             break
     logging.info("已處理完所有職缺")
+
 keyword_list = ["電子工程師", "電力工程師", "電源工程師", "數位IC設計工程師", "類比IC設計工程師", "IC佈局工程師", "半導體工程師", "光學工程師", "熱傳工程師"]
 # 使用方式
 crawl_jobs(keyword_list, max_errors=3, max_scrolls=100000)

@@ -330,7 +330,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
     # for job in current_jobs:
     ## 測試用
     logging.info(f"共找到 {len(current_jobs)} 筆職缺")
-    def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
+    def extract_job_info(current_jobs = current_jobs, max_errors = 3, crawler_error = 0):
         job_count=0
         for job in current_jobs:
         # 測試用
@@ -896,13 +896,16 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                 try:
                     # 若錯誤次數超過上限，則不再處理新的任務
                     if job_count > 3:
-                        unprocessed_jobs = current_jobs[job_count-3:]
+                        unprocessed_jobs = current_jobs[job_count-5:]
                         
                     else:
                         unprocessed_jobs = current_jobs
                     logging.error("錯誤次數超過上限，停止處理後續職缺")
-                    with open('D:/allm/crawler/undo/unprocessed_jobs.json', 'w', encoding='utf-8') as f:
-                        json.dump(unprocessed_jobs, f, ensure_ascii=False, indent=4)
+                    try:
+                        with open('D:/allm/crawler/undo/unprocessed_jobs.json', 'w', encoding='utf-8') as f:
+                            json.dump(unprocessed_jobs, f, ensure_ascii=False, indent=4)
+                    except Exception as e:
+                        logging.error(f"儲存未處理職缺時發生錯誤: {e}")
                     crawler_error = 0
                     return unprocessed_jobs
                 except Exception as e:
@@ -912,16 +915,17 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
         if len(unprocessed_jobs) > 0:
             logging.info(f"未處理職缺數量: {len(unprocessed_jobs)}")
             logging.info("處理未完成的職缺")
-            extract_job_info(unprocessed_jobs)
+            extract_job_info(current_jobs=unprocessed_jobs)
         elif len(current_jobs) > 0:
             logging.info("處理職缺中")
-            extract_job_info(current_jobs)
+            extract_job_info(current_jobs=current_jobs)
         else:
             logging.info("沒有職缺可以處理")
             break
     logging.info("已處理完所有職缺")
 
-keyword_list = ["電子工程師", "電力工程師", "電源工程師", "數位IC設計工程師", "類比IC設計工程師", "IC佈局工程師", "半導體工程師", "光學工程師", "熱傳工程師"]
+
+keyword_list = ["IC佈局工程師", "半導體工程師", "光學工程師", "熱傳工程師"]
 # 使用方式
 crawl_jobs(keyword_list, max_errors=3, max_scrolls=100000)
 if len(job_list) > 0:

@@ -7,7 +7,7 @@ import random
 import re
 '''
 import time
-import json
+import json 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from webdriver_manager.chrome import ChromeDriverManager
@@ -78,8 +78,8 @@ driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
 })
 driver.command_executor.set_timeout(1000)
 # 設定 Supabase 連線參數
-supabase_url: str = "url"
-supabase_key: str = "key"
+supabase_url: str = "https://fbwhzgumdgqcgivbgkke.supabase.co"
+supabase_key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZid2h6Z3VtZGdxY2dpdmJna2tlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyMzAzMjcsImV4cCI6MjA1NTgwNjMyN30.nW4t6beHineCCzIuogXjEEkt6Xp3Hh29VARemeEXfcc"
 # 建立 Supabase 客戶端
 supabase: Client = create_client(supabase_url, supabase_key)
 # 檢查 Chrome 和 ChromeDriver 的版本
@@ -283,30 +283,11 @@ def crawl_jobs(keyword_list, max_errors=3, max_scrolls=100000):
 def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'default_keyword'):
     scrolls = 0
     current_jobs = []
-    # 用來記錄尚未處理完的職缺（例如記錄其標題與 URL）
     unprocessed_jobs = []
+    
+    # 滾動並收集職缺
     while True and scrolls < max_scrolls:
         logging.info(f"正在處理第 {scrolls+1} 次滾動")
-        '''
-        try:
-            current_jobs = driver.find_elements(By.CSS_SELECTOR, target_selector)
-            logging.info(f"目前職缺數量: {len(current_jobs)}")
-            if len(current_jobs) == 0:
-                logging.warning("沒有找到職缺元素")
-                break
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            logging.info(f"已經滾動 {scrolls+1} 次，目前職缺數量: {len(current_jobs)}")
-            time.sleep(2)
-            
-            current_jobs = driver.find_elements(By.CSS_SELECTOR, target_selector)
-            if len(current_jobs) == previous_jobs_count:  # 元素數量沒有變化
-                break
-            previous_jobs_count = len(current_jobs)
-            scrolls += 1
-        except Exception as e:
-            logging.error(f"滾動到下一頁時發生錯誤: {e}")
-            break
-        '''
         try:
             WebDriverWait(driver, WAIT_TIMEOUT).until(
                 EC.presence_of_all_elements_located((By.CSS_SELECTOR, target_selector))
@@ -330,600 +311,582 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
     # for job in current_jobs:
     ## 測試用
     logging.info(f"共找到 {len(current_jobs)} 筆職缺")
-    def extract_job_info(current_jobs = current_jobs, max_errors = 3, crawler_error = 0):
-        job_count=0
+    def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
+        job_count = 0
+        remaining_jobs = []
+        
         for job in current_jobs:
-        # 測試用
-        # for job in current_jobs[:4]:
-            if  crawler_error < max_errors:
-                logging.info(f"正在處理第 {job_count+1} 筆職缺")
+            if crawler_error >= max_errors:
+                # 將剩餘未處理的職缺加入 remaining_jobs
+                remaining_jobs.extend(current_jobs[job_count:])
+                logging.warning(f"錯誤次數達到上限 {max_errors}，暫停處理")
+                break
+                
+            try:
+                # ※關鍵修正：從目前的職缺區塊內相對查找職缺標題與網址
+                title_element = job.find_element(By.XPATH, './/h2//a[contains(@class, "info-job__text")]')
+                job_url = title_element.get_attribute('href')
+                job_name = title_element.get_attribute('title')
+                
+                # 獲取公司資訊
+                company_element = job.find_element(By.CSS_SELECTOR, 'a[data-gtm-joblist="職缺-公司名稱"]')
+                company = company_element.text.strip()
+                company_url = company_element.get_attribute('href')
+                
+                # 開啟新分頁取得詳細資訊
+                driver.execute_script(f"window.open('{job_url}', '_blank')")
+                driver.switch_to.window(driver.window_handles[-1])
+                
+                WebDriverWait(driver, WAIT_TIMEOUT).until(
+                    EC.presence_of_element_located((By.CSS_SELECTOR, 'p.job-description__content'))
+                )
+                # 處理詳細頁面的資訊
                 try:
-                    # ※關鍵修正：從目前的職缺區塊內相對查找職缺標題與網址
-                    title_element = job.find_element(By.XPATH, './/h2//a[contains(@class, "info-job__text")]')
-                    job_url = title_element.get_attribute('href')
-                    job_name = title_element.get_attribute('title')
-                    
-                    # 獲取公司資訊
-                    company_element = job.find_element(By.CSS_SELECTOR, 'a[data-gtm-joblist="職缺-公司名稱"]')
-                    company = company_element.text.strip()
-                    company_url = company_element.get_attribute('href')
-                    
-                    # 開啟新分頁取得詳細資訊
-                    driver.execute_script(f"window.open('{job_url}', '_blank')")
-                    driver.switch_to.window(driver.window_handles[-1])
-                    
-                    WebDriverWait(driver, WAIT_TIMEOUT).until(
-                        EC.presence_of_element_located((By.CSS_SELECTOR, 'p.job-description__content'))
-                    )
-                    # 處理詳細頁面的資訊
+                    logging.info(f"職缺名稱: {job_name}")
+                    logging.info(f"職缺網址: {job_url}")
+                    # logging.info(f"公司名稱: {company}")
+                    # 獲取更新日期，使用 title 屬性來獲取完整日期（包含年份）
                     try:
-                        logging.info(f"職缺名稱: {job_name}")
-                        logging.info(f"職缺網址: {job_url}")
-                        # logging.info(f"公司名稱: {company}")
-                        # 獲取更新日期，使用 title 屬性來獲取完整日期（包含年份）
+                        update_date_element = driver.find_element(By.CSS_SELECTOR, 'span.text-gray-darker[title*="更新"]')
+                        update_date = update_date_element.get_attribute('title')  # 獲取完整的 title 內容
+                        update_date = update_date.replace("更新", "").strip()  # 移除 "更新" 文字
                         try:
-                            update_date_element = driver.find_element(By.CSS_SELECTOR, 'span.text-gray-darker[title*="更新"]')
-                            update_date = update_date_element.get_attribute('title')  # 獲取完整的 title 內容
-                            update_date = update_date.replace("更新", "").strip()  # 移除 "更新" 文字
-                            try:
-                                # 將 update_date 轉換為 datetime 物件
-                                date_obj = datetime.strptime(update_date, "%Y/%m/%d")  # 假設原始格式為 YYYY/MM/DD
-                                # 格式化為 YYYY-MM-DD
-                                update_date = date_obj.strftime("%Y-%m-%d")
-                                logging.info(f"更新日期: {update_date}")
-                            except ValueError as e:
-                                # 如果日期格式不匹配，捕捉錯誤
-                                logging.error(f"日期轉換失敗: {e}. 原始日期: {update_date}")
-                        except Exception as e:
-                            update_date = "N/A"
-                            logging.error(f"獲取更新日期時發生錯誤: {e}")
-                            logging.info("無法獲取更新日期")
-                        # 檢查是否為積極徵才中（可能不存在）
-                        try:
-                            actively_hiring = driver.find_element(By.CSS_SELECTOR, 'div.actively-hiring-tag').text.strip()
-                            actively_hiring = True if actively_hiring == "積極徵才中" else False
-                        except:
-                            actively_hiring = False
-                        # 獲取應徵人數
-                        try:
-                            applicants = driver.find_element(By.CSS_SELECTOR, 'a.d-flex.align-items-center.font-weight-bold').text.strip()
-                            # 提取數字範圍（例如："應徵人數 0~5 人" -> "0~5"）
-                            applicants = applicants.replace("應徵人數", "").replace("人", "").strip()
-                        except Exception as e:
-                            applicants = ""
-                            logging.info(f"獲取應徵人數時發生錯誤: {e}")
-                        try:
-                            # 獲取工作內容
-                            job_description = driver.find_element(By.CSS_SELECTOR, 'p.job-description__content').text.strip()
-                        except Exception as e:
-                            job_description = ""
-                            logging.error(f"獲取工作內容時發生錯誤: {e}")
-                        try:
-                            # 獲取職務類別
-                            job_categories = driver.find_elements(By.CSS_SELECTOR, 'div.category-item u')
-                            job_category = '、'.join([cat.text for cat in job_categories])
-                        except Exception as e:
-                            job_category = ""
-                            logging.error(f"獲取職務類別時發生錯誤: {e}")
-                        try:
-                            # 獲取工作待遇
-                            salary = driver.find_element(By.CSS_SELECTOR, 'p.text-primary.font-weight-bold').text.strip()
-                        except Exception as e:
-                            salary = ""
-                            logging.error(f"獲取工作待遇時發生錯誤: {e}")
-                        try:
+                            # 將 update_date 轉換為 datetime 物件
+                            date_obj = datetime.strptime(update_date, "%Y/%m/%d")  # 假設原始格式為 YYYY/MM/DD
+                            # 格式化為 YYYY-MM-DD
+                            update_date = date_obj.strftime("%Y-%m-%d")
+                            logging.info(f"更新日期: {update_date}")
+                        except ValueError as e:
+                            # 如果日期格式不匹配，捕捉錯誤
+                            logging.error(f"日期轉換失敗: {e}. 原始日期: {update_date}")
+                    except Exception as e:
+                        update_date = "N/A"
+                        logging.error(f"獲取更新日期時發生錯誤: {e}")
+                        logging.info("無法獲取更新日期")
+                    # 檢查是否為積極徵才中（可能不存在）
+                    try:
+                        actively_hiring = driver.find_element(By.CSS_SELECTOR, 'div.actively-hiring-tag').text.strip()
+                        actively_hiring = True if actively_hiring == "積極徵才中" else False
+                    except:
+                        actively_hiring = False
+                    # 獲取應徵人數
+                    try:
+                        applicants = driver.find_element(By.CSS_SELECTOR, 'a.d-flex.align-items-center.font-weight-bold').text.strip()
+                        # 提取數字範圍（例如："應徵人數 0~5 人" -> "0~5"）
+                        applicants = applicants.replace("應徵人數", "").replace("人", "").strip()
+                    except Exception as e:
+                        applicants = ""
+                        logging.info(f"獲取應徵人數時發生錯誤: {e}")
+                    try:
+                        # 獲取工作內容
+                        job_description = driver.find_element(By.CSS_SELECTOR, 'p.job-description__content').text.strip()
+                    except Exception as e:
+                        job_description = ""
+                        logging.error(f"獲取工作內容時發生錯誤: {e}")
+                    try:
+                        # 獲取職務類別
+                        job_categories = driver.find_elements(By.CSS_SELECTOR, 'div.category-item u')
+                        job_category = '、'.join([cat.text for cat in job_categories])
+                    except Exception as e:
+                        job_category = ""
+                        logging.error(f"獲取職務類別時發生錯誤: {e}")
+                    try:
+                        # 獲取工作待遇
+                        salary = driver.find_element(By.CSS_SELECTOR, 'p.text-primary.font-weight-bold').text.strip()
+                    except Exception as e:
+                        salary = ""
+                        logging.error(f"獲取工作待遇時發生錯誤: {e}")
+                    try:
 
-                            # 獲取工作性質
-                            job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data').text.strip()
-                        except Exception as e:
-                            job_type = ""
-                            logging.error(f"獲取工作性質時發生錯誤: {e}")
-                        try:
-                            # 獲取上班地點
-                            location = driver.find_element(By.CSS_SELECTOR, 'div.job-address span').text.strip()
-                        except Exception as e:
-                            location = ""
-                            logging.error(f"獲取上班地點時發生錯誤: {e}")
-                        try:
-                            # 獲取管理責任
-                            management_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
-                            management = ""
-                            for element in management_elements:
-                                try:
-                                    title_text = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title_text == "管理責任":
-                                        management = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取管理責任時發生錯誤: {e}")
-                                    continue
-                        except Exception as e:
-                            management = ""
-                            logging.error(f"獲取管理責任時發生錯誤: {e}")
-                        try:
-                            # 獲取出差外派
-                            business_trip = ""
-                            for element in management_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "出差外派":
-                                        business_trip = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取出差外派時發生錯誤: {e}")
-                                    continue
-                            # 獲取上班時段
-                            work_time = ""
-                            for element in management_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "上班時段":
-                                        work_time = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取上班時段時發生錯誤: {e}")
-                                    continue
-                            # 獲取休假制度
-                            vacation = ""
-                            for element in management_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "休假制度":
-                                        vacation = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取休假制度時發生錯誤: {e}")
-                                    continue
-                            # 獲取可上班日
-                            start_work = ""
-                            for element in management_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "可上班日":
-                                        start_work = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取可上班日時發生錯誤: {e}")
-                                    continue
-                            # 獲取需求人數
-                            headcount = ""
-                            for element in management_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "需求人數":
-                                        headcount = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取需求人數時發生錯誤: {e}")
-                                    continue
-                        except Exception as e:
-                            business_trip = ""
-                            work_time = ""
-                            vacation = ""
-                            start_work = ""
-                            headcount = ""
-                            logging.error(f"獲取工作條件時發生錯誤: {e}")
-                        # 獲取工作經歷
+                        # 獲取工作性質
+                        job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data').text.strip()
+                    except Exception as e:
+                        job_type = ""
+                        logging.error(f"獲取工作性質時發生錯誤: {e}")
+                    try:
+                        # 獲取上班地點
+                        location = driver.find_element(By.CSS_SELECTOR, 'div.job-address span').text.strip()
+                    except Exception as e:
+                        location = ""
+                        logging.error(f"獲取上班地點時發生錯誤: {e}")
+                    try:
+                        # 獲取管理責任
+                        management_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
+                        management = ""
+                        for element in management_elements:
+                            try:
+                                title_text = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title_text == "管理責任":
+                                    management = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取管理責任時發生錯誤: {e}")
+                                continue
+                    except Exception as e:
+                        management = ""
+                        logging.error(f"獲取管理責任時發生錯誤: {e}")
+                    try:
+                        # 獲取出差外派
+                        business_trip = ""
+                        for element in management_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "出差外派":
+                                    business_trip = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取出差外派時發生錯誤: {e}")
+                                continue
+                        # 獲取上班時段
+                        work_time = ""
+                        for element in management_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "上班時段":
+                                    work_time = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取上班時段時發生錯誤: {e}")
+                                continue
+                        # 獲取休假制度
+                        vacation = ""
+                        for element in management_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "休假制度":
+                                    vacation = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取休假制度時發生錯誤: {e}")
+                                continue
+                        # 獲取可上班日
+                        start_work = ""
+                        for element in management_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "可上班日":
+                                    start_work = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取可上班日時發生錯誤: {e}")
+                                continue
+                        # 獲取需求人數
+                        headcount = ""
+                        for element in management_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "需求人數":
+                                    headcount = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取需求人數時發生錯誤: {e}")
+                                continue
+                    except Exception as e:
+                        business_trip = ""
+                        work_time = ""
+                        vacation = ""
+                        start_work = ""
+                        headcount = ""
+                        logging.error(f"獲取工作條件時發生錯誤: {e}")
+                    # 獲取工作經歷
+                    work_exp = ""
+                    work_exp_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
+                    try:
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "工作經歷":
+                                    work_exp = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取工作經歷時發生錯誤: {e}")
+                                continue
+                        # 獲取學歷要求
+                        education = ""
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "學歷要求":
+                                    education = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取學歷要求時發生錯誤: {e}")
+                                continue
+                        # 獲取科系要求
+                        major = ""
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "科系要求":
+                                    major = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取科系要求時發生錯誤: {e}")
+                                continue
+                        # 獲取語文條件
+                        language = ""
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "語文條件":
+                                    language = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取語文條件時發生錯誤: {e}")
+                                continue
+                        # 獲取擅長工具
+                        tools = ""
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "擅長工具":
+                                    tools_elements = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data u')
+                                    tools = '、'.join([tool.text for tool in tools_elements])
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取擅長工具時發生錯誤: {e}")
+                                continue
+                        # 獲取工作技能
+                        skills = ""
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "工作技能":
+                                    skills_elements = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data u')
+                                    skills = '、'.join([skill.text for skill in skills_elements])
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取工作技能時發生錯誤: {e}")
+                                continue
+                        # 獲取具備證照
+                        certificates = ""
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "具備證照":
+                                    cert_elements = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data u')
+                                    certificates = '、'.join([cert.text for cert in cert_elements])
+                                    break
+                            except Exception as e:
+                                logging.error(f"獲取具備證照時發生錯誤: {e}")
+                                continue
+                        # 獲取其他條件
+                        other_requirements = ""
+                        for element in work_exp_elements:
+                            try:
+                                title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
+                                if title == "其他條件":
+                                    other_requirements = element.find_element(By.CSS_SELECTOR, 'div.list-row__data p.r3').text.strip()
+                                    break
+                            except Exception as e:
+                                logging.info(f"獲取其他條件時發生錯誤: {e}")
+                                continue
+                    except Exception as e:
                         work_exp = ""
-                        work_exp_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
+                        education = ""
+                        major = ""
+                        language = ""
+                        tools = ""
+                        skills = ""
+                        certificates = ""
+                        other_requirements = ""
+                        logging.error(f"獲取工作條件時發生錯誤: {e}")
+                    # 獲取福利制度
+                    try:
+                        # 法定項目
+                        legal_benefits = []
+                        legal_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(3) span.tag--text a')
+                        legal_benefits = [item.text.strip() for item in legal_elements]
+                        legal_benefits_str = '、'.join(legal_benefits)
+                        # 其他福利
+                        other_benefits = []
+                        other_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(5) span.tag--text a')
+                        other_benefits = [item.text.strip() for item in other_elements]
+                        other_benefits_str = '、'.join(other_benefits)
+                        # 未整理的福利說明
+                        raw_benefits = ""
+                        benefits_description = driver.find_element(By.CSS_SELECTOR, 'div.benefits-description p.r3').text.strip()
+                        raw_benefits = benefits_description             
+                    except Exception as e:
+                        logging.info(f"獲取福利制度時發生錯誤: {e}")
+                        legal_benefits_str = ""
+                        other_benefits_str = ""
+                        raw_benefits = ""
+                    
+                    # 獲取聯絡方式
+                    try:
+                        contact_info = []
+                        contact_elements = driver.find_elements(By.CSS_SELECTOR, 'div.job-contact-table div.job-contact-table__data')
+                        contact_info = [element.text.strip() for element in contact_elements]
+                        contact_info_str = '\n'.join(contact_info)
+                    except Exception as e:
+                        logging.info(f"獲取聯絡方式時發生錯誤: {e}")
+                        contact_info_str = ""     
+                    try:
+                        # 開啟應徵分頁獲取詳細資訊
+                        # 從原始工作頁面 URL 提取工作代碼
+                        apply_code = job_url.split('/')[-1].split('?')[0]
+                        # 構建應徵分析頁面的 URL
+                        apply_analysis_url = f"https://www.104.com.tw/jobs/apply/analysis/{apply_code}"
+                        driver.execute_script(f"window.open('{apply_analysis_url}', '_blank')")
+                        driver.switch_to.window(driver.window_handles[-1])
+                        time.sleep(5)
+                        # 抓取教育程度分布
                         try:
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "工作經歷":
-                                        work_exp = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取工作經歷時發生錯誤: {e}")
-                                    continue
-                            # 獲取學歷要求
-                            education = ""
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "學歷要求":
-                                        education = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取學歷要求時發生錯誤: {e}")
-                                    continue
-                            # 獲取科系要求
-                            major = ""
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "科系要求":
-                                        major = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取科系要求時發生錯誤: {e}")
-                                    continue
-                            # 獲取語文條件
-                            language = ""
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "語文條件":
-                                        language = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取語文條件時發生錯誤: {e}")
-                                    continue
-                            # 獲取擅長工具
-                            tools = ""
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "擅長工具":
-                                        tools_elements = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data u')
-                                        tools = '、'.join([tool.text for tool in tools_elements])
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取擅長工具時發生錯誤: {e}")
-                                    continue
-                            # 獲取工作技能
-                            skills = ""
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "工作技能":
-                                        skills_elements = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data u')
-                                        skills = '、'.join([skill.text for skill in skills_elements])
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取工作技能時發生錯誤: {e}")
-                                    continue
-                            # 獲取具備證照
-                            certificates = ""
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "具備證照":
-                                        cert_elements = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data u')
-                                        certificates = '、'.join([cert.text for cert in cert_elements])
-                                        break
-                                except Exception as e:
-                                    logging.error(f"獲取具備證照時發生錯誤: {e}")
-                                    continue
-                            # 獲取其他條件
-                            other_requirements = ""
-                            for element in work_exp_elements:
-                                try:
-                                    title = element.find_element(By.CSS_SELECTOR, 'h3').text.strip()
-                                    if title == "其他條件":
-                                        other_requirements = element.find_element(By.CSS_SELECTOR, 'div.list-row__data p.r3').text.strip()
-                                        break
-                                except Exception as e:
-                                    logging.info(f"獲取其他條件時發生錯誤: {e}")
-                                    continue
+                            apply_education = {}
+                            education_elements = driver.find_elements(By.CSS_SELECTOR, "div.legend__text")
+                            education_values = driver.find_elements(By.CSS_SELECTOR, "div.legend__value") 
+                            for i in range(len(education_elements)):
+                                apply_education[education_elements[i].text] = education_values[i].text
                         except Exception as e:
-                            work_exp = ""
-                            education = ""
-                            major = ""
-                            language = ""
-                            tools = ""
-                            skills = ""
-                            certificates = ""
-                            other_requirements = ""
-                            logging.error(f"獲取工作條件時發生錯誤: {e}")
-                        # 獲取福利制度
-                        try:
-                            # 法定項目
-                            legal_benefits = []
-                            legal_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(3) span.tag--text a')
-                            legal_benefits = [item.text.strip() for item in legal_elements]
-                            legal_benefits_str = '、'.join(legal_benefits)
-                            # 其他福利
-                            other_benefits = []
-                            other_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(5) span.tag--text a')
-                            other_benefits = [item.text.strip() for item in other_elements]
-                            other_benefits_str = '、'.join(other_benefits)
-                            # 未整理的福利說明
-                            raw_benefits = ""
-                            benefits_description = driver.find_element(By.CSS_SELECTOR, 'div.benefits-description p.r3').text.strip()
-                            raw_benefits = benefits_description             
-                        except Exception as e:
-                            logging.info(f"獲取福利制度時發生錯誤: {e}")
-                            legal_benefits_str = ""
-                            other_benefits_str = ""
-                            raw_benefits = ""
-                        
-                        # 獲取聯絡方式
-                        try:
-                            contact_info = []
-                            contact_elements = driver.find_elements(By.CSS_SELECTOR, 'div.job-contact-table div.job-contact-table__data')
-                            contact_info = [element.text.strip() for element in contact_elements]
-                            contact_info_str = '\n'.join(contact_info)
-                        except Exception as e:
+                            apply_education = {}
                             logging.info(f"獲取聯絡方式時發生錯誤: {e}")
-                            contact_info_str = ""     
+                        # 抓取性別分布
                         try:
-                            # 開啟應徵分頁獲取詳細資訊
-                            # 從原始工作頁面 URL 提取工作代碼
-                            apply_code = job_url.split('/')[-1].split('?')[0]
-                            # 構建應徵分析頁面的 URL
-                            apply_analysis_url = f"https://www.104.com.tw/jobs/apply/analysis/{apply_code}"
-                            driver.execute_script(f"window.open('{apply_analysis_url}', '_blank')")
-                            driver.switch_to.window(driver.window_handles[-1])
-                            time.sleep(5)
-                            # 抓取教育程度分布
-                            try:
-                                apply_education = {}
-                                education_elements = driver.find_elements(By.CSS_SELECTOR, "div.legend__text")
-                                education_values = driver.find_elements(By.CSS_SELECTOR, "div.legend__value") 
-                                for i in range(len(education_elements)):
-                                    apply_education[education_elements[i].text] = education_values[i].text
-                            except Exception as e:
-                                apply_education = {}
-                                logging.info(f"獲取聯絡方式時發生錯誤: {e}")
-                            # 抓取性別分布
-                            try:
-                                gender = {}
-                                gender_elements = driver.find_elements(By.CSS_SELECTOR, ".stack-bar__text__block")
-                                for element in gender_elements[:2]:
-                                    style = element.get_attribute("style")
-                                    rgb_value = style[style.find("rgb"):style.find(")") + 1]
-                                    gender_text = element.find_element(By.CSS_SELECTOR, "div").text
-                                    # 定義目標RGB值
-                                    male_rgb = [78, 145, 255]    # 藍色
-                                    female_rgb = [255, 144, 199]  # 粉色
-                                    if is_similar_rgb(rgb_value, male_rgb):
-                                        gender["男性"] = gender_text
-                                    elif is_similar_rgb(rgb_value, female_rgb):
-                                        gender["女性"] = gender_text
-                            except Exception as e:
-                                gender = {}
-                                logging.info(f"獲取性別分布時發生錯誤: {e}")
-                            # 抓取語言能力
-                            try:
-                                # 選取div.chart-container__body的第5個是下下之策
-                                language_container = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")[5]
-                                # 初始化語言能力字典
-                                language_skills = {}
-                                
-                                # 找出所有語言項目
-                                language_items = language_container.find_elements(By.XPATH, ".//div[contains(@class, 'mb-4')]")
-                                for language_item in language_items:
-                                    # 提取語言名稱
-                                    language_name = language_item.find_element(By.XPATH, ".//span[contains(@class, 'text-truncate')]").text
-                                    # 找出該語言的技能等級和百分比
-                                    skill_bars = language_item.find_elements(By.XPATH, ".//div[contains(@class, 'stack-bar__text__block')]")
-                                    # 建立該語言的技能描述
-                                    language_description = []
-                                    # 圖例映射
-                                    legend_map = {
-                                        "rgb(255, 231, 217)": "不會",
-                                        "rgb(255, 213, 189)": "略懂",
-                                        "rgb(255, 195, 161)": "中等",
-                                        "rgb(204, 156, 129)": "精通"
-                                    }
-                                    for bar in skill_bars:
-                                        try:
-                                            percentage = bar.text
-                                            # 獲取背景顏色
-                                            background_color = bar.get_attribute('style').split('background:')[1].split(';')[0].strip()
-                                            skill_level = legend_map.get(background_color, "未知")
-                                            language_description.append(f"{skill_level}{percentage}")
-                                        except Exception as e:
-                                            logging.info(f"提取{language_name}技能等級時出錯: {e}")
-                                    # 將語言技能加入字典
-                                    language_skills[language_name] = ','.join(language_description)
-                            except Exception as e:
-                                language_skills = {}
-                                logging.info(f"獲取語言能力時發生錯誤: {e}")
+                            gender = {}
+                            gender_elements = driver.find_elements(By.CSS_SELECTOR, ".stack-bar__text__block")
+                            for element in gender_elements[:2]:
+                                style = element.get_attribute("style")
+                                rgb_value = style[style.find("rgb"):style.find(")") + 1]
+                                gender_text = element.find_element(By.CSS_SELECTOR, "div").text
+                                # 定義目標RGB值
+                                male_rgb = [78, 145, 255]    # 藍色
+                                female_rgb = [255, 144, 199]  # 粉色
+                                if is_similar_rgb(rgb_value, male_rgb):
+                                    gender["男性"] = gender_text
+                                elif is_similar_rgb(rgb_value, female_rgb):
+                                    gender["女性"] = gender_text
+                        except Exception as e:
+                            gender = {}
+                            logging.info(f"獲取性別分布時發生錯誤: {e}")
+                        # 抓取語言能力
+                        try:
+                            # 選取div.chart-container__body的第5個是下下之策
+                            language_container = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")[5]
+                            # 初始化語言能力字典
+                            language_skills = {}
                             
-                            # 主要處理邏輯
-                            # 定位所有的圖表容器
-                            try:
-                                chart_containers = driver.find_elements(By.CSS_SELECTOR, 'div.chart-container.d-flex.flex-column.bg-white.overflow-hidden.horizontal-bar-chart')
-                                # 欄位名稱列表
-                                fields = {
-                                    '年齡': extract_age_distribution,
-                                    '工作經驗': extract_experience_distribution,
-                                    '科系': extract_experience_distribution,  # 可以重複使用
-                                    '技能': extract_experience_distribution,
-                                    '證照': extract_experience_distribution
+                            # 找出所有語言項目
+                            language_items = language_container.find_elements(By.XPATH, ".//div[contains(@class, 'mb-4')]")
+                            for language_item in language_items:
+                                # 提取語言名稱
+                                language_name = language_item.find_element(By.XPATH, ".//span[contains(@class, 'text-truncate')]").text
+                                # 找出該語言的技能等級和百分比
+                                skill_bars = language_item.find_elements(By.XPATH, ".//div[contains(@class, 'stack-bar__text__block')]")
+                                # 建立該語言的技能描述
+                                language_description = []
+                                # 圖例映射
+                                legend_map = {
+                                    "rgb(255, 231, 217)": "不會",
+                                    "rgb(255, 213, 189)": "略懂",
+                                    "rgb(255, 195, 161)": "中等",
+                                    "rgb(204, 156, 129)": "精通"
                                 }
-                                # 遍歷每個圖表容器
-                                for container in chart_containers:
-                                    # 找出標題 DIV
-                                    title_div = container.find_element(By.CSS_SELECTOR, 'div:first-child')
-                                    # 找出詳細資訊 DIV
-                                    details_div = container.find_element(By.CSS_SELECTOR, 'div:last-child')
-                                    # 獲取標題
-                                    title = title_div.text
-                                    # 根據標題提取資料
-                                    if title in fields:
-                                        # 使用對應的提取方法
-                                        extraction_method = fields[title]
-                                        extracted_data = extraction_method(details_div)
-                                        # 根據標題存儲到對應的變數
-                                        if title == '年齡':
-                                            try:
-                                                age_distribution = extracted_data
-                                            except Exception as e:
-                                                logging.info(f"獲取年齡分佈時發生錯誤: {e}")
-                                                age_distribution = {}
-                                        elif title == '工作經驗':
-                                            try:
-                                                work_experience = extracted_data
-                                            except Exception as e:
-                                                logging.info(f"獲取工作經驗分佈時發生錯誤: {e}")
-                                                work_experience = {}
-                                        elif title == '科系':
-                                            try:
-                                                major_distribution = extracted_data
-                                            except Exception as e:
-                                                logging.info(f"獲取科系分佈時發生錯誤: {e}")
-                                                major_distribution = {}
-                                        elif title == '技能':
-                                            try:
-                                                skills_distribution = extracted_data
-                                            except Exception as e:
-                                                logging.info(f"獲取技能分佈時發生錯誤: {e}")
-                                                skills_distribution = {}
-                                        elif title == '證照':
-                                            try:
-                                                certificates_distribution = extracted_data
-                                            except Exception as e:
-                                                logging.info(f"獲取證照分佈時發生錯誤: {e}")
-                                                certificates_distribution = {}
-                                        else:
-                                            logging.info(f"未知的標題: {title}")
+                                for bar in skill_bars:
+                                    try:
+                                        percentage = bar.text
+                                        # 獲取背景顏色
+                                        background_color = bar.get_attribute('style').split('background:')[1].split(';')[0].strip()
+                                        skill_level = legend_map.get(background_color, "未知")
+                                        language_description.append(f"{skill_level}{percentage}")
+                                    except Exception as e:
+                                        logging.info(f"提取{language_name}技能等級時出錯: {e}")
+                                # 將語言技能加入字典
+                                language_skills[language_name] = ','.join(language_description)
+                        except Exception as e:
+                            language_skills = {}
+                            logging.info(f"獲取語言能力時發生錯誤: {e}")
+                        
+                        # 主要處理邏輯
+                        # 定位所有的圖表容器
+                        try:
+                            chart_containers = driver.find_elements(By.CSS_SELECTOR, 'div.chart-container.d-flex.flex-column.bg-white.overflow-hidden.horizontal-bar-chart')
+                            # 欄位名稱列表
+                            fields = {
+                                '年齡': extract_age_distribution,
+                                '工作經驗': extract_experience_distribution,
+                                '科系': extract_experience_distribution,  # 可以重複使用
+                                '技能': extract_experience_distribution,
+                                '證照': extract_experience_distribution
+                            }
+                            # 遍歷每個圖表容器
+                            for container in chart_containers:
+                                # 找出標題 DIV
+                                title_div = container.find_element(By.CSS_SELECTOR, 'div:first-child')
+                                # 找出詳細資訊 DIV
+                                details_div = container.find_element(By.CSS_SELECTOR, 'div:last-child')
+                                # 獲取標題
+                                title = title_div.text
+                                # 根據標題提取資料
+                                if title in fields:
+                                    # 使用對應的提取方法
+                                    extraction_method = fields[title]
+                                    extracted_data = extraction_method(details_div)
+                                    # 根據標題存儲到對應的變數
+                                    if title == '年齡':
+                                        try:
+                                            age_distribution = extracted_data
+                                        except Exception as e:
+                                            logging.info(f"獲取年齡分佈時發生錯誤: {e}")
+                                            age_distribution = {}
+                                    elif title == '工作經驗':
+                                        try:
+                                            work_experience = extracted_data
+                                        except Exception as e:
+                                            logging.info(f"獲取工作經驗分佈時發生錯誤: {e}")
+                                            work_experience = {}
+                                    elif title == '科系':
+                                        try:
+                                            major_distribution = extracted_data
+                                        except Exception as e:
+                                            logging.info(f"獲取科系分佈時發生錯誤: {e}")
+                                            major_distribution = {}
+                                    elif title == '技能':
+                                        try:
+                                            skills_distribution = extracted_data
+                                        except Exception as e:
+                                            logging.info(f"獲取技能分佈時發生錯誤: {e}")
+                                            skills_distribution = {}
+                                    elif title == '證照':
+                                        try:
+                                            certificates_distribution = extracted_data
+                                        except Exception as e:
+                                            logging.info(f"獲取證照分佈時發生錯誤: {e}")
+                                            certificates_distribution = {}
                                     else:
                                         logging.info(f"未知的標題: {title}")
-                            except Exception as e:
-                                logging.error(f"獲取應徵眾多資訊時發生錯誤: {e}")
+                                else:
+                                    logging.info(f"未知的標題: {title}")
                         except Exception as e:
-                            logging.error(f"獲取應徵詳細資訊時發生錯誤: {e}")
-                            "apply_education"=={} 
-                            "apply_gender"== {}
-                            "apply_language"== {}
-                            "apply_age_distribution"== {}
-                            "apply_experience"== {}
-                            "apply_major"== {}
-                            "apply_skills"== {}
-                            "apply_certificates"== {}                      
-                        time.sleep(3)
-                        # 更新要存入的資料
-                        try:
-                            job_list.append({
-                                "job_id":apply_code+update_date,
-                                "job_name":job_name, "company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
-                                "applicants":applicants, "job_description":job_description, "job_category":job_category, "salary":salary, "job_type":job_type, 
-                                "location":location, "management":management, "business_trip":business_trip, "work_time":work_time, "vacation":vacation, 
-                                "start_work":start_work, "headcount":headcount, "work_exp":work_exp, "education":education, "major":major, 
-                                "language":language, "skills":skills, "tools": tools, "certificates":certificates, "other_requirements":other_requirements,
-                                "legal_benefits":legal_benefits_str, "other_benefits":other_benefits_str, "raw_benefits":raw_benefits, "contact_info":contact_info_str,
-                                "apply_education":apply_education, "apply_gender": gender, "apply_language": language_skills, "apply_age_distribution": age_distribution,
-                                "apply_experience": work_experience, "apply_major": major_distribution, "apply_skills": skills_distribution, "apply_certificates": certificates_distribution,
-                                "status": "active"                     
-                            })
-                            # job_id INT REFERENCES jobs(job_id),
-                            # tools_id INT REFERENCES tools(tools_id),
-                            # PRIMARY KEY (job_id, tool_id)
-                            job_id = apply_code+update_date
-                            # tools_id = None
-                            # 遍歷工具列表，並將每個工具添加到 tools_list
-                        except Exception as e:
-                            logging.error(f"處理職缺時發生錯誤: {e}")
-                        try:
-                            if tools != "":
-                                # 將工具字串轉換為列表
-                                tools = tools.split("、")  # 使用 "、" 分隔符
-                                for tool in tools:
-                                    # tools_id = f"tool_{index + 1}"  # 根據索引生成 tool_id
-                                    tools_list.append({"job_id": job_id, "tool": tool})
-                            else:
-                                
-                                tools_list.append({"job_id": job_id, "tool": tools})
-                        except Exception as e:
-                            tools_list.clear()
-                            logging.error(f"處理工具列表時發生錯誤: {e}")
-                            tools_list.append({"job_id": job_id, "tool": tools})
-                        # 使用 split() 方法分割字符串
-                        try:
-                            # 將公司網址中的公司 ID 提取出來
-                            # 以 "/" 分割 URL，將結果存成串列
-                            parts = company_url.split('/')
-                            # 分割結果的最後一部分可能包含 query 參數，所以以 "?" 進一步分割
-                            if len(parts) >= 5:
-                                # 以下假設 URL 格式為 "https://www.104.com.tw/company/ID?..."
-                                company_id = parts[4].split('?')[0]
-                                com_list.append({"company_url":company_url, "company_id":company_id})  
-                            else:
-                                raise ValueError("URL 格式錯誤: " + company_url)
-                        except Exception as e:
-                            logging.error(f"處理公司網址時發生錯誤: {e}")
-                        job_count+=1
+                            logging.error(f"獲取應徵眾多資訊時發生錯誤: {e}")
                     except Exception as e:
-                        logging.error(f"處理詳細頁面資訊時發生錯誤: {e}")
+                        logging.error(f"獲取應徵詳細資訊時發生錯誤: {e}")
+                    "apply_education"=={} 
+                    "apply_gender"== {}
+                    "apply_language"== {}
+                    "apply_age_distribution"== {}
+                    "apply_experience"== {}
+                    "apply_major"== {}
+                    "apply_skills"== {}
+                    "apply_certificates"== {}                      
+                    time.sleep(3)
+                    # 更新要存入的資料
+                    try:
                         job_list.append({
                             "job_id":apply_code+update_date,
                             "job_name":job_name, "company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
-                            "applicants":"", "job_description": "", "job_category": "", "salary": "", "job_type": "",
-                            "location": "", "management": "", "business_trip": "", "work_time": "",
-                            "vacation": "", "start_work": "", "headcount": "", "work_exp": "", "education": "", 
-                            "major":"", "language":"", "skills":"", "tools":"", certificates:"", 
-                            "other_requirements":"", "legal_benefits":"", "other_benefits":"", "raw_benefits":"", "contact_info":"", "status": "draft",
-                            "apply_education":{}, "apply_gender": {}, "apply_language": {}, "apply_age_distribution": {},
-                            "apply_experience": {}, "apply_major": {}, "apply_skills": {}, "apply_certificates": {}
-                            # 新增欄位的空值
+                            "applicants":applicants, "job_description":job_description, "job_category":job_category, "salary":salary, "job_type":job_type, 
+                            "location":location, "management":management, "business_trip":business_trip, "work_time":work_time, "vacation":vacation, 
+                            "start_work":start_work, "headcount":headcount, "work_exp":work_exp, "education":education, "major":major, 
+                            "language":language, "skills":skills, "tools": tools, "certificates":certificates, "other_requirements":other_requirements,
+                            "legal_benefits":legal_benefits_str, "other_benefits":other_benefits_str, "raw_benefits":raw_benefits, "contact_info":contact_info_str,
+                            "apply_education":apply_education, "apply_gender": gender, "apply_language": language_skills, "apply_age_distribution": age_distribution,
+                            "apply_experience": work_experience, "apply_major": major_distribution, "apply_skills": skills_distribution, "apply_certificates": certificates_distribution,
+                            "status": "active"                     
                         })
-                        job_url_list.append({"job_id": apply_code+update_date, "job_url":job_url})              
-                        com_list.append([""])
+                        # job_id INT REFERENCES jobs(job_id),
+                        # tools_id INT REFERENCES tools(tools_id),
+                        # PRIMARY KEY (job_id, tool_id)
+                        job_id = apply_code+update_date
                         # tools_id = None
-                        tools_list.append({"job_id": apply_code+update_date, "tool": tools})
-                        job_count +=1
-                        if sum(1 for field in job_list[-1] if field == "") > 6:
-                            crawler_error += 1
-                    # 關閉詳細頁面，切回列表頁
-                    driver.close()
-                    driver.switch_to.window(driver.window_handles[0])
-                    # 儲存資料
-                    try:
-                        x_save(job_list, job_count= job_count,directory='D:/allm/crawler/job_list', keyword = keyword, table_name='jobs')
-                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                        filename = f"com_url_{timestamp}.json"
-                        x_save(com_list, job_count= job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword = keyword, table_name="com_url")
-                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                        filename = f"tools_list_{timestamp}.json"
-                        x_save(tools_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/tools', keyword = keyword, table_name='job_tools')
-                        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                        filename = f"job_url_{timestamp}.json"
-                        x_save(job_url_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/job_url', keyword = keyword, table_name='job_url')
+                        # 遍歷工具列表，並將每個工具添加到 tools_list
                     except Exception as e:
-                        logging.error(f"儲存時發生錯誤: {e}")
+                        logging.error(f"處理職缺時發生錯誤: {e}")
+                    try:
+                        if tools != "":
+                            # 將工具字串轉換為列表
+                            tools = tools.split("、")  # 使用 "、" 分隔符
+                            for tool in tools:
+                                # tools_id = f"tool_{index + 1}"  # 根據索引生成 tool_id
+                                tools_list.append({"job_id": job_id, "tool": tool})
+                        else:
+                            
+                            tools_list.append({"job_id": job_id, "tool": tools})
+                    except Exception as e:
+                        tools_list.clear()
+                        logging.error(f"處理工具列表時發生錯誤: {e}")
+                        tools_list.append({"job_id": job_id, "tool": tools})
+                    # 使用 split() 方法分割字符串
+                    try:
+                        # 將公司網址中的公司 ID 提取出來
+                        # 以 "/" 分割 URL，將結果存成串列
+                        parts = company_url.split('/')
+                        # 分割結果的最後一部分可能包含 query 參數，所以以 "?" 進一步分割
+                        if len(parts) >= 5:
+                            # 以下假設 URL 格式為 "https://www.104.com.tw/company/ID?..."
+                            company_id = parts[4].split('?')[0]
+                            com_list.append({"company_url":company_url, "company_id":company_id})  
+                        else:
+                            raise ValueError("URL 格式錯誤: " + company_url)
+                    except Exception as e:
+                        logging.error(f"處理公司網址時發生錯誤: {e}")
+                    job_count+=1
                 except Exception as e:
-                    logging.error(f"處理 {company}, {job_name}職缺時發生錯誤, {job_url}: {e}")
-                    crawler_error += 1
+                    logging.error(f"處理詳細頁面資訊時發生錯誤: {e}")
+                    job_list.append({
+                        "job_id":apply_code+update_date,
+                        "job_name":job_name, "company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
+                        "applicants":"", "job_description": "", "job_category": "", "salary": "", "job_type": "",
+                        "location": "", "management": "", "business_trip": "", "work_time": "",
+                        "vacation": "", "start_work": "", "headcount": "", "work_exp": "", "education": "", 
+                        "major":"", "language":"", "skills":"", "tools":"", certificates:"", 
+                        "other_requirements":"", "legal_benefits":"", "other_benefits":"", "raw_benefits":"", "contact_info":"", "status": "draft",
+                        "apply_education":{}, "apply_gender": {}, "apply_language": {}, "apply_age_distribution": {},
+                        "apply_experience": {}, "apply_major": {}, "apply_skills": {}, "apply_certificates": {}
+                        # 新增欄位的空值
+                    })
+                    job_url_list.append({"job_id": apply_code+update_date, "job_url":job_url})              
+                    com_list.append([""])
+                    # tools_id = None
+                    tools_list.append({"job_id": apply_code+update_date, "tool": tools})
                     job_count +=1
-                    driver.close()
-                    driver.switch_to.window(driver.window_handles[0])
-                    # 儲存資料
-                    x_save(job_list, job_count = job_count,directory='D:/allm/crawler/job_list', keyword = keyword, table_name='jobs')
+                    if sum(1 for field in job_list[-1] if field == "") > 6:
+                        crawler_error += 1
+                # 關閉詳細頁面，切回列表頁
+                driver.close()
+                driver.switch_to.window(driver.window_handles[0])
+                # 儲存資料
+                try:
+                    x_save(job_list, job_count= job_count,directory='D:/allm/crawler/job_list', keyword = keyword, table_name='jobs')
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"com_url_{timestamp}.json"
-                    x_save(com_list, job_count = job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword = keyword, table_name="com_url")
+                    x_save(com_list, job_count= job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword = keyword, table_name="com_url")
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"tools_list_{timestamp}.json"
-                    x_save(tools_list, job_count = job_count,filename = filename ,directory='D:/allm/crawler/tools', keyword = keyword, table_name='job_tools')
+                    x_save(tools_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/tools', keyword = keyword, table_name='job_tools')
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"job_url_{timestamp}.json"
-                    x_save(job_url_list, job_count = job_count,filename = filename ,directory='D:/allm/crawler/job_url', keyword = keyword, table_name='job_url')
-                    continue
-            else:
-                try:
-                    # 若錯誤次數超過上限，則不再處理新的任務
-                    if job_count > 3:
-                        unprocessed_jobs = current_jobs[job_count-5:]
-                        
-                    else:
-                        unprocessed_jobs = current_jobs
-                    logging.error("錯誤次數超過上限，停止處理後續職缺")
-                    try:
-                        with open('D:/allm/crawler/undo/unprocessed_jobs.json', 'w', encoding='utf-8') as f:
-                            json.dump(unprocessed_jobs, f, ensure_ascii=False, indent=4)
-                    except Exception as e:
-                        logging.error(f"儲存未處理職缺時發生錯誤: {e}")
-                    crawler_error = 0
-                    return unprocessed_jobs
+                    x_save(job_url_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/job_url', keyword = keyword, table_name='job_url')
                 except Exception as e:
-                    crawler_error = 0
-                    logging.error(f"錯誤處理時發生錯誤: {e}")
-    while True:
-        if len(unprocessed_jobs) > 0:
-            logging.info(f"未處理職缺數量: {len(unprocessed_jobs)}")
-            logging.info("處理未完成的職缺")
-            extract_job_info(current_jobs=unprocessed_jobs)
-        elif len(current_jobs) > 0:
-            logging.info("處理職缺中")
-            extract_job_info(current_jobs=current_jobs)
-        else:
-            logging.info("沒有職缺可以處理")
-            break
-    logging.info("已處理完所有職缺")
+                    logging.error(f"儲存時發生錯誤: {e}")
+            except Exception as e:
+                logging.error(f"處理職缺時發生錯誤: {e}")
+                crawler_error += 1
+            job_count += 1
+            
+        return remaining_jobs, crawler_error
 
+    # 主要處理循環
+    remaining_jobs = current_jobs
+    while remaining_jobs:
+        logging.info(f"開始處理 {len(remaining_jobs)} 個職缺")
+        remaining_jobs, crawler_error = extract_job_info(remaining_jobs)
+        
+        if remaining_jobs:
+            logging.info(f"還有 {len(remaining_jobs)} 個職缺未處理完成")
+            # 儲存未處理職缺到檔案
+            try:
+                with open('D:/allm/crawler/undo/unprocessed_jobs.json', 'w', encoding='utf-8') as f:
+                    json.dump(remaining_jobs, f, ensure_ascii=False, indent=4)
+            except Exception as e:
+                logging.error(f"儲存未處理職缺時發生錯誤: {e}")
+            
+            # 重置錯誤計數器，準備下一輪處理
+            crawler_error = 0
+            time.sleep(5)  # 短暫暫停後繼續處理
+        else:
+            logging.info("所有職缺處理完成")
+            break
 
 keyword_list = ["IC佈局工程師", "半導體工程師", "光學工程師", "熱傳工程師"]
 # 使用方式

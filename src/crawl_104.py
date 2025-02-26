@@ -79,7 +79,7 @@ driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
 driver.command_executor.set_timeout(1000)
 # 設定 Supabase 連線參數
 supabase_url: str = "https://fbwhzgumdgqcgivbgkke.supabase.co"
-supabase_key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZid2h6Z3VtZGdxY2dpdmJna2tlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyMzAzMjcsImV4cCI6MjA1NTgwNjMyN30.nW4t6beHineCCzIuogXjEEkt6Xp3Hh29VARemeEXfcc"
+supabase_key: str = "eyJhbGciOiJIUzI1NiIsInR5cCIid2h6Z3VtZGdxY2dpdmJna2tlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyMzAzMjcsImV4cCI6MjA1NTgwNjMyN30.nW4t6beHineCCzIuogXjEEkt6Xp3Hh29VARemeEXfcc"
 # 建立 Supabase 客戶端
 supabase: Client = create_client(supabase_url, supabase_key)
 # 檢查 Chrome 和 ChromeDriver 的版本

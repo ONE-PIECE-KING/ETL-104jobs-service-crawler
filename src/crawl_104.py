@@ -52,12 +52,10 @@ chrome_options = Options()
 chrome_options.add_argument("--headless")
 chrome_options.add_argument("--no-sandbox")
 chrome_options.add_argument("--disable-dev-shm-usage")
-
 chrome_options.add_argument('--start-maximized')
 # port號 一個爬蟲程序只能一個
 chrome_options.add_argument('--remote-debugging-port=9222')
 chrome_options.add_argument('--disable-gpu')
-
 # 隨機 User Agent
 ua = UserAgent()
 chrome_options.add_argument(f'user-agent={ua.random}')
@@ -78,8 +76,8 @@ driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
 })
 driver.command_executor.set_timeout(1000)
 # 設定 Supabase 連線參數
-supabase_url: str = "https://fbwhzgumdgqcgivbgkke.supabase.co"
-supabase_key: str = "eyJhbGciOiJIUzI1NiIsInR5cCIid2h6Z3VtZGdxY2dpdmJna2tlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyMzAzMjcsImV4cCI6MjA1NTgwNjMyN30.nW4t6beHineCCzIuogXjEEkt6Xp3Hh29VARemeEXfcc"
+supabase_url: str = "url"
+supabase_key: str = "key"
 # 建立 Supabase 客戶端
 supabase: Client = create_client(supabase_url, supabase_key)
 # 檢查 Chrome 和 ChromeDriver 的版本
@@ -102,7 +100,6 @@ def check_chrome_driver_version():
         return driver_path
     else:
         return None
-
 # 應徵欄位的辨識
 def is_similar_rgb(rgb_str, target_rgb):
     # 從rgb字符串中提取數值
@@ -150,7 +147,6 @@ def extract_experience_distribution(details_div):
             experience_distribution[experience_range] = percentage
     
     return experience_distribution
-
 # 上傳資料到特定資料表
 def upload_data(data, table_name = "unknown"):
     # 插入多筆資料
@@ -174,7 +170,7 @@ def upload_data(data, table_name = "unknown"):
         logging.error(f"資料範例：{data[:1]}")
         logging.error(f"資料總筆數：{len(data)}")
 def x_save(data, job_count, filename = None , sum_job = 100, 
-        directory='default_directory', keyword = 'default_keyword_list', table_name = "default_table_name"):
+        directory='default_directory',keyword="default_keyword", table_name = "default_table_name"):
     if job_count > 0 and job_count % sum_job ==0:
         save_to_json(data, directory=directory, filename = filename)
         if table_name == 'jobs':
@@ -279,12 +275,12 @@ def crawl_jobs(keyword_list, max_errors=3, max_scrolls=100000):
             logging.error(f"爬蟲 {keyword} 發生錯誤: {e}")
             if crawler_error >= max_errors:
                 logging.warning(f"已達到最大錯誤次數 {max_errors}，停止爬蟲")
+                crawler_error = 0
                 break
 def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'default_keyword'):
     scrolls = 0
     current_jobs = []
     unprocessed_jobs = []
-    
     # 滾動並收集職缺
     while True and scrolls < max_scrolls:
         logging.info(f"正在處理第 {scrolls+1} 次滾動")
@@ -314,25 +310,23 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
     def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
         job_count = 0
         remaining_jobs = []
-        
         for job in current_jobs:
+            logging.info(f"正在處理第 {job_count+1} 筆職缺")
             if crawler_error >= max_errors:
                 # 將剩餘未處理的職缺加入 remaining_jobs
-                remaining_jobs.extend(current_jobs[job_count:])
+                remaining_jobs=(current_jobs[job_count:])
                 logging.warning(f"錯誤次數達到上限 {max_errors}，暫停處理")
+                crawler_error = 0
                 break
-                
             try:
                 # ※關鍵修正：從目前的職缺區塊內相對查找職缺標題與網址
                 title_element = job.find_element(By.XPATH, './/h2//a[contains(@class, "info-job__text")]')
                 job_url = title_element.get_attribute('href')
                 job_name = title_element.get_attribute('title')
-                
                 # 獲取公司資訊
                 company_element = job.find_element(By.CSS_SELECTOR, 'a[data-gtm-joblist="職缺-公司名稱"]')
                 company = company_element.text.strip()
                 company_url = company_element.get_attribute('href')
-                
                 # 開啟新分頁取得詳細資訊
                 driver.execute_script(f"window.open('{job_url}', '_blank')")
                 driver.switch_to.window(driver.window_handles[-1])
@@ -579,7 +573,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                     other_requirements = element.find_element(By.CSS_SELECTOR, 'div.list-row__data p.r3').text.strip()
                                     break
                             except Exception as e:
-                                logging.info(f"獲取其他條件時發生錯誤: {e}")
+                                logging.info("其他條件無資訊")
                                 continue
                     except Exception as e:
                         work_exp = ""
@@ -592,27 +586,32 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                         other_requirements = ""
                         logging.error(f"獲取工作條件時發生錯誤: {e}")
                     # 獲取福利制度
-                    try:
-                        # 法定項目
-                        legal_benefits = []
-                        legal_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(3) span.tag--text a')
+                    # 法定項目
+                    legal_benefits = []
+                    legal_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(3) span.tag--text a')
+                    if legal_elements: 
                         legal_benefits = [item.text.strip() for item in legal_elements]
                         legal_benefits_str = '、'.join(legal_benefits)
-                        # 其他福利
-                        other_benefits = []
-                        other_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(5) span.tag--text a')
+                    else:
+                        logging.info("法定項目無資訊")
+                        legal_benefits_str = ""
+                    # 其他福利
+                    other_benefits = []
+                    other_elements = driver.find_elements(By.CSS_SELECTOR, 'div.benefits-labels:nth-child(5) span.tag--text a')
+                    if other_elements:
                         other_benefits = [item.text.strip() for item in other_elements]
                         other_benefits_str = '、'.join(other_benefits)
-                        # 未整理的福利說明
-                        raw_benefits = ""
-                        benefits_description = driver.find_element(By.CSS_SELECTOR, 'div.benefits-description p.r3').text.strip()
-                        raw_benefits = benefits_description             
-                    except Exception as e:
-                        logging.info(f"獲取福利制度時發生錯誤: {e}")
-                        legal_benefits_str = ""
+                    else:
+                        logging.info("其他福利無資訊")
                         other_benefits_str = ""
+                    # 未整理的福利說明
+                    raw_benefits = ""
+                    benefits_description = driver.find_element(By.CSS_SELECTOR, 'div.benefits-description p.r3').text.strip()
+                    if benefits_description:
+                        raw_benefits = benefits_description     
+                    else:
+                        logging.info("未整理的福利說明無資訊")
                         raw_benefits = ""
-                    
                     # 獲取聯絡方式
                     try:
                         contact_info = []
@@ -640,7 +639,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                 apply_education[education_elements[i].text] = education_values[i].text
                         except Exception as e:
                             apply_education = {}
-                            logging.info(f"獲取聯絡方式時發生錯誤: {e}")
+                            logging.info("教育程度分佈無資料")
                         # 抓取性別分布
                         try:
                             gender = {}
@@ -658,7 +657,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                     gender["女性"] = gender_text
                         except Exception as e:
                             gender = {}
-                            logging.info(f"獲取性別分布時發生錯誤: {e}")
+                            logging.info("性別分佈無資料")
                         # 抓取語言能力
                         try:
                             # 選取div.chart-container__body的第5個是下下之策
@@ -690,13 +689,12 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                         skill_level = legend_map.get(background_color, "未知")
                                         language_description.append(f"{skill_level}{percentage}")
                                     except Exception as e:
-                                        logging.info(f"提取{language_name}技能等級時出錯: {e}")
+                                        logging.info("語言技能分佈無資料")
                                 # 將語言技能加入字典
                                 language_skills[language_name] = ','.join(language_description)
                         except Exception as e:
                             language_skills = {}
-                            logging.info(f"獲取語言能力時發生錯誤: {e}")
-                        
+                            logging.info("語言能力分佈無資料")
                         # 主要處理邏輯
                         # 定位所有的圖表容器
                         try:
@@ -727,31 +725,31 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                         try:
                                             age_distribution = extracted_data
                                         except Exception as e:
-                                            logging.info(f"獲取年齡分佈時發生錯誤: {e}")
+                                            logging.info("年齡分佈無資料")
                                             age_distribution = {}
                                     elif title == '工作經驗':
                                         try:
                                             work_experience = extracted_data
                                         except Exception as e:
-                                            logging.info(f"獲取工作經驗分佈時發生錯誤: {e}")
+                                            logging.info("工作經驗分佈無資料")
                                             work_experience = {}
                                     elif title == '科系':
                                         try:
                                             major_distribution = extracted_data
                                         except Exception as e:
-                                            logging.info(f"獲取科系分佈時發生錯誤: {e}")
+                                            logging.info("科系分佈無資料")
                                             major_distribution = {}
                                     elif title == '技能':
                                         try:
                                             skills_distribution = extracted_data
                                         except Exception as e:
-                                            logging.info(f"獲取技能分佈時發生錯誤: {e}")
+                                            logging.info("技能分佈無資料")
                                             skills_distribution = {}
                                     elif title == '證照':
                                         try:
                                             certificates_distribution = extracted_data
                                         except Exception as e:
-                                            logging.info(f"獲取證照分佈時發生錯誤: {e}")
+                                            logging.info("證照分佈無資料")
                                             certificates_distribution = {}
                                     else:
                                         logging.info(f"未知的標題: {title}")
@@ -759,7 +757,13 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                     logging.info(f"未知的標題: {title}")
                         except Exception as e:
                             logging.error(f"獲取應徵眾多資訊時發生錯誤: {e}")
+                        # 關閉應徵頁面，切回列表頁
+                        driver.close()
+                        driver.switch_to.window(driver.window_handles[-1])
                     except Exception as e:
+                        # 關閉應徵頁面，切回列表頁
+                        driver.close()
+                        driver.switch_to.window(driver.window_handles[-1])
                         logging.error(f"獲取應徵詳細資訊時發生錯誤: {e}")
                     "apply_education"=={} 
                     "apply_gender"== {}
@@ -840,38 +844,38 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                     # tools_id = None
                     tools_list.append({"job_id": apply_code+update_date, "tool": tools})
                     job_count +=1
-                    if sum(1 for field in job_list[-1] if field == "") > 6:
-                        crawler_error += 1
+                    # if sum(1 for field in job_list[-1] if field == "") > 6:
+                    #     crawler_error += 1
+                    #     logging.info("職缺超過六個空缺")
                 # 關閉詳細頁面，切回列表頁
                 driver.close()
                 driver.switch_to.window(driver.window_handles[0])
                 # 儲存資料
                 try:
-                    x_save(job_list, job_count= job_count,directory='D:/allm/crawler/job_list', keyword = keyword, table_name='jobs')
+                    logging.info(f"目前第{job_count}個職缺，儲存資料")
+                    x_save(job_list, job_count= job_count,directory='D:/allm/crawler/job_list',keyword = "job_list", table_name='jobs')
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"com_url_{timestamp}.json"
-                    x_save(com_list, job_count= job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword = keyword, table_name="com_url")
+                    x_save(com_list, job_count= job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword="com_url", table_name="com_url")
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"tools_list_{timestamp}.json"
-                    x_save(tools_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/tools', keyword = keyword, table_name='job_tools')
+                    x_save(tools_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/tools', keyword="tools_list", table_name='job_tools')
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"job_url_{timestamp}.json"
-                    x_save(job_url_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/job_url', keyword = keyword, table_name='job_url')
+                    x_save(job_url_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/job_url', keyword="job_url_list", table_name='job_url')
                 except Exception as e:
                     logging.error(f"儲存時發生錯誤: {e}")
             except Exception as e:
+                driver.close()
+                driver.switch_to.window(driver.window_handles[0])
                 logging.error(f"處理職缺時發生錯誤: {e}")
                 crawler_error += 1
-            job_count += 1
-            
         return remaining_jobs, crawler_error
-
     # 主要處理循環
     remaining_jobs = current_jobs
     while remaining_jobs:
         logging.info(f"開始處理 {len(remaining_jobs)} 個職缺")
         remaining_jobs, crawler_error = extract_job_info(remaining_jobs)
-        
         if remaining_jobs:
             logging.info(f"還有 {len(remaining_jobs)} 個職缺未處理完成")
             # 儲存未處理職缺到檔案
@@ -880,7 +884,6 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                     json.dump(remaining_jobs, f, ensure_ascii=False, indent=4)
             except Exception as e:
                 logging.error(f"儲存未處理職缺時發生錯誤: {e}")
-            
             # 重置錯誤計數器，準備下一輪處理
             crawler_error = 0
             time.sleep(5)  # 短暫暫停後繼續處理
@@ -888,19 +891,15 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
             logging.info("所有職缺處理完成")
             break
 
-keyword_list = ["IC佈局工程師", "半導體工程師", "光學工程師", "熱傳工程師"]
+keyword_list = ["系統工程師", "網路管理工程師", "資安工程師", "資訊設備管制人員", "雲端工程師", "網路安全分析師"]
 # 使用方式
 crawl_jobs(keyword_list, max_errors=3, max_scrolls=100000)
 if len(job_list) > 0:
-    save_to_json(raw_data= job_list, directory='D:/allm/crawler/job_list')
+    x_save(job_list, job_count= 2,directory='D:/allm/crawler/job_list', table_name='jobs')
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"com_url_{timestamp}.json"
-    save_to_json(raw_data= com_list,filename=filename, directory='D:/allm/crawler/com_url')
-    # save_to_json(raw_data= applicants_analysis, directory='D:/allm/crawler/applicants_analysis')
-    upload_data(data=job_list, table_name='jobs')
-    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    filename = f"tools_list_{timestamp}.json"
-    upload_data(data=tools_list, table_name='job_tools')
+    x_save(com_list, job_count= 2,filename = f"com_url_{timestamp}.json" ,directory='D:/allm/crawler/com_url', table_name="com_url")
+    x_save(tools_list, job_count= 2,filename=f"tools_list_{timestamp}.json",directory='D:/allm/crawler/tools', table_name='job_tools')
+    x_save(job_url_list, job_count= 2,filename=f"job_url_{timestamp}.json",directory='D:/allm/crawler/job_url', table_name='job_url')
 driver.quit()
 logging.info("職缺爬蟲程式執行完畢")
 # 關鍵字

@@ -230,9 +230,9 @@ def save_to_json(raw_data, filename=None, mode='w', directory='default_directory
 '''
 # def line_request(msg = 'hi'):
 #     # 注意前方要有 Bearer
-#     headers = {'Authorization':'Bearer R8QHtMLcDnyilFU=','Content-Type':'application/json'}
+#     headers = {'Authorization':'Bearer 你的金鑰','Content-Type':'application/json'}
 #     body = {
-#         'to':'U53129a6be4ca475a77ef6',
+#         'to':'使用者',
 #         'messages':[{
 #                 'type': 'text',
 #                 'text': msg

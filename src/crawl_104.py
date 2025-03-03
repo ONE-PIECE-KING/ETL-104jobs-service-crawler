@@ -76,8 +76,8 @@ driver.execute_cdp_cmd("Page.addScriptToEvaluateOnNewDocument", {
 })
 driver.command_executor.set_timeout(1000)
 # 設定 Supabase 連線參數
-supabase_url: str = "url"
-supabase_key: str = "key"
+supabase_url: str = "https://.supabase.co"
+supabase_key: str = ".."
 # 建立 Supabase 客戶端
 supabase: Client = create_client(supabase_url, supabase_key)
 # 檢查 Chrome 和 ChromeDriver 的版本
@@ -176,7 +176,7 @@ def x_save(data, job_count, filename = None , sum_job = 100,
         if table_name == 'jobs':
             upload_data(data, table_name = table_name)
         elif table_name == 'job_tools':
-            upload_data(data, table_name = table_name)
+            logging.warning("job_tools不上傳")
         elif table_name == 'com_url':
             logging.warning("com_url不上傳")
         elif table_name == 'job_url':
@@ -230,9 +230,9 @@ def save_to_json(raw_data, filename=None, mode='w', directory='default_directory
 '''
 # def line_request(msg = 'hi'):
 #     # 注意前方要有 Bearer
-#     headers = {'Authorization':'Bearer 你的金鑰','Content-Type':'application/json'}
+#     headers = {'Authorization':'Bearer =','Content-Type':'application/json'}
 #     body = {
-#         'to':'使用者',
+#         'to':'',
 #         'messages':[{
 #                 'type': 'text',
 #                 'text': msg
@@ -364,11 +364,11 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                     except:
                         actively_hiring = False
                     # 獲取應徵人數
-                    try:
-                        applicants = driver.find_element(By.CSS_SELECTOR, 'a.d-flex.align-items-center.font-weight-bold').text.strip()
-                        # 提取數字範圍（例如："應徵人數 0~5 人" -> "0~5"）
+                    applicants = driver.find_element(By.CSS_SELECTOR, 'a.d-flex.align-items-center.font-weight-bold').text.strip()
+                    # 提取數字範圍（例如："應徵人數 0~5 人" -> "0~5"）
+                    if applicants:
                         applicants = applicants.replace("應徵人數", "").replace("人", "").strip()
-                    except Exception as e:
+                    else:
                         applicants = ""
                         logging.info(f"獲取應徵人數時發生錯誤: {e}")
                     try:
@@ -613,13 +613,13 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                         logging.info("未整理的福利說明無資訊")
                         raw_benefits = ""
                     # 獲取聯絡方式
-                    try:
-                        contact_info = []
-                        contact_elements = driver.find_elements(By.CSS_SELECTOR, 'div.job-contact-table div.job-contact-table__data')
+                    contact_info = []
+                    contact_elements = driver.find_elements(By.CSS_SELECTOR, 'div.job-contact-table div.job-contact-table__data')
+                    if contact_elements:
                         contact_info = [element.text.strip() for element in contact_elements]
                         contact_info_str = '\n'.join(contact_info)
-                    except Exception as e:
-                        logging.info(f"獲取聯絡方式時發生錯誤: {e}")
+                    else:
+                        logging.info("聯絡方式無資訊")
                         contact_info_str = ""     
                     try:
                         # 開啟應徵分頁獲取詳細資訊
@@ -631,19 +631,19 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                         driver.switch_to.window(driver.window_handles[-1])
                         time.sleep(5)
                         # 抓取教育程度分布
+                        apply_education = {}
+                        education_elements = driver.find_elements(By.CSS_SELECTOR, "div.legend__text")
+                        education_values = driver.find_elements(By.CSS_SELECTOR, "div.legend__value") 
                         try:
-                            apply_education = {}
-                            education_elements = driver.find_elements(By.CSS_SELECTOR, "div.legend__text")
-                            education_values = driver.find_elements(By.CSS_SELECTOR, "div.legend__value") 
                             for i in range(len(education_elements)):
                                 apply_education[education_elements[i].text] = education_values[i].text
                         except Exception as e:
                             apply_education = {}
                             logging.info("教育程度分佈無資料")
                         # 抓取性別分布
-                        try:
-                            gender = {}
-                            gender_elements = driver.find_elements(By.CSS_SELECTOR, ".stack-bar__text__block")
+                        gender = {}
+                        gender_elements = driver.find_elements(By.CSS_SELECTOR, ".stack-bar__text__block")
+                        if gender_elements:
                             for element in gender_elements[:2]:
                                 style = element.get_attribute("style")
                                 rgb_value = style[style.find("rgb"):style.find(")") + 1]
@@ -655,16 +655,15 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                     gender["男性"] = gender_text
                                 elif is_similar_rgb(rgb_value, female_rgb):
                                     gender["女性"] = gender_text
-                        except Exception as e:
+                        else:
                             gender = {}
                             logging.info("性別分佈無資料")
                         # 抓取語言能力
-                        try:
-                            # 選取div.chart-container__body的第5個是下下之策
-                            language_container = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")[5]
+                        # 選取div.chart-container__body的第5個是下下之策
+                        language_container = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")[5]
+                        if language_container:
                             # 初始化語言能力字典
                             language_skills = {}
-                            
                             # 找出所有語言項目
                             language_items = language_container.find_elements(By.XPATH, ".//div[contains(@class, 'mb-4')]")
                             for language_item in language_items:
@@ -692,13 +691,13 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                         logging.info("語言技能分佈無資料")
                                 # 將語言技能加入字典
                                 language_skills[language_name] = ','.join(language_description)
-                        except Exception as e:
+                        else:
                             language_skills = {}
                             logging.info("語言能力分佈無資料")
                         # 主要處理邏輯
                         # 定位所有的圖表容器
-                        try:
-                            chart_containers = driver.find_elements(By.CSS_SELECTOR, 'div.chart-container.d-flex.flex-column.bg-white.overflow-hidden.horizontal-bar-chart')
+                        chart_containers = driver.find_elements(By.CSS_SELECTOR, 'div.chart-container.d-flex.flex-column.bg-white.overflow-hidden.horizontal-bar-chart')
+                        if chart_containers:
                             # 欄位名稱列表
                             fields = {
                                 '年齡': extract_age_distribution,
@@ -755,8 +754,8 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                                         logging.info(f"未知的標題: {title}")
                                 else:
                                     logging.info(f"未知的標題: {title}")
-                        except Exception as e:
-                            logging.error(f"獲取應徵眾多資訊時發生錯誤: {e}")
+                        else:
+                            logging.error("應徵眾多資訊無資訊")
                         # 關閉應徵頁面，切回列表頁
                         driver.close()
                         driver.switch_to.window(driver.window_handles[-1])
@@ -788,28 +787,23 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                             "apply_experience": work_experience, "apply_major": major_distribution, "apply_skills": skills_distribution, "apply_certificates": certificates_distribution,
                             "status": "active"                     
                         })
-                        # job_id INT REFERENCES jobs(job_id),
-                        # tools_id INT REFERENCES tools(tools_id),
-                        # PRIMARY KEY (job_id, tool_id)
-                        job_id = apply_code+update_date
-                        # tools_id = None
                         # 遍歷工具列表，並將每個工具添加到 tools_list
                     except Exception as e:
                         logging.error(f"處理職缺時發生錯誤: {e}")
-                    try:
-                        if tools != "":
-                            # 將工具字串轉換為列表
-                            tools = tools.split("、")  # 使用 "、" 分隔符
-                            for tool in tools:
-                                # tools_id = f"tool_{index + 1}"  # 根據索引生成 tool_id
-                                tools_list.append({"job_id": job_id, "tool": tool})
-                        else:
+                    # try:
+                    #     if tools != "":
+                    #         # 將工具字串轉換為列表
+                    #         tools = tools.split("、")  # 使用 "、" 分隔符
+                    #         for tool in tools:
+                    #             # tools_id = f"tool_{index + 1}"  # 根據索引生成 tool_id
+                    #             tools_list.append({"job_id": job_id, "tool": tool})
+                    #     else:
                             
-                            tools_list.append({"job_id": job_id, "tool": tools})
-                    except Exception as e:
-                        tools_list.clear()
-                        logging.error(f"處理工具列表時發生錯誤: {e}")
-                        tools_list.append({"job_id": job_id, "tool": tools})
+                    #         tools_list.append({"job_id": job_id, "tool": tools})
+                    # except Exception as e:
+                    #     tools_list.clear()
+                    #     logging.error(f"處理工具列表時發生錯誤: {e}")
+                    #     tools_list.append({"job_id": job_id, "tool": tools})
                     # 使用 split() 方法分割字符串
                     try:
                         # 將公司網址中的公司 ID 提取出來
@@ -821,6 +815,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                             company_id = parts[4].split('?')[0]
                             com_list.append({"company_url":company_url, "company_id":company_id})  
                         else:
+                            com_list.append({"company_url":"", "company_id":""})
                             raise ValueError("URL 格式錯誤: " + company_url)
                     except Exception as e:
                         logging.error(f"處理公司網址時發生錯誤: {e}")
@@ -833,16 +828,16 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                         "applicants":"", "job_description": "", "job_category": "", "salary": "", "job_type": "",
                         "location": "", "management": "", "business_trip": "", "work_time": "",
                         "vacation": "", "start_work": "", "headcount": "", "work_exp": "", "education": "", 
-                        "major":"", "language":"", "skills":"", "tools":"", certificates:"", 
+                        "major":"", "language":"", "skills":"", "tools":"", "certificates":"", 
                         "other_requirements":"", "legal_benefits":"", "other_benefits":"", "raw_benefits":"", "contact_info":"", "status": "draft",
                         "apply_education":{}, "apply_gender": {}, "apply_language": {}, "apply_age_distribution": {},
                         "apply_experience": {}, "apply_major": {}, "apply_skills": {}, "apply_certificates": {}
                         # 新增欄位的空值
                     })
-                    job_url_list.append({"job_id": apply_code+update_date, "job_url":job_url})              
-                    com_list.append([""])
+                    # job_url_list.append({"job_id": apply_code+update_date, "job_url":job_url})              
+                    com_list.append({"company_url":"", "company_id":""})
                     # tools_id = None
-                    tools_list.append({"job_id": apply_code+update_date, "tool": tools})
+                    # tools_list.append({"job_id": apply_code+update_date, "tool": tools})
                     job_count +=1
                     # if sum(1 for field in job_list[-1] if field == "") > 6:
                     #     crawler_error += 1
@@ -857,12 +852,12 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
                     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                     filename = f"com_url_{timestamp}.json"
                     x_save(com_list, job_count= job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword="com_url", table_name="com_url")
-                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                    filename = f"tools_list_{timestamp}.json"
-                    x_save(tools_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/tools', keyword="tools_list", table_name='job_tools')
-                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                    filename = f"job_url_{timestamp}.json"
-                    x_save(job_url_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/job_url', keyword="job_url_list", table_name='job_url')
+                    # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    # filename = f"tools_list_{timestamp}.json"
+                    # x_save(tools_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/tools', keyword="tools_list", table_name='job_tools')
+                    # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    # filename = f"job_url_{timestamp}.json"
+                    # x_save(job_url_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/job_url', keyword="job_url_list", table_name='job_url')
                 except Exception as e:
                     logging.error(f"儲存時發生錯誤: {e}")
             except Exception as e:
@@ -891,21 +886,22 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
             logging.info("所有職缺處理完成")
             break
 
-keyword_list = ["系統工程師", "網路管理工程師", "資安工程師", "資訊設備管制人員", "雲端工程師", "網路安全分析師"]
+keyword_list = ["前端工程師", "後端工程師", "全端工程師", "數據分析師", "軟體工程師", "軟體助理工程師", "軟體專案主管", "系統分析師", "資料科學家", "資料工程師", "AI工程師", "演算法工程師", "韌體工程師", "電玩程式設計師", "Internet程式設計師", "資訊助理", "區塊鏈工程師", "BIOS工程師", "通訊軟體工程師", "電子商務技術主管", "其他資訊專業人員", "MIS程式設計師", "資料庫管理人員", "MIS / 網管主管", "資安主管"]
 # 使用方式
 crawl_jobs(keyword_list, max_errors=3, max_scrolls=100000)
 if len(job_list) > 0:
     x_save(job_list, job_count= 2,directory='D:/allm/crawler/job_list', table_name='jobs')
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
     x_save(com_list, job_count= 2,filename = f"com_url_{timestamp}.json" ,directory='D:/allm/crawler/com_url', table_name="com_url")
-    x_save(tools_list, job_count= 2,filename=f"tools_list_{timestamp}.json",directory='D:/allm/crawler/tools', table_name='job_tools')
-    x_save(job_url_list, job_count= 2,filename=f"job_url_{timestamp}.json",directory='D:/allm/crawler/job_url', table_name='job_url')
+    # x_save(tools_list, job_count= 2,filename=f"tools_list_{timestamp}.json",directory='D:/allm/crawler/tools', table_name='job_tools')
+    # x_save(job_url_list, job_count= 2,filename=f"job_url_{timestamp}.json",directory='D:/allm/crawler/job_url', table_name='job_url')
 driver.quit()
 logging.info("職缺爬蟲程式執行完畢")
 # 關鍵字
 '''
 資訊軟體系統類
 keyword_list = ["iOS 工程師", "Android 工程師", "前端工程師", "後端工程師", "全端工程師", "數據分析師", "軟體工程師", "軟體助理工程師", "軟體專案主管", "系統分析師", "資料科學家", "資料工程師", "AI工程師", "演算法工程師", "韌體工程師", "電玩程式設計師", "Internet程式設計師", "資訊助理", "區塊鏈工程師", "BIOS工程師", "通訊軟體工程師", "電子商務技術主管", "其他資訊專業人員", "系統工程師", "網路管理工程師", "資安工程師", "資訊設備管制人員", "雲端工程師", "網路安全分析師", "MES工程師", "MIS程式設計師", "資料庫管理人員", "MIS / 網管主管", "資安主管"]
+"系統工程師", "網路管理工程師", "資安工程師", "資訊設備管制人員", "雲端工程師", "網路安全分析師"
 研發相關
 keyword_list = [
 "iOS 工程師", "Android 工程師", "前端工程師", "後端工程師", "全端工程師", "數據分析師", "軟體工程師", "軟體助理工程師", "軟體專案主管", "系統分析師", "資料科學家", "資料工程師", "AI工程師", "演算法工程師", "韌體工程師", "電玩程式設計師", "Internet程式設計師", "資訊助理", "區塊鏈工程師", "BIOS工程師", "通訊軟體工程師", "電子商務技術主管", "其他資訊專業人員", "系統工程師", "網路管理工程師", "資安工程師", "資訊設備管制人員", "雲端工程師", "網路安全分析師", "MES工程師", "MIS程式設計師", "資料庫管理人員", "MIS / 網管主管", "資安主管"

@@ -11,29 +11,27 @@ from selenium.webdriver.chrome.service import Service
 from datetime import datetime
 from fake_useragent import UserAgent
 import os
-import pandas as pd
+# import pandas as pd
 import logging
 from supabase import create_client, Client
 # ------------------ 設定參數 -------------------
 target_jobs = [
-    "iOS 工程師", "Android 工程師", "前端工程師", "後端工程師", "全端工程師",
-    "數據分析師", "軟體工程師", "軟體助理工程師", "軟體專案主管", "系統分析師",
-    "資料科學家", "資料工程師", "AI工程師", "演算法工程師", "韌體工程師",
-    "電玩程式設計師", "Internet程式設計師", "資訊助理", "區塊鏈工程師", "BIOS工程師",
-    "通訊軟體工程師", "電子商務技術主管", "其他資訊專業人員", "系統工程師",
-    "網路管理工程師", "資安工程師", "資訊設備管制人員", "雲端工程師",
-    "網路安全分析師", "MES工程師", "MIS程式設計師", "資料庫管理人員", "MIS / 網管主管",
-    "資安主管"
+"助理工程師", "工程助理", "機構工程師", "機械工程師", "電子工程師", "電力工程師", "電源工程師", "數位IC設計工程師", "類比IC設計工程師", 
+"IC佈局工程師", "半導體工程師", "光學工程師", "熱傳工程師", "零件工程師", "光電工程師", "光電工程研發主管", "RF通訊工程師", "電信/通訊系統工程師", 
+"通訊工程研發主管", "太陽能技術工程師", "PCB佈線工程師", "硬體研發工程師", "硬體工程研發主管", "電子產品系統工程師", "微機電工程師", "聲學/噪音工程師", 
+"機電技師/工程師", "電機技師/工程師", "其他特殊工程師", "其他工程研發主管", "材料研發人員", "化工化學工程師", "實驗化驗人員", "特用化學工程師", "紡織化學工程師", 
+"生物科技研發人員", "醫藥研發人員", "醫療器材研發工程師", "食品研發人員", "化學工程研發人員", "病理藥理研究人員", "農藝/畜產研究人員"
 ]
-target_industry = ["資訊軟體系統類"]
+target_industry = ["研發相關類"]
 target_continent = ['台灣地區']  # 若沒有設定則抓取第一個洲的所有地區
 target_primary_category=[]
 nouse_area = [ "澎湖縣",  "金門縣",  "連江縣" ]
+nouse_district = []
 nouxe_primary_category=[]
 nouxe_jobs = []
 # 設定 Supabase 連線參數
-supabase_url: str = ""
-supabase_key: str = ""
+supabase_url: str = "https://fbwhzgumdgqcgivbgkke.supabase.co"
+supabase_key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZid2h6Z3VtZGdxY2dpdmJna2tlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyMzAzMjcsImV4cCI6MjA1NTgwNjMyN30.nW4t6beHineCCzIuogXjEEkt6Xp3Hh29VARemeEXfcc"
 # 定義目標元素的 CSS 選擇器
 target_selector = 'div.job-summary'
 # 定義等待超時時間（以秒為單位）
@@ -49,6 +47,7 @@ applicants_analysis = []
 job_url_list = []
 start_time = datetime.now()
 # ------------------------------------------------
+
 """初始化logging，預設log位址為logs/"""
 def setup_logging(log_dir='logs'):
     # 確保日誌目錄存在
@@ -103,10 +102,37 @@ def setup_driver():
     driver.command_executor.set_timeout(1000)
     return driver
 """爬蟲_應徵欄位性別分布的辨識"""
-def is_similar_rgb(rgb_str, target_rgb):
-    # 從rgb字符串中提取數值
-    rgb_values = [int(x) for x in rgb_str.replace("rgb(", "").replace(")", "").split(",")]
-    # 允許的誤差範圍
+def is_similar_rgb(rgb_input, target_rgb):
+    """
+    檢查輸入的 RGB 值（可以是字符串或列表）是否與目標 RGB 值相似。
+    
+    參數:
+    rgb_input: 字符串 (例如 "rgb(255,144,199)") 或列表 (例如 [255,144,199])。
+    target_rgb: 目標 RGB 值列表，例如 [255,144,199]。
+    
+    返回:
+    如果相似則返回 True，否則返回 False。
+    """
+    # 如果傳入的是列表，則直接處理；如果是字符串則進行處理
+    if isinstance(rgb_input, list):
+        rgb_values = rgb_input
+    elif isinstance(rgb_input, str):
+        try:
+            # 清除前後空格
+            rgb_str = rgb_input.strip()
+            # 判斷是否包含 "rgb(" 字符串，符合則提取括號內的部分
+            if "rgb(" in rgb_str:
+                start = rgb_str.find("rgb(") + len("rgb(")
+                end = rgb_str.find(")", start)
+                rgb_str = rgb_str[start:end]
+            rgb_values = [int(x.strip()) for x in rgb_str.split(",")]
+        except ValueError as e:
+            logging.error(f"Error parsing RGB values: {e}")
+            return False
+    else:
+        logging.error(f"Expected string or list for rgb_input, got {type(rgb_input)} instead.")
+        return False
+    # 設置允許的誤差範圍
     tolerance = 5
     return all(abs(a - b) <= tolerance for a, b in zip(rgb_values, target_rgb))
 """爬蟲_應徵欄位年齡的辨識"""
@@ -229,7 +255,7 @@ def save_to_json(raw_data, filename=None, mode='w', directory='default_directory
         logging.error(f"儲存 JSON 檔案時發生錯誤: {e}")
         return None
 """爬蟲選單_點擊並等待選項展開，根據 selector 定位元素"""
-def click_and_select(selector):
+def click_and_select(selector, driver):
     """点击并等待选项展开的通用函数"""
     try:
         logging.info(f"准备点击元素: {selector}")
@@ -295,6 +321,20 @@ def select_area(area_name, driver, area_element):
     except Exception as e:
         logging.error(f"选择地区时发生错误: {area_name}, 错误: {e}")
         raise
+"""爬蟲選單_選取區"""
+def select_district(district_name, driver, district_element):
+    """选择地区"""
+    try:
+        logging.info(f"开始选择区: {district_name}")
+        district_selector = f"button.area-item[data-area='{district_name}']"
+        logging.info(f"等待区选项出现: {district_selector}")
+        logging.info(f"地区选项已找到，准备点击")
+        district_element.click()
+        logging.info(f"已完成区选择: {district_name}")
+        time.sleep(1)
+    except Exception as e:
+        logging.error(f"选择区时发生错误: {district_name}, 错误: {e}")
+        raise
 """爬蟲選單_選取產業"""
 def select_industry(industry_name, driver, industries_element):
     """选择产业"""
@@ -325,6 +365,7 @@ def select_job(job_name, driver, jobs_element):
     try:
         logging.info(f"开始选择职缺: {job_name}")
         logging.info(f"职缺选项已找到，准备点击")
+        time.sleep(3)
         driver.execute_script("arguments[0].click();", jobs_element)
         logging.info(f"已完成职缺选择: {job_name}")
         time.sleep(1)
@@ -397,7 +438,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
     remaining_jobs = current_jobs
     while remaining_jobs:
         logging.info(f"開始處理 {len(remaining_jobs)} 個職缺")
-        remaining_jobs, crawler_error = extract_job_info(remaining_jobs)
+        remaining_jobs, crawler_error = extract_job_info(remaining_jobs, driver)
         if remaining_jobs:
             logging.info(f"還有 {len(remaining_jobs)} 個職缺未處理完成")
             # 儲存未處理職缺到檔案
@@ -413,7 +454,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
             logging.info("所有職缺處理完成")
             break    
 '''將詳細頁面的資料爬取'''
-def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
+def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0):
     job_count = 0
     remaining_jobs = []
     for job in current_jobs:
@@ -444,9 +485,9 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
             try:
                 logging.info(f"職缺名稱: {job_name}")
                 logging.info(f"職缺網址: {job_url}")
-                # logging.info(f"公司名稱: {company}")
                 # 獲取更新日期，使用 title 屬性來獲取完整日期（包含年份）
                 try:
+                    # update_date_element = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, 'span.text-gray-darker[title*="更新"]')))
                     update_date_element = driver.find_element(By.CSS_SELECTOR, 'span.text-gray-darker[title*="更新"]')
                     update_date = update_date_element.get_attribute('title')  # 獲取完整的 title 內容
                     update_date = update_date.replace("更新", "").strip()  # 移除 "更新" 文字
@@ -497,7 +538,6 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                     salary = ""
                     logging.error(f"獲取工作待遇時發生錯誤: {e}")
                 try:
-
                     # 獲取工作性質
                     job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data').text.strip()
                 except Exception as e:
@@ -728,14 +768,18 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                     logging.info("聯絡方式無資訊")
                     contact_info_str = ""     
                 try:
+                    logging.info("開始開啟應徵分頁")
                     # 開啟應徵分頁獲取詳細資訊
                     # 從原始工作頁面 URL 提取工作代碼
                     apply_code = job_url.split('/')[-1].split('?')[0]
                     # 構建應徵分析頁面的 URL
-                    apply_analysis_url = f"https://www.104.com.tw/jobs/apply/analysis/{apply_code}"
-                    driver.execute_script(f"window.open('{apply_analysis_url}', '_blank')")
-                    driver.switch_to.window(driver.window_handles[-1])
-                    time.sleep(5)
+                    try:
+                        apply_analysis_url = f"https://www.104.com.tw/jobs/apply/analysis/{apply_code}"
+                        driver.execute_script(f"window.open('{apply_analysis_url}', '_blank')")
+                        driver.switch_to.window(driver.window_handles[-1])
+                        time.sleep(5)
+                    except Exception as e:
+                        logging.error(f"分析與開啟應徵分析頁面代碼發生錯誤: {e}")
                     # 抓取教育程度分布
                     apply_education = {}
                     education_elements = driver.find_elements(By.CSS_SELECTOR, "div.legend__text")
@@ -747,30 +791,36 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                         apply_education = {}
                         logging.info("教育程度分佈無資料")
                     # 抓取性別分布
-                    gender = {}
+                    gender = {"男性":"", "女性":""}
                     gender_elements = driver.find_elements(By.CSS_SELECTOR, ".stack-bar__text__block")
                     if gender_elements:
                         for element in gender_elements[:2]:
                             style = element.get_attribute("style")
-                            rgb_value = style[style.find("rgb"):style.find(")") + 1]
-                            rgb_value = rgb_value.strip()
-                            rgb_value = rgb_value.replace("rgb(", "").replace(")", "")
-                            rgb_value = [int(x) for x in rgb_value.split(",")]
-                            gender_text = element.find_element(By.CSS_SELECTOR, "div").text
-                            # 定義目標RGB值
-                            male_rgb = [78, 145, 255]    # 藍色
-                            female_rgb = [255, 144, 199]  # 粉色
-                            if is_similar_rgb(rgb_value, male_rgb):
-                                gender["男性"] = gender_text
-                            elif is_similar_rgb(rgb_value, female_rgb):
-                                gender["女性"] = gender_text
+                            if "rgb" in style:
+                                rgb_value = style[style.find("rgb"):style.find(")") + 1]
+                                rgb_value = rgb_value.strip()
+                                rgb_value = rgb_value.replace("rgb(", "").replace(")", "")
+                                rgb_value = [int(x) for x in rgb_value.split(",")]
+                                gender_text = element.find_element(By.CSS_SELECTOR, "div").text
+                                male_rgb = [78, 145, 255]    # 藍色
+                                female_rgb = [255, 144, 199]  # 粉色
+                                if is_similar_rgb(rgb_value, male_rgb):
+                                    gender["男性"] = gender_text
+                                elif is_similar_rgb(rgb_value, female_rgb):
+                                    gender["女性"] = gender_text
                     else:
                         gender = {}
                         logging.info("性別分佈無資料")
                     # 抓取語言能力
                     # 選取div.chart-container__body的第5個是下下之策
-                    language_container = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")[5]
-                    if language_container:
+                    # language_container = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")[5]
+                    language_containers = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")
+                    if len(language_containers) > 5:
+                        language_container = language_containers[5]
+                    else:
+                        logging.error("語言能力容器數量不足")
+                    logging.info("開始抓取語言能力")
+                    try:
                         # 初始化語言能力字典
                         language_skills = {}
                         # 找出所有語言項目
@@ -800,10 +850,9 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                                     logging.info("語言技能分佈無資料")
                             # 將語言技能加入字典
                             language_skills[language_name] = ','.join(language_description)
-                    else:
+                    except Exception as e:
                         language_skills = {}
-                        logging.info("語言能力分佈無資料")
-                    # 主要處理邏輯
+                        logging.info(f"語言能力分佈無資料,錯誤代碼{e}")
                     # 定位所有的圖表容器
                     chart_containers = driver.find_elements(By.CSS_SELECTOR, 'div.chart-container.d-flex.flex-column.bg-white.overflow-hidden.horizontal-bar-chart')
                     if chart_containers:
@@ -873,6 +922,7 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                     driver.close()
                     driver.switch_to.window(driver.window_handles[-1])
                     logging.error(f"獲取應徵詳細資訊時發生錯誤: {e}")
+                    apply_education, gender, language_skills, age_distribution, work_experience, major_distribution, skills_distribution, certificates_distribution = {}
                 "apply_education"=={} 
                 "apply_gender"== {}
                 "apply_language"== {}
@@ -883,6 +933,7 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                 "apply_certificates"== {}                      
                 time.sleep(3)
                 # 更新要存入的資料
+                logging.info(f"更新要存入的資料")
                 try:
                     job_list.append({
                         "job_id":apply_code+update_date,
@@ -896,29 +947,10 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                         "apply_experience": work_experience, "apply_major": major_distribution, "apply_skills": skills_distribution, "apply_certificates": certificates_distribution,
                         "status": "active"                     
                     })
-                    # 遍歷工具列表，並將每個工具添加到 tools_list
                 except Exception as e:
                     logging.error(f"處理職缺時發生錯誤: {e}")
-                # try:
-                #     if tools != "":
-                #         # 將工具字串轉換為列表
-                #         tools = tools.split("、")  # 使用 "、" 分隔符
-                #         for tool in tools:
-                #             # tools_id = f"tool_{index + 1}"  # 根據索引生成 tool_id
-                #             tools_list.append({"job_id": job_id, "tool": tool})
-                #     else:
-                #         
-                #         tools_list.append({"job_id": job_id, "tool": tools})
-                # except Exception as e:
-                #     tools_list.clear()
-                #     logging.error(f"處理工具列表時發生錯誤: {e}")
-                #     tools_list.append({"job_id": job_id, "tool": tools})
-                # 使用 split() 方法分割字符串
                 try:
-                    # 將公司網址中的公司 ID 提取出來
-                    # 以 "/" 分割 URL，將結果存成串列
                     parts = company_url.split('/')
-                    # 分割結果的最後一部分可能包含 query 參數，所以以 "?" 進一步分割
                     if len(parts) >= 5:
                         # 以下假設 URL 格式為 "https://www.104.com.tw/company/ID?..."
                         company_id = parts[4].split('?')[0]
@@ -942,11 +974,8 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
                     "apply_education":{}, "apply_gender": {}, "apply_language": {}, "apply_age_distribution": {},
                     "apply_experience": {}, "apply_major": {}, "apply_skills": {}, "apply_certificates": {}
                     # 新增欄位的空值
-                })
-                # job_url_list.append({"job_id": apply_code+update_date, "job_url":job_url})              
+                })             
                 com_list.append({"company_url":"", "company_id":""})
-                # tools_id = None
-                # tools_list.append({"job_id": apply_code+update_date, "tool": tools})
                 job_count +=1
                 # if sum(1 for field in job_list[-1] if field == "") > 6:
                 #     crawler_error += 1
@@ -956,17 +985,11 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
             driver.switch_to.window(driver.window_handles[0])
             # 儲存資料
             try:
-                logging.info(f"目前第{job_count}個職缺，儲存資料")
+                logging.info(f"目前第{len(job_list)}個職缺，儲存資料")
                 x_save(job_list, job_count= job_count,directory='D:/allm/crawler/job_list',keyword = "job_list", table_name='jobs')
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 filename = f"com_url_{timestamp}.json"
                 x_save(com_list, job_count= job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword="com_url", table_name="com_url")
-                # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                # filename = f"tools_list_{timestamp}.json"
-                # x_save(tools_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/tools', keyword="tools_list", table_name='job_tools')
-                # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                # filename = f"job_url_{timestamp}.json"
-                # x_save(job_url_list, job_count= job_count,filename=filename,directory='D:/allm/crawler/job_url', keyword="job_url_list", table_name='job_url')
             except Exception as e:
                 logging.error(f"儲存時發生錯誤: {e}")
         except Exception as e:
@@ -974,7 +997,7 @@ def extract_job_info(current_jobs, max_errors = 3, crawler_error = 0):
             driver.switch_to.window(driver.window_handles[0])
             logging.error(f"處理職缺時發生錯誤: {e}")
             crawler_error += 1
-    return remaining_jobs, crawler_error
+    return remaining_jobs, crawler_error, job_list, com_list
 def crawl():
     logging.info("开始爬取程序")
     driver = setup_driver()
@@ -985,15 +1008,24 @@ def crawl():
     logging.info("网站加载完成")
     # 等待并点击地区按钮
     logging.info("等待地区按钮出现...")
-    area_button = WebDriverWait(driver, 10).until(
-        EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-地區']"))
-    )
+    area_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-地區']")))
     area_button.click()
     # 洲别选取
     logging.info("开始处理洲别选择")
-    continents_to_iterate = target_continent if target_continent else []
-    continent_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')
-    continent_texts = [element.text for element in continent_elements]
+    try:
+        continents_to_iterate = target_continent if target_continent else []
+    except Exception as e:
+        logging.error(f"處理洲別時發生錯誤1: {e}")
+    try:
+        time.sleep(3)
+        continent_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')
+        # category-item category-item--focus category-item--level-one
+    except Exception as e:
+        logging.error(f"處理洲別時發生錯誤2: {e}")
+    try:
+        continent_texts = [element.text for element in continent_elements]
+    except Exception as e:
+        logging.error(f"處理洲別時發生錯誤3: {e}")   
     logging.info(continent_texts)
     if not continents_to_iterate:
         logging.info("未指定目标洲别，将选取所有洲别")
@@ -1008,69 +1040,107 @@ def crawl():
         # 地区选取
         logging.info("开始处理地区选择")
         area_elements = driver.find_elements(By.XPATH, f'//li[contains(@class, "category-item") and contains(@class, "category-item--level-two")]')
-        area_names = [a.text for a in area_elements if a.text not in nouse_area]
-        logging.info(f"找到以下可用地区: {area_names}")
-        for index, area  in enumerate(area_names):
+        area_texts = [a.text for a in area_elements if a.text not in nouse_area]
+        logging.info(f"找到以下可用地区: {area_texts}")
+        for area in area_texts:
             logging.info(f"=== 开始处理地区: {area} ===")
-            area_element = area_elements[index]
+            area_index = area_texts.index(area)
+            area_element = area_elements[area_index]
             select_area(area, driver, area_element)
-
-            confirm_selection(driver)
-            # 产业选取
-            logging.info("开始处理产业选择")
-            try:
-                industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
-                industries_button.click()
-            except Exception as e:
-                logging.error(f"產業案件錯誤{e}")
-            industries_to_iterate = target_industry if target_industry else []
-            industries_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')
-            industries_texts = [element.text for element in industries_elements]
-            logging.info(industries_texts)
-            if not industries_to_iterate:
-                logging.info("未指定目标产业，将选取全部产业")
-                industries_to_iterate = [industries_elements.text]
-                logging.info(f"选择的产业: {industries_to_iterate}")
-            for index, industry in enumerate(industries_to_iterate):
-                logging.info(f"=== 开始处理产业: {industry} ===")
-                industries_element = industries_elements[index]
-                select_industry(industry, driver, industries_element)
-                
-                # 次要職業分類选取
-                primary_category_to_iterate = target_primary_category if target_primary_category else []
-                primary_category_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-two")]')
-                primary_category_names = [a.text for a in primary_category_elements if a.text not in nouxe_primary_category]
-                logging.info("开始处理次要职缺选择")
-                if not primary_category_to_iterate:
-                    logging.info("未指定目标次分類，将选取全部次分類")
-                    primary_category_to_iterate = primary_category_names
-                    logging.info(f"选择的次分類:{primary_category_to_iterate}")
-                for index, primary_category in enumerate(primary_category_names):
-                    logging.info(f"=== 开始处理产业: {primary_category} ===")
-                    primary_category_element = primary_category_elements[index]
-                    select_primary_category(primary_category, driver, primary_category_element)
-                    # 職業選取
-                    jobs_to_iterate = target_jobs if target_jobs else []
-                    jobs_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-three")]')
-                    jobs_names = [a for a in jobs_to_iterate if a not in nouxe_jobs]
-                    logging.info("开始处理职缺选择")
-                    if not jobs_to_iterate:
-                        logging.info("未指定目标職務，将选取全部職業")
-                        jobs_to_iterate = jobs_names
-                    for job in target_jobs:
-                        logging.info(f"=== 开始处理职缺: {job} ===")
-                        jobs_element = jobs_elements[index]
-                        select_job(job, driver, jobs_element)
-                        confirm_selection(driver)
-                        confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
-                        logging.info("确认按钮已找到，准备点击")
-                        confirm_element.click()
-                        logging.info("开始获取职缺数据")
-                        fetch_jobs_data(driver, max_errors=3, max_scrolls=100000, keyword=job)
-                        logging.info(f"完成职缺 {job} 的数据获取")
+            # 區 選取
+            logging.info("开始处理區選擇")
+            district_elements = driver.find_elements(By.XPATH, f'//li[contains(@class, "category-item") and contains(@class, "category-item--level-three")]')
+            district_texts = [a.text for a in district_elements if a.text != "" and a.text not in nouse_district]
+            logging.info(f"找到以下可用區: {district_texts}")
+            for district in district_texts:
+                logging.info(f"=== 开始处理區: {district} ===")
+                district_index = district_texts.index(district)
+                district_element = district_elements[district_index]
+                select_district(district, driver, district_element)
+                confirm_selection(driver)
+                # 产业选取
+                logging.info("开始处理产业选择")
+                try:
+                    industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
+                    industries_button.click()
+                except Exception as e:
+                    logging.error(f"產業案件錯誤{e}")
+                time.sleep(3)
+                industries_to_iterate = target_industry if target_industry else []
+                # 所有產業的網頁元素
+                industries_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')
+                # 所有產業的文字
+                industries_texts = [element.text for element in industries_elements]
+                logging.info(industries_texts)
+                if not industries_to_iterate:
+                    logging.info("未指定目标产业，将选取全部产业")
+                    industries_to_iterate = industries_texts
+                    logging.info(f"选择的产业: {industries_to_iterate}")
+                for industry in industries_to_iterate:
+                    logging.info(f"=== 开始处理产业: {industry} ===")
+                    indus_index = industries_texts.index(industry)
+                    industries_element = industries_elements[indus_index]
+                    select_industry(industry, driver, industries_element)
+                    
+                    # 次要職業分類选取
+                    primary_category_to_iterate = target_primary_category if target_primary_category else []
+                    primary_category_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-two")]')
+                    primary_category_texts = [a.text for a in primary_category_elements if a.text not in nouxe_primary_category]
+                    logging.info(f"找到以下可用次分類: {primary_category_texts}")
+                    logging.info("开始处理次要职缺选择")
+                    if not primary_category_to_iterate:
+                        logging.info("未指定目标次分類，将选取全部次分類")
+                        primary_category_to_iterate = primary_category_texts
+                        logging.info(f"选择的次分類:{primary_category_to_iterate}")
+                    for primary_category in primary_category_texts:
+                        logging.info(f"=== 开始处理产业: {primary_category} ===")
+                        prim_index = primary_category_texts.index(primary_category)
+                        primary_category_element = primary_category_elements[prim_index]
+                        select_primary_category(primary_category, driver, primary_category_element)
+                        # 職業選取
+                        jobs_to_iterate = target_jobs if target_jobs else []
+                        jobs_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-three")]')
+                        jobs_texts = [a.text for a in jobs_elements if a not in nouxe_jobs]
+                        logging.info("开始处理职缺选择")
+                        if not jobs_to_iterate:
+                            logging.info("未指定目标職務，将选取全部職業")
+                            jobs_to_iterate = jobs_texts
+                        jobs_count=0
+                        for job in jobs_to_iterate:
+                            logging.info(f"=== 开始处理职缺: {job} ===")
+                            job_index = jobs_texts.index(job)
+                            jobs_element = jobs_elements[job_index]
+                            if jobs_count ==0:
+                                select_job(job, driver, jobs_element)
+                                confirm_selection(driver)
+                                confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
+                                logging.info("确认按钮已找到，准备点击")
+                                confirm_element.click()
+                                logging.info("开始获取职缺数据")
+                                fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, keyword=job)
+                                logging.info(f"完成职缺 {job} 的数据获取")
+                            else:
+                                try:
+                                    industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
+                                    industries_button.click()
+                                except Exception as e:
+                                    logging.error(f"產業案件錯誤{e}")
+                                select_industry(industry, driver, industries_element)
+                                select_primary_category(primary_category, driver, primary_category_element)
+                                select_job(job, driver, jobs_element)
+                                confirm_selection(driver)
+                                confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
+                                logging.info("确认按钮已找到，准备点击")
+                                confirm_element.click()
+                                logging.info("开始获取职缺数据")
+                                fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, keyword=job)
+                                logging.info(f"完成职缺 {job} 的数据获取")                           
+                            jobs_count +=1
     logging.info("所有数据爬取完成")
     driver.quit()
     logging.info("浏览器已关闭，程序结束")
+
+
 if __name__ == "__main__":
     log_file = setup_logging()
     logging.info(f"日誌檔案已建立：{log_file}")
@@ -1084,3 +1154,5 @@ if __name__ == "__main__":
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         x_save(com_list, job_count= 2,filename = f"com_url_{timestamp}.json" ,directory='D:/allm/crawler/com_url', table_name="com_url")
     logging.info("職缺爬蟲程式執行完畢")
+
+

@@ -30,8 +30,8 @@ nouse_district = []
 nouxe_primary_category=[]
 nouxe_jobs = []
 # 設定 Supabase 連線參數
-supabase_url: str = "https://fbwhzgumdgqcgivbgkke.supabase.co"
-supabase_key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZid2h6Z3VtZGdxY2dpdmJna2tlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDAyMzAzMjcsImV4cCI6MjA1NTgwNjMyN30.nW4t6beHineCCzIuogXjEEkt6Xp3Hh29VARemeEXfcc"
+supabase_url: str = ""
+supabase_key: str = ""
 # 定義目標元素的 CSS 選擇器
 target_selector = 'div.job-summary'
 # 定義等待超時時間（以秒為單位）
@@ -391,20 +391,20 @@ def confirm_selection(driver):
         logging.error(f"确认选择时发生错误: {e}")
         raise
 """抓取頁面中職缺資料，返回結果列表"""
-def fetch_jobs_data(driver, max_errors=3, max_scrolls=100000, keyword = "default_keyword"):
+def fetch_jobs_data(driver, max_errors=3, max_scrolls=100000, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     crawler_error = 0
-    logging.info(f"正在處理關鍵字: {keyword}")
+    logging.info(f"正在處理關鍵字: {job_title}")
     try:
         # 處理職缺
-        process_jobs(driver, max_scrolls, max_errors = 3,keyword=keyword)
+        process_jobs(driver, max_scrolls, max_errors = 3, area = area, district = district, industry = industry, primary_category = primary_category, job_title = job_title)
     except Exception as e:
         crawler_error += 1
-        logging.error(f"爬蟲 {keyword} 發生錯誤: {e}")
+        logging.error(f"爬蟲 {job_title} 發生錯誤: {e}")
         if crawler_error >= max_errors:
             logging.warning(f"已達到最大錯誤次數 {max_errors}")
             crawler_error = 0
 '''將職缺頁滑動到最後，將所有職缺詳細頁面url存取給extract_job_info使用'''
-def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'default_keyword'):
+def process_jobs(driver, max_scrolls = 100000, max_errors = 3, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     scrolls = 0
     current_jobs = []
     unprocessed_jobs = []
@@ -438,7 +438,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
     remaining_jobs = current_jobs
     while remaining_jobs:
         logging.info(f"開始處理 {len(remaining_jobs)} 個職缺")
-        remaining_jobs, crawler_error = extract_job_info(remaining_jobs, driver)
+        remaining_jobs, crawler_error = extract_job_info(remaining_jobs, driver, area = area, district = district, industry = industry, primary_category = primary_category, job_title = job_title)
         if remaining_jobs:
             logging.info(f"還有 {len(remaining_jobs)} 個職缺未處理完成")
             # 儲存未處理職缺到檔案
@@ -454,7 +454,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, keyword = 'defaul
             logging.info("所有職缺處理完成")
             break    
 '''將詳細頁面的資料爬取'''
-def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0):
+def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     job_count = 0
     remaining_jobs = []
     for job in current_jobs:
@@ -470,8 +470,15 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0):
             title_element = job.find_element(By.XPATH, './/h2//a[contains(@class, "info-job__text")]')
             job_url = title_element.get_attribute('href')
             job_name = title_element.get_attribute('title')
+            try:
+                job_industry = job.find_element(By.CSS_SELECTOR, '[data-gtm-joblist^="職缺-產業-"]')
+                logging.info(f"職缺產業{job_industry.text}")
+            except Exception as e:
+                job_industry = ""
+                logging.error(f"獲取職缺產業時發生錯誤: {e}")
             # 獲取公司資訊
             company_element = job.find_element(By.CSS_SELECTOR, 'a[data-gtm-joblist="職缺-公司名稱"]')
+            
             company = company_element.text.strip()
             company_url = company_element.get_attribute('href')
             # 開啟新分頁取得詳細資訊
@@ -937,7 +944,8 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0):
                 try:
                     job_list.append({
                         "job_id":apply_code+update_date,
-                        "job_name":job_name, "company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
+                        "job_name":job_name, "job_industry":job_industry, "area":area+district, "industry": industry, "primary_category":primary_category, 
+                        "job_title":job_title,"company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
                         "applicants":applicants, "job_description":job_description, "job_category":job_category, "salary":salary, "job_type":job_type, 
                         "location":location, "management":management, "business_trip":business_trip, "work_time":work_time, "vacation":vacation, 
                         "start_work":start_work, "headcount":headcount, "work_exp":work_exp, "education":education, "major":major, 
@@ -965,7 +973,8 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0):
                 logging.error(f"處理詳細頁面資訊時發生錯誤: {e}")
                 job_list.append({
                     "job_id":apply_code+update_date,
-                    "job_name":job_name, "company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
+                    "job_name":job_name, "job_industry":job_industry, "area":area+district, "industry": industry, "primary_category":primary_category, 
+                    "job_title":job_title,"company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
                     "applicants":"", "job_description": "", "job_category": "", "salary": "", "job_type": "",
                     "location": "", "management": "", "business_trip": "", "work_time": "",
                     "vacation": "", "start_work": "", "headcount": "", "work_exp": "", "education": "", 
@@ -985,11 +994,12 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0):
             driver.switch_to.window(driver.window_handles[0])
             # 儲存資料
             try:
-                logging.info(f"目前第{len(job_list)}個職缺，儲存資料")
-                x_save(job_list, job_count= job_count,directory='D:/allm/crawler/job_list',keyword = "job_list", table_name='jobs')
+                job_list_count = len(job_list)
+                logging.info(f"目前第{job_list_count}個職缺，儲存資料")
+                x_save(job_list, job_count= job_list_count,directory='D:/allm/crawler/job_list',keyword = "job_list", table_name='jobs')
                 timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
                 filename = f"com_url_{timestamp}.json"
-                x_save(com_list, job_count= job_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword="com_url", table_name="com_url")
+                x_save(com_list, job_count= job_list_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword="com_url", table_name="com_url")
             except Exception as e:
                 logging.error(f"儲存時發生錯誤: {e}")
         except Exception as e:
@@ -1106,19 +1116,19 @@ def crawl():
                             logging.info("未指定目标職務，将选取全部職業")
                             jobs_to_iterate = jobs_texts
                         jobs_count=0
-                        for job in jobs_to_iterate:
-                            logging.info(f"=== 开始处理职缺: {job} ===")
-                            job_index = jobs_texts.index(job)
+                        for job_title in jobs_to_iterate:
+                            logging.info(f"=== 开始处理职缺: {job_title} ===")
+                            job_index = jobs_texts.index(job_title)
                             jobs_element = jobs_elements[job_index]
                             if jobs_count ==0:
-                                select_job(job, driver, jobs_element)
+                                select_job(job_title, driver, jobs_element)
                                 confirm_selection(driver)
                                 confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
                                 logging.info("确认按钮已找到，准备点击")
                                 confirm_element.click()
                                 logging.info("开始获取职缺数据")
-                                fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, keyword=job)
-                                logging.info(f"完成职缺 {job} 的数据获取")
+                                fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, area = area, district = district, industry = industry, primary_category = primary_category, job_title = job_title)
+                                logging.info(f"完成职缺 {job_title} 的数据获取")
                             else:
                                 try:
                                     industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
@@ -1127,14 +1137,14 @@ def crawl():
                                     logging.error(f"產業案件錯誤{e}")
                                 select_industry(industry, driver, industries_element)
                                 select_primary_category(primary_category, driver, primary_category_element)
-                                select_job(job, driver, jobs_element)
+                                select_job(job_title, driver, jobs_element)
                                 confirm_selection(driver)
                                 confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
                                 logging.info("确认按钮已找到，准备点击")
                                 confirm_element.click()
                                 logging.info("开始获取职缺数据")
-                                fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, keyword=job)
-                                logging.info(f"完成职缺 {job} 的数据获取")                           
+                                fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, area = area, district = district, industry = industry, primary_category = primary_category, job_title = job_title)
+                                logging.info(f"完成职缺 {job_title} 的数据获取")                           
                             jobs_count +=1
     logging.info("所有数据爬取完成")
     driver.quit()

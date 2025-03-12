@@ -527,29 +527,32 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 else:
                     applicants = ""
                     logging.info(f"獲取應徵人數時發生錯誤: {e}")
-                try:
-                    # 獲取工作內容
-                    job_description = driver.find_element(By.CSS_SELECTOR, 'p.job-description__content').text.strip()
-                except Exception as e:
+                # 獲取工作內容
+                job_description = driver.find_element(By.CSS_SELECTOR, 'p.job-description__content')
+                if job_description:
+                    job_description = job_description.text.strip()
+                else:
                     job_description = ""
-                    logging.error(f"獲取工作內容時發生錯誤: {e}")
-                try:
-                    # 獲取職務類別
-                    job_categories = driver.find_elements(By.CSS_SELECTOR, 'div.category-item u')
+                    logging.info(f"獲取工作內容時發生錯誤: {e}")
+                # 獲取職務類別
+                job_categories = driver.find_elements(By.CSS_SELECTOR, 'div.category-item u')
+                if job_categories:
                     job_category = '、'.join([cat.text for cat in job_categories])
-                except Exception as e:
+                else:
                     job_category = ""
                     logging.error(f"獲取職務類別時發生錯誤: {e}")
-                try:
-                    # 獲取工作待遇
-                    salary = driver.find_element(By.CSS_SELECTOR, 'p.text-primary.font-weight-bold').text.strip()
-                except Exception as e:
+                # 獲取工作待遇
+                salary = driver.find_element(By.CSS_SELECTOR, 'p.text-primary.font-weight-bold')
+                if salary:
+                    salary = salary.text.strip()
+                else:
                     salary = ""
                     logging.error(f"獲取工作待遇時發生錯誤: {e}")
-                try:
-                    # 獲取工作性質
-                    job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data').text.strip()
-                except Exception as e:
+                # 獲取工作性質
+                job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data')
+                if job_type:
+                    job_type = job_type.text.strip()
+                else:
                     job_type = ""
                     logging.error(f"獲取工作性質時發生錯誤: {e}")
                 try:
@@ -574,6 +577,30 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 except Exception as e:
                     management = ""
                     logging.error(f"獲取管理責任時發生錯誤: {e}")
+                # 獲取上班地點
+                location_element = driver.find_elements(By.CSS_SELECTOR, 'div.job-address span')
+                if location_element:
+                    location = location_element[0].text.strip()
+                else:
+                    location = ""
+                    logging.error(f"獲取上班地點時發生錯誤")
+
+                # 獲取管理責任
+                management_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
+                management = ""
+                for element in management_elements:
+                    title_text_element = element.find_elements(By.CSS_SELECTOR, 'h3')
+                    if title_text_element:
+                        title_text = title_text_element[0].text.strip()
+                        if title_text == "管理責任":
+                            management_data_element = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data')
+                            if management_data_element:
+                                management = management_data_element[0].text.strip()
+                            else:
+                                logging.error(f"獲取管理責任時發生錯誤")
+                            break
+                    else:
+                        logging.error(f"獲取管理責任時發生錯誤")
                 try:
                     # 獲取出差外派
                     business_trip = ""

@@ -403,6 +403,7 @@ def fetch_jobs_data(driver, max_errors=3, max_scrolls=100000, area = "", distric
         if crawler_error >= max_errors:
             logging.warning(f"已達到最大錯誤次數 {max_errors}")
             crawler_error = 0
+    return job_list, com_list
 '''將職缺頁滑動到最後，將所有職缺詳細頁面url存取給extract_job_info使用'''
 def process_jobs(driver, max_scrolls = 100000, max_errors = 3, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     scrolls = 0
@@ -452,7 +453,8 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, area = "", distri
             time.sleep(5)  # 短暫暫停後繼續處理
         else:
             logging.info("所有職缺處理完成")
-            break    
+            break   
+    return job_list, com_list
 '''將詳細頁面的資料爬取'''
 def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     job_count = 0
@@ -471,8 +473,8 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
             job_url = title_element.get_attribute('href')
             job_name = title_element.get_attribute('title')
             try:
-                job_industry = job.find_element(By.CSS_SELECTOR, '[data-gtm-joblist^="職缺-產業-"]')
-                logging.info(f"職缺產業{job_industry.text}")
+                job_industry = job.find_element(By.CSS_SELECTOR, '[data-gtm-joblist^="職缺-產業-"]').text.strip()
+                logging.info(f"職缺產業{job_industry}")
             except Exception as e:
                 job_industry = ""
                 logging.error(f"獲取職缺產業時發生錯誤: {e}")
@@ -821,13 +823,10 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                     # 抓取語言能力
                     # 選取div.chart-container__body的第5個是下下之策
                     # language_container = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")[5]
+                    logging.info("開始抓取語言能力")
                     language_containers = driver.find_elements(By.CSS_SELECTOR, "div.chart-container__body")
                     if len(language_containers) > 5:
                         language_container = language_containers[5]
-                    else:
-                        logging.error("語言能力容器數量不足")
-                    logging.info("開始抓取語言能力")
-                    try:
                         # 初始化語言能力字典
                         language_skills = {}
                         # 找出所有語言項目
@@ -856,10 +855,9 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 except Exception as e:
                                     logging.info("語言技能分佈無資料")
                             # 將語言技能加入字典
-                            language_skills[language_name] = ','.join(language_description)
-                    except Exception as e:
-                        language_skills = {}
-                        logging.info(f"語言能力分佈無資料,錯誤代碼{e}")
+                            language_skills[language_name] = ','.join(language_description)                        
+                    else:
+                        logging.error("語言能力容器數量不足")
                     # 定位所有的圖表容器
                     chart_containers = driver.find_elements(By.CSS_SELECTOR, 'div.chart-container.d-flex.flex-column.bg-white.overflow-hidden.horizontal-bar-chart')
                     if chart_containers:
@@ -1048,22 +1046,22 @@ def crawl():
         logging.info(index)
         select_continent(continent, driver, index)
         # 地区选取
-        logging.info("开始处理地区选择")
+        logging.info("开始处理縣市选择")
         area_elements = driver.find_elements(By.XPATH, f'//li[contains(@class, "category-item") and contains(@class, "category-item--level-two")]')
         area_texts = [a.text for a in area_elements if a.text not in nouse_area]
-        logging.info(f"找到以下可用地区: {area_texts}")
+        logging.info(f"找到以下可用縣市: {area_texts}")
         for area in area_texts:
-            logging.info(f"=== 开始处理地区: {area} ===")
+            logging.info(f"=== 开始处理縣市: {area} ===")
             area_index = area_texts.index(area)
             area_element = area_elements[area_index]
             select_area(area, driver, area_element)
             # 區 選取
-            logging.info("开始处理區選擇")
+            logging.info("开始处理行政區選擇")
             district_elements = driver.find_elements(By.XPATH, f'//li[contains(@class, "category-item") and contains(@class, "category-item--level-three")]')
             district_texts = [a.text for a in district_elements if a.text != "" and a.text not in nouse_district]
-            logging.info(f"找到以下可用區: {district_texts}")
+            logging.info(f"找到以下可用行政區: {district_texts}")
             for district in district_texts:
-                logging.info(f"=== 开始处理區: {district} ===")
+                logging.info(f"=== 开始处理行政區: {district} ===")
                 district_index = district_texts.index(district)
                 district_element = district_elements[district_index]
                 select_district(district, driver, district_element)
@@ -1091,7 +1089,6 @@ def crawl():
                     indus_index = industries_texts.index(industry)
                     industries_element = industries_elements[indus_index]
                     select_industry(industry, driver, industries_element)
-                    
                     # 次要職業分類选取
                     primary_category_to_iterate = target_primary_category if target_primary_category else []
                     primary_category_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-two")]')
@@ -1102,8 +1099,8 @@ def crawl():
                         logging.info("未指定目标次分類，将选取全部次分類")
                         primary_category_to_iterate = primary_category_texts
                         logging.info(f"选择的次分類:{primary_category_to_iterate}")
-                    for primary_category in primary_category_texts:
-                        logging.info(f"=== 开始处理产业: {primary_category} ===")
+                    for primary_category in primary_category_to_iterate:
+                        logging.info(f"=== 开始处理次分類: {primary_category} ===")
                         prim_index = primary_category_texts.index(primary_category)
                         primary_category_element = primary_category_elements[prim_index]
                         select_primary_category(primary_category, driver, primary_category_element)
@@ -1111,13 +1108,13 @@ def crawl():
                         jobs_to_iterate = target_jobs if target_jobs else []
                         jobs_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-three")]')
                         jobs_texts = [a.text for a in jobs_elements if a not in nouxe_jobs]
-                        logging.info("开始处理职缺选择")
+                        logging.info("开始处理職務选择")
                         if not jobs_to_iterate:
                             logging.info("未指定目标職務，将选取全部職業")
                             jobs_to_iterate = jobs_texts
                         jobs_count=0
                         for job_title in jobs_to_iterate:
-                            logging.info(f"=== 开始处理职缺: {job_title} ===")
+                            logging.info(f"=== 开始处理職務: {job_title} ===")
                             job_index = jobs_texts.index(job_title)
                             jobs_element = jobs_elements[job_index]
                             if jobs_count ==0:

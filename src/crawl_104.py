@@ -403,7 +403,6 @@ def fetch_jobs_data(driver, max_errors=3, max_scrolls=100000, area = "", distric
         if crawler_error >= max_errors:
             logging.warning(f"已達到最大錯誤次數 {max_errors}")
             crawler_error = 0
-    return job_list, com_list
 '''將職缺頁滑動到最後，將所有職缺詳細頁面url存取給extract_job_info使用'''
 def process_jobs(driver, max_scrolls = 100000, max_errors = 3, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     scrolls = 0
@@ -453,8 +452,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, area = "", distri
             time.sleep(5)  # 短暫暫停後繼續處理
         else:
             logging.info("所有職缺處理完成")
-            break   
-    return job_list, com_list
+            break
 '''將詳細頁面的資料爬取'''
 def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     job_count = 0
@@ -527,32 +525,29 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 else:
                     applicants = ""
                     logging.info(f"獲取應徵人數時發生錯誤: {e}")
-                # 獲取工作內容
-                job_description = driver.find_element(By.CSS_SELECTOR, 'p.job-description__content')
-                if job_description:
-                    job_description = job_description.text.strip()
-                else:
+                try:
+                    # 獲取工作內容
+                    job_description = driver.find_element(By.CSS_SELECTOR, 'p.job-description__content').text.strip()
+                except Exception as e:
                     job_description = ""
-                    logging.info(f"獲取工作內容時發生錯誤: {e}")
-                # 獲取職務類別
-                job_categories = driver.find_elements(By.CSS_SELECTOR, 'div.category-item u')
-                if job_categories:
+                    logging.error(f"獲取工作內容時發生錯誤: {e}")
+                try:
+                    # 獲取職務類別
+                    job_categories = driver.find_elements(By.CSS_SELECTOR, 'div.category-item u')
                     job_category = '、'.join([cat.text for cat in job_categories])
-                else:
+                except Exception as e:
                     job_category = ""
                     logging.error(f"獲取職務類別時發生錯誤: {e}")
-                # 獲取工作待遇
-                salary = driver.find_element(By.CSS_SELECTOR, 'p.text-primary.font-weight-bold')
-                if salary:
-                    salary = salary.text.strip()
-                else:
+                try:
+                    # 獲取工作待遇
+                    salary = driver.find_element(By.CSS_SELECTOR, 'p.text-primary.font-weight-bold').text.strip()
+                except Exception as e:
                     salary = ""
                     logging.error(f"獲取工作待遇時發生錯誤: {e}")
-                # 獲取工作性質
-                job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data')
-                if job_type:
-                    job_type = job_type.text.strip()
-                else:
+                try:
+                    # 獲取工作性質
+                    job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data').text.strip()
+                except Exception as e:
                     job_type = ""
                     logging.error(f"獲取工作性質時發生錯誤: {e}")
                 try:
@@ -577,30 +572,6 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 except Exception as e:
                     management = ""
                     logging.error(f"獲取管理責任時發生錯誤: {e}")
-                # 獲取上班地點
-                location_element = driver.find_elements(By.CSS_SELECTOR, 'div.job-address span')
-                if location_element:
-                    location = location_element[0].text.strip()
-                else:
-                    location = ""
-                    logging.error(f"獲取上班地點時發生錯誤")
-
-                # 獲取管理責任
-                management_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
-                management = ""
-                for element in management_elements:
-                    title_text_element = element.find_elements(By.CSS_SELECTOR, 'h3')
-                    if title_text_element:
-                        title_text = title_text_element[0].text.strip()
-                        if title_text == "管理責任":
-                            management_data_element = element.find_elements(By.CSS_SELECTOR, 'div.list-row__data')
-                            if management_data_element:
-                                management = management_data_element[0].text.strip()
-                            else:
-                                logging.error(f"獲取管理責任時發生錯誤")
-                            break
-                    else:
-                        logging.error(f"獲取管理責任時發生錯誤")
                 try:
                     # 獲取出差外派
                     business_trip = ""
@@ -788,9 +759,9 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                     other_benefits_str = ""
                 # 未整理的福利說明
                 raw_benefits = ""
-                benefits_description = driver.find_element(By.CSS_SELECTOR, 'div.benefits-description p.r3').text.strip()
+                benefits_description = driver.find_element(By.CSS_SELECTOR, 'div.benefits-description p.r3')
                 if benefits_description:
-                    raw_benefits = benefits_description     
+                    raw_benefits = benefits_description.text.strip()     
                 else:
                     logging.info("未整理的福利說明無資訊")
                     raw_benefits = ""
@@ -967,6 +938,17 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 # 更新要存入的資料
                 logging.info(f"更新要存入的資料")
                 try:
+                    parts = company_url.split('/')
+                    if len(parts) >= 5:
+                        # 以下假設 URL 格式為 "https://www.104.com.tw/company/ID?..."
+                        company_id = parts[4].split('?')[0]
+                        com_list.append({"company_url":company_url, "company_id":company_id})  
+                    else:
+                        com_list.append({"company_url":"", "company_id":""})
+                        raise ValueError("URL 格式錯誤: " + company_url)
+                except Exception as e:
+                    logging.error(f"處理公司網址時發生錯誤: {e}")
+                try:
                     job_list.append({
                         "job_id":apply_code+update_date,
                         "job_name":job_name, "job_industry":job_industry, "area":area+district, "industry": industry, "primary_category":primary_category, 
@@ -982,17 +964,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                     })
                 except Exception as e:
                     logging.error(f"處理職缺時發生錯誤: {e}")
-                try:
-                    parts = company_url.split('/')
-                    if len(parts) >= 5:
-                        # 以下假設 URL 格式為 "https://www.104.com.tw/company/ID?..."
-                        company_id = parts[4].split('?')[0]
-                        com_list.append({"company_url":company_url, "company_id":company_id})  
-                    else:
-                        com_list.append({"company_url":"", "company_id":""})
-                        raise ValueError("URL 格式錯誤: " + company_url)
-                except Exception as e:
-                    logging.error(f"處理公司網址時發生錯誤: {e}")
+
                 job_count+=1
             except Exception as e:
                 logging.error(f"處理詳細頁面資訊時發生錯誤: {e}")
@@ -1032,7 +1004,23 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
             driver.switch_to.window(driver.window_handles[0])
             logging.error(f"處理職缺時發生錯誤: {e}")
             crawler_error += 1
-    return remaining_jobs, crawler_error, job_list, com_list
+    if len(job_list)>0:
+        # job_list_count = len(job_list)
+        # logging.info(f"目前第{job_list_count}個職缺，儲存資料")
+        # x_save(job_list, job_count= job_list_count,directory='D:/allm/crawler/job_list',keyword = "job_list", table_name='jobs')
+        # timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        # filename = f"com_url_{timestamp}.json"
+        # x_save(com_list, job_count= job_list_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword="com_url", table_name="com_url")
+        # def upload_data(data, table_name = "unknown"):
+        # def save_to_json(raw_data, filename=None, mode='w', directory='default_directory'):
+        save_to_json(job_list, directory='D:/allm/crawler/job_list')
+        upload_data(job_list, table_name='jobs')
+        job_list.clear()
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"com_url_{timestamp}.json"
+        save_to_json(com_list,filename = filename , directory='D:/allm/crawler/com_url')
+        com_list.clear()
+    return remaining_jobs, crawler_error
 def crawl():
     logging.info("开始爬取程序")
     driver = setup_driver()

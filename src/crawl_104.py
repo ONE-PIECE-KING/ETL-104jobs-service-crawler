@@ -1051,29 +1051,44 @@ def crawl():
         continent_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')
         continents_to_iterate = [elem.text for elem in continent_elements]
         logging.info(f"找到以下洲别: {continents_to_iterate}")
+    con_select_count = 0
     for continent in continents_to_iterate:
         logging.info(f"=== 开始处理洲别: {continent} ===")
-        index = continent_texts.index(continent)
-        select_continent(continent, driver, index)
+        continent_index = continent_texts.index(continent)
+        if con_select_count != 0:
+            area_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-地區']")))
+            area_button.click()            
+        select_continent(continent, driver, continent_index)
         # 地区选取
         logging.info("开始处理縣市选择")
         area_elements = driver.find_elements(By.XPATH, f'//li[contains(@class, "category-item") and contains(@class, "category-item--level-two")]')
         area_texts = [a.text for a in area_elements if a.text not in nouse_area]
         logging.info(f"找到以下可用縣市: {area_texts}")
+        area_select_count = 0
         for area in area_texts:
             logging.info(f"=== 开始处理縣市: {area} ===")
             area_index = area_texts.index(area)
             area_element = area_elements[area_index]
+            if area_select_count != 0:
+                area_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-地區']")))
+                area_button.click()
+                select_continent(continent, driver, continent_index)                
             select_area(area, driver, area_element)
             # 區 選取
             logging.info("开始处理行政區選擇")
             district_elements = driver.find_elements(By.XPATH, f'//li[contains(@class, "category-item") and contains(@class, "category-item--level-three")]')
             district_texts = [a.text for a in district_elements if a.text != "" and a.text not in nouse_district]
             logging.info(f"找到以下可用行政區: {district_texts}")
+            dis_select_count = 0
             for district in district_texts:
                 logging.info(f"=== 开始处理行政區: {district} ===")
                 district_index = district_texts.index(district)
                 district_element = district_elements[district_index]
+                if dis_select_count != 0:
+                    area_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-地區']")))
+                    area_button.click()
+                    select_continent(continent, driver, continent_index)
+                    select_area(area, driver, area_element)                    
                 select_district(district, driver, district_element)
                 confirm_selection(driver)
                 # 产业选取
@@ -1094,10 +1109,17 @@ def crawl():
                     logging.info("未指定目标产业，将选取全部产业")
                     industries_to_iterate = industries_texts
                     logging.info(f"选择的产业: {industries_to_iterate}")
+                ind_select_count = 0
                 for industry in industries_to_iterate:
                     logging.info(f"=== 开始处理产业: {industry} ===")
                     indus_index = industries_texts.index(industry)
                     industries_element = industries_elements[indus_index]
+                    if ind_select_count != 0:
+                        try:
+                            industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
+                            industries_button.click()
+                        except Exception as e:
+                            logging.error(f"產業按鍵錯誤: {e}")
                     select_industry(industry, driver, industries_element)
                     # 次要職業分類选取
                     primary_category_to_iterate = target_primary_category if target_primary_category else []
@@ -1109,11 +1131,20 @@ def crawl():
                         logging.info("未指定目标次分類，将选取全部次分類")
                         primary_category_to_iterate = primary_category_texts
                         logging.info(f"选择的次分類:{primary_category_to_iterate}")
+                    pc_select_count = 0
                     for primary_category in primary_category_to_iterate:
                         logging.info(f"=== 开始处理次分類: {primary_category} ===")
                         prim_index = primary_category_texts.index(primary_category)
                         primary_category_element = primary_category_elements[prim_index]
-                        select_primary_category(primary_category, driver, primary_category_element)
+                        if pc_select_count ==0:
+                            select_primary_category(primary_category, driver, primary_category_element)
+                        else:
+                            try:
+                                industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
+                                industries_button.click()
+                            except Exception as e:
+                                logging.error(f"產業按鍵錯誤{e}")                            
+                            select_primary_category(primary_category, driver, primary_category_element)
                         # 職業選取
                         jobs_to_iterate = target_jobs if target_jobs else []
                         jobs_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-three")]')
@@ -1125,6 +1156,7 @@ def crawl():
                         jobs_count=0
                         logging.info(f"选择的職務: {jobs_to_iterate}")
                         jobs_to_iterate = [item for item in jobs_to_iterate if item != '']
+                        logging.info(f"选择的職務: {jobs_to_iterate}")
                         for job_title in jobs_to_iterate:
                             logging.info(f"=== 开始处理職務: {job_title} ===")
                             job_index = jobs_texts.index(job_title)
@@ -1132,7 +1164,6 @@ def crawl():
                             jobs_element = jobs_elements[job_index]
                             ex_jobs_element = jobs_elements[ex_job_index]
                             if jobs_count ==0:
-                                
                                 select_job(job_title, driver, jobs_element)
                                 confirm_selection(driver)
                                 confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
@@ -1140,14 +1171,13 @@ def crawl():
                                 confirm_element.click()
                                 logging.info("开始获取职缺数据")
                                 fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, area = area, district = district, industry = industry, primary_category = primary_category, job_title = job_title)
-                                logging.info(f"完成职缺 {job_title} 的数据获取")
+                                logging.info(f"完成职缺 {job_title} 的数据获取")                               
                             else:
                                 try:
                                     industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
                                     industries_button.click()
                                 except Exception as e:
                                     logging.error(f"產業案件錯誤{e}")
-                                select_job(job_title, driver, ex_jobs_element)
                                 select_job(job_title, driver, jobs_element)
                                 confirm_selection(driver)
                                 confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
@@ -1155,13 +1185,26 @@ def crawl():
                                 confirm_element.click()
                                 logging.info("开始获取职缺数据")
                                 fetch_jobs_data(driver, max_errors=3, max_scrolls=10000, area = area, district = district, industry = industry, primary_category = primary_category, job_title = job_title)
-                                logging.info(f"完成职缺 {job_title} 的数据获取")                           
+                                logging.info(f"完成职缺 {job_title} 的数据获取")                                                      
+                            try:
+                                industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
+                                industries_button.click()
+                            except Exception as e:
+                                logging.error(f"產業按鍵錯誤{e}")
+                            select_job(job_title, driver, jobs_element)
+                            confirm_selection(driver)                            
                             jobs_count +=1
+                        pc_select_count += 1
+                industries_button = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-職類']")))
+                industries_button.click()                
+                dis_select_count += 1
+                select_district(district, driver, district_element)
+                confirm_selection(driver)
+            area_select_count += 1           
+        con_select_count +=1
     logging.info("所有数据爬取完成")
     driver.quit()
     logging.info("浏览器已关闭，程序结束")
-
-
 if __name__ == "__main__":
     log_file = setup_logging()
     logging.info(f"日誌檔案已建立：{log_file}")

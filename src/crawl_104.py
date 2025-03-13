@@ -15,13 +15,7 @@ import os
 import logging
 from supabase import create_client, Client
 # ------------------ 設定參數 -------------------
-target_jobs = [
-"助理工程師", "工程助理", "機構工程師", "機械工程師", "電子工程師", "電力工程師", "電源工程師", "數位IC設計工程師", "類比IC設計工程師", 
-"IC佈局工程師", "半導體工程師", "光學工程師", "熱傳工程師", "零件工程師", "光電工程師", "光電工程研發主管", "RF通訊工程師", "電信/通訊系統工程師", 
-"通訊工程研發主管", "太陽能技術工程師", "PCB佈線工程師", "硬體研發工程師", "硬體工程研發主管", "電子產品系統工程師", "微機電工程師", "聲學/噪音工程師", 
-"機電技師/工程師", "電機技師/工程師", "其他特殊工程師", "其他工程研發主管", "材料研發人員", "化工化學工程師", "實驗化驗人員", "特用化學工程師", "紡織化學工程師", 
-"生物科技研發人員", "醫藥研發人員", "醫療器材研發工程師", "食品研發人員", "化學工程研發人員", "病理藥理研究人員", "農藝/畜產研究人員"
-]
+target_jobs = []
 target_industry = ["研發相關類"]
 target_continent = ['台灣地區']  # 若沒有設定則抓取第一個洲的所有地區
 target_primary_category=[]
@@ -30,8 +24,8 @@ nouse_district = []
 nouxe_primary_category=[]
 nouxe_jobs = []
 # 設定 Supabase 連線參數
-supabase_url: str = ""
-supabase_key: str = ""
+supabase_url: str = "https://.supabase.co"
+supabase_key: str = ".."
 # 定義目標元素的 CSS 選擇器
 target_selector = 'div.job-summary'
 # 定義等待超時時間（以秒為單位）
@@ -457,6 +451,8 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, area = "", distri
 def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, area = "", district = "", industry = "", primary_category = "", job_title = ""):
     job_count = 0
     remaining_jobs = []
+    com_list = []
+    job_list = []
     for job in current_jobs:
         logging.info(f"正在處理第 {job_count+1} 筆職缺")
         if crawler_error >= max_errors:
@@ -1015,11 +1011,11 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
         # def save_to_json(raw_data, filename=None, mode='w', directory='default_directory'):
         save_to_json(job_list, directory='D:/allm/crawler/job_list')
         upload_data(job_list, table_name='jobs')
-        job_list.clear()
+        job_list = []
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         filename = f"com_url_{timestamp}.json"
         save_to_json(com_list,filename = filename , directory='D:/allm/crawler/com_url')
-        com_list.clear()
+        com_list = []
     return remaining_jobs, crawler_error
 def crawl():
     logging.info("开始爬取程序")
@@ -1058,7 +1054,6 @@ def crawl():
     for continent in continents_to_iterate:
         logging.info(f"=== 开始处理洲别: {continent} ===")
         index = continent_texts.index(continent)
-        logging.info(index)
         select_continent(continent, driver, index)
         # 地区选取
         logging.info("开始处理縣市选择")
@@ -1128,11 +1123,16 @@ def crawl():
                             logging.info("未指定目标職務，将选取全部職業")
                             jobs_to_iterate = jobs_texts
                         jobs_count=0
+                        logging.info(f"选择的職務: {jobs_to_iterate}")
+                        jobs_to_iterate = [item for item in jobs_to_iterate if item != '']
                         for job_title in jobs_to_iterate:
                             logging.info(f"=== 开始处理職務: {job_title} ===")
                             job_index = jobs_texts.index(job_title)
+                            ex_job_index = jobs_texts.index(job_title) -1
                             jobs_element = jobs_elements[job_index]
+                            ex_jobs_element = jobs_elements[ex_job_index]
                             if jobs_count ==0:
+                                
                                 select_job(job_title, driver, jobs_element)
                                 confirm_selection(driver)
                                 confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))
@@ -1147,8 +1147,7 @@ def crawl():
                                     industries_button.click()
                                 except Exception as e:
                                     logging.error(f"產業案件錯誤{e}")
-                                select_industry(industry, driver, industries_element)
-                                select_primary_category(primary_category, driver, primary_category_element)
+                                select_job(job_title, driver, ex_jobs_element)
                                 select_job(job_title, driver, jobs_element)
                                 confirm_selection(driver)
                                 confirm_element = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "button[data-gtm-joblist='搜尋欄位-搜尋點擊']")))

@@ -11,6 +11,7 @@ from selenium.webdriver.chrome.service import Service
 from datetime import datetime
 from fake_useragent import UserAgent
 import os
+from dotenv import load_dotenv
 # import pandas as pd
 import logging
 from supabase import create_client, Client
@@ -25,8 +26,9 @@ nouse_district = []
 nouxe_primary_category=[]
 nouxe_jobs = []
 # 設定 Supabase 連線參數
-supabase_url: str = "https://.supabase.co"
-supabase_key: str = ".."
+load_dotenv()  # 加載 .env 文件
+supabase_url = os.getenv("SUPABASE_URL")
+supabase_key = os.getenv("SUPABASE_KEY")
 # 定義目標元素的 CSS 選擇器
 target_selector = 'div.job-summary'
 recommended_selector = "div.job__recommend.mt-6"
@@ -42,7 +44,6 @@ tools_list = []
 applicants_analysis = []
 job_url_list = []
 start_time = datetime.now()
-
 # ------------------------------------------------
 """初始化logging，預設log位址為logs/"""
 def setup_logging(log_dir='logs'):

@@ -42,6 +42,7 @@ tools_list = []
 applicants_analysis = []
 job_url_list = []
 start_time = datetime.now()
+
 # ------------------------------------------------
 """初始化logging，預設log位址為logs/"""
 def setup_logging(log_dir='logs'):
@@ -194,16 +195,14 @@ def upload_data(data, table_name = "unknown"):
                 try:
                     supabase.table(table_name).insert(item).execute()
                 except Exception as e:
-                    logging.error(f"資料上傳失敗：{e}")
-                    logging.error(f"失敗的資料：{item}")
+                    logging.error(f"資料上傳失敗：{e},失敗的資料：{item}")
             logging.info(f"資料上傳成功")
         except Exception as e:
             logging.error(f"資料上傳失敗：{e}")
     except Exception as e:
         logging.error(f"資料上傳到 {table_name} 表失敗：{e}")
         # 額外的診斷資訊
-        logging.error(f"資料範例：{data[:1]}")
-        logging.error(f"資料總筆數：{len(data)}")
+        logging.error(f"資料範例：{data[:1]},資料總筆數：{len(data)}")
 """儲存_呼叫x_save()與upload_data()每多少筆存到雲端與本地"""
 def x_save(data, job_count, filename = None , sum_job = 100, 
         directory='default_directory',keyword="default_keyword", table_name = "default_table_name"):
@@ -294,20 +293,18 @@ def select_continent(continent_name, driver, index):
             time.sleep(1)  # 等待滚动完成
             continent_element.click()
             logging.info(f"已完成洲别选择: {continent_name}")
-            time.sleep(2)  # 增加点击后的等待时间
+            # time.sleep(2)  # 增加点击后的等待时间
         else:
             raise Exception(f"无法找到洲别选项: {continent_name}")
             
     except TimeoutException as te:
         logging.error(f"等待洲别元素超时: {continent_name}")
         logging.error(f"当前页面URL: {driver.current_url}")
-        logging.error(f"当前页面标题: {driver.title}")
         raise
     except Exception as e:
         logging.error(f"选择洲别时发生错误: {continent_name}, 错误: {e}")
         # 添加更多调试信息
         logging.error(f"当前页面URL: {driver.current_url}")
-        logging.error(f"当前页面标题: {driver.title}")
         # 尝试获取页面源码中的部分内容
         try:
             page_source = driver.page_source
@@ -322,10 +319,9 @@ def select_area(area_name, driver, area_element):
         logging.info(f"开始选择地区: {area_name}")
         area_selector = f"button.area-item[data-area='{area_name}']"
         logging.info(f"等待地区选项出现: {area_selector}")
-        logging.info(f"地区选项已找到，准备点击")
         area_element.click()
         logging.info(f"已完成地区选择: {area_name}")
-        time.sleep(1)
+        # time.sleep(1)
     except Exception as e:
         logging.error(f"选择地区时发生错误: {area_name}, 错误: {e}")
         raise
@@ -336,10 +332,8 @@ def select_district(district_name, driver, district_element):
         logging.info(f"开始选择区: {district_name}")
         district_selector = f"button.area-item[data-area='{district_name}']"
         logging.info(f"等待区选项出现: {district_selector}")
-        logging.info(f"地区选项已找到，准备点击")
         district_element.click()
-        logging.info(f"已完成区选择: {district_name}")
-        time.sleep(1)
+        # time.sleep(1)
     except Exception as e:
         logging.error(f"选择区时发生错误: {district_name}, 错误: {e}")
         raise
@@ -350,8 +344,7 @@ def select_industry(industry_name, driver, industries_element):
         logging.info(f"开始选择产业: {industry_name}")
         logging.info(f"产业选项已找到，准备点击")
         industries_element.click()
-        logging.info(f"已完成产业选择: {industry_name}")
-        time.sleep(1)
+        # time.sleep(1)
     except Exception as e:
         logging.error(f"选择产业时发生错误: {industry_name}, 错误: {e}")
         raise
@@ -362,8 +355,7 @@ def select_primary_category(primary_category, driver, primary_category_element):
         logging.info(f"开始选择产业: {primary_category}")
         logging.info(f"产业选项已找到，准备点击")
         primary_category_element.click()
-        logging.info(f"已完成产业选择: {primary_category}")
-        time.sleep(1)
+        # time.sleep(1)
     except Exception as e:
         logging.error(f"选择产业时发生错误: {primary_category}, 错误: {e}")
         raise
@@ -373,10 +365,9 @@ def select_job(job_name, driver, jobs_element):
     try:
         logging.info(f"开始选择职缺: {job_name}")
         logging.info(f"职缺选项已找到，准备点击")
-        time.sleep(3)
+        # time.sleep(3)
         driver.execute_script("arguments[0].click();", jobs_element)
-        logging.info(f"已完成职缺选择: {job_name}")
-        time.sleep(1)
+        # time.sleep(1)
     except Exception as e:
         logging.error(f"选择职缺时发生错误: {job_name}, 错误: {e}")
         raise
@@ -391,7 +382,6 @@ def confirm_selection(driver):
         )
         logging.info("确认按钮已找到，准备点击")
         confirm_element.click()
-        logging.info("页面加载完成")
     except TimeoutException:
         logging.error("等待确认按钮或页面加载超时")
         raise
@@ -471,7 +461,7 @@ def process_jobs(driver, max_scrolls = 100000, max_errors = 3, area = "", distri
                 logging.error(f"儲存未處理職缺時發生錯誤: {e}")
             # 重置錯誤計數器，準備下一輪處理
             crawler_error = 0
-            time.sleep(5)  # 短暫暫停後繼續處理
+            # time.sleep(5)  # 短暫暫停後繼續處理
         else:
             logging.info("所有職缺處理完成")
             break
@@ -499,7 +489,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 logging.info(f"職缺產業{job_industry}")
             except Exception as e:
                 job_industry = ""
-                logging.error(f"獲取職缺產業時發生錯誤: {e}")
+                logging.info(f"獲取職缺產業時發生錯誤: {e}")
             # 獲取公司資訊
             company_element = job.find_element(By.CSS_SELECTOR, 'a[data-gtm-joblist="職缺-公司名稱"]')
             
@@ -530,10 +520,10 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                         logging.info(f"更新日期: {update_date}")
                     except ValueError as e:
                         # 如果日期格式不匹配，捕捉錯誤
-                        logging.error(f"日期轉換失敗: {e}. 原始日期: {update_date}")
+                        logging.warning(f"日期轉換失敗: {e}. 原始日期: {update_date}")
                 except Exception as e:
                     update_date = "N/A"
-                    logging.error(f"獲取更新日期時發生錯誤: {e}")
+                    logging.info(f"獲取更新日期時發生錯誤: {e}")
                     logging.info("無法獲取更新日期")
                 # 檢查是否為積極徵才中（可能不存在）
                 try:
@@ -554,32 +544,32 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                     job_description = driver.find_element(By.CSS_SELECTOR, 'p.job-description__content').text.strip()
                 except Exception as e:
                     job_description = ""
-                    logging.error(f"獲取工作內容時發生錯誤: {e}")
+                    logging.info(f"獲取工作內容時發生錯誤: {e}")
                 try:
                     # 獲取職務類別
                     job_categories = driver.find_elements(By.CSS_SELECTOR, 'div.category-item u')
                     job_category = '、'.join([cat.text for cat in job_categories])
                 except Exception as e:
                     job_category = ""
-                    logging.error(f"獲取職務類別時發生錯誤: {e}")
+                    logging.info(f"獲取職務類別時發生錯誤: {e}")
                 try:
                     # 獲取工作待遇
                     salary = driver.find_element(By.CSS_SELECTOR, 'p.text-primary.font-weight-bold').text.strip()
                 except Exception as e:
                     salary = ""
-                    logging.error(f"獲取工作待遇時發生錯誤: {e}")
+                    logging.info(f"獲取工作待遇時發生錯誤: {e}")
                 try:
                     # 獲取工作性質
                     job_type = driver.find_element(By.CSS_SELECTOR, 'div.list-row:nth-child(4) div.list-row__data').text.strip()
                 except Exception as e:
                     job_type = ""
-                    logging.error(f"獲取工作性質時發生錯誤: {e}")
+                    logging.info(f"獲取工作性質時發生錯誤: {e}")
                 try:
                     # 獲取上班地點
                     location = driver.find_element(By.CSS_SELECTOR, 'div.job-address span').text.strip()
                 except Exception as e:
                     location = ""
-                    logging.error(f"獲取上班地點時發生錯誤: {e}")
+                    logging.info(f"獲取上班地點時發生錯誤: {e}")
                 try:
                     # 獲取管理責任
                     management_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
@@ -591,11 +581,11 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 management = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取管理責任時發生錯誤: {e}")
+                            logging.info(f"獲取管理責任時發生錯誤: {e}")
                             continue
                 except Exception as e:
                     management = ""
-                    logging.error(f"獲取管理責任時發生錯誤: {e}")
+                    logging.info(f"獲取管理責任時發生錯誤: {e}")
                 try:
                     # 獲取出差外派
                     business_trip = ""
@@ -606,7 +596,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 business_trip = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取出差外派時發生錯誤: {e}")
+                            logging.warning(f"獲取出差外派時發生錯誤: {e}")
                             continue
                     # 獲取上班時段
                     work_time = ""
@@ -617,7 +607,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 work_time = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取上班時段時發生錯誤: {e}")
+                            logging.warning(f"獲取上班時段時發生錯誤: {e}")
                             continue
                     # 獲取休假制度
                     vacation = ""
@@ -628,7 +618,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 vacation = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取休假制度時發生錯誤: {e}")
+                            logging.warning(f"獲取休假制度時發生錯誤: {e}")
                             continue
                     # 獲取可上班日
                     start_work = ""
@@ -639,7 +629,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 start_work = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取可上班日時發生錯誤: {e}")
+                            logging.warning(f"獲取可上班日時發生錯誤: {e}")
                             continue
                     # 獲取需求人數
                     headcount = ""
@@ -650,7 +640,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 headcount = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取需求人數時發生錯誤: {e}")
+                            logging.warning(f"獲取需求人數時發生錯誤: {e}")
                             continue
                 except Exception as e:
                     business_trip = ""
@@ -658,7 +648,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                     vacation = ""
                     start_work = ""
                     headcount = ""
-                    logging.error(f"獲取工作條件時發生錯誤: {e}")
+                    logging.warning(f"獲取工作條件時發生錯誤: {e}")
                 # 獲取工作經歷
                 work_exp = ""
                 work_exp_elements = driver.find_elements(By.CSS_SELECTOR, 'div.list-row')
@@ -670,7 +660,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 work_exp = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取工作經歷時發生錯誤: {e}")
+                            logging.warning(f"獲取工作經歷時發生錯誤: {e}")
                             continue
                     # 獲取學歷要求
                     education = ""
@@ -681,7 +671,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 education = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取學歷要求時發生錯誤: {e}")
+                            logging.warning(f"獲取學歷要求時發生錯誤: {e}")
                             continue
                     # 獲取科系要求
                     major = ""
@@ -692,7 +682,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 major = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取科系要求時發生錯誤: {e}")
+                            logging.warning(f"獲取科系要求時發生錯誤: {e}")
                             continue
                     # 獲取語文條件
                     language = ""
@@ -703,7 +693,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 language = element.find_element(By.CSS_SELECTOR, 'div.list-row__data').text.strip()
                                 break
                         except Exception as e:
-                            logging.error(f"獲取語文條件時發生錯誤: {e}")
+                            logging.warning(f"獲取語文條件時發生錯誤: {e}")
                             continue
                     # 獲取擅長工具
                     tools = ""
@@ -715,7 +705,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 tools = '、'.join([tool.text for tool in tools_elements])
                                 break
                         except Exception as e:
-                            logging.error(f"獲取擅長工具時發生錯誤: {e}")
+                            logging.warning(f"獲取擅長工具時發生錯誤: {e}")
                             continue
                     # 獲取工作技能
                     skills = ""
@@ -727,7 +717,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 skills = '、'.join([skill.text for skill in skills_elements])
                                 break
                         except Exception as e:
-                            logging.error(f"獲取工作技能時發生錯誤: {e}")
+                            logging.warning(f"獲取工作技能時發生錯誤: {e}")
                             continue
                     # 獲取具備證照
                     certificates = ""
@@ -739,7 +729,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                                 certificates = '、'.join([cert.text for cert in cert_elements])
                                 break
                         except Exception as e:
-                            logging.error(f"獲取具備證照時發生錯誤: {e}")
+                            logging.warning(f"獲取具備證照時發生錯誤: {e}")
                             continue
                     # 獲取其他條件
                     other_requirements = ""
@@ -761,7 +751,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                     skills = ""
                     certificates = ""
                     other_requirements = ""
-                    logging.error(f"獲取工作條件時發生錯誤: {e}")
+                    logging.warning(f"獲取工作條件時發生錯誤: {e}")
                 # 獲取福利制度
                 # 法定項目
                 legal_benefits = []
@@ -807,9 +797,9 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                         apply_analysis_url = f"https://www.104.com.tw/jobs/apply/analysis/{apply_code}"
                         driver.execute_script(f"window.open('{apply_analysis_url}', '_blank')")
                         driver.switch_to.window(driver.window_handles[-1])
-                        time.sleep(5)
+                        # time.sleep(5)
                     except Exception as e:
-                        logging.error(f"分析與開啟應徵分析頁面代碼發生錯誤: {e}")
+                        logging.warning(f"分析與開啟應徵分析頁面代碼發生錯誤: {e}")
                     # 抓取教育程度分布
                     apply_education = {}
                     education_elements = driver.find_elements(By.CSS_SELECTOR, "div.legend__text")
@@ -878,7 +868,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                             # 將語言技能加入字典
                             language_skills[language_name] = ','.join(language_description)                        
                     else:
-                        logging.error("語言能力容器數量不足")
+                        logging.warning("語言能力容器數量不足")
                     # 定位所有的圖表容器
                     chart_containers = driver.find_elements(By.CSS_SELECTOR, 'div.chart-container.d-flex.flex-column.bg-white.overflow-hidden.horizontal-bar-chart')
                     if chart_containers:
@@ -939,7 +929,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                             else:
                                 logging.info(f"未知的標題: {title}")
                     else:
-                        logging.error("應徵眾多資訊無資訊")
+                        logging.warning("應徵眾多資訊無資訊")
                     # 關閉應徵頁面，切回列表頁
                     driver.close()
                     driver.switch_to.window(driver.window_handles[-1])
@@ -947,7 +937,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                     # 關閉應徵頁面，切回列表頁
                     driver.close()
                     driver.switch_to.window(driver.window_handles[-1])
-                    logging.error(f"獲取應徵詳細資訊時發生錯誤: {e}")
+                    logging.warning(f"獲取應徵詳細資訊時發生錯誤: {e}")
                     apply_education, gender, language_skills, age_distribution, work_experience, major_distribution, skills_distribution, certificates_distribution = {}
                 "apply_education"=={} 
                 "apply_gender"== {}
@@ -957,7 +947,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 "apply_major"== {}
                 "apply_skills"== {}
                 "apply_certificates"== {}                      
-                time.sleep(3)
+                # time.sleep(3)
                 # 更新要存入的資料
                 logging.info(f"更新要存入的資料")
                 try:
@@ -970,7 +960,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                         com_list.append({"company_url":"", "company_id":""})
                         raise ValueError("URL 格式錯誤: " + company_url)
                 except Exception as e:
-                    logging.error(f"處理公司網址時發生錯誤: {e}")
+                    logging.warning(f"處理公司網址時發生錯誤: {e}")
                 try:
                     job_list.append({
                         "job_id":apply_code+update_date, "company_id":company_id, 
@@ -986,11 +976,11 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                         "status": "active"                     
                     })
                 except Exception as e:
-                    logging.error(f"處理職缺時發生錯誤: {e}")
+                    logging.warning(f"處理職缺時發生錯誤: {e}")
 
                 job_count+=1
             except Exception as e:
-                logging.error(f"處理詳細頁面資訊時發生錯誤: {e}")
+                logging.warning(f"處理詳細頁面資訊時發生錯誤: {e}")
                 job_list.append({
                     "job_id":apply_code+update_date, "company_id":company_id,
                     "job_name":job_name, "job_industry":job_industry, "area":district, "industry": industry, "primary_category":primary_category, 
@@ -1021,11 +1011,11 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 filename = f"com_url_{timestamp}.json"
                 x_save(com_list, job_count= job_list_count,filename = filename ,directory='D:/allm/crawler/com_url', keyword="com_url", table_name="com_url")
             except Exception as e:
-                logging.error(f"儲存時發生錯誤: {e}")
+                logging.warning(f"儲存時發生錯誤: {e}")
         except Exception as e:
             driver.close()
             driver.switch_to.window(driver.window_handles[0])
-            logging.error(f"處理職缺時發生錯誤: {e}")
+            logging.warning(f"處理職缺時發生錯誤: {e}")
             crawler_error += 1
     if len(job_list)>0:
         # job_list_count = len(job_list)
@@ -1058,20 +1048,11 @@ def crawl():
     area_button.click()
     # 洲别选取
     logging.info("开始处理洲别选择")
-    try:
-        continents_to_iterate = target_continent if target_continent else []
-    except Exception as e:
-        logging.error(f"處理洲別時發生錯誤1: {e}")
-    try:
-        time.sleep(3)
-        continent_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')
-        # category-item category-item--focus category-item--level-one
-    except Exception as e:
-        logging.error(f"處理洲別時發生錯誤2: {e}")
-    try:
-        continent_texts = [element.text for element in continent_elements]
-    except Exception as e:
-        logging.error(f"處理洲別時發生錯誤3: {e}")   
+    continents_to_iterate = target_continent if target_continent else []
+    time.sleep(2)
+    continent_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')
+    # category-item category-item--focus category-item--level-one
+    continent_texts = [element.text for element in continent_elements]
     logging.info(continent_texts)
     if not continents_to_iterate:
         logging.info("未指定目标洲别，将选取所有洲别")
@@ -1144,7 +1125,6 @@ def crawl():
                     industries_button.click()
                 except Exception as e:
                     logging.error(f"產業案件錯誤{e}")
-                time.sleep(3)
                 industries_to_iterate = target_industry if target_industry else []
                 # 所有產業的網頁元素
                 industries_elements = driver.find_elements(By.XPATH, '//li[contains(@class, "category-item") and contains(@class, "category-item--level-one")]')

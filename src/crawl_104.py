@@ -20,7 +20,7 @@ target_jobs = []
 target_industry = ["資訊軟體系統類"]
 target_continent = ['台灣地區']  # 若沒有設定則抓取第一個洲的所有地區
 target_primary_category=[]
-nouse_area = [ "澎湖縣",  "金門縣",  "連江縣" ]
+nouse_area = []
 nouse_district = []
 nouxe_primary_category=[]
 nouxe_jobs = []
@@ -974,7 +974,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 try:
                     job_list.append({
                         "job_id":apply_code+update_date, "company_id":company_id, 
-                        "job_name":job_name, "job_industry":job_industry, "area":area+district, "industry": industry, "primary_category":primary_category, 
+                        "job_name":job_name, "job_industry":job_industry, "area":district, "industry": industry, "primary_category":primary_category, 
                         "job_title":job_title,"company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
                         "applicants":applicants, "job_description":job_description, "job_category":job_category, "salary":salary, "job_type":job_type, 
                         "location":location, "management":management, "business_trip":business_trip, "work_time":work_time, "vacation":vacation, 
@@ -993,7 +993,7 @@ def extract_job_info(current_jobs, driver, max_errors = 3, crawler_error = 0, ar
                 logging.error(f"處理詳細頁面資訊時發生錯誤: {e}")
                 job_list.append({
                     "job_id":apply_code+update_date, "company_id":company_id,
-                    "job_name":job_name, "job_industry":job_industry, "area":area+district, "industry": industry, "primary_category":primary_category, 
+                    "job_name":job_name, "job_industry":job_industry, "area":district, "industry": industry, "primary_category":primary_category, 
                     "job_title":job_title,"company_name":company, "update_date":update_date, "actively_hiring":actively_hiring, 
                     "applicants":"", "job_description": "", "job_category": "", "salary": "", "job_type": "",
                     "location": "", "management": "", "business_trip": "", "work_time": "",

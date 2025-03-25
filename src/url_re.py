@@ -244,10 +244,10 @@ def collect_urls(filename=None):
         
         # 檢查是否需要處理該洲
         if target_continent and current_continent not in target_continent:
-            logging.info(f"跳過洲別 {current_continent}，因為其不在 target_continent 列表中")
+            # logging.info(f"跳過洲別 {current_continent}，因為其不在 target_continent 列表中")
             continue
         if nouse_continent and current_continent in nouse_continent:
-            logging.info(f"跳過洲別 {current_continent}，因為其在 nouse_continent 列表中")
+            # logging.info(f"跳過洲別 {current_continent}，因為其在 nouse_continent 列表中")
             continue
             
         logging.info(f"開始處理洲別: {current_continent} ({continent_index+1}/{len(continent_elements)})")
@@ -513,7 +513,7 @@ def collect_urls(filename=None):
                                 
                                 # 处理当前容器内的每个职务
                                 job_process_count = 0
-                                for job_index in filtered_job_indices:
+                                for job_index in filtered_job_indices[:1]:
                                     current_job = job_elements_text[job_index]
                                     logging.info(f"開始處理職務: {current_job} ({job_index+1}/{len(job_elements)})")
                                     
@@ -633,6 +633,47 @@ def collect_urls(filename=None):
                                     confirm_btn.click()
                                     time.sleep(3)
                     
+                    # 清除地區選擇條件
+                    logging.info(f"完成處理城市 {city_name}，清除地區查詢條件")
+                    area_btn = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, area_btn_selector)))
+                    area_btn.click()
+                    time.sleep(3)
+                    logging.info(f"清除地區查詢條件_選擇洲別: {current_continent}")
+                    continent_elements = driver.find_elements(By.XPATH, lv1_selector)
+                    continent_elements[continent_index].click()
+                    time.sleep(3)
+                    logging.info(f"清除地區查詢條件_選擇城市: {city_name}")
+                    city_elements = driver.find_elements(By.XPATH, lv2_selector)
+                    city_elements[city_index].click()
+                    time.sleep(3)
+                    
+                    # 重新获取区县列表并计算有效块范围
+                    district_elements = driver.find_elements(By.XPATH, lv3_selector)
+                    district_elements_text = [district.text for district in district_elements]
+                    
+                    # 确定有效内容的起始索引
+                    start_index = -1
+                    end_index = -1
+                    for i, text in enumerate(district_elements_text):
+                        if text.strip():
+                            if start_index == -1:
+                                start_index = i
+                            end_index = i
+                    
+                    if start_index <= district_index <= end_index:
+                        logging.info(f"清除地區查詢條件_選擇區縣: {district_elements_text[district_index]}")
+                        district_elements[district_index].click()
+                        time.sleep(3)
+                    else:
+                        logging.warning(f"district_index ({district_index}) 超出有效範圍 ({start_index}-{end_index})，使用第一個有效行政區")
+                        district_elements[start_index].click()
+                        time.sleep(3)
+                        
+                    logging.info("清除地區查詢條件_點擊確認按鈕")
+                    confirm_btn = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, confirm_btn_selector)))
+                    confirm_btn.click()
+                    time.sleep(3)
+
             # 当前城市处理完毕，保存剩余URL
             if city_temp_urls:
                 logging.info(f"處理完 {current_district} 的所有職缺，保存剩余URL")
@@ -648,46 +689,7 @@ def collect_urls(filename=None):
                 city_urls_files.append(merged_file)
                 logging.info(f"已合併城市 {city_name} 的所有URL到文件 {merged_file}")
             
-            # 清除地區選擇條件
-            logging.info(f"完成處理城市 {city_name}，清除地區查詢條件")
-            area_btn = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, area_btn_selector)))
-            area_btn.click()
-            time.sleep(3)
-            logging.info(f"清除地區查詢條件_選擇洲別: {current_continent}")
-            continent_elements = driver.find_elements(By.XPATH, lv1_selector)
-            continent_elements[continent_index].click()
-            time.sleep(3)
-            logging.info(f"清除地區查詢條件_選擇城市: {city_name}")
-            city_elements = driver.find_elements(By.XPATH, lv2_selector)
-            city_elements[city_index].click()
-            time.sleep(3)
-            
-            # 重新获取区县列表并计算有效块范围
-            district_elements = driver.find_elements(By.XPATH, lv3_selector)
-            district_elements_text = [district.text for district in district_elements]
-            
-            # 确定有效内容的起始索引
-            start_index = -1
-            end_index = -1
-            for i, text in enumerate(district_elements_text):
-                if text.strip():
-                    if start_index == -1:
-                        start_index = i
-                    end_index = i
-            
-            if start_index <= district_index <= end_index:
-                logging.info(f"清除地區查詢條件_選擇區縣: {district_elements_text[district_index]}")
-                district_elements[district_index].click()
-                time.sleep(3)
-            else:
-                logging.warning(f"district_index ({district_index}) 超出有效範圍 ({start_index}-{end_index})，使用第一個有效行政區")
-                district_elements[start_index].click()
-                time.sleep(3)
-                
-            logging.info("清除地區查詢條件_點擊確認按鈕")
-            confirm_btn = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR, confirm_btn_selector)))
-            confirm_btn.click()
-            time.sleep(3)
+
     
     # 所有城市处理完毕，合并所有城市文件（如果需要）
     if len(city_urls_files) > 1 and filename:
